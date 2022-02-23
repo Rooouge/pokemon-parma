@@ -42,7 +42,7 @@ public class OnMapChangeLabel {
 		
 		black = new Rectangle(left, top, right - left, bottom - top);
 		white = new Rectangle(black.x + size, black.y + size, black.width - 2*size, black.height - 2*size);
-		line = new Point(white.x + padding, white.y + padding + font.height(mapName));
+		line = new Point(black.x + padding, black.y + padding + font.height(mapName));
 	}
 	
 	public void draw(Graphics2D g) {

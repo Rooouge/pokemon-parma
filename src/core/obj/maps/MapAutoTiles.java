@@ -70,4 +70,12 @@ public class MapAutoTiles extends ArrayList<AutoTile> {
 		return result;
 	}
 	
+	public AutoTile getFromPos(GridPosition pos) {
+		for(AutoTile at : this) {
+			if(at.getPos().equals(pos))
+				return at;
+		}
+		
+		return null;
+	}
 }

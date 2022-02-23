@@ -12,10 +12,12 @@ import jutils.gui.ColoredPanel;
 import lombok.Getter;
 
 @SuppressWarnings("serial")
+@Getter
 public class Content extends ColoredPanel {
 
-	@Getter
-	protected List<Action> actions;
+	protected final List<Action> actions;
+	protected final List<Action> toAdd;
+	
 	
 	
 	public Content() {
@@ -23,6 +25,7 @@ public class Content extends ColoredPanel {
 		setPreferredSize(ContentSettings.dimension);
 		
 		actions = new ArrayList<>();
+		toAdd = new ArrayList<>();
 	}
 	
 
@@ -40,6 +43,11 @@ public class Content extends ColoredPanel {
 	
 	public void update() throws Exception {
 		List<Action> over = new ArrayList<>();
+		
+		if(!toAdd.isEmpty()) {
+			actions.addAll(toAdd);
+			toAdd.clear();
+		}
 		
 		//Executing actions
 		for(Action a : actions) {
@@ -59,6 +67,10 @@ public class Content extends ColoredPanel {
 	
 	public void addAction(Action action) {
 		actions.add(action);
+	}
+	
+	public void toAddAction(Action action) {
+		toAdd.add(action);
 	}
 	
 	public boolean removeAction(Action action) {

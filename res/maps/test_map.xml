@@ -76,7 +76,14 @@
 		</entity>
 	</entities>
 	<autotiles>
-		<autotile name="flower" pos="5,19"/>
-		<autotile name="flower" pos="5,20"/>
+		<autotile name="flower" pos="7,25"/>
+		<autotile name="flower" pos="8,16"/>
+		<autotile name="flower" pos="9,29"/>
+		<autotile name="flower" pos="10,11"/>
+		<autotile name="flower" pos="11,14"/>
+		<autotile name="flower" pos="12,15"/>
+		<autotile name="flower" pos="13,21"/>
+		<autotile name="flower" pos="14,27"/>
+		<autotile name="flower" pos="15,30"/>
 	</autotiles>
 </map>

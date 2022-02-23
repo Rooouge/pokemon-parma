@@ -13,11 +13,16 @@ import core.obj.entities.EntityHandler;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.overworld.OverworldEntityData;
 import core.obj.scripts.Scripts;
+import lombok.Getter;
+import lombok.Setter;
 
 @SuppressWarnings("serial")
+@Getter
 public class MapEntities extends ArrayList<OverworldEntity> {
 
-	private Map map;
+	private final Map map;
+	@Setter
+	private MapEntitiesHandler handler;
 	
 	
 	public MapEntities(Map map, Node root) throws Exception {

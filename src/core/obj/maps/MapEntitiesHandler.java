@@ -15,11 +15,13 @@ import core.obj.animation.OverworldMovementAction;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.overworld.OverworldEntityData;
 import core.obj.entities.overworld.PlayerOverworldEntity;
+import lombok.Getter;
 
 public class MapEntitiesHandler extends SequenceAction {
 
 	private final MapEntities entities;
 	private final int pixels;
+	@Getter
 	private final Exploration parent;
 	private final long delay;
 	private final Random random;
@@ -31,6 +33,7 @@ public class MapEntitiesHandler extends SequenceAction {
 		super(times);
 		this.parent = parent;
 		this.entities = entities;
+		this.entities.setHandler(this);
 		this.chance = chance;
 		
 		pixels = ContentSettings.tileSize / times;

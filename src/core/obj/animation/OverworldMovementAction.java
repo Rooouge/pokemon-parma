@@ -6,6 +6,7 @@ import core.gui.XYLocation;
 import core.obj.actions.SequenceAction;
 import core.obj.entities.overworld.OverworldEntityData;
 import core.obj.maps.MapEntities;
+import core.obj.maps.tiles.AutoTile;
 
 public class OverworldMovementAction extends SequenceAction {
 
@@ -33,10 +34,20 @@ public class OverworldMovementAction extends SequenceAction {
 		int dc = dir.getDc();
 		int dr = dir.getDr();
 		GridPosition pos = data.getPos();
+		
+		AutoTile at = entities.getMap().getAutoTiles().getFromPos(pos);
+		if(at != null)
+			entities.getHandler().getParent().toAddAction(at);
+		
 		data.setPos(pos.row - dr, pos.column - dc);
 		entities.checkPos(index, dir);
+	}
+	
+	@Override
+	public void onEnd() {
+		super.onEnd();
 		
-//		System.out.println(entities.toString()); //This comments is good with the one in MapEntitiesHandler.update() [row ~ 65]
+		
 	}
 	
 	@Override
