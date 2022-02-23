@@ -1,0 +1,26 @@
+<map>
+	<name name="Test Map"/>
+	<size>
+		<width>40</width>
+		<height>40</height>
+	</size>
+	<spawnpoint>
+		<row>8</row>
+		<column>9</column>
+	</spawnpoint>
+	<movements>
+		rows(0,5) {
+			fillRow(0,18,OBSTACLE)
+			fillRow(19,20,WALK_0)
+			fillRow(21,39,OBSTACLE)
+		}
+		rows(6,17) {
+			fillRow(0,6,OBSTACLE)
+			fillRow(7,32,WALK_0)
+			fillRow(33,39,OBSTACLE)
+		}
+		rows(18,22) {
+			fillRow(0,39,OBSTACLE)
+		}
+	</movements>
+</map>

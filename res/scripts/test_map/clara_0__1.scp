@@ -1,0 +1,10 @@
+faceplayer this
+text "CLARA: a sinistra GIUBI!"
+waitpress
+move giubi-0 UP
+move giubi-0 RIGHT
+move giubi-0 RIGHT
+move giubi-0 DOWN
+face giubi-0 LEFT
+
+state 0

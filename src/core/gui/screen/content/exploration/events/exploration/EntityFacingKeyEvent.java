@@ -1,0 +1,21 @@
+package core.gui.screen.content.exploration.events.exploration;
+
+import core.enums.Directions;
+import core.enums.GameStates;
+import core.events.exploration.ExplorationEntityKeyEvent;
+import core.gui.screen.content.exploration.ExplorationKeyPressHandler;
+import core.obj.entities.overworld.OverworldEntity;
+
+public class EntityFacingKeyEvent extends ExplorationEntityKeyEvent {
+	
+	public EntityFacingKeyEvent(int keyCode, Directions dir, OverworldEntity entity, ExplorationKeyPressHandler handler) {
+		super(keyCode, dir, entity, handler, GameStates.EXPLORATION);
+	}
+	
+	
+	public void execute() {
+		entity.getData().setFacing(dir);
+		active = false;
+		handler.setNoEventActive();
+	}
+}

@@ -1,0 +1,52 @@
+<map>
+	<name name="Test Map2"/>
+	<size>
+		<width>20</width>
+		<height>20</height>
+	</size>
+	<spawnpoint>
+		<row>6</row>
+		<column>7</column>
+	</spawnpoint>
+	<music>
+		<name>route_000</name>
+		<loop>
+			<at>67890000</at>
+			<to>520000</to>
+		</loop>
+		<volume>0.5</volume>
+	</music>
+	<movements>
+		rows(0,5) {
+			fillRow(0,_w,OBSTACLE)
+		}
+
+		rows(6,7) {
+			fillRow(0,6,OBSTACLE)
+			fillRow(7,12,WALK_0)
+			fillRow(13,_w,OBSTACLE)
+		}
+
+		rows(8,10) {
+			fillRow(0,6,OBSTACLE)
+			fillRow(7,8,WALK_0)
+			fillRow(9,10,OBSTACLE)
+			fillRow(11,12,WALK_0)
+			fillRow(13,_w,OBSTACLE)
+		}
+
+		rows(11,15) {
+			fillRow(0,6,OBSTACLE)
+			fillRow(7,12,WALK_0)
+			fillRow(13,_w,OBSTACLE)
+		}
+
+		rows(16,_h) {
+			fillRow(0,8,OBSTACLE)
+			fillRow(9,10,WALK_0)
+			fillRow(11,_w,OBSTACLE)
+		}
+	</movements>
+	<entities>
+	</entities>
+</map>
