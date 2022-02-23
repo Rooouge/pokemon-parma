@@ -20,18 +20,11 @@ public class ExplorationEntityScriptPainter extends Painter<Exploration> {
 	
 	private ScriptAction action;
 	
-	private final int left;
-	private final int top;
-	private final int bottom;
-	private final int right;
-	private final int size;
 	private final int arc;
-	
 	private final Rectangle black;
 	private final Rectangle white;
 	private final Point line1;
 	private final Point line2;
-	private final int padding;
 	
 //	private Thread painter;
 //	private int index;
@@ -42,20 +35,22 @@ public class ExplorationEntityScriptPainter extends Painter<Exploration> {
 		
 		Dimension dim = ContentSettings.dimension;
 		
-		left = ContentSettings.tileSize/2;
-		right = dim.width - left;
-		bottom = dim.height - left;
-		top = bottom - ContentSettings.tileSize*2;
-		size = ContentSettings.tileResize;
+		int size = ContentSettings.tileResize;
+		int padding = size*4;
+		
+		int left = ContentSettings.tileSize/2;
+		int right = dim.width - left;
+		int bottom = dim.height - left;
+		int top = bottom - ContentSettings.tileSize*2;
+		
 		arc = size*4;
-		padding = size*4;
 		
 		black = new Rectangle(left, top, right - left, bottom - top);
 		white = new Rectangle(black.x + size, black.y + size, black.width - 2*size, black.height - 2*size);
 		
 		
 		Font font = Fonts.SCRIPT_TEXT_FONT;
-		int height = (int)(font.getStringBounds("SAMPLE", font.getFrc())).getHeight();
+		int height = font.height();
 		
 		line1 = new Point(white.x + padding, white.y + padding + height);
 		line2 = new Point(line1.x, white.y + white.height - padding);

@@ -17,12 +17,14 @@ import core.gui.screen.content.exploration.painters.ExplorationPainter;
 import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.entities.player.Player;
 import core.obj.maps.Map;
+import core.obj.maps.MapAutoTilesHandler;
 import core.obj.maps.MapEntitiesHandler;
 import core.obj.maps.Maps;
 import core.obj.maps.links.Link;
 import jutils.config.Config;
 import jutils.global.Global;
 import lombok.Getter;
+import lombok.Setter;
 
 @SuppressWarnings("serial")
 public class Exploration extends Content {
@@ -33,7 +35,12 @@ public class Exploration extends Content {
 	private final java.util.Map<GameStates, Painter<Exploration>> painters;
 	@Getter
 	private MapEntitiesHandler entityHandler;
+	private MapAutoTilesHandler autoTilesHandler;
 	private GameStates currentState;
+	@Getter
+	@Setter
+	private boolean onMapChange;
+	
 	
 	
 	public Exploration() throws Exception {
@@ -90,17 +97,12 @@ public class Exploration extends Content {
 		
 		activeMaps.clear();
 		activeMaps.add(map);
-		addNeighbors(map);
-		
-		/*
-		for(int i = 0; i < activeMaps.size(); i++) {
-			Map m = activeMaps.get(i);
-			System.out.println(i + ") " + m.getData().getName() + ", pos: " + m.getData().getPos());
-		}
-		*/
-		
+		addNeighbors(map);		
 		MusicHandler.playMapMusic(map.getData());
-		entityHandler = new MapEntitiesHandler(ContentSettings.tileOriginalSize, map.getEntities(), 6, this);
+		onMapChange = true;
+		
+		entityHandler = new MapEntitiesHandler(ContentSettings.tileOriginalSize, map.getEntities(), 2, this);
+		autoTilesHandler = new MapAutoTilesHandler(map.getAutoTiles(), 6, this);
 	}
 	
 	public Map getActiveMap() {
@@ -125,6 +127,7 @@ public class Exploration extends Content {
 		switch (currentState) {
 		case EXPLORATION:
 			entityHandler.update();
+			autoTilesHandler.update();
 			break;
 		case EXPLORATION_ENTITY_SCRIPT:
 			break;

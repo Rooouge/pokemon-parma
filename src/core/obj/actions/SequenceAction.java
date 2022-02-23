@@ -6,6 +6,7 @@ public class SequenceAction extends Action {
 
 	@Getter
 	protected int times;
+	@Getter
 	protected int tick;
 	
 	

@@ -41,9 +41,9 @@ public class MapAutoTiles extends ArrayList<AutoTile> {
 					args = br.readLine().split(";");
 				}
 				
-				int times = Integer.parseInt(args[0]);
-				int numOfSprite = Integer.parseInt(args[1]);
-				int delay = Integer.parseInt(args[2]);
+				int numOfSprite = Integer.parseInt(args[0]);
+				int times = numOfSprite;
+				int delay = Integer.parseInt(args[1]);
 				
 				
 				String[] posString = n.valueOf("@pos").split(",");

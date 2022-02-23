@@ -39,7 +39,11 @@ public class AutoTile extends Animation {
 			images[i] = new TiledImage(sourceImage.getImage().getSubimage(size*i, 0, size, size));
 		}
 	}
-
+	
+	@Override
+	public void onEnd() {
+		tick = 0;
+	}
 
 	@Override
 	public TiledImage getImage() {

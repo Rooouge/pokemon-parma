@@ -19,8 +19,11 @@ import core.obj.maps.tiles.AutoTile;
 
 public class ExplorationPainter extends Painter<Exploration> {
 	
+	private final OnMapChangeLabel onMapChange;
+	
 	public ExplorationPainter(Exploration parent) {
 		super(parent);
+		onMapChange = new OnMapChangeLabel();
 	}
 	
 
@@ -103,6 +106,14 @@ public class ExplorationPainter extends Painter<Exploration> {
 			}			
 		}
 		*/
+		
+		if(parent.isOnMapChange()) {
+			onMapChange.set(parent.getActiveMap().getData().getName());
+			parent.setOnMapChange(false);
+		}
+		
+		if(onMapChange.isActive())
+			onMapChange.draw(g);
 	}
-
+	
 }
