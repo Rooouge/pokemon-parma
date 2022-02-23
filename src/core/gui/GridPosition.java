@@ -14,6 +14,11 @@ public class GridPosition {
 	}
 	
 	
+	public void add(int dr, int dc) {
+		row += dr;
+		column += dc;
+	}
+	
 	public XYLocation convert() {
 		return new XYLocation(column*ContentSettings.tileSize, row*ContentSettings.tileSize);
 	}

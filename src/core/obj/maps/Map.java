@@ -17,7 +17,7 @@ public class Map {
 	
 	
 	public Map(Node root) throws Exception {
-		data = new MapData(root);
+		data = new MapData(this, root);
 		images = new MapImages(data.getRegistryName());
 		movement = new MapMovements(this, root.selectSingleNode("movements"));
 		entities = new MapEntities(this, root.selectSingleNode("entities"));

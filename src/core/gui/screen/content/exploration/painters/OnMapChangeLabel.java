@@ -25,24 +25,24 @@ public class OnMapChangeLabel {
 	private int arc;
 	
 	
-	public void set(String mapName) {
+	public void set(String mapLabel) {
 		tick = 0;
 		active = true;
-		this.mapName = mapName;
+		this.mapName = mapLabel;
 		
 		int size = ContentSettings.tileResize;
 		int padding = size*4;
 		
 		int left = ContentSettings.tileSize/2;
-		int right = left + font.width(mapName) + 2*padding;
+		int right = left + font.width(mapLabel) + 2*padding;
 		int top = left;
-		int bottom = top + font.height(mapName) + 2*padding;
+		int bottom = top + font.height(mapLabel) + 2*padding;
 		
 		arc = size*4;
 		
 		black = new Rectangle(left, top, right - left, bottom - top);
 		white = new Rectangle(black.x + size, black.y + size, black.width - 2*size, black.height - 2*size);
-		line = new Point(black.x + padding, black.y + padding + font.height(mapName));
+		line = new Point(black.x + padding, black.y + padding + font.height(mapLabel));
 	}
 	
 	public void draw(Graphics2D g) {

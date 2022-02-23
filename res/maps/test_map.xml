@@ -1,5 +1,6 @@
 <map>
 	<name name="Test Map"/>
+	<label value="Community Area"/>
 	<size>
 		<width>40</width>
 		<height>23</height>

@@ -85,11 +85,10 @@ public class MapUtils {
 			return true;
 		}
 		
-		
+//		System.out.println(entity.getData().getName() + ": " + new GridPosition(nextRow, nextColumn) + " - " + grid.length + "," + grid[0].length);
 		if(TileMovements.canMoveTo(grid[nextRow][nextColumn])) {
 			GridPosition newPos = new GridPosition(nextRow, nextColumn);
 			for(OverworldEntity e : activeMap.getEntities()) {
-//				System.out.println(newPos + " - " + e.getData().getPos());
 				if(e.getData().getPos().equals(newPos) && e.getData().isVisible())
 					return false;
 			}

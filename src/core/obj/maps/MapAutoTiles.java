@@ -49,7 +49,9 @@ public class MapAutoTiles extends ArrayList<AutoTile> {
 				String[] posString = n.valueOf("@pos").split(",");
 				GridPosition pos = new GridPosition(Integer.parseInt(posString[0]), Integer.parseInt(posString[1]));
 				
-				spawn(new AutoTile(resName, image, times, numOfSprite, delay), pos);
+				AutoTile at = new AutoTile(resName, image, times, numOfSprite, delay);
+				spawn(at, pos);
+				Log.log("Added AutoTile '" + at.getResName() + "' at pos: " + at.getPos());
 			}
 		} else {
 			Log.log("<autotiles> node not found");
@@ -64,10 +66,20 @@ public class MapAutoTiles extends ArrayList<AutoTile> {
 		
 		if(result) {
 			at.setPos(pos);
+			at.setOriginalPos(new GridPosition(pos.row, pos.column));
 			at.setLoc(map.getData().getLocationFromPos(pos));
 		}
 		
 		return result;
+	}
+	
+	public void respawnAll() {
+		List<AutoTile> temp = new ArrayList<>(this);
+		
+		clear();
+		for(AutoTile at : temp) {
+			spawn(at, at.getOriginalPos());
+		}
 	}
 	
 	public AutoTile getFromPos(GridPosition pos) {

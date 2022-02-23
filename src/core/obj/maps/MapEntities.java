@@ -38,10 +38,7 @@ public class MapEntities extends ArrayList<OverworldEntity> {
 			int row = Integer.parseInt(spawnpointNode.selectSingleNode("row").getStringValue());
 			int column = Integer.parseInt(spawnpointNode.selectSingleNode("column").getStringValue());
 			int facing = Integer.parseInt(spawnpointNode.selectSingleNode("facing").getStringValue());
-			
-			eData.setPos(new GridPosition(row, column));
-			eData.setOriginalPos(eData.getPos());
-			eData.setFacing(Directions.getFromIndex(facing));
+			GridPosition pos = new GridPosition(row, column);
 			
 			Node visibleNode = entityNode.selectSingleNode("visible");
 			if(visibleNode != null) {
@@ -60,7 +57,7 @@ public class MapEntities extends ArrayList<OverworldEntity> {
 			}
 			
 			
-			spawn(entity, eData.getPos());
+			spawn(entity, pos, Directions.getFromIndex(facing));
 			Log.log("Added Entity '" + name + "' with position " + eData.getPos());
 		}
 		
@@ -72,16 +69,24 @@ public class MapEntities extends ArrayList<OverworldEntity> {
 	
 	
 	public boolean spawn(OverworldEntity e) {
-		return spawn(e, map.getData().getSpawnpoint());
+		return spawn(e, map.getData().getSpawnpoint(), e.getData().getFacing());
 	}
 	
 	public boolean spawn(OverworldEntity e, GridPosition pos) {
+		return spawn(e, pos, e.getData().getFacing());
+	}
+	
+	public boolean spawn(OverworldEntity e, GridPosition pos, Directions facing) {
 		boolean result = add(e, pos);
 		
 		
 		if(result) {
-			e.getData().setPos(pos);
-			e.getData().setLoc(map.getData().getLocationFromPos(pos));
+			OverworldEntityData eData = e.getData();
+			eData.setPos(pos);
+			eData.setOriginalPos(new GridPosition(pos.row, pos.column));
+			eData.setLoc(map.getData().getLocationFromPos(pos));
+			eData.setFacing(facing);
+			eData.setOriginalFacing(Directions.getFromIndex(facing.getIndex()));
 		}
 		
 		return result;
@@ -89,6 +94,15 @@ public class MapEntities extends ArrayList<OverworldEntity> {
 	
 	public boolean despawn(OverworldEntity e) {
 		return remove(e);
+	}
+	
+	public void respawnAll() {
+		List<OverworldEntity> temp = new ArrayList<>(this);
+		
+		clear();
+		for(OverworldEntity e : temp) {
+			spawn(e, e.getData().getOriginalPos(), e.getData().getOriginalFacing());
+		}
 	}
 	
 	public boolean add(OverworldEntity e, GridPosition pos) {

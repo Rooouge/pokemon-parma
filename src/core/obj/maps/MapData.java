@@ -13,14 +13,18 @@ import core.files.MusicHandler;
 import core.gui.GridPosition;
 import core.gui.XYLocation;
 import core.gui.screen.content.ContentSettings;
+import core.obj.entities.overworld.OverworldEntity;
 import core.obj.maps.links.Link;
+import core.obj.maps.tiles.AutoTile;
 import lombok.Getter;
 
 @Getter
 public class MapData {
 
+	private final Map map;
 	private final String name;
 	private final String registryName;
+	private final String label;
 	private final Dimension size;
 	private final GridPosition spawnpoint;
 	private final Clip music;
@@ -30,9 +34,12 @@ public class MapData {
 	private GridPosition pos;	
 	
 	
-	public MapData(Node root) {
+	public MapData(Map map, Node root) {
+		this.map = map;
 		name = root.selectSingleNode("name").valueOf("@name");
+		label = root.selectSingleNode("label").valueOf("@value");
 		Log.log("Map name: " + name);
+		
 		registryName = name.toLowerCase().replace(" ", "_");
 		
 		int w = Integer.parseInt(root.selectSingleNode("size/width").getStringValue());
@@ -81,6 +88,7 @@ public class MapData {
 		
 //		System.out.println("Connection from " + mData.registryName + " to " + registryName + " = " + dir);
 		
+		
 		switch (dir) {
 		case DOWN:
 			pos = new GridPosition(mPos.row + mData.size.height, mPos.column + l.getOffset(registryName));
@@ -94,6 +102,17 @@ public class MapData {
 		case RIGHT:
 			pos = new GridPosition(mPos.row + l.getOffset(registryName), mPos.column + mData.size.width);
 			break;
+		}
+		
+		for(OverworldEntity e : map.getEntities()) {
+			GridPosition ePos = e.getData().getPos();
+			ePos.add(pos.row, pos.column);
+			e.getData().setLoc(ePos.convert());
+		}
+		for(AutoTile at : map.getAutoTiles()) {
+			GridPosition aPos = at.getPos();
+			aPos.add(pos.row, pos.column);
+			at.setLoc(aPos.convert());
 		}
 		
 		setLocFromPos();

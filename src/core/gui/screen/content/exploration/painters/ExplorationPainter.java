@@ -108,7 +108,7 @@ public class ExplorationPainter extends Painter<Exploration> {
 		*/
 		
 		if(parent.isOnMapChange()) {
-			onMapChange.set(parent.getActiveMap().getData().getName());
+			onMapChange.set(parent.getActiveMap().getData().getLabel());
 			parent.setOnMapChange(false);
 		}
 		

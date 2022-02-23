@@ -29,6 +29,8 @@ public class OverworldEntityData {
 	@Setter
 	protected XYLocation loc;
 	@Setter
+	protected Directions originalFacing;
+	@Setter
 	protected Directions facing;
 	@Setter
 	protected boolean running;

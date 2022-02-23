@@ -13,6 +13,8 @@ public class AutoTile extends Animation {
 	
 	private final String resName;
 	@Setter
+	protected GridPosition originalPos;
+	@Setter
 	private GridPosition pos;
 	@Setter
 	private XYLocation loc;

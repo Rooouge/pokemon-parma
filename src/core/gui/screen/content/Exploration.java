@@ -91,7 +91,9 @@ public class Exploration extends Content {
 			Map aMap = getActiveMap();
 			aMap.getEntities().remove(pEntity);
 			MusicHandler.stopMapMusic(aMap.getData());
-		} else {
+			map.getEntities().respawnAll();
+			map.getAutoTiles().respawnAll();
+		} else {			
 			map.getEntities().spawn(pEntity);
 		}
 		

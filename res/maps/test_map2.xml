@@ -1,5 +1,6 @@
 <map>
 	<name name="Test Map2"/>
+	<label value="Spawn"/>
 	<size>
 		<width>20</width>
 		<height>20</height>
