@@ -70,7 +70,6 @@ public class OnMapChangeLabel {
 		g.drawString(mapName, line.x, line.y);
 		
 		tick++;
-		System.out.println(tick);
 		if(tick == ticks)
 			active = false;
 	}
