@@ -4,10 +4,13 @@ import jutils.global.Global;
 
 public enum GameStates {
 
-	
+	NONE,
 	EXPLORATION,
+	EXPLORATION_FADE_IN,
+	EXPLORATION_FADE_OUT,
 	EXPLORATION_ENTITY_SCRIPT;
 
+	
 	public static final String KEY = "state";
 	
 	

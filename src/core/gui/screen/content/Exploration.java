@@ -13,6 +13,8 @@ import core.gui.screen.GlobalKeyEventHandler;
 import core.gui.screen.content.exploration.ExplorationEntityScriptKeyPressHandler;
 import core.gui.screen.content.exploration.ExplorationKeyPressHandler;
 import core.gui.screen.content.exploration.painters.ExplorationEntityScriptPainter;
+import core.gui.screen.content.exploration.painters.ExplorationFadeInPainter;
+import core.gui.screen.content.exploration.painters.ExplorationFadeOutPainter;
 import core.gui.screen.content.exploration.painters.ExplorationPainter;
 import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.entities.player.Player;
@@ -51,6 +53,8 @@ public class Exploration extends Content {
 		painters = new HashMap<>();
 		painters.put(GameStates.EXPLORATION, new ExplorationPainter(this));
 		painters.put(GameStates.EXPLORATION_ENTITY_SCRIPT, new ExplorationEntityScriptPainter(this));
+		painters.put(GameStates.EXPLORATION_FADE_IN, new ExplorationFadeInPainter(this));
+		painters.put(GameStates.EXPLORATION_FADE_OUT, new ExplorationFadeOutPainter(this));
 		
 		
 		Log.log("Initializing Player...");
@@ -128,10 +132,29 @@ public class Exploration extends Content {
 	
 	@Override
 	protected void paintComponent(Graphics2D g) {
-		painters.get(GameStates.EXPLORATION).paint(g);
-		switch (currentState) {
+		Painter<Exploration> painter = painters.get(currentState);
+		
+		switch(currentState) {
+		case EXPLORATION:
+			if(painter != null)
+				painter.paint(g);
+			break;
+		case EXPLORATION_ENTITY_SCRIPT:
+			painters.get(GameStates.EXPLORATION).paint(g);
+			if(painter != null)
+				painter.paint(g);
+			break;
+		case EXPLORATION_FADE_IN:
+			painters.get(GameStates.EXPLORATION).paint(g);
+			if(painter != null)
+				painter.paint(g);
+			break;
+		case EXPLORATION_FADE_OUT:
+			painters.get(GameStates.EXPLORATION).paint(g);
+			if(painter != null)
+				painter.paint(g);
+			break;
 		default:
-			painters.get(currentState).paint(g);
 			break;
 		}
 	}

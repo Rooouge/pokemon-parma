@@ -19,7 +19,7 @@ public class Core {
 	
 	
 	public void init() throws Exception {
-		GameStates.set(GameStates.EXPLORATION);
+		GameStates.set(GameStates.EXPLORATION_FADE_IN);
 		
 		
 		Log.log("Initializing sounds...");

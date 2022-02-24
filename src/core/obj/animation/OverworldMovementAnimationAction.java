@@ -74,23 +74,28 @@ public class OverworldMovementAnimationAction extends Animation {
         }
 	}
 	
+	
 	@Override
 	public void onStart() {
 		super.onStart();
 		
 		int facing = entityData.getFacing().getIndex()*3;
 		switcher = switcher == 0 ? 1 : 0;
-		actives = new int[] {-1, facing+1+switcher, facing+1+switcher, facing};
 		
 		boolean running = entityData.isRunning();
-		times = running ? originalTimes / 2 : originalTimes;
-		delay = running ? originalDelay / 2 : originalDelay;
-		System.out.println("------------------");
-	}
-	
-	@Override
-	public void update() throws Exception {
-		super.update();
+		if(running) {
+			actives = new int[] {-1, facing+1+switcher, facing+1+switcher, facing+1+switcher};
+			times = originalTimes/2;
+			delay = originalDelay;
+		} else {
+			actives = new int[] {-1, facing+1+switcher, facing+1+switcher, facing};
+			times = originalTimes;
+			delay = originalDelay;
+		}
+		
+//		System.out.println("------------------");
+//		System.out.println("Times: " + times + ", Original: " + originalTimes);
+//		System.out.println("Delay: " + delay + ", Original: " + originalDelay);
 	}
 	
 	@Override
@@ -98,11 +103,12 @@ public class OverworldMovementAnimationAction extends Animation {
 		started = false;
 	}
 	
+	
 	@Override
 	public TiledImage getImage() {
 		if(started) {
 			int index = actives[tick];
-			System.out.println("Tick " + tick + " = " + index);
+//			System.out.println("Tick " + tick + " = " + index);
 			return entityData.isRunning() ? runSprite[index] : walkSprite[index];
 		}
 		

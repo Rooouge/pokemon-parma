@@ -19,15 +19,7 @@ public class Font extends java.awt.Font {
 	}
 	
 	
-	public int width(String str) {
-		return (int)(getStringBounds(str, frc)).getWidth();
-	}
-	
 	public int height() {
-		return height("SAMPLE");
-	}
-	
-	public int height(String str) {
-		return (int)(getStringBounds(str, frc)).getHeight();
+		return (int)(getStringBounds("SAMPLE", frc)).getHeight();
 	}
 }
