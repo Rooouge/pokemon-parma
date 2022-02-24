@@ -1,10 +1,11 @@
-package core.obj.maps;
+package core.obj.maps.links;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import core.enums.Directions;
-import core.obj.maps.links.Link;
+import core.obj.maps.Map;
+import core.obj.maps.Maps;
 import lombok.Getter;
 
 @SuppressWarnings("serial")

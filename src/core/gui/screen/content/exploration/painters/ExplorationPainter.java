@@ -11,11 +11,11 @@ import core.gui.screen.content.Exploration;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.overworld.OverworldEntityData;
 import core.obj.maps.Map;
-import core.obj.maps.MapAutoTiles;
 import core.obj.maps.MapData;
-import core.obj.maps.MapEntities;
-import core.obj.maps.MapImages;
-import core.obj.maps.tiles.AutoTile;
+import core.obj.maps.autotiles.AutoTile;
+import core.obj.maps.autotiles.MapAutoTiles;
+import core.obj.maps.entities.MapEntities;
+import core.obj.maps.images.MapImages;
 
 public class ExplorationPainter extends Painter<Exploration> {
 	

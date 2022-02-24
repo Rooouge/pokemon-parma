@@ -11,6 +11,7 @@ import core.obj.entities.overworld.OverworldEntityData;
 import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.entities.player.Player;
 import core.obj.maps.links.Link;
+import core.obj.maps.links.MapLinks;
 import jutils.global.Global;
 import lombok.experimental.UtilityClass;
 

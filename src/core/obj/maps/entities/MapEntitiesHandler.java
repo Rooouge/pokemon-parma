@@ -1,4 +1,4 @@
-package core.obj.maps;
+package core.obj.maps.entities;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,6 +15,7 @@ import core.obj.animation.OverworldMovementAction;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.overworld.OverworldEntityData;
 import core.obj.entities.overworld.PlayerOverworldEntity;
+import core.obj.maps.MapUtils;
 import lombok.Getter;
 
 public class MapEntitiesHandler extends SequenceAction {

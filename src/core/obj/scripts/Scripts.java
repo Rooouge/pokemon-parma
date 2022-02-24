@@ -7,7 +7,7 @@ import core.files.FileHandler;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.overworld.OverworldEntityData;
 import core.obj.maps.Map;
-import core.obj.maps.MapEntities;
+import core.obj.maps.entities.MapEntities;
 import jutils.config.Config;
 import lombok.experimental.UtilityClass;
 

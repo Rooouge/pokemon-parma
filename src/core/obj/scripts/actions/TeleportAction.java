@@ -2,7 +2,7 @@ package core.obj.scripts.actions;
 
 import core.gui.GridPosition;
 import core.obj.entities.overworld.OverworldEntity;
-import core.obj.maps.MapEntities;
+import core.obj.maps.entities.MapEntities;
 import core.obj.scripts.ScriptAction;
 
 public class TeleportAction extends ScriptAction {

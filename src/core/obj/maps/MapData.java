@@ -14,8 +14,8 @@ import core.gui.GridPosition;
 import core.gui.XYLocation;
 import core.gui.screen.content.ContentSettings;
 import core.obj.entities.overworld.OverworldEntity;
+import core.obj.maps.autotiles.AutoTile;
 import core.obj.maps.links.Link;
-import core.obj.maps.tiles.AutoTile;
 import lombok.Getter;
 
 @Getter

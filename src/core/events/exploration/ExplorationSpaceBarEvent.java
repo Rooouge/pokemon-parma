@@ -31,7 +31,7 @@ public class ExplorationSpaceBarEvent extends ExplorationKeyEvent {
 		
 //		System.out.println("Target: " + target);
 		
-		if(target != null) {
+		if(target != null && target.getData().isVisible()) {
 			EntityScripts scripts = target.getData().getScripts();
 			if(scripts != null && !scripts.isEmpty() && scripts.getState() < scripts.size()) {
 				active = false;

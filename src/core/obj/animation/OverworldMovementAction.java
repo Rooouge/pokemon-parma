@@ -5,8 +5,8 @@ import core.gui.GridPosition;
 import core.gui.XYLocation;
 import core.obj.actions.SequenceAction;
 import core.obj.entities.overworld.OverworldEntityData;
-import core.obj.maps.MapEntities;
-import core.obj.maps.tiles.AutoTile;
+import core.obj.maps.autotiles.AutoTile;
+import core.obj.maps.entities.MapEntities;
 
 public class OverworldMovementAction extends SequenceAction {
 

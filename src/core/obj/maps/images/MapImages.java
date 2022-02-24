@@ -1,4 +1,4 @@
-package core.obj.maps;
+package core.obj.maps.images;
 
 import java.io.IOException;
 import java.util.ArrayList;

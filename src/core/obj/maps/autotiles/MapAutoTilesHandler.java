@@ -1,10 +1,9 @@
-package core.obj.maps;
+package core.obj.maps.autotiles;
 
 import java.util.Date;
 import java.util.Random;
 
 import core.gui.screen.content.Exploration;
-import core.obj.maps.tiles.AutoTile;
 
 public class MapAutoTilesHandler {
 

@@ -1,6 +1,7 @@
 package core.obj.scripts;
 
 import core.enums.GameStates;
+import core.gui.screen.content.Exploration;
 import core.gui.screen.content.exploration.ExplorationEntityScriptKeyPressHandler;
 import core.gui.screen.content.exploration.painters.ExplorationEntityScriptPainter;
 import lombok.experimental.UtilityClass;
@@ -9,12 +10,12 @@ import lombok.experimental.UtilityClass;
 public class ScriptExecutor {
 
 	
-	public boolean execute(Script script, ExplorationEntityScriptKeyPressHandler handler) {
+	public boolean execute(Script script, Exploration exploration) {
 		ScriptAction action = script.getNextAction();
 		
 		if(action != null) {			
 			if(!action.isStarted()) {
-				ExplorationEntityScriptPainter.class.cast(handler.getExploration().getPainters().get(GameStates.EXPLORATION_ENTITY_SCRIPT)).setAction(action);
+				ExplorationEntityScriptPainter.class.cast(exploration.getPainters().get(GameStates.EXPLORATION_ENTITY_SCRIPT)).setAction(action);
 				action.onStart();
 			}
 			
@@ -30,5 +31,9 @@ public class ScriptExecutor {
 		}
 		
 		return true;
+	}
+	
+	public boolean execute(Script script, ExplorationEntityScriptKeyPressHandler handler) {
+		return execute(script, handler.getExploration());
 	}
 }

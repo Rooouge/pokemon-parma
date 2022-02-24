@@ -1,4 +1,4 @@
-package core.obj.maps.tiles;
+package core.obj.maps.autotiles;
 
 import core.files.TiledImage;
 import core.gui.GridPosition;

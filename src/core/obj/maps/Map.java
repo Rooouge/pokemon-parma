@@ -2,7 +2,13 @@ package core.obj.maps;
 
 import org.dom4j.Node;
 
+import core.obj.maps.autotiles.MapAutoTiles;
+import core.obj.maps.entities.MapEntities;
+import core.obj.maps.images.MapImages;
 import core.obj.maps.links.Links;
+import core.obj.maps.links.MapLinks;
+import core.obj.maps.movements.MapMovements;
+import core.obj.maps.scripts.MapScripts;
 import lombok.Getter;
 
 @Getter
@@ -13,6 +19,7 @@ public class Map {
 	private final MapMovements movement;
 	private final MapEntities entities;
 	private final MapAutoTiles autoTiles;
+	private final MapScripts scripts;
 	private MapLinks links;
 	
 	
@@ -22,6 +29,7 @@ public class Map {
 		movement = new MapMovements(this, root.selectSingleNode("movements"));
 		entities = new MapEntities(this, root.selectSingleNode("entities"));
 		autoTiles = new MapAutoTiles(this, root.selectSingleNode("autotiles"));
+		scripts = new MapScripts(this, root.selectSingleNode("scripts"));
 	}
 	
 	

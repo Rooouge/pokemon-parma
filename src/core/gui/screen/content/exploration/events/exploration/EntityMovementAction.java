@@ -9,7 +9,7 @@ import core.gui.screen.content.exploration.ExplorationKeyPressHandler;
 import core.obj.actions.SequenceAction;
 import core.obj.entities.player.Player;
 import core.obj.maps.Map;
-import core.obj.maps.tiles.AutoTile;
+import core.obj.maps.autotiles.AutoTile;
 import jutils.global.Global;
 
 public class EntityMovementAction extends SequenceAction {

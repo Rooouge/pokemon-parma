@@ -17,12 +17,15 @@ import core.gui.screen.content.exploration.painters.ExplorationPainter;
 import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.entities.player.Player;
 import core.obj.maps.Map;
-import core.obj.maps.MapAutoTilesHandler;
-import core.obj.maps.MapEntitiesHandler;
 import core.obj.maps.Maps;
+import core.obj.maps.autotiles.MapAutoTilesHandler;
+import core.obj.maps.entities.MapEntitiesHandler;
 import core.obj.maps.links.Link;
+import core.obj.maps.scripts.MapScript;
+import core.obj.scripts.ScriptExecutor;
 import jutils.config.Config;
 import jutils.global.Global;
+import jutils.threads.Threads;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -40,7 +43,6 @@ public class Exploration extends Content {
 	@Getter
 	@Setter
 	private boolean onMapChange;
-	
 	
 	
 	public Exploration() throws Exception {
@@ -99,7 +101,19 @@ public class Exploration extends Content {
 		
 		activeMaps.clear();
 		activeMaps.add(map);
-		addNeighbors(map);		
+		addNeighbors(map);
+		
+		MapScript onEnter = map.getScripts().getOnEnter();
+		if(onEnter != null) {
+			Threads.run(() -> {
+				do {
+					ScriptExecutor.execute(onEnter, this);
+				} while(onEnter.getIndex() != 0);
+				
+				Thread.currentThread().interrupt();
+			});
+		}
+		
 		MusicHandler.playMapMusic(map.getData());
 		onMapChange = true;
 		

@@ -85,7 +85,7 @@ public class OverworldMovementAnimationAction extends Animation {
 		boolean running = entityData.isRunning();
 		times = running ? originalTimes / 2 : originalTimes;
 		delay = running ? originalDelay / 2 : originalDelay;
-//		System.out.println(times + " - " + delay);
+		System.out.println("------------------");
 	}
 	
 	@Override
@@ -102,7 +102,7 @@ public class OverworldMovementAnimationAction extends Animation {
 	public TiledImage getImage() {
 		if(started) {
 			int index = actives[tick];
-//			System.out.println("Tick " + tick + " = " + index);
+			System.out.println("Tick " + tick + " = " + index);
 			return entityData.isRunning() ? runSprite[index] : walkSprite[index];
 		}
 		

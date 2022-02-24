@@ -15,7 +15,9 @@ import core.files.SoundsHandler;
 import core.gui.GridPosition;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.maps.Map;
-import core.obj.maps.MapEntities;
+import core.obj.maps.entities.MapEntities;
+import core.obj.maps.scripts.MapScript;
+import core.obj.maps.scripts.MapScriptTypes;
 import core.obj.scripts.actions.FaceAction;
 import core.obj.scripts.actions.FacePlayerAction;
 import core.obj.scripts.actions.MoveAction;
@@ -38,17 +40,14 @@ public class ScriptCompiler {
 	private final String WRONG_FORMAT_TAG = "WRONG FORMAT";
 	private final String MISSING_ENTITY_TAG = "MISSING ENTITY IN MAP";
 	private final int DEFAULT_WAIT = Integer.parseInt(Config.getValue("script-default-wait"));
-	private String arg = null;
-	private String[] args = null;
 	
 	// Used in parsing
 	private int i;
-	private List<String> lines;
 	
 	
 	public Script compile(Map map, OverworldEntity owner, MapEntities entities, File file) throws Exception {
 		Script script = new Script(file, owner);
-		lines = new ArrayList<>();
+		List<String> lines = new ArrayList<>();
 		
 		/*
 		 * Reading
@@ -82,6 +81,26 @@ public class ScriptCompiler {
 
 		
 //		System.out.println(script);
+		return script;
+	}
+	
+	public MapScript compile(Map map, MapScriptTypes type, String[] lines) throws Exception {
+		MapScript script = new MapScript(map, type);
+		
+		for(i = 0; i < lines.length; i++) {
+			String line = lines[i].trim();
+			
+			if(line.isEmpty())
+				continue;
+			
+			ScriptAction action = parse(script, null, line, map, null, map.getEntities());
+			
+			if(action == null)
+				throw new ParsingActionException("XML: " + map.getData().getRegistryName(), i, line);
+			
+			script.add(action);
+		}
+		
 		return script;
 	}
 	
@@ -140,76 +159,76 @@ public class ScriptCompiler {
 	 */
 	
 	private ScriptAction faceplayer(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
-		arg = line.replace("faceplayer ", "");
+		String arg = line.replace("faceplayer ", "");
 		
-		return new FacePlayerAction(parseEntity(arg, args, owner, entities));
+		return new FacePlayerAction(parseEntity(arg, null, owner, entities));
 	}
 	
 	private ScriptAction face(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
-		arg = line.replace("face ", "");
-		args = arg.split(" ");
+		String arg = line.replace("face ", "");
+		String[] args = arg.split(" ");
 		Assert.isTrue(args.length == 2, invalidArguments(arg, WRONG_FORMAT_TAG));
 		
-		return new FaceAction(parseEntity(line, args[0].split("-"), owner, entities), parseDirection(args[1]));
+		return new FaceAction(parseEntity(line, args[0], owner, entities), parseDirection(args[1]));
 	}
 	
 	private ScriptAction rotate(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
-		arg = line.replace("rotate ", "");
-		args = arg.split(" ");
+		String arg = line.replace("rotate ", "");
+		String[] args = arg.split(" ");
 		Assert.isTrue(args.length == 2, invalidArguments(arg, WRONG_FORMAT_TAG));
 		
-		return new RotateAction(parseEntity(line, args[0].split("-"), owner, entities), parseRotationValue(args[1]));
+		return new RotateAction(parseEntity(line, args[0], owner, entities), parseRotationValue(args[1]));
 	}
 	
 	private ScriptAction move(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
-		arg = line.replace("move ", "");
-		args = arg.split(" ");
+		String arg = line.replace("move ", "");
+		String[] args = arg.split(" ");
 		Assert.isTrue(args.length == 2, invalidArguments(arg, WRONG_FORMAT_TAG));
 		
-		return new MoveAction(parseEntity(line, args[0].split("-"), owner, entities), parseDirection(args[1]));
+		return new MoveAction(parseEntity(line, args[0], owner, entities), parseDirection(args[1]));
 	}
 	
 	private ScriptAction wait(String line) {
-		arg = line.replace("wait ", "");
+		String arg = line.replace("wait ", "");
 		
 		return new WaitAction(Integer.parseInt(arg));
 	}
 	
 	private ScriptAction text(String line) throws AssertException {
-		arg = line.replace("text ", "");
+		String arg = line.replace("text ", "");
 		Assert.isTrue(arg.startsWith("\"") && arg.endsWith("\"") && (arg.length() - arg.replace("\"", "").length() == 2), invalidArguments(arg, WRONG_FORMAT_TAG));
 		
 		return new TextAction(arg.replace("\"", ""));
 	}
 	
 	private ScriptAction teleport(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
-		arg = line.replace("teleport ", "");
-		args = arg.split(" ");
+		String arg = line.replace("teleport ", "");
+		String[] args = arg.split(" ");
 		Assert.isTrue(args.length == 2, invalidArguments(arg, WRONG_FORMAT_TAG));
 		
-		return new TeleportAction(parseEntity(line, args[0].split("-"), owner, entities), entities, parsePosition(args[1]));		
+		return new TeleportAction(parseEntity(line, args[0], owner, entities), entities, parsePosition(args[1]));		
 	}
 	
 	private ScriptAction show(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
-		arg = line.replace("show ", "");
+		String arg = line.replace("show ", "");
 		
-		return new ShowHideAction(parseEntity(line, args[0].split("-"), owner, entities), true);
+		return new ShowHideAction(parseEntity(line, arg, owner, entities), true);
 	}
 
 	private ScriptAction hide(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
-		arg = line.replace("hide ", "");
+		String arg = line.replace("hide ", "");
 		
-		return new ShowHideAction(parseEntity(line, args[0].split("-"), owner, entities), false);
+		return new ShowHideAction(parseEntity(line, arg, owner, entities), false);
 	}
 	
 	private ScriptAction state(String line, OverworldEntity owner) {
-		arg = line.replace("state ", "");
+		String arg = line.replace("state ", "");
 		
 		return new SetStateAction(owner, Integer.parseInt(arg));
 	}
 	
 	private ScriptAction sound(String line) {
-		arg = line.replace("sound ", "");
+		String arg = line.replace("sound ", "");
 		
 		return new SoundAction(parseClip(arg));
 	}
@@ -218,11 +237,16 @@ public class ScriptCompiler {
 	 * Utility
 	 */
 	
-	private OverworldEntity parseEntity(String arg, String[] args, OverworldEntity owner, MapEntities entities) throws AssertException {
+	private OverworldEntity parseEntity(String arg, String argStr, OverworldEntity owner, MapEntities entities) throws AssertException {
 		if(arg.equalsIgnoreCase("this")) {
 			return owner;
 		}
 		
+		String[] args;
+		if(argStr == null)
+			args = arg.split("-");
+		else
+			args = argStr.split("-");
 		Assert.isTrue(args.length == 2, invalidArguments(arg, WRONG_FORMAT_TAG));
 		String eName = args[0];
 		int eVariant = Integer.parseInt(args[1]);

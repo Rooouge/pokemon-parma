@@ -5,7 +5,6 @@ import java.util.List;
 
 import core.enums.Directions;
 import core.obj.maps.Map;
-import core.obj.maps.MapLinks;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass

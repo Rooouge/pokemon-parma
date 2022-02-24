@@ -87,4 +87,12 @@
 		<autotile name="flower" pos="14,27"/>
 		<autotile name="flower" pos="15,30"/>
 	</autotiles>
+	<!--
+	<scripts>
+		<script type="onEnter">
+			hide Clara-0
+			show Giubi-0
+		</script>
+	</scripts>
+	-->
 </map>

@@ -1,4 +1,4 @@
-package core.obj.maps;
+package core.obj.maps.movements;
 
 import java.io.IOException;
 
@@ -11,8 +11,11 @@ import core.gui.screen.content.ContentSettings;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.overworld.OverworldEntityData;
 import core.obj.entities.overworld.PlayerOverworldEntity;
-import core.obj.maps.movements.MovementsParser;
-import core.obj.maps.tiles.AutoTile;
+import core.obj.maps.Map;
+import core.obj.maps.MapData;
+import core.obj.maps.autotiles.AutoTile;
+import core.obj.maps.autotiles.MapAutoTiles;
+import core.obj.maps.entities.MapEntities;
 import lombok.Getter;
 
 public class MapMovements {

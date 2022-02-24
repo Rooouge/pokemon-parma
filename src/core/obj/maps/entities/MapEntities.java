@@ -1,4 +1,4 @@
-package core.obj.maps;
+package core.obj.maps.entities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +12,7 @@ import core.gui.GridPosition;
 import core.obj.entities.EntityHandler;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.overworld.OverworldEntityData;
+import core.obj.maps.Map;
 import core.obj.scripts.Scripts;
 import lombok.Getter;
 import lombok.Setter;

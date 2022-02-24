@@ -1,4 +1,4 @@
-package core.obj.maps;
+package core.obj.maps.autotiles;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import core.files.FileHandler;
 import core.files.ImageHandler;
 import core.files.TiledImage;
 import core.gui.GridPosition;
-import core.obj.maps.tiles.AutoTile;
+import core.obj.maps.Map;
 import jutils.config.Config;
 import lombok.Getter;
 
