@@ -1,10 +1,43 @@
-faceplayer this
-text "CLARA: a destra GIUBI!"
-waitpress
-move giubi-0 UP
-move giubi-0 LEFT
-move giubi-0 LEFT
-move giubi-0 DOWN
-face giubi-0 RIGHT
+teleport seba-0_8,12;gazza-0_9,12;zappa-0_10,12;giubi-0_11,12
+face seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+show seba-0
+show giubi-0
+show gazza-0
+show zappa-0
 
-state 1
+move this_UP;player_UP
+move this_UP;player_UP
+move this_UP;player_UP
+movecamera UP
+movecamera UP
+
+wait 2
+text "CLARA: Soldati... In marcia verso la RUSSIA!"
+waitpress
+
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+face seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+face seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+hide seba-0
+hide giubi-0
+hide gazza-0
+hide zappa-0
+
+wait 2
+movecamera DOWN
+movecamera DOWN

@@ -1,19 +1,18 @@
 package core.obj.scripts.actions;
 
-import core.enums.Directions;
-import core.obj.entities.overworld.OverworldEntity;
+import java.util.List;
+
 import core.obj.scripts.ScriptAction;
+import core.obj.scripts.ScriptCompiler.EntityDirection;
 
 public class FaceAction extends ScriptAction {
 
-	private final OverworldEntity entity;
-	private final Directions dir;
+	private final List<EntityDirection> facings;
 	
 	
-	public FaceAction(OverworldEntity entity, Directions dir) {
+	public FaceAction(List<EntityDirection> facings) {
 		super(false, NO_DELAY);
-		this.entity = entity;
-		this.dir = dir;
+		this.facings = facings;
 	}
 	
 	
@@ -21,8 +20,8 @@ public class FaceAction extends ScriptAction {
 	public void execute() {
 		super.execute();
 		
-		if(dir != null) {
-			entity.getData().setFacing(dir);
+		for(EntityDirection facing : facings) {
+			facing.getEntity().getData().setFacing(facing.getDir());
 		}
 	}
 	

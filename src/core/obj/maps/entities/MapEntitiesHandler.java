@@ -15,7 +15,9 @@ import core.obj.animation.OverworldMovementAction;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.overworld.OverworldEntityData;
 import core.obj.entities.overworld.PlayerOverworldEntity;
+import core.obj.entities.player.Player;
 import core.obj.maps.MapUtils;
+import jutils.global.Global;
 import lombok.Getter;
 
 public class MapEntitiesHandler extends SequenceAction {
@@ -84,6 +86,11 @@ public class MapEntitiesHandler extends SequenceAction {
 		entity.getData().setFacing(dir);
 		parent.addAction(entity.getAnimationAction());
 		parent.addAction(new OverworldMovementAction(times, entity.getData(), entities.indexOf(entity), dir.getOpposite(), pixels, entities)); //parent.getActiveMap().getEntities()	
+	}
+	
+	public void addCameraMovementCounterpart(Directions dir) {
+		PlayerOverworldEntity pe = Global.get("player", Player.class).getOverworldEntity();
+		parent.addAction(new OverworldMovementAction(times, pe.getData(), entities.indexOf(pe), dir, pixels, entities));
 	}
 	
 	

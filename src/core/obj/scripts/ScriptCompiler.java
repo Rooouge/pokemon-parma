@@ -14,6 +14,7 @@ import core.exceptions.ParsingActionException;
 import core.files.SoundsHandler;
 import core.gui.GridPosition;
 import core.obj.entities.overworld.OverworldEntity;
+import core.obj.entities.player.Player;
 import core.obj.maps.Map;
 import core.obj.maps.entities.MapEntities;
 import core.obj.maps.scripts.MapScript;
@@ -21,7 +22,7 @@ import core.obj.maps.scripts.MapScriptTypes;
 import core.obj.scripts.actions.FaceAction;
 import core.obj.scripts.actions.FacePlayerAction;
 import core.obj.scripts.actions.MoveAction;
-import core.obj.scripts.actions.WaitPressAction;
+import core.obj.scripts.actions.MoveCameraAction;
 import core.obj.scripts.actions.RotateAction;
 import core.obj.scripts.actions.SetStateAction;
 import core.obj.scripts.actions.ShowHideAction;
@@ -29,9 +30,12 @@ import core.obj.scripts.actions.SoundAction;
 import core.obj.scripts.actions.TeleportAction;
 import core.obj.scripts.actions.TextAction;
 import core.obj.scripts.actions.WaitAction;
+import core.obj.scripts.actions.WaitPressAction;
 import jutils.asserts.Assert;
 import jutils.asserts.AssertException;
 import jutils.config.Config;
+import jutils.global.Global;
+import lombok.Data;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
@@ -118,6 +122,9 @@ public class ScriptCompiler {
 		// rotate
 		if(line.startsWith("rotate"))
 			return rotate(line, owner, entities);
+		// movecamera
+		if(line.startsWith("movecamera"))
+			return moveCamera(line);
 		// move
 		if(line.startsWith("move"))
 			return move(line, owner, entities);
@@ -165,27 +172,21 @@ public class ScriptCompiler {
 	}
 	
 	private ScriptAction face(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
-		String arg = line.replace("face ", "");
-		String[] args = arg.split(" ");
-		Assert.isTrue(args.length == 2, invalidArguments(arg, WRONG_FORMAT_TAG));
-		
-		return new FaceAction(parseEntity(line, args[0], owner, entities), parseDirection(args[1]));
+		return new FaceAction(parseEntitiesAndDirections(line, line.replace("face ", "").split(";"), owner, entities));
 	}
 	
 	private ScriptAction rotate(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
-		String arg = line.replace("rotate ", "");
-		String[] args = arg.split(" ");
-		Assert.isTrue(args.length == 2, invalidArguments(arg, WRONG_FORMAT_TAG));
-		
-		return new RotateAction(parseEntity(line, args[0], owner, entities), parseRotationValue(args[1]));
+		return new RotateAction(parseEntitiesAndRotation(line, line.replace("rotate ", "").split(";"), owner, entities));
 	}
 	
 	private ScriptAction move(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
-		String arg = line.replace("move ", "");
-		String[] args = arg.split(" ");
-		Assert.isTrue(args.length == 2, invalidArguments(arg, WRONG_FORMAT_TAG));
+		return new MoveAction(parseEntitiesAndDirections(line, line.replace("move ", "").split(";"), owner, entities));
+	}
+	
+	private ScriptAction moveCamera(String line) {
+		String arg = line.replace("movecamera ", "");
 		
-		return new MoveAction(parseEntity(line, args[0], owner, entities), parseDirection(args[1]));
+		return new MoveCameraAction(parseDirection(arg));
 	}
 	
 	private ScriptAction wait(String line) {
@@ -202,11 +203,7 @@ public class ScriptCompiler {
 	}
 	
 	private ScriptAction teleport(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
-		String arg = line.replace("teleport ", "");
-		String[] args = arg.split(" ");
-		Assert.isTrue(args.length == 2, invalidArguments(arg, WRONG_FORMAT_TAG));
-		
-		return new TeleportAction(parseEntity(line, args[0], owner, entities), entities, parsePosition(args[1]));		
+		return new TeleportAction(parseEntitiesAndPositions(line, line.replace("teleport ", "").split(";"), owner, entities), entities);
 	}
 	
 	private ScriptAction show(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
@@ -237,16 +234,56 @@ public class ScriptCompiler {
 	 * Utility
 	 */
 	
-	private OverworldEntity parseEntity(String arg, String argStr, OverworldEntity owner, MapEntities entities) throws AssertException {
-		if(arg.equalsIgnoreCase("this")) {
-			return owner;
+	private List<EntityDirection> parseEntitiesAndDirections(String line, String[] args, OverworldEntity owner, MapEntities entities) throws AssertException {
+		List<EntityDirection> movements = new ArrayList<>();
+		for(String subArg : args) {
+			String[] subArgs = subArg.split("_");
+			Assert.isTrue(subArgs.length == 2, invalidArguments(subArg, WRONG_FORMAT_TAG));
+			
+			movements.add(new EntityDirection(parseEntity(line, subArgs[0], owner, entities), parseDirection(subArgs[1])));
 		}
 		
+		return movements;
+	}
+	
+	private List<EntityRotation> parseEntitiesAndRotation(String line, String[] args, OverworldEntity owner, MapEntities entities) throws AssertException {
+		List<EntityRotation> rotations = new ArrayList<>();
+		for(String subArg : args) {
+			String[] subArgs = subArg.split("_");
+			Assert.isTrue(subArgs.length == 2, invalidArguments(subArg, WRONG_FORMAT_TAG));
+			
+			rotations.add(new EntityRotation(parseEntity(line, subArgs[0], owner, entities), parseRotationValue(subArgs[1])));
+		}
+		
+		return rotations;
+	}
+	
+	private List<EntityPosition> parseEntitiesAndPositions(String line, String[] args, OverworldEntity owner, MapEntities entities) throws AssertException {
+		List<EntityPosition> positions = new ArrayList<>();
+		for(String subArg : args) {
+			String[] subArgs = subArg.split("_");
+			Assert.isTrue(subArgs.length == 2, invalidArguments(subArg, WRONG_FORMAT_TAG));
+			
+			positions.add(new EntityPosition(parseEntity(line, subArgs[0], owner, entities), parsePosition(subArgs[1])));
+		}
+		
+		return positions;
+	}
+	
+	
+	private OverworldEntity parseEntity(String arg, String argStr, OverworldEntity owner, MapEntities entities) throws AssertException {
 		String[] args;
 		if(argStr == null)
 			args = arg.split("-");
 		else
 			args = argStr.split("-");
+		
+		if(args[0].equalsIgnoreCase("this")) {
+			return owner;
+		} else if(args[0].equalsIgnoreCase("player")) {
+			return Global.get("player", Player.class).getOverworldEntity();
+		}
+		
 		Assert.isTrue(args.length == 2, invalidArguments(arg, WRONG_FORMAT_TAG));
 		String eName = args[0];
 		int eVariant = Integer.parseInt(args[1]);
@@ -281,5 +318,33 @@ public class ScriptCompiler {
 	private Clip parseClip(String arg) {
 		arg = arg.trim().toLowerCase();
 		return SoundsHandler.get(arg);
+	}
+	
+	/*
+	 * private class
+	 */
+	
+	@Data
+	public class EntityDirection {
+		
+		private final OverworldEntity entity;
+		private final Directions dir;
+		
+	}
+	
+	@Data
+	public class EntityRotation {
+		
+		private final OverworldEntity entity;
+		private final int rotationValue;
+		
+	}
+	
+	@Data
+	public class EntityPosition {
+		
+		private final OverworldEntity entity;
+		private final GridPosition pos;
+		
 	}
 }

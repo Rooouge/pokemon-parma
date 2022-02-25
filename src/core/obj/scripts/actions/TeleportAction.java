@@ -1,21 +1,21 @@
 package core.obj.scripts.actions;
 
-import core.gui.GridPosition;
+import java.util.List;
+
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.maps.entities.MapEntities;
 import core.obj.scripts.ScriptAction;
+import core.obj.scripts.ScriptCompiler.EntityPosition;
 
 public class TeleportAction extends ScriptAction {
 
-	private final OverworldEntity entity;
-	private final GridPosition pos;
+	private final List<EntityPosition> positions;
 	private final MapEntities entities;
 	
 	
-	public TeleportAction(OverworldEntity entity, MapEntities entities, GridPosition pos) {
+	public TeleportAction(List<EntityPosition> positions, MapEntities entities) {
 		super(false, STANDARD_DELAY);
-		this.entity = entity;
-		this.pos = pos;
+		this.positions = positions;
 		this.entities = entities;
 	}
 	
@@ -24,8 +24,12 @@ public class TeleportAction extends ScriptAction {
 	public void execute() {
 		super.execute();
 		
-		entities.despawn(entity);
-		entities.spawn(entity, pos);
+		for(EntityPosition ep : positions) {
+			OverworldEntity e = ep.getEntity();
+			
+			entities.despawn(e);
+			entities.spawn(e, ep.getPos());
+		}
 	}
 
 }

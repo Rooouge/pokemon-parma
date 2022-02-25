@@ -20,7 +20,7 @@ public class EntityMovementAction extends SequenceAction {
 	private final ExplorationKeyPressHandler handler;
 	
 	
-	protected EntityMovementAction(int times, List<Map> activeMaps, Directions dir, ExplorationKeyPressHandler handler, boolean running) {
+	public EntityMovementAction(int times, List<Map> activeMaps, Directions dir, ExplorationKeyPressHandler handler, boolean running) {
 		super(running ? times/2 : times);
 		this.activeMaps = activeMaps;
 		this.dir = dir;

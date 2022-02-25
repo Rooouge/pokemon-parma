@@ -15,7 +15,7 @@
 			<at>67890000</at>
 			<to>520000</to>
 		</loop>
-		<volume>0</volume>
+		<volume>0.5f</volume>
 	</music>
 	<movements>
 		rows(0,5) {
@@ -40,6 +40,7 @@
 				<column>10</column>
 				<facing>2</facing>
 			</spawnpoint>
+			<visible>false</visible>
 		</entity>
 		<entity>
 			<name>Seba-0</name>
@@ -49,6 +50,7 @@
 				<facing>3</facing>
 			</spawnpoint>
 			<movements>moving-hor</movements>
+			<visible>false</visible>
 		</entity>
 		<entity>
 			<name>Zappa-0</name>
@@ -58,13 +60,14 @@
 				<facing>3</facing>
 			</spawnpoint>
 			<movements>facing</movements>
+			<visible>false</visible>
 		</entity>
 		<entity>
 			<name>Clara-0</name>
 			<spawnpoint>
-				<row>7</row>
+				<row>16</row>
 				<column>18</column>
-				<facing>0</facing>
+				<facing>3</facing>
 			</spawnpoint>
 		</entity>
 		<entity>
@@ -74,6 +77,7 @@
 				<column>19</column>
 				<facing>2</facing>
 			</spawnpoint>
+			<visible>false</visible>
 		</entity>
 	</entities>
 	<autotiles>

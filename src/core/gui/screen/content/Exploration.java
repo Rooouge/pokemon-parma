@@ -69,7 +69,7 @@ public class Exploration extends Content {
 		
 		currentState = GameStates.current();
 		
-		
+
 		GlobalKeyEventHandler keyHandler = GlobalKeyEventHandler.getInstance();
 		keyHandler.add(new ExplorationKeyPressHandler(this), GameStates.EXPLORATION);
 		keyHandler.add(new ExplorationEntityScriptKeyPressHandler(this), GameStates.EXPLORATION_ENTITY_SCRIPT);

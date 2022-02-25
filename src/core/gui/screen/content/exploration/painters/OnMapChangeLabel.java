@@ -13,7 +13,7 @@ import lombok.Getter;
 public class OnMapChangeLabel {
 
 	private final Font font = Fonts.SCRIPT_TEXT_FONT;
-	private final int ticks = 500;
+	private final int ticks = 250;
 	
 	private int tick;
 	@Getter

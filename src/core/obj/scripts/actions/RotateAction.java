@@ -1,20 +1,19 @@
 package core.obj.scripts.actions;
 
-import core.obj.entities.overworld.OverworldEntity;
+import java.util.List;
+
 import core.obj.entities.overworld.OverworldEntityData;
 import core.obj.scripts.ScriptAction;
+import core.obj.scripts.ScriptCompiler.EntityRotation;
 
 public class RotateAction extends ScriptAction {
 
-	private final OverworldEntityData data;
-	private final int rotationValue;
+	private final List<EntityRotation> rotations;
 	
 	
-	public RotateAction(OverworldEntity entity, int rotationValue) {
+	public RotateAction(List<EntityRotation> rotations) {
 		super(false, STANDARD_DELAY);
-		
-		data = entity.getData();
-		this.rotationValue = rotationValue;
+		this.rotations = rotations;
 	}
 	
 	
@@ -22,6 +21,11 @@ public class RotateAction extends ScriptAction {
 	public void execute() {
 		super.execute();
 		
-		data.setFacing(data.getFacing().rotate(rotationValue));
+		for(EntityRotation move : rotations) {
+			OverworldEntityData data = move.getEntity().getData();
+			data.setFacing(data.getFacing().rotate(move.getRotationValue()));
+		}
+		
+		
 	}
 }
