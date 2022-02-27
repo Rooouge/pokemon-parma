@@ -1,12 +1,14 @@
 package core;
 
 import core.enums.GameStates;
+import core.enums.Types;
 import core.files.SoundsHandler;
 import core.fonts.Fonts;
 import core.gui.screen.GameScreen;
 import core.gui.screen.content.ContentSettings;
 import core.gui.screen.content.Exploration;
 import core.obj.maps.links.Links;
+import core.obj.pokemon.pokedex.PokedexHandler;
 import jutils.global.Global;
 import jutils.threads.Threads;
 import lombok.experimental.UtilityClass;
@@ -20,7 +22,14 @@ public class Core {
 	
 	public void init() throws Exception {
 		GameStates.set(GameStates.EXPLORATION_FADE_IN);
+
+		Log.log("Initializing Pokémon types...");
+		Types.init();
+		Log.log("Pokémon types initialized.");
 		
+		Log.log("Creating new Pokédex...");
+		PokedexHandler.create();
+		Log.log("Pokédex succesfully created...");
 		
 		Log.log("Initializing sounds...");
 		SoundsHandler.init();

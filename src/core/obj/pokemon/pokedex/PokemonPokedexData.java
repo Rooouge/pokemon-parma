@@ -1,16 +1,26 @@
 package core.obj.pokemon.pokedex;
 
+import org.dom4j.Node;
+
+import core.enums.PokedexPokemonStates;
 import core.obj.pokemon.PokemonBaseData;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
 public class PokemonPokedexData extends PokemonBaseData {
-
-	private final int id; //Numer-1
 	
-	public PokemonPokedexData(String name, int id) {
-		super(name);
-		this.id = id;
+	@Setter
+	protected PokedexPokemonStates state;
+	
+	
+	public PokemonPokedexData(Node root) {
+		this(root, PokedexPokemonStates.UNKNOWN);
+	}
+	
+	public PokemonPokedexData(Node root, PokedexPokemonStates state) {
+		super(root);
+		this.state = state;
 	}
 
 }

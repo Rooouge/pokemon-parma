@@ -231,7 +231,6 @@ public class ScriptCompiler {
 	}
 	
 	private ScriptAction state(String line, Entity<?> owner) {
-		System.out.println(line + " - " + owner);
 		String arg = line.replace("state ", "");
 		
 		return new SetStateAction(owner, Integer.parseInt(arg));

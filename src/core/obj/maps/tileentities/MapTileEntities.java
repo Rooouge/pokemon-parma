@@ -22,7 +22,6 @@ public class MapTileEntities extends ArrayList<TileEntity> {
 		
 		for(Node tileNode : root.selectNodes("script")) {
 			if(MapScriptTypes.getFromValue(tileNode.valueOf("@type")).equals(MapScriptTypes.TILE_SCRIPT)) {
-				System.out.println(tileNode.asXML());
 				TileEntity te = new TileEntity(map, tileNode);
 				te.getData().setScripts(Scripts.getTileScripts(te, map, te.getData().getPos(), map.getEntities()));
 				
@@ -33,9 +32,7 @@ public class MapTileEntities extends ArrayList<TileEntity> {
 	
 	
 	public TileEntity getFromPos(GridPosition pos) {
-//		System.out.println("Size: " + size());
 		for(TileEntity te : this) {
-//			System.out.println("- " + te.getData().getPos());
 			if(te.getData().getPos().equals(pos))
 				return te;
 		}
