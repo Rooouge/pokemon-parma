@@ -13,6 +13,7 @@ import core.enums.Directions;
 import core.exceptions.ParsingActionException;
 import core.files.SoundsHandler;
 import core.gui.GridPosition;
+import core.obj.entities.Entity;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.player.Player;
 import core.obj.maps.Map;
@@ -21,6 +22,7 @@ import core.obj.maps.scripts.MapScript;
 import core.obj.maps.scripts.MapScriptTypes;
 import core.obj.scripts.actions.FaceAction;
 import core.obj.scripts.actions.FacePlayerAction;
+import core.obj.scripts.actions.LogAction;
 import core.obj.scripts.actions.MoveAction;
 import core.obj.scripts.actions.MoveCameraAction;
 import core.obj.scripts.actions.RotateAction;
@@ -49,7 +51,7 @@ public class ScriptCompiler {
 	private int i;
 	
 	
-	public Script compile(Map map, OverworldEntity owner, MapEntities entities, File file) throws Exception {
+	public Script compile(Map map, Entity<?> owner, MapEntities entities, File file) throws Exception {
 		Script script = new Script(file, owner);
 		List<String> lines = new ArrayList<>();
 		
@@ -108,11 +110,14 @@ public class ScriptCompiler {
 		return script;
 	}
 	
-	private ScriptAction parse(Script script, File file, String line, Map map, OverworldEntity owner, MapEntities entities) throws AssertException, ParsingActionException {
+	private ScriptAction parse(Script script, File file, String line, Map map, Entity<?> owner, MapEntities entities) throws AssertException, ParsingActionException {
 		/*
 		 * Funtions
 		 */
 		
+		// log
+		if(line.startsWith("log"))
+			return log(line);
 		// faceplayer
 		if(line.startsWith("faceplayer"))
 			return faceplayer(line, owner, entities);
@@ -165,21 +170,28 @@ public class ScriptCompiler {
 	 * Functions
 	 */
 	
-	private ScriptAction faceplayer(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
+	private ScriptAction log(String line) throws AssertException {
+		String arg = line.replace("log ", "");
+		Assert.isTrue(arg.startsWith("\"") && arg.endsWith("\"") && (arg.length() - arg.replace("\"", "").length() == 2), invalidArguments(arg, WRONG_FORMAT_TAG));
+		
+		return new LogAction(arg.replace("\"", ""));
+	}
+	
+	private ScriptAction faceplayer(String line, Entity<?> owner, MapEntities entities) throws AssertException {
 		String arg = line.replace("faceplayer ", "");
 		
 		return new FacePlayerAction(parseEntity(arg, null, owner, entities));
 	}
 	
-	private ScriptAction face(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
+	private ScriptAction face(String line, Entity<?> owner, MapEntities entities) throws AssertException {
 		return new FaceAction(parseEntitiesAndDirections(line, line.replace("face ", "").split(";"), owner, entities));
 	}
 	
-	private ScriptAction rotate(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
+	private ScriptAction rotate(String line, Entity<?> owner, MapEntities entities) throws AssertException {
 		return new RotateAction(parseEntitiesAndRotation(line, line.replace("rotate ", "").split(";"), owner, entities));
 	}
 	
-	private ScriptAction move(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
+	private ScriptAction move(String line, Entity<?> owner, MapEntities entities) throws AssertException {
 		return new MoveAction(parseEntitiesAndDirections(line, line.replace("move ", "").split(";"), owner, entities));
 	}
 	
@@ -202,23 +214,24 @@ public class ScriptCompiler {
 		return new TextAction(arg.replace("\"", ""));
 	}
 	
-	private ScriptAction teleport(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
+	private ScriptAction teleport(String line, Entity<?> owner, MapEntities entities) throws AssertException {
 		return new TeleportAction(parseEntitiesAndPositions(line, line.replace("teleport ", "").split(";"), owner, entities), entities);
 	}
 	
-	private ScriptAction show(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
+	private ScriptAction show(String line, Entity<?> owner, MapEntities entities) throws AssertException {
 		String arg = line.replace("show ", "");
 		
 		return new ShowHideAction(parseEntity(line, arg, owner, entities), true);
 	}
 
-	private ScriptAction hide(String line, OverworldEntity owner, MapEntities entities) throws AssertException {
+	private ScriptAction hide(String line, Entity<?> owner, MapEntities entities) throws AssertException {
 		String arg = line.replace("hide ", "");
 		
 		return new ShowHideAction(parseEntity(line, arg, owner, entities), false);
 	}
 	
-	private ScriptAction state(String line, OverworldEntity owner) {
+	private ScriptAction state(String line, Entity<?> owner) {
+		System.out.println(line + " - " + owner);
 		String arg = line.replace("state ", "");
 		
 		return new SetStateAction(owner, Integer.parseInt(arg));
@@ -234,7 +247,7 @@ public class ScriptCompiler {
 	 * Utility
 	 */
 	
-	private List<EntityDirection> parseEntitiesAndDirections(String line, String[] args, OverworldEntity owner, MapEntities entities) throws AssertException {
+	private List<EntityDirection> parseEntitiesAndDirections(String line, String[] args, Entity<?> owner, MapEntities entities) throws AssertException {
 		List<EntityDirection> movements = new ArrayList<>();
 		for(String subArg : args) {
 			String[] subArgs = subArg.split("_");
@@ -246,7 +259,7 @@ public class ScriptCompiler {
 		return movements;
 	}
 	
-	private List<EntityRotation> parseEntitiesAndRotation(String line, String[] args, OverworldEntity owner, MapEntities entities) throws AssertException {
+	private List<EntityRotation> parseEntitiesAndRotation(String line, String[] args, Entity<?> owner, MapEntities entities) throws AssertException {
 		List<EntityRotation> rotations = new ArrayList<>();
 		for(String subArg : args) {
 			String[] subArgs = subArg.split("_");
@@ -258,7 +271,7 @@ public class ScriptCompiler {
 		return rotations;
 	}
 	
-	private List<EntityPosition> parseEntitiesAndPositions(String line, String[] args, OverworldEntity owner, MapEntities entities) throws AssertException {
+	private List<EntityPosition> parseEntitiesAndPositions(String line, String[] args, Entity<?> owner, MapEntities entities) throws AssertException {
 		List<EntityPosition> positions = new ArrayList<>();
 		for(String subArg : args) {
 			String[] subArgs = subArg.split("_");
@@ -271,7 +284,7 @@ public class ScriptCompiler {
 	}
 	
 	
-	private OverworldEntity parseEntity(String arg, String argStr, OverworldEntity owner, MapEntities entities) throws AssertException {
+	private OverworldEntity parseEntity(String arg, String argStr, Entity<?> owner, MapEntities entities) throws AssertException {
 		String[] args;
 		if(argStr == null)
 			args = arg.split("-");
@@ -279,7 +292,7 @@ public class ScriptCompiler {
 			args = argStr.split("-");
 		
 		if(args[0].equalsIgnoreCase("this")) {
-			return owner;
+			return (OverworldEntity) owner;
 		} else if(args[0].equalsIgnoreCase("player")) {
 			return Global.get("player", Player.class).getOverworldEntity();
 		}

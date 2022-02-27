@@ -6,8 +6,8 @@ import java.util.HashMap;
 import core.gui.interfaces.OnKeyPressHandler;
 import core.gui.screen.content.Exploration;
 import core.gui.screen.content.exploration.events.entityscript.ScriptKeyEvent;
-import core.obj.scripts.EntityScripts;
 import core.obj.scripts.ScriptExecutor;
+import core.obj.scripts.statescripts.EntityScripts;
 import lombok.Getter;
 
 public class ExplorationEntityScriptKeyPressHandler extends OnKeyPressHandler {

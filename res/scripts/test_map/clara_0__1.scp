@@ -1,15 +1,4 @@
 faceplayer this
-teleport seba-0_10,15;gazza-0_11,15;zappa-0_12,15;giubi-0_13,15
-text "CLARA: Pronti... Partenza... Via!"
+text "CLARA: Ciao, 1"
 waitpress
-
-face seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
-move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
-move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
-move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
-face seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
-move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
-move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
-move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
-move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
-move seba-0_RIGHT;gazza-0_RIGHT;zappa-0_RIGHT;giubi-0_RIGHT
+state 0

@@ -7,14 +7,14 @@ import org.dom4j.Node;
 import core.files.TiledImage;
 import core.obj.animation.Animation;
 import core.obj.animation.OverworldMovementAnimationAction;
+import core.obj.entities.Entity;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class OverworldEntity {
+public class OverworldEntity extends Entity<OverworldEntityData> {
 
-	protected final OverworldEntityData data;
 	protected final OverworldMovementAnimationAction animationAction;
 	
 	

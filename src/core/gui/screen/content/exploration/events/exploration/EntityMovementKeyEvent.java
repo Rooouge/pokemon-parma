@@ -21,7 +21,9 @@ public class EntityMovementKeyEvent extends ExplorationEntityKeyEvent {
 	public boolean canActivate() throws Exception {
 		return super.canActivate() && MapUtils.canMove(entity, handler.getExploration(), dir);
 	}
-
+	
+	
+	
 	@Override
 	public void execute() {
 		Exploration exploration = handler.getExploration();

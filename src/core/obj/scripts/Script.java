@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 import core.enums.GameStates;
-import core.obj.entities.overworld.OverworldEntity;
+import core.obj.entities.Entity;
 import lombok.Getter;
 
 @SuppressWarnings("serial")
@@ -12,11 +12,11 @@ import lombok.Getter;
 public class Script extends ArrayList<ScriptAction> {
 
 	private final File file;
-	private final OverworldEntity owner;
+	private final Entity<?>  owner;
 	private int index;
 	
 	
-	public Script(File file, OverworldEntity owner) {
+	public Script(File file, Entity<?> owner) {
 		super();
 		this.file = file;
 		this.owner = owner;
@@ -55,7 +55,7 @@ public class Script extends ArrayList<ScriptAction> {
 	
 	@Override
 	public String toString() {
-		String s = "Owner: " + owner.getData().getName() + "-" + owner.getData().getVariant();
+		String s = "Owner: " + owner.getClass();
 		
 		for(int i = 0; i < size(); i++) {
 			s += "\n[" + i + "] " + get(i).getClass().getSimpleName();

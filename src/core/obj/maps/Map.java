@@ -9,6 +9,7 @@ import core.obj.maps.links.Links;
 import core.obj.maps.links.MapLinks;
 import core.obj.maps.movements.MapMovements;
 import core.obj.maps.scripts.MapScripts;
+import core.obj.maps.tileentities.MapTileEntities;
 import lombok.Getter;
 
 @Getter
@@ -20,6 +21,7 @@ public class Map {
 	private final MapEntities entities;
 	private final MapAutoTiles autoTiles;
 	private final MapScripts scripts;
+	private final MapTileEntities tileEntities;
 	private MapLinks links;
 	
 	
@@ -30,6 +32,7 @@ public class Map {
 		entities = new MapEntities(this, root.selectSingleNode("entities"));
 		autoTiles = new MapAutoTiles(this, root.selectSingleNode("autotiles"));
 		scripts = new MapScripts(this, root.selectSingleNode("scripts"));
+		tileEntities = new MapTileEntities(this, root.selectSingleNode("scripts"));
 	}
 	
 	

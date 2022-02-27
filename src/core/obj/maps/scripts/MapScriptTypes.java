@@ -7,7 +7,8 @@ import lombok.RequiredArgsConstructor;
 @Getter
 public enum MapScriptTypes {
 
-	EXEC_ON_ENTER("onEnter");
+	EXEC_ON_ENTER("onEnter"),
+	TILE_SCRIPT("tileScript");
 	
 	
 	private final String value;

@@ -8,12 +8,13 @@ import lombok.Getter;
 @Getter
 public class MapScript extends Script {
 
-	private final MapScriptTypes type;
+	protected final Map map;
+	protected final MapScriptTypes type;
 	
 	
 	public MapScript(Map map, MapScriptTypes type) {
 		super(null, null);
-		
+		this.map = map;
 		this.type = type;
 	}
 

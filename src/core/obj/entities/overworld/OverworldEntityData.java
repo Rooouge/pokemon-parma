@@ -12,7 +12,7 @@ import core.files.TiledImage;
 import core.gui.GridPosition;
 import core.gui.XYLocation;
 import core.gui.screen.content.ContentSettings;
-import core.obj.scripts.EntityScripts;
+import core.obj.scripts.statescripts.EntityScripts;
 import lombok.Getter;
 import lombok.Setter;
 

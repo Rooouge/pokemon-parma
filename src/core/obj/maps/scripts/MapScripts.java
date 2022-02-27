@@ -21,19 +21,26 @@ public class MapScripts extends ArrayList<MapScript> {
 		if(root != null) {
 			for(Node sNode : root.selectNodes("script")) {
 				MapScriptTypes type = MapScriptTypes.getFromValue(sNode.valueOf("@type"));
-				String value = sNode.getStringValue();
-				add(ScriptCompiler.compile(map, type, value.split("\n")));
+				
+				if(type.equals(MapScriptTypes.EXEC_ON_ENTER)) {
+					String value = sNode.getStringValue();
+					add(ScriptCompiler.compile(map, type, value.split("\n")));
+				}
+				
 			}
 		}
+		
 	}
 	
 	
 	public MapScript getOnEnter() {
-		for(MapScript s : this) {
-			if(s.getType().equals(MapScriptTypes.EXEC_ON_ENTER))
-				return s;
+		for(MapScript ms : this) {
+			if(ms.getType().equals(MapScriptTypes.EXEC_ON_ENTER))
+				return ms;
 		}
 		
 		return null;
 	}
+	
+	
 }

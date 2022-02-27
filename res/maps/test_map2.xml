@@ -49,5 +49,16 @@
 		}
 	</movements>
 	<entities>
+		<entity>
+			<name>Akira-0</name>
+			<spawnpoint>
+				<row>15</row>
+				<column>10</column>
+				<facing>2</facing>
+			</spawnpoint>
+		</entity>
 	</entities>
+	<scripts>
+		<script type="tileScript" tile="15,8" />
+	</scripts>
 </map>

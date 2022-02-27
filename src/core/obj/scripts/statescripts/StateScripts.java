@@ -1,4 +1,4 @@
-package core.obj.scripts;
+package core.obj.scripts.statescripts;
 
 import java.io.File;
 import java.io.FileReader;
@@ -6,30 +6,29 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import core.obj.scripts.Script;
 import lombok.Getter;
 import lombok.Setter;
 
 @SuppressWarnings("serial")
-public class EntityScripts extends ArrayList<Script> {
+public class StateScripts extends ArrayList<Script> {
 
 	@Getter
 	@Setter
-	private int state;
-	private final File stateFile;
+	protected int state;
+	protected final File stateFile;
 	
-	public EntityScripts(File file) throws IOException {
-		stateFile = new File(file.getParentFile(), file.getName() + ".state");
+	
+	public StateScripts(File stateFile) throws IOException {
+		this.stateFile = stateFile;
 		
 		initState();
 	}
 	
 	
-	private void readState(int state) throws IOException {
+	private void writeState(int state) throws IOException {
 		this.state = state;
 //		System.out.println(stateFile.getName() + " = " + stateFile.exists());
-		
-		if(!stateFile.exists())
-			stateFile.createNewFile();
 		
 		try (
 			FileWriter w = new FileWriter(stateFile);
@@ -39,8 +38,8 @@ public class EntityScripts extends ArrayList<Script> {
 	}
 	
 	private void initState() throws IOException {
-		if(!stateFile.exists()) {
-			readState(0);
+		if(!stateFile.exists() && stateFile.createNewFile()) {
+			writeState(0);
 		}
 		else {
 			try (

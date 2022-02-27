@@ -10,6 +10,9 @@ import core.obj.actions.SequenceAction;
 import core.obj.entities.player.Player;
 import core.obj.maps.Map;
 import core.obj.maps.autotiles.AutoTile;
+import core.obj.maps.tileentities.TileEntity;
+import core.obj.scripts.Script;
+import core.obj.scripts.ScriptExecutor;
 import jutils.global.Global;
 
 public class EntityMovementAction extends SequenceAction {
@@ -37,12 +40,26 @@ public class EntityMovementAction extends SequenceAction {
 	
 	@Override
 	public void onEnd() {
+//		System.out.println("end");
 		handler.setNoEventActive();
 		GridPosition newPos = Global.get("player", Player.class).getOverworldEntity().getData().getPos();
 		
-		AutoTile at = activeMaps.get(0).getAutoTiles().getFromPos(newPos);
+		Map map = activeMaps.get(0);
+		
+		AutoTile at = map.getAutoTiles().getFromPos(newPos);
 		if(at != null)
 			handler.getExploration().toAddAction(at);
+		
+		
+		TileEntity te = map.getTileEntities().getFromPos(newPos);
+//		System.out.println(newPos + ": " + te);
+		if(te != null) {
+			Script script = te.getData().getScripts().getCurrent();
+			do {
+				ScriptExecutor.execute(script, handler.getExploration());
+			} while(script.getIndex() != 0);
+		}		
+		
 	}
 	
 	@Override

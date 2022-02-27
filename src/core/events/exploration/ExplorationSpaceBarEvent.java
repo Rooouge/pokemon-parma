@@ -7,7 +7,7 @@ import core.gui.screen.GlobalKeyEventHandler;
 import core.gui.screen.content.exploration.ExplorationEntityScriptKeyPressHandler;
 import core.gui.screen.content.exploration.ExplorationKeyPressHandler;
 import core.obj.entities.overworld.OverworldEntity;
-import core.obj.scripts.EntityScripts;
+import core.obj.scripts.statescripts.EntityScripts;
 
 public class ExplorationSpaceBarEvent extends ExplorationKeyEvent {
 

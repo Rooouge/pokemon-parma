@@ -27,7 +27,6 @@ public class MapEntities extends ArrayList<OverworldEntity> {
 	
 	
 	public MapEntities(Map map, Node root) throws Exception {
-		super();
 		this.map = map;
 		
 		for(Node entityNode : root.selectNodes("entity")) {
@@ -64,7 +63,7 @@ public class MapEntities extends ArrayList<OverworldEntity> {
 		
 		for(OverworldEntity entity : this) {
 			OverworldEntityData eData = entity.getData();
-			eData.setScripts(Scripts.get(map, entity, this));
+			eData.setScripts(Scripts.getEntityScripts(map, entity, this));
 		}
 	}
 	

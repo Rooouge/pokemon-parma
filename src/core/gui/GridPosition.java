@@ -1,6 +1,8 @@
 package core.gui;
 
 import core.gui.screen.content.ContentSettings;
+import jutils.asserts.Assert;
+import jutils.asserts.AssertException;
 
 public class GridPosition {
 
@@ -11,6 +13,13 @@ public class GridPosition {
 	public GridPosition(int r, int c) {
 		this.row = r;
 		this.column = c;
+	}
+	
+	public GridPosition(String s) throws AssertException {
+		String[] args = s.split(",");
+		Assert.isTrue(args.length == 2, "Failed to create GridPosition from string '" + s + "'");
+		row = Integer.parseInt(args[0]);
+		column = Integer.parseInt(args[1]);
 	}
 	
 	
