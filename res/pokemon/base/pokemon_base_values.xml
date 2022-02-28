@@ -1,0 +1,3090 @@
+<data>
+	<pokemon id="1">
+		<hp>45</hp>
+		<attack>49</attack>
+		<defense>49</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="2">
+		<hp>60</hp>
+		<attack>62</attack>
+		<defense>63</defense>
+		<sp_attack>80</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="3">
+		<hp>80</hp>
+		<attack>82</attack>
+		<defense>83</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="4">
+		<hp>39</hp>
+		<attack>52</attack>
+		<defense>43</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="5">
+		<hp>58</hp>
+		<attack>64</attack>
+		<defense>58</defense>
+		<sp_attack>80</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="6">
+		<hp>78</hp>
+		<attack>84</attack>
+		<defense>78</defense>
+		<sp_attack>109</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="7">
+		<hp>44</hp>
+		<attack>48</attack>
+		<defense>65</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>64</sp_defense>
+		<speed>43</speed>
+	</pokemon>
+	<pokemon id="8">
+		<hp>59</hp>
+		<attack>63</attack>
+		<defense>80</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>58</speed>
+	</pokemon>
+	<pokemon id="9">
+		<hp>79</hp>
+		<attack>83</attack>
+		<defense>100</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>105</sp_defense>
+		<speed>78</speed>
+	</pokemon>
+	<pokemon id="10">
+		<hp>45</hp>
+		<attack>30</attack>
+		<defense>35</defense>
+		<sp_attack>20</sp_attack>
+		<sp_defense>20</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="11">
+		<hp>50</hp>
+		<attack>20</attack>
+		<defense>55</defense>
+		<sp_attack>25</sp_attack>
+		<sp_defense>25</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="12">
+		<hp>60</hp>
+		<attack>45</attack>
+		<defense>50</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="13">
+		<hp>40</hp>
+		<attack>35</attack>
+		<defense>30</defense>
+		<sp_attack>20</sp_attack>
+		<sp_defense>20</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="14">
+		<hp>45</hp>
+		<attack>25</attack>
+		<defense>50</defense>
+		<sp_attack>25</sp_attack>
+		<sp_defense>25</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="15">
+		<hp>65</hp>
+		<attack>90</attack>
+		<defense>40</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>75</speed>
+	</pokemon>
+	<pokemon id="16">
+		<hp>40</hp>
+		<attack>45</attack>
+		<defense>40</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>56</speed>
+	</pokemon>
+	<pokemon id="17">
+		<hp>63</hp>
+		<attack>60</attack>
+		<defense>55</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>71</speed>
+	</pokemon>
+	<pokemon id="18">
+		<hp>83</hp>
+		<attack>80</attack>
+		<defense>75</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>101</speed>
+	</pokemon>
+	<pokemon id="19">
+		<hp>30</hp>
+		<attack>56</attack>
+		<defense>35</defense>
+		<sp_attack>25</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>72</speed>
+	</pokemon>
+	<pokemon id="20">
+		<hp>55</hp>
+		<attack>81</attack>
+		<defense>60</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>97</speed>
+	</pokemon>
+	<pokemon id="21">
+		<hp>40</hp>
+		<attack>60</attack>
+		<defense>30</defense>
+		<sp_attack>31</sp_attack>
+		<sp_defense>31</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="22">
+		<hp>65</hp>
+		<attack>90</attack>
+		<defense>65</defense>
+		<sp_attack>61</sp_attack>
+		<sp_defense>61</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="23">
+		<hp>35</hp>
+		<attack>60</attack>
+		<defense>44</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>54</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="24">
+		<hp>60</hp>
+		<attack>95</attack>
+		<defense>69</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>79</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="25">
+		<hp>35</hp>
+		<attack>55</attack>
+		<defense>40</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="26">
+		<hp>60</hp>
+		<attack>90</attack>
+		<defense>55</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>110</speed>
+	</pokemon>
+	<pokemon id="27">
+		<hp>50</hp>
+		<attack>75</attack>
+		<defense>85</defense>
+		<sp_attack>20</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="28">
+		<hp>75</hp>
+		<attack>100</attack>
+		<defense>110</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="29">
+		<hp>55</hp>
+		<attack>47</attack>
+		<defense>52</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>41</speed>
+	</pokemon>
+	<pokemon id="30">
+		<hp>70</hp>
+		<attack>62</attack>
+		<defense>67</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>56</speed>
+	</pokemon>
+	<pokemon id="31">
+		<hp>90</hp>
+		<attack>92</attack>
+		<defense>87</defense>
+		<sp_attack>75</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>76</speed>
+	</pokemon>
+	<pokemon id="32">
+		<hp>46</hp>
+		<attack>57</attack>
+		<defense>40</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="33">
+		<hp>61</hp>
+		<attack>72</attack>
+		<defense>57</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="34">
+		<hp>81</hp>
+		<attack>102</attack>
+		<defense>77</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="35">
+		<hp>70</hp>
+		<attack>45</attack>
+		<defense>48</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="36">
+		<hp>95</hp>
+		<attack>70</attack>
+		<defense>73</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="37">
+		<hp>38</hp>
+		<attack>41</attack>
+		<defense>40</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="38">
+		<hp>73</hp>
+		<attack>76</attack>
+		<defense>75</defense>
+		<sp_attack>81</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="39">
+		<hp>115</hp>
+		<attack>45</attack>
+		<defense>20</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>25</sp_defense>
+		<speed>20</speed>
+	</pokemon>
+	<pokemon id="40">
+		<hp>140</hp>
+		<attack>70</attack>
+		<defense>45</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="41">
+		<hp>40</hp>
+		<attack>45</attack>
+		<defense>35</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="42">
+		<hp>75</hp>
+		<attack>80</attack>
+		<defense>70</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="43">
+		<hp>45</hp>
+		<attack>50</attack>
+		<defense>55</defense>
+		<sp_attack>75</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="44">
+		<hp>60</hp>
+		<attack>65</attack>
+		<defense>70</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="45">
+		<hp>75</hp>
+		<attack>80</attack>
+		<defense>85</defense>
+		<sp_attack>110</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="46">
+		<hp>35</hp>
+		<attack>70</attack>
+		<defense>55</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>25</speed>
+	</pokemon>
+	<pokemon id="47">
+		<hp>60</hp>
+		<attack>95</attack>
+		<defense>80</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="48">
+		<hp>60</hp>
+		<attack>55</attack>
+		<defense>50</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="49">
+		<hp>70</hp>
+		<attack>65</attack>
+		<defense>60</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="50">
+		<hp>10</hp>
+		<attack>55</attack>
+		<defense>25</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="51">
+		<hp>35</hp>
+		<attack>100</attack>
+		<defense>50</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>120</speed>
+	</pokemon>
+	<pokemon id="52">
+		<hp>40</hp>
+		<attack>45</attack>
+		<defense>35</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="53">
+		<hp>65</hp>
+		<attack>70</attack>
+		<defense>60</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>115</speed>
+	</pokemon>
+	<pokemon id="54">
+		<hp>50</hp>
+		<attack>52</attack>
+		<defense>48</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="55">
+		<hp>80</hp>
+		<attack>82</attack>
+		<defense>78</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="56">
+		<hp>40</hp>
+		<attack>80</attack>
+		<defense>35</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="57">
+		<hp>65</hp>
+		<attack>105</attack>
+		<defense>60</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="58">
+		<hp>55</hp>
+		<attack>70</attack>
+		<defense>45</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="59">
+		<hp>90</hp>
+		<attack>110</attack>
+		<defense>80</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="60">
+		<hp>40</hp>
+		<attack>50</attack>
+		<defense>40</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="61">
+		<hp>65</hp>
+		<attack>65</attack>
+		<defense>65</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="62">
+		<hp>90</hp>
+		<attack>95</attack>
+		<defense>95</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="63">
+		<hp>25</hp>
+		<attack>20</attack>
+		<defense>15</defense>
+		<sp_attack>105</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="64">
+		<hp>40</hp>
+		<attack>35</attack>
+		<defense>30</defense>
+		<sp_attack>120</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>105</speed>
+	</pokemon>
+	<pokemon id="65">
+		<hp>55</hp>
+		<attack>50</attack>
+		<defense>45</defense>
+		<sp_attack>135</sp_attack>
+		<sp_defense>95</sp_defense>
+		<speed>120</speed>
+	</pokemon>
+	<pokemon id="66">
+		<hp>70</hp>
+		<attack>80</attack>
+		<defense>50</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="67">
+		<hp>80</hp>
+		<attack>100</attack>
+		<defense>70</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="68">
+		<hp>90</hp>
+		<attack>130</attack>
+		<defense>80</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="69">
+		<hp>50</hp>
+		<attack>75</attack>
+		<defense>35</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="70">
+		<hp>65</hp>
+		<attack>90</attack>
+		<defense>50</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="71">
+		<hp>80</hp>
+		<attack>105</attack>
+		<defense>65</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="72">
+		<hp>40</hp>
+		<attack>40</attack>
+		<defense>35</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="73">
+		<hp>80</hp>
+		<attack>70</attack>
+		<defense>65</defense>
+		<sp_attack>80</sp_attack>
+		<sp_defense>120</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="74">
+		<hp>40</hp>
+		<attack>80</attack>
+		<defense>100</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>20</speed>
+	</pokemon>
+	<pokemon id="75">
+		<hp>55</hp>
+		<attack>95</attack>
+		<defense>115</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="76">
+		<hp>80</hp>
+		<attack>120</attack>
+		<defense>130</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="77">
+		<hp>50</hp>
+		<attack>85</attack>
+		<defense>55</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="78">
+		<hp>65</hp>
+		<attack>100</attack>
+		<defense>70</defense>
+		<sp_attack>80</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>105</speed>
+	</pokemon>
+	<pokemon id="79">
+		<hp>90</hp>
+		<attack>65</attack>
+		<defense>65</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>15</speed>
+	</pokemon>
+	<pokemon id="80">
+		<hp>95</hp>
+		<attack>75</attack>
+		<defense>110</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="81">
+		<hp>25</hp>
+		<attack>35</attack>
+		<defense>70</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="82">
+		<hp>50</hp>
+		<attack>60</attack>
+		<defense>95</defense>
+		<sp_attack>120</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="83">
+		<hp>52</hp>
+		<attack>90</attack>
+		<defense>55</defense>
+		<sp_attack>58</sp_attack>
+		<sp_defense>62</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="84">
+		<hp>35</hp>
+		<attack>85</attack>
+		<defense>45</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>75</speed>
+	</pokemon>
+	<pokemon id="85">
+		<hp>60</hp>
+		<attack>110</attack>
+		<defense>70</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>110</speed>
+	</pokemon>
+	<pokemon id="86">
+		<hp>65</hp>
+		<attack>45</attack>
+		<defense>55</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="87">
+		<hp>90</hp>
+		<attack>70</attack>
+		<defense>80</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>95</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="88">
+		<hp>80</hp>
+		<attack>80</attack>
+		<defense>50</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>25</speed>
+	</pokemon>
+	<pokemon id="89">
+		<hp>105</hp>
+		<attack>105</attack>
+		<defense>75</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="90">
+		<hp>30</hp>
+		<attack>65</attack>
+		<defense>100</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>25</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="91">
+		<hp>50</hp>
+		<attack>95</attack>
+		<defense>180</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="92">
+		<hp>30</hp>
+		<attack>35</attack>
+		<defense>30</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="93">
+		<hp>45</hp>
+		<attack>50</attack>
+		<defense>45</defense>
+		<sp_attack>115</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="94">
+		<hp>60</hp>
+		<attack>65</attack>
+		<defense>60</defense>
+		<sp_attack>130</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>110</speed>
+	</pokemon>
+	<pokemon id="95">
+		<hp>35</hp>
+		<attack>45</attack>
+		<defense>160</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="96">
+		<hp>60</hp>
+		<attack>48</attack>
+		<defense>45</defense>
+		<sp_attack>43</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>42</speed>
+	</pokemon>
+	<pokemon id="97">
+		<hp>85</hp>
+		<attack>73</attack>
+		<defense>70</defense>
+		<sp_attack>73</sp_attack>
+		<sp_defense>115</sp_defense>
+		<speed>67</speed>
+	</pokemon>
+	<pokemon id="98">
+		<hp>30</hp>
+		<attack>105</attack>
+		<defense>90</defense>
+		<sp_attack>25</sp_attack>
+		<sp_defense>25</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="99">
+		<hp>55</hp>
+		<attack>130</attack>
+		<defense>115</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>75</speed>
+	</pokemon>
+	<pokemon id="100">
+		<hp>40</hp>
+		<attack>30</attack>
+		<defense>50</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="101">
+		<hp>60</hp>
+		<attack>50</attack>
+		<defense>70</defense>
+		<sp_attack>80</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>150</speed>
+	</pokemon>
+	<pokemon id="102">
+		<hp>60</hp>
+		<attack>40</attack>
+		<defense>80</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="103">
+		<hp>95</hp>
+		<attack>95</attack>
+		<defense>85</defense>
+		<sp_attack>125</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="104">
+		<hp>50</hp>
+		<attack>50</attack>
+		<defense>95</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="105">
+		<hp>60</hp>
+		<attack>80</attack>
+		<defense>110</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="106">
+		<hp>50</hp>
+		<attack>120</attack>
+		<defense>53</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>110</sp_defense>
+		<speed>87</speed>
+	</pokemon>
+	<pokemon id="107">
+		<hp>50</hp>
+		<attack>105</attack>
+		<defense>79</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>110</sp_defense>
+		<speed>76</speed>
+	</pokemon>
+	<pokemon id="108">
+		<hp>90</hp>
+		<attack>55</attack>
+		<defense>75</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="109">
+		<hp>40</hp>
+		<attack>65</attack>
+		<defense>95</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="110">
+		<hp>65</hp>
+		<attack>90</attack>
+		<defense>120</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="111">
+		<hp>80</hp>
+		<attack>85</attack>
+		<defense>95</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>25</speed>
+	</pokemon>
+	<pokemon id="112">
+		<hp>105</hp>
+		<attack>130</attack>
+		<defense>120</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="113">
+		<hp>250</hp>
+		<attack>5</attack>
+		<defense>5</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>105</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="114">
+		<hp>65</hp>
+		<attack>55</attack>
+		<defense>115</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="115">
+		<hp>105</hp>
+		<attack>95</attack>
+		<defense>80</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="116">
+		<hp>30</hp>
+		<attack>40</attack>
+		<defense>70</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>25</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="117">
+		<hp>55</hp>
+		<attack>65</attack>
+		<defense>95</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="118">
+		<hp>45</hp>
+		<attack>67</attack>
+		<defense>60</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>63</speed>
+	</pokemon>
+	<pokemon id="119">
+		<hp>80</hp>
+		<attack>92</attack>
+		<defense>65</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>68</speed>
+	</pokemon>
+	<pokemon id="120">
+		<hp>30</hp>
+		<attack>45</attack>
+		<defense>55</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="121">
+		<hp>60</hp>
+		<attack>75</attack>
+		<defense>85</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>115</speed>
+	</pokemon>
+	<pokemon id="122">
+		<hp>40</hp>
+		<attack>45</attack>
+		<defense>65</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>120</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="123">
+		<hp>70</hp>
+		<attack>110</attack>
+		<defense>80</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>105</speed>
+	</pokemon>
+	<pokemon id="124">
+		<hp>65</hp>
+		<attack>50</attack>
+		<defense>35</defense>
+		<sp_attack>115</sp_attack>
+		<sp_defense>95</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="125">
+		<hp>65</hp>
+		<attack>83</attack>
+		<defense>57</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>105</speed>
+	</pokemon>
+	<pokemon id="126">
+		<hp>65</hp>
+		<attack>95</attack>
+		<defense>57</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>93</speed>
+	</pokemon>
+	<pokemon id="127">
+		<hp>65</hp>
+		<attack>125</attack>
+		<defense>100</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="128">
+		<hp>75</hp>
+		<attack>100</attack>
+		<defense>95</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>110</speed>
+	</pokemon>
+	<pokemon id="129">
+		<hp>20</hp>
+		<attack>10</attack>
+		<defense>55</defense>
+		<sp_attack>15</sp_attack>
+		<sp_defense>20</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="130">
+		<hp>95</hp>
+		<attack>125</attack>
+		<defense>79</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>81</speed>
+	</pokemon>
+	<pokemon id="131">
+		<hp>130</hp>
+		<attack>85</attack>
+		<defense>80</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>95</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="132">
+		<hp>48</hp>
+		<attack>48</attack>
+		<defense>48</defense>
+		<sp_attack>48</sp_attack>
+		<sp_defense>48</sp_defense>
+		<speed>48</speed>
+	</pokemon>
+	<pokemon id="133">
+		<hp>55</hp>
+		<attack>55</attack>
+		<defense>50</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="134">
+		<hp>130</hp>
+		<attack>65</attack>
+		<defense>60</defense>
+		<sp_attack>110</sp_attack>
+		<sp_defense>95</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="135">
+		<hp>65</hp>
+		<attack>65</attack>
+		<defense>60</defense>
+		<sp_attack>110</sp_attack>
+		<sp_defense>95</sp_defense>
+		<speed>130</speed>
+	</pokemon>
+	<pokemon id="136">
+		<hp>65</hp>
+		<attack>130</attack>
+		<defense>60</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>110</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="137">
+		<hp>65</hp>
+		<attack>60</attack>
+		<defense>70</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="138">
+		<hp>35</hp>
+		<attack>40</attack>
+		<defense>100</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="139">
+		<hp>70</hp>
+		<attack>60</attack>
+		<defense>125</defense>
+		<sp_attack>115</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="140">
+		<hp>30</hp>
+		<attack>80</attack>
+		<defense>90</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="141">
+		<hp>60</hp>
+		<attack>115</attack>
+		<defense>105</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="142">
+		<hp>80</hp>
+		<attack>105</attack>
+		<defense>65</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>130</speed>
+	</pokemon>
+	<pokemon id="143">
+		<hp>160</hp>
+		<attack>110</attack>
+		<defense>65</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>110</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="144">
+		<hp>90</hp>
+		<attack>85</attack>
+		<defense>100</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>125</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="145">
+		<hp>90</hp>
+		<attack>90</attack>
+		<defense>85</defense>
+		<sp_attack>125</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="146">
+		<hp>90</hp>
+		<attack>100</attack>
+		<defense>90</defense>
+		<sp_attack>125</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="147">
+		<hp>41</hp>
+		<attack>64</attack>
+		<defense>45</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="148">
+		<hp>61</hp>
+		<attack>84</attack>
+		<defense>65</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="149">
+		<hp>91</hp>
+		<attack>134</attack>
+		<defense>95</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="150">
+		<hp>106</hp>
+		<attack>110</attack>
+		<defense>90</defense>
+		<sp_attack>154</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>130</speed>
+	</pokemon>
+	<pokemon id="151">
+		<hp>100</hp>
+		<attack>100</attack>
+		<defense>100</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="152">
+		<hp>45</hp>
+		<attack>49</attack>
+		<defense>65</defense>
+		<sp_attack>49</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="153">
+		<hp>60</hp>
+		<attack>62</attack>
+		<defense>80</defense>
+		<sp_attack>63</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="154">
+		<hp>80</hp>
+		<attack>82</attack>
+		<defense>100</defense>
+		<sp_attack>83</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="155">
+		<hp>39</hp>
+		<attack>52</attack>
+		<defense>43</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="156">
+		<hp>58</hp>
+		<attack>64</attack>
+		<defense>58</defense>
+		<sp_attack>80</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="157">
+		<hp>78</hp>
+		<attack>84</attack>
+		<defense>78</defense>
+		<sp_attack>109</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="158">
+		<hp>50</hp>
+		<attack>65</attack>
+		<defense>64</defense>
+		<sp_attack>44</sp_attack>
+		<sp_defense>48</sp_defense>
+		<speed>43</speed>
+	</pokemon>
+	<pokemon id="159">
+		<hp>65</hp>
+		<attack>80</attack>
+		<defense>80</defense>
+		<sp_attack>59</sp_attack>
+		<sp_defense>63</sp_defense>
+		<speed>58</speed>
+	</pokemon>
+	<pokemon id="160">
+		<hp>85</hp>
+		<attack>105</attack>
+		<defense>100</defense>
+		<sp_attack>79</sp_attack>
+		<sp_defense>83</sp_defense>
+		<speed>78</speed>
+	</pokemon>
+	<pokemon id="161">
+		<hp>35</hp>
+		<attack>46</attack>
+		<defense>34</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>20</speed>
+	</pokemon>
+	<pokemon id="162">
+		<hp>85</hp>
+		<attack>76</attack>
+		<defense>64</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="163">
+		<hp>60</hp>
+		<attack>30</attack>
+		<defense>30</defense>
+		<sp_attack>36</sp_attack>
+		<sp_defense>56</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="164">
+		<hp>100</hp>
+		<attack>50</attack>
+		<defense>50</defense>
+		<sp_attack>86</sp_attack>
+		<sp_defense>96</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="165">
+		<hp>40</hp>
+		<attack>20</attack>
+		<defense>30</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="166">
+		<hp>55</hp>
+		<attack>35</attack>
+		<defense>50</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>110</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="167">
+		<hp>40</hp>
+		<attack>60</attack>
+		<defense>40</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="168">
+		<hp>70</hp>
+		<attack>90</attack>
+		<defense>70</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="169">
+		<hp>85</hp>
+		<attack>90</attack>
+		<defense>80</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>130</speed>
+	</pokemon>
+	<pokemon id="170">
+		<hp>75</hp>
+		<attack>38</attack>
+		<defense>38</defense>
+		<sp_attack>56</sp_attack>
+		<sp_defense>56</sp_defense>
+		<speed>67</speed>
+	</pokemon>
+	<pokemon id="171">
+		<hp>125</hp>
+		<attack>58</attack>
+		<defense>58</defense>
+		<sp_attack>76</sp_attack>
+		<sp_defense>76</sp_defense>
+		<speed>67</speed>
+	</pokemon>
+	<pokemon id="172">
+		<hp>20</hp>
+		<attack>40</attack>
+		<defense>15</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="173">
+		<hp>50</hp>
+		<attack>25</attack>
+		<defense>28</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>15</speed>
+	</pokemon>
+	<pokemon id="174">
+		<hp>90</hp>
+		<attack>30</attack>
+		<defense>15</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>20</sp_defense>
+		<speed>15</speed>
+	</pokemon>
+	<pokemon id="175">
+		<hp>35</hp>
+		<attack>20</attack>
+		<defense>65</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>20</speed>
+	</pokemon>
+	<pokemon id="176">
+		<hp>55</hp>
+		<attack>40</attack>
+		<defense>85</defense>
+		<sp_attack>80</sp_attack>
+		<sp_defense>105</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="177">
+		<hp>40</hp>
+		<attack>50</attack>
+		<defense>45</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="178">
+		<hp>65</hp>
+		<attack>75</attack>
+		<defense>70</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="179">
+		<hp>55</hp>
+		<attack>40</attack>
+		<defense>40</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="180">
+		<hp>70</hp>
+		<attack>55</attack>
+		<defense>55</defense>
+		<sp_attack>80</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="181">
+		<hp>90</hp>
+		<attack>75</attack>
+		<defense>85</defense>
+		<sp_attack>115</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="182">
+		<hp>75</hp>
+		<attack>80</attack>
+		<defense>95</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="183">
+		<hp>70</hp>
+		<attack>20</attack>
+		<defense>50</defense>
+		<sp_attack>20</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="184">
+		<hp>100</hp>
+		<attack>50</attack>
+		<defense>80</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="185">
+		<hp>70</hp>
+		<attack>100</attack>
+		<defense>115</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="186">
+		<hp>90</hp>
+		<attack>75</attack>
+		<defense>75</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="187">
+		<hp>35</hp>
+		<attack>35</attack>
+		<defense>40</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="188">
+		<hp>55</hp>
+		<attack>45</attack>
+		<defense>50</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="189">
+		<hp>75</hp>
+		<attack>55</attack>
+		<defense>70</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>95</sp_defense>
+		<speed>110</speed>
+	</pokemon>
+	<pokemon id="190">
+		<hp>55</hp>
+		<attack>70</attack>
+		<defense>55</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="191">
+		<hp>30</hp>
+		<attack>30</attack>
+		<defense>30</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="192">
+		<hp>75</hp>
+		<attack>75</attack>
+		<defense>55</defense>
+		<sp_attack>105</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="193">
+		<hp>65</hp>
+		<attack>65</attack>
+		<defense>45</defense>
+		<sp_attack>75</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="194">
+		<hp>55</hp>
+		<attack>45</attack>
+		<defense>45</defense>
+		<sp_attack>25</sp_attack>
+		<sp_defense>25</sp_defense>
+		<speed>15</speed>
+	</pokemon>
+	<pokemon id="195">
+		<hp>95</hp>
+		<attack>85</attack>
+		<defense>85</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="196">
+		<hp>65</hp>
+		<attack>65</attack>
+		<defense>60</defense>
+		<sp_attack>130</sp_attack>
+		<sp_defense>95</sp_defense>
+		<speed>110</speed>
+	</pokemon>
+	<pokemon id="197">
+		<hp>95</hp>
+		<attack>65</attack>
+		<defense>110</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>130</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="198">
+		<hp>60</hp>
+		<attack>85</attack>
+		<defense>42</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>42</sp_defense>
+		<speed>91</speed>
+	</pokemon>
+	<pokemon id="199">
+		<hp>95</hp>
+		<attack>75</attack>
+		<defense>80</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>110</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="200">
+		<hp>60</hp>
+		<attack>60</attack>
+		<defense>60</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="201">
+		<hp>48</hp>
+		<attack>72</attack>
+		<defense>48</defense>
+		<sp_attack>72</sp_attack>
+		<sp_defense>48</sp_defense>
+		<speed>48</speed>
+	</pokemon>
+	<pokemon id="202">
+		<hp>190</hp>
+		<attack>33</attack>
+		<defense>58</defense>
+		<sp_attack>33</sp_attack>
+		<sp_defense>58</sp_defense>
+		<speed>33</speed>
+	</pokemon>
+	<pokemon id="203">
+		<hp>70</hp>
+		<attack>80</attack>
+		<defense>65</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="204">
+		<hp>50</hp>
+		<attack>65</attack>
+		<defense>90</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>15</speed>
+	</pokemon>
+	<pokemon id="205">
+		<hp>75</hp>
+		<attack>90</attack>
+		<defense>140</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="206">
+		<hp>100</hp>
+		<attack>70</attack>
+		<defense>70</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="207">
+		<hp>65</hp>
+		<attack>75</attack>
+		<defense>105</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="208">
+		<hp>75</hp>
+		<attack>85</attack>
+		<defense>200</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="209">
+		<hp>60</hp>
+		<attack>80</attack>
+		<defense>50</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="210">
+		<hp>90</hp>
+		<attack>120</attack>
+		<defense>75</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="211">
+		<hp>65</hp>
+		<attack>95</attack>
+		<defense>85</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="212">
+		<hp>70</hp>
+		<attack>130</attack>
+		<defense>100</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="213">
+		<hp>20</hp>
+		<attack>10</attack>
+		<defense>230</defense>
+		<sp_attack>10</sp_attack>
+		<sp_defense>230</sp_defense>
+		<speed>5</speed>
+	</pokemon>
+	<pokemon id="214">
+		<hp>80</hp>
+		<attack>125</attack>
+		<defense>75</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>95</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="215">
+		<hp>55</hp>
+		<attack>95</attack>
+		<defense>55</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>115</speed>
+	</pokemon>
+	<pokemon id="216">
+		<hp>60</hp>
+		<attack>80</attack>
+		<defense>50</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="217">
+		<hp>90</hp>
+		<attack>130</attack>
+		<defense>75</defense>
+		<sp_attack>75</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="218">
+		<hp>40</hp>
+		<attack>40</attack>
+		<defense>40</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>20</speed>
+	</pokemon>
+	<pokemon id="219">
+		<hp>60</hp>
+		<attack>50</attack>
+		<defense>120</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="220">
+		<hp>50</hp>
+		<attack>50</attack>
+		<defense>40</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="221">
+		<hp>100</hp>
+		<attack>100</attack>
+		<defense>80</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="222">
+		<hp>65</hp>
+		<attack>55</attack>
+		<defense>95</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>95</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="223">
+		<hp>35</hp>
+		<attack>65</attack>
+		<defense>35</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="224">
+		<hp>75</hp>
+		<attack>105</attack>
+		<defense>75</defense>
+		<sp_attack>105</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="225">
+		<hp>45</hp>
+		<attack>55</attack>
+		<defense>45</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>75</speed>
+	</pokemon>
+	<pokemon id="226">
+		<hp>85</hp>
+		<attack>40</attack>
+		<defense>70</defense>
+		<sp_attack>80</sp_attack>
+		<sp_defense>140</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="227">
+		<hp>65</hp>
+		<attack>80</attack>
+		<defense>140</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="228">
+		<hp>45</hp>
+		<attack>60</attack>
+		<defense>30</defense>
+		<sp_attack>80</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="229">
+		<hp>75</hp>
+		<attack>90</attack>
+		<defense>50</defense>
+		<sp_attack>110</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="230">
+		<hp>75</hp>
+		<attack>95</attack>
+		<defense>95</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>95</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="231">
+		<hp>90</hp>
+		<attack>60</attack>
+		<defense>60</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="232">
+		<hp>90</hp>
+		<attack>120</attack>
+		<defense>120</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="233">
+		<hp>85</hp>
+		<attack>80</attack>
+		<defense>90</defense>
+		<sp_attack>105</sp_attack>
+		<sp_defense>95</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="234">
+		<hp>73</hp>
+		<attack>95</attack>
+		<defense>62</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="235">
+		<hp>55</hp>
+		<attack>20</attack>
+		<defense>35</defense>
+		<sp_attack>20</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>75</speed>
+	</pokemon>
+	<pokemon id="236">
+		<hp>35</hp>
+		<attack>35</attack>
+		<defense>35</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="237">
+		<hp>50</hp>
+		<attack>95</attack>
+		<defense>95</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>110</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="238">
+		<hp>45</hp>
+		<attack>30</attack>
+		<defense>15</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="239">
+		<hp>45</hp>
+		<attack>63</attack>
+		<defense>37</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="240">
+		<hp>45</hp>
+		<attack>75</attack>
+		<defense>37</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>83</speed>
+	</pokemon>
+	<pokemon id="241">
+		<hp>95</hp>
+		<attack>80</attack>
+		<defense>105</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="242">
+		<hp>255</hp>
+		<attack>10</attack>
+		<defense>10</defense>
+		<sp_attack>75</sp_attack>
+		<sp_defense>135</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="243">
+		<hp>90</hp>
+		<attack>85</attack>
+		<defense>75</defense>
+		<sp_attack>115</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>115</speed>
+	</pokemon>
+	<pokemon id="244">
+		<hp>115</hp>
+		<attack>115</attack>
+		<defense>85</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="245">
+		<hp>100</hp>
+		<attack>75</attack>
+		<defense>115</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>115</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="246">
+		<hp>50</hp>
+		<attack>64</attack>
+		<defense>50</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>41</speed>
+	</pokemon>
+	<pokemon id="247">
+		<hp>70</hp>
+		<attack>84</attack>
+		<defense>70</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>51</speed>
+	</pokemon>
+	<pokemon id="248">
+		<hp>100</hp>
+		<attack>134</attack>
+		<defense>110</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>61</speed>
+	</pokemon>
+	<pokemon id="249">
+		<hp>106</hp>
+		<attack>90</attack>
+		<defense>130</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>154</sp_defense>
+		<speed>110</speed>
+	</pokemon>
+	<pokemon id="250">
+		<hp>106</hp>
+		<attack>130</attack>
+		<defense>90</defense>
+		<sp_attack>110</sp_attack>
+		<sp_defense>154</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="251">
+		<hp>100</hp>
+		<attack>100</attack>
+		<defense>100</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="252">
+		<hp>40</hp>
+		<attack>45</attack>
+		<defense>35</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="253">
+		<hp>50</hp>
+		<attack>65</attack>
+		<defense>45</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="254">
+		<hp>70</hp>
+		<attack>85</attack>
+		<defense>65</defense>
+		<sp_attack>105</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>120</speed>
+	</pokemon>
+	<pokemon id="255">
+		<hp>45</hp>
+		<attack>60</attack>
+		<defense>40</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="256">
+		<hp>60</hp>
+		<attack>85</attack>
+		<defense>60</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="257">
+		<hp>80</hp>
+		<attack>120</attack>
+		<defense>70</defense>
+		<sp_attack>110</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="258">
+		<hp>50</hp>
+		<attack>70</attack>
+		<defense>50</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="259">
+		<hp>70</hp>
+		<attack>85</attack>
+		<defense>70</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="260">
+		<hp>100</hp>
+		<attack>110</attack>
+		<defense>90</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="261">
+		<hp>35</hp>
+		<attack>55</attack>
+		<defense>35</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="262">
+		<hp>70</hp>
+		<attack>90</attack>
+		<defense>70</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="263">
+		<hp>38</hp>
+		<attack>30</attack>
+		<defense>41</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>41</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="264">
+		<hp>78</hp>
+		<attack>70</attack>
+		<defense>61</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>61</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="265">
+		<hp>45</hp>
+		<attack>45</attack>
+		<defense>35</defense>
+		<sp_attack>20</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>20</speed>
+	</pokemon>
+	<pokemon id="266">
+		<hp>50</hp>
+		<attack>35</attack>
+		<defense>55</defense>
+		<sp_attack>25</sp_attack>
+		<sp_defense>25</sp_defense>
+		<speed>15</speed>
+	</pokemon>
+	<pokemon id="267">
+		<hp>60</hp>
+		<attack>70</attack>
+		<defense>50</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="268">
+		<hp>50</hp>
+		<attack>35</attack>
+		<defense>55</defense>
+		<sp_attack>25</sp_attack>
+		<sp_defense>25</sp_defense>
+		<speed>15</speed>
+	</pokemon>
+	<pokemon id="269">
+		<hp>60</hp>
+		<attack>50</attack>
+		<defense>70</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="270">
+		<hp>40</hp>
+		<attack>30</attack>
+		<defense>30</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="271">
+		<hp>60</hp>
+		<attack>50</attack>
+		<defense>50</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="272">
+		<hp>80</hp>
+		<attack>70</attack>
+		<defense>70</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="273">
+		<hp>40</hp>
+		<attack>40</attack>
+		<defense>50</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="274">
+		<hp>70</hp>
+		<attack>70</attack>
+		<defense>40</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="275">
+		<hp>90</hp>
+		<attack>100</attack>
+		<defense>60</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="276">
+		<hp>40</hp>
+		<attack>55</attack>
+		<defense>30</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="277">
+		<hp>60</hp>
+		<attack>85</attack>
+		<defense>60</defense>
+		<sp_attack>75</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>125</speed>
+	</pokemon>
+	<pokemon id="278">
+		<hp>40</hp>
+		<attack>30</attack>
+		<defense>30</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="279">
+		<hp>60</hp>
+		<attack>50</attack>
+		<defense>100</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="280">
+		<hp>28</hp>
+		<attack>25</attack>
+		<defense>25</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="281">
+		<hp>38</hp>
+		<attack>35</attack>
+		<defense>35</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="282">
+		<hp>68</hp>
+		<attack>65</attack>
+		<defense>65</defense>
+		<sp_attack>125</sp_attack>
+		<sp_defense>115</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="283">
+		<hp>40</hp>
+		<attack>30</attack>
+		<defense>32</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>52</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="284">
+		<hp>70</hp>
+		<attack>60</attack>
+		<defense>62</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>82</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="285">
+		<hp>60</hp>
+		<attack>40</attack>
+		<defense>60</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="286">
+		<hp>60</hp>
+		<attack>130</attack>
+		<defense>80</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="287">
+		<hp>60</hp>
+		<attack>60</attack>
+		<defense>60</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="288">
+		<hp>80</hp>
+		<attack>80</attack>
+		<defense>80</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="289">
+		<hp>150</hp>
+		<attack>160</attack>
+		<defense>100</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="290">
+		<hp>31</hp>
+		<attack>45</attack>
+		<defense>90</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="291">
+		<hp>61</hp>
+		<attack>90</attack>
+		<defense>45</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>160</speed>
+	</pokemon>
+	<pokemon id="292">
+		<hp>1</hp>
+		<attack>90</attack>
+		<defense>45</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="293">
+		<hp>64</hp>
+		<attack>51</attack>
+		<defense>23</defense>
+		<sp_attack>51</sp_attack>
+		<sp_defense>23</sp_defense>
+		<speed>28</speed>
+	</pokemon>
+	<pokemon id="294">
+		<hp>84</hp>
+		<attack>71</attack>
+		<defense>43</defense>
+		<sp_attack>71</sp_attack>
+		<sp_defense>43</sp_defense>
+		<speed>48</speed>
+	</pokemon>
+	<pokemon id="295">
+		<hp>104</hp>
+		<attack>91</attack>
+		<defense>63</defense>
+		<sp_attack>91</sp_attack>
+		<sp_defense>73</sp_defense>
+		<speed>68</speed>
+	</pokemon>
+	<pokemon id="296">
+		<hp>72</hp>
+		<attack>60</attack>
+		<defense>30</defense>
+		<sp_attack>20</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>25</speed>
+	</pokemon>
+	<pokemon id="297">
+		<hp>144</hp>
+		<attack>120</attack>
+		<defense>60</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="298">
+		<hp>50</hp>
+		<attack>20</attack>
+		<defense>40</defense>
+		<sp_attack>20</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>20</speed>
+	</pokemon>
+	<pokemon id="299">
+		<hp>30</hp>
+		<attack>45</attack>
+		<defense>135</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="300">
+		<hp>50</hp>
+		<attack>45</attack>
+		<defense>45</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="301">
+		<hp>70</hp>
+		<attack>65</attack>
+		<defense>65</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="302">
+		<hp>50</hp>
+		<attack>75</attack>
+		<defense>75</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="303">
+		<hp>50</hp>
+		<attack>85</attack>
+		<defense>85</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="304">
+		<hp>50</hp>
+		<attack>70</attack>
+		<defense>100</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="305">
+		<hp>60</hp>
+		<attack>90</attack>
+		<defense>140</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="306">
+		<hp>70</hp>
+		<attack>110</attack>
+		<defense>180</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="307">
+		<hp>30</hp>
+		<attack>40</attack>
+		<defense>55</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="308">
+		<hp>60</hp>
+		<attack>60</attack>
+		<defense>75</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="309">
+		<hp>40</hp>
+		<attack>45</attack>
+		<defense>40</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="310">
+		<hp>70</hp>
+		<attack>75</attack>
+		<defense>60</defense>
+		<sp_attack>105</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>105</speed>
+	</pokemon>
+	<pokemon id="311">
+		<hp>60</hp>
+		<attack>50</attack>
+		<defense>40</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="312">
+		<hp>60</hp>
+		<attack>40</attack>
+		<defense>50</defense>
+		<sp_attack>75</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="313">
+		<hp>65</hp>
+		<attack>73</attack>
+		<defense>75</defense>
+		<sp_attack>47</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="314">
+		<hp>65</hp>
+		<attack>47</attack>
+		<defense>75</defense>
+		<sp_attack>73</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>85</speed>
+	</pokemon>
+	<pokemon id="315">
+		<hp>50</hp>
+		<attack>60</attack>
+		<defense>45</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="316">
+		<hp>70</hp>
+		<attack>43</attack>
+		<defense>53</defense>
+		<sp_attack>43</sp_attack>
+		<sp_defense>53</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="317">
+		<hp>100</hp>
+		<attack>73</attack>
+		<defense>83</defense>
+		<sp_attack>73</sp_attack>
+		<sp_defense>83</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="318">
+		<hp>45</hp>
+		<attack>90</attack>
+		<defense>20</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>20</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="319">
+		<hp>70</hp>
+		<attack>120</attack>
+		<defense>40</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="320">
+		<hp>130</hp>
+		<attack>70</attack>
+		<defense>35</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="321">
+		<hp>170</hp>
+		<attack>90</attack>
+		<defense>45</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="322">
+		<hp>60</hp>
+		<attack>60</attack>
+		<defense>40</defense>
+		<sp_attack>65</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="323">
+		<hp>70</hp>
+		<attack>100</attack>
+		<defense>70</defense>
+		<sp_attack>105</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="324">
+		<hp>70</hp>
+		<attack>85</attack>
+		<defense>140</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>20</speed>
+	</pokemon>
+	<pokemon id="325">
+		<hp>60</hp>
+		<attack>25</attack>
+		<defense>35</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="326">
+		<hp>80</hp>
+		<attack>45</attack>
+		<defense>65</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>110</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="327">
+		<hp>60</hp>
+		<attack>60</attack>
+		<defense>60</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="328">
+		<hp>45</hp>
+		<attack>100</attack>
+		<defense>45</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>45</sp_defense>
+		<speed>10</speed>
+	</pokemon>
+	<pokemon id="329">
+		<hp>50</hp>
+		<attack>70</attack>
+		<defense>50</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="330">
+		<hp>80</hp>
+		<attack>100</attack>
+		<defense>80</defense>
+		<sp_attack>80</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="331">
+		<hp>50</hp>
+		<attack>85</attack>
+		<defense>40</defense>
+		<sp_attack>85</sp_attack>
+		<sp_defense>40</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="332">
+		<hp>70</hp>
+		<attack>115</attack>
+		<defense>60</defense>
+		<sp_attack>115</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="333">
+		<hp>45</hp>
+		<attack>40</attack>
+		<defense>60</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="334">
+		<hp>75</hp>
+		<attack>70</attack>
+		<defense>90</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>105</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="335">
+		<hp>73</hp>
+		<attack>115</attack>
+		<defense>60</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="336">
+		<hp>73</hp>
+		<attack>100</attack>
+		<defense>60</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="337">
+		<hp>90</hp>
+		<attack>55</attack>
+		<defense>65</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>85</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="338">
+		<hp>90</hp>
+		<attack>95</attack>
+		<defense>85</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="339">
+		<hp>50</hp>
+		<attack>48</attack>
+		<defense>43</defense>
+		<sp_attack>46</sp_attack>
+		<sp_defense>41</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="340">
+		<hp>110</hp>
+		<attack>78</attack>
+		<defense>73</defense>
+		<sp_attack>76</sp_attack>
+		<sp_defense>71</sp_defense>
+		<speed>60</speed>
+	</pokemon>
+	<pokemon id="341">
+		<hp>43</hp>
+		<attack>80</attack>
+		<defense>65</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>35</sp_defense>
+		<speed>35</speed>
+	</pokemon>
+	<pokemon id="342">
+		<hp>63</hp>
+		<attack>120</attack>
+		<defense>85</defense>
+		<sp_attack>90</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="343">
+		<hp>40</hp>
+		<attack>40</attack>
+		<defense>55</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="344">
+		<hp>60</hp>
+		<attack>70</attack>
+		<defense>105</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>120</sp_defense>
+		<speed>75</speed>
+	</pokemon>
+	<pokemon id="345">
+		<hp>66</hp>
+		<attack>41</attack>
+		<defense>77</defense>
+		<sp_attack>61</sp_attack>
+		<sp_defense>87</sp_defense>
+		<speed>23</speed>
+	</pokemon>
+	<pokemon id="346">
+		<hp>86</hp>
+		<attack>81</attack>
+		<defense>97</defense>
+		<sp_attack>81</sp_attack>
+		<sp_defense>107</sp_defense>
+		<speed>43</speed>
+	</pokemon>
+	<pokemon id="347">
+		<hp>45</hp>
+		<attack>95</attack>
+		<defense>50</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>75</speed>
+	</pokemon>
+	<pokemon id="348">
+		<hp>75</hp>
+		<attack>125</attack>
+		<defense>100</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="349">
+		<hp>20</hp>
+		<attack>15</attack>
+		<defense>20</defense>
+		<sp_attack>10</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="350">
+		<hp>95</hp>
+		<attack>60</attack>
+		<defense>79</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>125</sp_defense>
+		<speed>81</speed>
+	</pokemon>
+	<pokemon id="351">
+		<hp>70</hp>
+		<attack>70</attack>
+		<defense>70</defense>
+		<sp_attack>70</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="352">
+		<hp>60</hp>
+		<attack>90</attack>
+		<defense>70</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>120</sp_defense>
+		<speed>40</speed>
+	</pokemon>
+	<pokemon id="353">
+		<hp>44</hp>
+		<attack>75</attack>
+		<defense>35</defense>
+		<sp_attack>63</sp_attack>
+		<sp_defense>33</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="354">
+		<hp>64</hp>
+		<attack>115</attack>
+		<defense>65</defense>
+		<sp_attack>83</sp_attack>
+		<sp_defense>63</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="355">
+		<hp>20</hp>
+		<attack>40</attack>
+		<defense>90</defense>
+		<sp_attack>30</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>25</speed>
+	</pokemon>
+	<pokemon id="356">
+		<hp>40</hp>
+		<attack>70</attack>
+		<defense>130</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>130</sp_defense>
+		<speed>25</speed>
+	</pokemon>
+	<pokemon id="357">
+		<hp>99</hp>
+		<attack>68</attack>
+		<defense>83</defense>
+		<sp_attack>72</sp_attack>
+		<sp_defense>87</sp_defense>
+		<speed>51</speed>
+	</pokemon>
+	<pokemon id="358">
+		<hp>75</hp>
+		<attack>50</attack>
+		<defense>80</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="359">
+		<hp>65</hp>
+		<attack>130</attack>
+		<defense>60</defense>
+		<sp_attack>75</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>75</speed>
+	</pokemon>
+	<pokemon id="360">
+		<hp>95</hp>
+		<attack>23</attack>
+		<defense>48</defense>
+		<sp_attack>23</sp_attack>
+		<sp_defense>48</sp_defense>
+		<speed>23</speed>
+	</pokemon>
+	<pokemon id="361">
+		<hp>50</hp>
+		<attack>50</attack>
+		<defense>50</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="362">
+		<hp>80</hp>
+		<attack>80</attack>
+		<defense>80</defense>
+		<sp_attack>80</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>80</speed>
+	</pokemon>
+	<pokemon id="363">
+		<hp>70</hp>
+		<attack>40</attack>
+		<defense>50</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>25</speed>
+	</pokemon>
+	<pokemon id="364">
+		<hp>90</hp>
+		<attack>60</attack>
+		<defense>70</defense>
+		<sp_attack>75</sp_attack>
+		<sp_defense>70</sp_defense>
+		<speed>45</speed>
+	</pokemon>
+	<pokemon id="365">
+		<hp>110</hp>
+		<attack>80</attack>
+		<defense>90</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>65</speed>
+	</pokemon>
+	<pokemon id="366">
+		<hp>35</hp>
+		<attack>64</attack>
+		<defense>85</defense>
+		<sp_attack>74</sp_attack>
+		<sp_defense>55</sp_defense>
+		<speed>32</speed>
+	</pokemon>
+	<pokemon id="367">
+		<hp>55</hp>
+		<attack>104</attack>
+		<defense>105</defense>
+		<sp_attack>94</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>52</speed>
+	</pokemon>
+	<pokemon id="368">
+		<hp>55</hp>
+		<attack>84</attack>
+		<defense>105</defense>
+		<sp_attack>114</sp_attack>
+		<sp_defense>75</sp_defense>
+		<speed>52</speed>
+	</pokemon>
+	<pokemon id="369">
+		<hp>100</hp>
+		<attack>90</attack>
+		<defense>130</defense>
+		<sp_attack>45</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>55</speed>
+	</pokemon>
+	<pokemon id="370">
+		<hp>43</hp>
+		<attack>30</attack>
+		<defense>55</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>65</sp_defense>
+		<speed>97</speed>
+	</pokemon>
+	<pokemon id="371">
+		<hp>45</hp>
+		<attack>75</attack>
+		<defense>60</defense>
+		<sp_attack>40</sp_attack>
+		<sp_defense>30</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="372">
+		<hp>65</hp>
+		<attack>95</attack>
+		<defense>100</defense>
+		<sp_attack>60</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="373">
+		<hp>95</hp>
+		<attack>135</attack>
+		<defense>80</defense>
+		<sp_attack>110</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="374">
+		<hp>40</hp>
+		<attack>55</attack>
+		<defense>80</defense>
+		<sp_attack>35</sp_attack>
+		<sp_defense>60</sp_defense>
+		<speed>30</speed>
+	</pokemon>
+	<pokemon id="375">
+		<hp>60</hp>
+		<attack>75</attack>
+		<defense>100</defense>
+		<sp_attack>55</sp_attack>
+		<sp_defense>80</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="376">
+		<hp>80</hp>
+		<attack>135</attack>
+		<defense>130</defense>
+		<sp_attack>95</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>70</speed>
+	</pokemon>
+	<pokemon id="377">
+		<hp>80</hp>
+		<attack>100</attack>
+		<defense>200</defense>
+		<sp_attack>50</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="378">
+		<hp>80</hp>
+		<attack>50</attack>
+		<defense>100</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>200</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="379">
+		<hp>80</hp>
+		<attack>75</attack>
+		<defense>150</defense>
+		<sp_attack>75</sp_attack>
+		<sp_defense>150</sp_defense>
+		<speed>50</speed>
+	</pokemon>
+	<pokemon id="380">
+		<hp>80</hp>
+		<attack>80</attack>
+		<defense>90</defense>
+		<sp_attack>110</sp_attack>
+		<sp_defense>130</sp_defense>
+		<speed>110</speed>
+	</pokemon>
+	<pokemon id="381">
+		<hp>80</hp>
+		<attack>90</attack>
+		<defense>80</defense>
+		<sp_attack>130</sp_attack>
+		<sp_defense>110</sp_defense>
+		<speed>110</speed>
+	</pokemon>
+	<pokemon id="382">
+		<hp>100</hp>
+		<attack>100</attack>
+		<defense>90</defense>
+		<sp_attack>150</sp_attack>
+		<sp_defense>140</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="383">
+		<hp>100</hp>
+		<attack>150</attack>
+		<defense>140</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>90</speed>
+	</pokemon>
+	<pokemon id="384">
+		<hp>105</hp>
+		<attack>150</attack>
+		<defense>90</defense>
+		<sp_attack>150</sp_attack>
+		<sp_defense>90</sp_defense>
+		<speed>95</speed>
+	</pokemon>
+	<pokemon id="385">
+		<hp>100</hp>
+		<attack>100</attack>
+		<defense>100</defense>
+		<sp_attack>100</sp_attack>
+		<sp_defense>100</sp_defense>
+		<speed>100</speed>
+	</pokemon>
+	<pokemon id="386">
+		<hp>50</hp>
+		<attack>150</attack>
+		<defense>50</defense>
+		<sp_attack>150</sp_attack>
+		<sp_defense>50</sp_defense>
+		<speed>150</speed>
+	</pokemon>
+</data>

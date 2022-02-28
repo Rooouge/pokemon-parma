@@ -1,0 +1,3476 @@
+<data>
+	<pokemon id="1">
+		<exp>64</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="2">
+		<exp>141</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="3">
+		<exp>208</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="4">
+		<exp>65</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="5">
+		<exp>142</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="6">
+		<exp>209</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>3</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="7">
+		<exp>66</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="8">
+		<exp>143</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="9">
+		<exp>210</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>3</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="10">
+		<exp>53</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="11">
+		<exp>72</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="12">
+		<exp>160</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="13">
+		<exp>52</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="14">
+		<exp>71</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="15">
+		<exp>159</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="16">
+		<exp>55</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="17">
+		<exp>113</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="18">
+		<exp>172</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>3</speed>
+	</pokemon>
+	<pokemon id="19">
+		<exp>57</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="20">
+		<exp>116</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="21">
+		<exp>58</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="22">
+		<exp>162</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="23">
+		<exp>62</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="24">
+		<exp>147</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="25">
+		<exp>82</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="26">
+		<exp>122</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>3</speed>
+	</pokemon>
+	<pokemon id="27">
+		<exp>93</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="28">
+		<exp>163</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="29">
+		<exp>59</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="30">
+		<exp>117</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="31">
+		<exp>194</exp>
+		<hp>3</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="32">
+		<exp>60</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="33">
+		<exp>118</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="34">
+		<exp>195</exp>
+		<hp>0</hp>
+		<attack>3</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="35">
+		<exp>68</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="36">
+		<exp>129</exp>
+		<hp>3</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="37">
+		<exp>63</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="38">
+		<exp>178</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="39">
+		<exp>76</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="40">
+		<exp>109</exp>
+		<hp>3</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="41">
+		<exp>54</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="42">
+		<exp>171</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="43">
+		<exp>78</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="44">
+		<exp>132</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="45">
+		<exp>184</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>3</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="46">
+		<exp>70</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="47">
+		<exp>128</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="48">
+		<exp>75</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="49">
+		<exp>138</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="50">
+		<exp>81</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="51">
+		<exp>153</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="52">
+		<exp>69</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="53">
+		<exp>148</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="54">
+		<exp>80</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="55">
+		<exp>174</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="56">
+		<exp>74</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="57">
+		<exp>149</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="58">
+		<exp>91</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="59">
+		<exp>213</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="60">
+		<exp>77</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="61">
+		<exp>131</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="62">
+		<exp>185</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>3</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="63">
+		<exp>73</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="64">
+		<exp>145</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="65">
+		<exp>186</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>3</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="66">
+		<exp>88</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="67">
+		<exp>146</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="68">
+		<exp>193</exp>
+		<hp>0</hp>
+		<attack>3</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="69">
+		<exp>84</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="70">
+		<exp>151</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="71">
+		<exp>191</exp>
+		<hp>0</hp>
+		<attack>3</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="72">
+		<exp>105</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="73">
+		<exp>205</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="74">
+		<exp>86</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="75">
+		<exp>134</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="76">
+		<exp>177</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>3</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="77">
+		<exp>152</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="78">
+		<exp>192</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="79">
+		<exp>99</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="80">
+		<exp>164</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="81">
+		<exp>89</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="82">
+		<exp>161</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="83">
+		<exp>94</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="84">
+		<exp>96</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="85">
+		<exp>158</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="86">
+		<exp>100</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="87">
+		<exp>176</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="88">
+		<exp>90</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="89">
+		<exp>157</exp>
+		<hp>1</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="90">
+		<exp>97</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="91">
+		<exp>203</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="92">
+		<exp>95</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="93">
+		<exp>126</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="94">
+		<exp>190</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>3</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="95">
+		<exp>108</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="96">
+		<exp>102</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="97">
+		<exp>165</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="98">
+		<exp>115</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="99">
+		<exp>206</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="100">
+		<exp>103</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="101">
+		<exp>150</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="102">
+		<exp>98</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="103">
+		<exp>212</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="104">
+		<exp>87</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="105">
+		<exp>124</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="106">
+		<exp>139</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="107">
+		<exp>140</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="108">
+		<exp>127</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="109">
+		<exp>114</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="110">
+		<exp>173</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="111">
+		<exp>135</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="112">
+		<exp>204</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="113">
+		<exp>255</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="114">
+		<exp>166</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="115">
+		<exp>175</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="116">
+		<exp>83</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="117">
+		<exp>155</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="118">
+		<exp>111</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="119">
+		<exp>170</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="120">
+		<exp>106</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="121">
+		<exp>207</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="122">
+		<exp>136</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="123">
+		<exp>187</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="124">
+		<exp>137</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="125">
+		<exp>156</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="126">
+		<exp>167</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="127">
+		<exp>200</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="128">
+		<exp>211</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="129">
+		<exp>20</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="130">
+		<exp>214</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="131">
+		<exp>219</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="132">
+		<exp>61</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="133">
+		<exp>92</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="134">
+		<exp>196</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="135">
+		<exp>197</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="136">
+		<exp>198</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="137">
+		<exp>130</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="138">
+		<exp>120</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="139">
+		<exp>199</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="140">
+		<exp>119</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="141">
+		<exp>201</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="142">
+		<exp>202</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="143">
+		<exp>154</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="144">
+		<exp>215</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>3</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="145">
+		<exp>216</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>3</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="146">
+		<exp>217</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>3</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="147">
+		<exp>67</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="148">
+		<exp>144</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="149">
+		<exp>218</exp>
+		<hp>0</hp>
+		<attack>3</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="150">
+		<exp>220</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>3</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="151">
+		<exp>64</exp>
+		<hp>3</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="152">
+		<exp>64</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="153">
+		<exp>141</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="154">
+		<exp>208</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="155">
+		<exp>65</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="156">
+		<exp>142</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="157">
+		<exp>209</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>3</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="158">
+		<exp>66</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="159">
+		<exp>143</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="160">
+		<exp>210</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="161">
+		<exp>57</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="162">
+		<exp>116</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="163">
+		<exp>58</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="164">
+		<exp>162</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="165">
+		<exp>54</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="166">
+		<exp>134</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="167">
+		<exp>54</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="168">
+		<exp>134</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="169">
+		<exp>204</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>3</speed>
+	</pokemon>
+	<pokemon id="170">
+		<exp>90</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="171">
+		<exp>156</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="172">
+		<exp>42</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="173">
+		<exp>37</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="174">
+		<exp>39</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="175">
+		<exp>74</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="176">
+		<exp>114</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="177">
+		<exp>73</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="178">
+		<exp>171</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="179">
+		<exp>59</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="180">
+		<exp>117</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="181">
+		<exp>194</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>3</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="182">
+		<exp>184</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>3</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="183">
+		<exp>58</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="184">
+		<exp>153</exp>
+		<hp>3</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="185">
+		<exp>135</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="186">
+		<exp>185</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>3</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="187">
+		<exp>74</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="188">
+		<exp>136</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="189">
+		<exp>176</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>3</speed>
+	</pokemon>
+	<pokemon id="190">
+		<exp>94</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="191">
+		<exp>52</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="192">
+		<exp>146</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="193">
+		<exp>147</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="194">
+		<exp>52</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="195">
+		<exp>137</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="196">
+		<exp>197</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="197">
+		<exp>197</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="198">
+		<exp>107</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="199">
+		<exp>164</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>3</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="200">
+		<exp>147</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="201">
+		<exp>61</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="202">
+		<exp>177</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="203">
+		<exp>149</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="204">
+		<exp>60</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="205">
+		<exp>118</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="206">
+		<exp>75</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="207">
+		<exp>108</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="208">
+		<exp>196</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="209">
+		<exp>63</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="210">
+		<exp>178</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="211">
+		<exp>100</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="212">
+		<exp>200</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="213">
+		<exp>80</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="214">
+		<exp>200</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="215">
+		<exp>132</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="216">
+		<exp>124</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="217">
+		<exp>189</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="218">
+		<exp>78</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="219">
+		<exp>154</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="220">
+		<exp>78</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="221">
+		<exp>160</exp>
+		<hp>1</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="222">
+		<exp>113</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="223">
+		<exp>78</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="224">
+		<exp>164</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="225">
+		<exp>183</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="226">
+		<exp>168</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="227">
+		<exp>168</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="228">
+		<exp>114</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="229">
+		<exp>204</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="230">
+		<exp>207</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="231">
+		<exp>124</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="232">
+		<exp>189</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="233">
+		<exp>180</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="234">
+		<exp>165</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="235">
+		<exp>106</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="236">
+		<exp>91</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="237">
+		<exp>138</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="238">
+		<exp>87</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="239">
+		<exp>106</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="240">
+		<exp>117</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="241">
+		<exp>200</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="242">
+		<exp>255</exp>
+		<hp>3</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="243">
+		<exp>216</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="244">
+		<exp>217</exp>
+		<hp>1</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="245">
+		<exp>215</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="246">
+		<exp>67</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="247">
+		<exp>144</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="248">
+		<exp>218</exp>
+		<hp>0</hp>
+		<attack>3</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="249">
+		<exp>220</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>3</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="250">
+		<exp>220</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>3</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="251">
+		<exp>64</exp>
+		<hp>3</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="252">
+		<exp>65</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="253">
+		<exp>141</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="254">
+		<exp>208</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>3</speed>
+	</pokemon>
+	<pokemon id="255">
+		<exp>65</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="256">
+		<exp>142</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="257">
+		<exp>209</exp>
+		<hp>0</hp>
+		<attack>3</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="258">
+		<exp>65</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="259">
+		<exp>143</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="260">
+		<exp>210</exp>
+		<hp>0</hp>
+		<attack>3</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="261">
+		<exp>55</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="262">
+		<exp>128</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="263">
+		<exp>60</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="264">
+		<exp>128</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="265">
+		<exp>54</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="266">
+		<exp>71</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="267">
+		<exp>161</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>3</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="268">
+		<exp>72</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="269">
+		<exp>160</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>3</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="270">
+		<exp>74</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="271">
+		<exp>141</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="272">
+		<exp>181</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>3</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="273">
+		<exp>74</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="274">
+		<exp>141</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="275">
+		<exp>181</exp>
+		<hp>0</hp>
+		<attack>3</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="276">
+		<exp>59</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="277">
+		<exp>162</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="278">
+		<exp>64</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="279">
+		<exp>164</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="280">
+		<exp>70</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="281">
+		<exp>140</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="282">
+		<exp>208</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>3</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="283">
+		<exp>63</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="284">
+		<exp>128</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="285">
+		<exp>65</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="286">
+		<exp>165</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="287">
+		<exp>83</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="288">
+		<exp>126</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="289">
+		<exp>210</exp>
+		<hp>3</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="290">
+		<exp>65</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="291">
+		<exp>155</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="292">
+		<exp>95</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="293">
+		<exp>68</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="294">
+		<exp>126</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="295">
+		<exp>184</exp>
+		<hp>3</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="296">
+		<exp>87</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="297">
+		<exp>184</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="298">
+		<exp>33</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="299">
+		<exp>108</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="300">
+		<exp>65</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="301">
+		<exp>138</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="302">
+		<exp>98</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="303">
+		<exp>98</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="304">
+		<exp>96</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="305">
+		<exp>152</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="306">
+		<exp>205</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>3</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="307">
+		<exp>91</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="308">
+		<exp>153</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="309">
+		<exp>104</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="310">
+		<exp>168</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="311">
+		<exp>120</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="312">
+		<exp>120</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="313">
+		<exp>146</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="314">
+		<exp>146</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="315">
+		<exp>152</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="316">
+		<exp>75</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="317">
+		<exp>168</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="318">
+		<exp>88</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="319">
+		<exp>175</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="320">
+		<exp>137</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="321">
+		<exp>206</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="322">
+		<exp>88</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="323">
+		<exp>175</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="324">
+		<exp>161</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="325">
+		<exp>89</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="326">
+		<exp>164</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="327">
+		<exp>85</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="328">
+		<exp>73</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="329">
+		<exp>126</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="330">
+		<exp>197</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>2</speed>
+	</pokemon>
+	<pokemon id="331">
+		<exp>97</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="332">
+		<exp>177</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="333">
+		<exp>74</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="334">
+		<exp>188</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="335">
+		<exp>165</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="336">
+		<exp>165</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="337">
+		<exp>150</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="338">
+		<exp>150</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="339">
+		<exp>92</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="340">
+		<exp>158</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="341">
+		<exp>111</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="342">
+		<exp>161</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="343">
+		<exp>58</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="344">
+		<exp>189</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="345">
+		<exp>121</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="346">
+		<exp>201</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="347">
+		<exp>119</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="348">
+		<exp>200</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="349">
+		<exp>61</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="350">
+		<exp>213</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>2</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="351">
+		<exp>145</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="352">
+		<exp>132</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="353">
+		<exp>97</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="354">
+		<exp>179</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="355">
+		<exp>97</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="356">
+		<exp>179</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="357">
+		<exp>169</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="358">
+		<exp>147</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="359">
+		<exp>174</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="360">
+		<exp>44</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="361">
+		<exp>74</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="362">
+		<exp>187</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="363">
+		<exp>75</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="364">
+		<exp>128</exp>
+		<hp>2</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="365">
+		<exp>192</exp>
+		<hp>3</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="366">
+		<exp>142</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="367">
+		<exp>178</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="368">
+		<exp>178</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>2</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="369">
+		<exp>198</exp>
+		<hp>1</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="370">
+		<exp>110</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+	<pokemon id="371">
+		<exp>89</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="372">
+		<exp>144</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="373">
+		<exp>218</exp>
+		<hp>0</hp>
+		<attack>3</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="374">
+		<exp>103</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>1</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="375">
+		<exp>153</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="376">
+		<exp>210</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>3</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="377">
+		<exp>217</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>3</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="378">
+		<exp>216</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>3</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="379">
+		<exp>215</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>2</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>1</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="380">
+		<exp>211</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>3</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="381">
+		<exp>211</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>3</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="382">
+		<exp>218</exp>
+		<hp>0</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>3</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="383">
+		<exp>218</exp>
+		<hp>0</hp>
+		<attack>3</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="384">
+		<exp>220</exp>
+		<hp>0</hp>
+		<attack>2</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="385">
+		<exp>215</exp>
+		<hp>3</hp>
+		<attack>0</attack>
+		<defense>0</defense>
+		<sp_attack>0</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>0</speed>
+	</pokemon>
+	<pokemon id="386">
+		<exp>215</exp>
+		<hp>0</hp>
+		<attack>1</attack>
+		<defense>0</defense>
+		<sp_attack>1</sp_attack>
+		<sp_defense>0</sp_defense>
+		<speed>1</speed>
+	</pokemon>
+</data>

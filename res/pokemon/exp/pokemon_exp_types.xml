@@ -1,0 +1,1160 @@
+<data>
+	<pokemon id="1">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="2">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="3">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="4">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="5">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="6">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="7">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="8">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="9">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="10">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="11">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="12">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="13">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="14">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="15">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="16">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="17">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="18">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="19">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="20">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="21">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="22">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="23">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="24">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="25">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="26">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="27">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="28">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="29">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="30">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="31">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="32">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="33">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="34">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="35">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="36">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="37">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="38">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="39">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="40">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="41">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="42">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="43">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="44">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="45">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="46">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="47">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="48">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="49">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="50">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="51">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="52">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="53">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="54">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="55">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="56">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="57">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="58">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="59">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="60">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="61">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="62">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="63">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="64">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="65">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="66">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="67">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="68">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="69">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="70">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="71">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="72">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="73">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="74">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="75">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="76">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="77">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="78">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="79">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="80">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="81">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="82">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="83">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="84">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="85">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="86">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="87">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="88">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="89">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="90">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="91">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="92">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="93">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="94">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="95">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="96">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="97">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="98">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="99">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="100">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="101">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="102">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="103">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="104">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="105">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="106">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="107">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="108">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="109">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="110">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="111">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="112">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="113">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="114">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="115">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="116">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="117">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="118">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="119">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="120">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="121">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="122">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="123">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="124">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="125">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="126">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="127">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="128">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="129">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="130">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="131">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="132">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="133">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="134">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="135">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="136">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="137">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="138">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="139">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="140">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="141">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="142">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="143">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="144">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="145">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="146">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="147">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="148">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="149">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="150">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="151">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="152">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="153">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="154">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="155">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="156">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="157">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="158">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="159">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="160">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="161">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="162">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="163">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="164">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="165">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="166">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="167">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="168">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="169">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="170">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="171">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="172">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="173">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="174">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="175">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="176">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="177">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="178">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="179">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="180">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="181">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="182">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="183">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="184">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="185">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="186">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="187">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="188">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="189">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="190">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="191">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="192">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="193">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="194">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="195">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="196">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="197">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="198">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="199">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="200">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="201">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="202">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="203">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="204">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="205">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="206">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="207">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="208">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="209">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="210">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="211">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="212">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="213">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="214">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="215">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="216">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="217">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="218">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="219">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="220">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="221">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="222">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="223">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="224">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="225">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="226">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="227">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="228">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="229">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="230">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="231">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="232">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="233">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="234">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="235">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="236">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="237">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="238">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="239">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="240">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="241">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="242">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="243">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="244">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="245">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="246">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="247">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="248">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="249">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="250">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="251">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="252">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="253">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="254">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="255">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="256">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="257">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="258">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="259">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="260">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="261">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="262">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="263">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="264">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="265">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="266">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="267">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="268">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="269">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="270">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="271">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="272">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="273">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="274">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="275">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="276">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="277">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="278">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="279">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="280">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="281">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="282">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="283">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="284">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="285">
+		<exp_type>Fluctuating</exp_type>
+	</pokemon>
+	<pokemon id="286">
+		<exp_type>Fluctuating</exp_type>
+	</pokemon>
+	<pokemon id="287">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="288">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="289">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="290">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="291">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="292">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="293">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="294">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="295">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="296">
+		<exp_type>Fluctuating</exp_type>
+	</pokemon>
+	<pokemon id="297">
+		<exp_type>Fluctuating</exp_type>
+	</pokemon>
+	<pokemon id="298">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="299">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="300">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="301">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="302">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="303">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="304">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="305">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="306">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="307">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="308">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="309">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="310">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="311">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="312">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="313">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="314">
+		<exp_type>Fluctuating</exp_type>
+	</pokemon>
+	<pokemon id="315">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="316">
+		<exp_type>Fluctuating</exp_type>
+	</pokemon>
+	<pokemon id="317">
+		<exp_type>Fluctuating</exp_type>
+	</pokemon>
+	<pokemon id="318">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="319">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="320">
+		<exp_type>Fluctuating</exp_type>
+	</pokemon>
+	<pokemon id="321">
+		<exp_type>Fluctuating</exp_type>
+	</pokemon>
+	<pokemon id="322">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="323">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="324">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="325">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="326">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="327">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="328">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="329">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="330">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="331">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="332">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="333">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="334">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="335">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="336">
+		<exp_type>Fluctuating</exp_type>
+	</pokemon>
+	<pokemon id="337">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="338">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="339">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="340">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="341">
+		<exp_type>Fluctuating</exp_type>
+	</pokemon>
+	<pokemon id="342">
+		<exp_type>Fluctuating</exp_type>
+	</pokemon>
+	<pokemon id="343">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="344">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="345">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="346">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="347">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="348">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="349">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="350">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="351">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="352">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="353">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="354">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="355">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="356">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="357">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="358">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="359">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="360">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="361">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="362">
+		<exp_type>Medium Fast</exp_type>
+	</pokemon>
+	<pokemon id="363">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="364">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="365">
+		<exp_type>Medium Slow</exp_type>
+	</pokemon>
+	<pokemon id="366">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="367">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="368">
+		<exp_type>Erratic</exp_type>
+	</pokemon>
+	<pokemon id="369">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="370">
+		<exp_type>Fast</exp_type>
+	</pokemon>
+	<pokemon id="371">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="372">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="373">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="374">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="375">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="376">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="377">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="378">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="379">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="380">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="381">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="382">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="383">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="384">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="385">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+	<pokemon id="386">
+		<exp_type>Slow</exp_type>
+	</pokemon>
+</data>

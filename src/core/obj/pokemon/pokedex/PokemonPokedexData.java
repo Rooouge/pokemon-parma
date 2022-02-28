@@ -8,8 +8,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-public class PokemonPokedexData extends PokemonBaseData {
+public class PokemonPokedexData {
 	
+	protected final PokemonBaseData baseData;
 	@Setter
 	protected PokedexPokemonStates state;
 	
@@ -19,7 +20,7 @@ public class PokemonPokedexData extends PokemonBaseData {
 	}
 	
 	public PokemonPokedexData(Node root, PokedexPokemonStates state) {
-		super(root);
+		baseData = new PokemonBaseData(root);
 		this.state = state;
 	}
 

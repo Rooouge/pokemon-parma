@@ -7,6 +7,7 @@ import org.dom4j.io.SAXReader;
 
 import core.Log;
 import core.files.XMLHandler;
+import core.obj.pokemon.PokemonBaseData;
 import jutils.global.Global;
 import lombok.experimental.UtilityClass;
 
@@ -22,6 +23,7 @@ public class PokedexHandler {
 	
 	public void create() throws Exception {
 		Pokedex pokedex = new Pokedex();
+		pokedex.add(null); //No pkmn with id = 0
 		
 		Document doc = new SAXReader().read(XMLHandler.getFile("pokemon", "pokedex-create"));
 		Element root = doc.getRootElement();
@@ -30,7 +32,7 @@ public class PokedexHandler {
 			PokemonPokedex p = new PokemonPokedex(n);
 			pokedex.add(p);
 			
-			PokemonPokedexData data = p.getData();
+			PokemonBaseData data = p.getData().getBaseData();
 			Log.log("- Founded Pokémon '" + data.getName() + "' with Id: " + data.getId());
 		}
 		
