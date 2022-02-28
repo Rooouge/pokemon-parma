@@ -8,6 +8,7 @@ import core.gui.screen.GameScreen;
 import core.gui.screen.content.ContentSettings;
 import core.gui.screen.content.Exploration;
 import core.obj.maps.links.Links;
+import core.obj.pokemon.entity.ExpHandler;
 import core.obj.pokemon.pokedex.PokedexHandler;
 import jutils.global.Global;
 import jutils.threads.Threads;
@@ -22,7 +23,11 @@ public class Core {
 	
 	public void init() throws Exception {
 		GameStates.set(GameStates.EXPLORATION_FADE_IN);
-
+		
+		Log.log("Initializing Exp types...");
+		ExpHandler.init();
+		Log.log("Exp types initialized.");
+		
 		Log.log("Initializing Pokémon types...");
 		Types.init();
 		Log.log("Pokémon types initialized.");

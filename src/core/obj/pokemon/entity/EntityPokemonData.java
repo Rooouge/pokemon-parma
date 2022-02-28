@@ -11,6 +11,7 @@ public class EntityPokemonData {
 
 	protected final PokemonBaseData baseData;
 	protected final EntityPokemonStats stats;
+	protected final EntityPokemonExpHandler exp;
 	protected int level;
 	protected String nickname;
 	protected Genders gender;
@@ -20,10 +21,17 @@ public class EntityPokemonData {
 	public EntityPokemonData(PokemonBaseData baseData) throws Exception {
 		this.baseData = baseData;
 		stats = EntityPokemonStats.create(baseData.getId());
+		exp = new EntityPokemonExpHandler(baseData.getId());
 	}
 	
 	
 	public String getDisplayName() {
 		return nickname == null ? baseData.getName() : nickname;
+	}
+	
+	public void setLevel(int level) {
+		if(level > this.level) {
+			exp.setExp(level);
+		}
 	}
 }

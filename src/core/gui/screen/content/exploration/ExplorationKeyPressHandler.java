@@ -4,6 +4,7 @@ import java.awt.event.KeyEvent;
 import java.util.HashMap;
 
 import core.enums.Directions;
+import core.enums.GameStates;
 import core.events.exploration.ExplorationKeyEvent;
 import core.events.exploration.ExplorationSpaceBarEvent;
 import core.gui.interfaces.OnKeyPressHandler;
@@ -11,6 +12,7 @@ import core.gui.screen.content.Exploration;
 import core.gui.screen.content.exploration.events.exploration.EntityFacingKeyEvent;
 import core.gui.screen.content.exploration.events.exploration.EntityMovementKeyEvent;
 import core.gui.screen.content.exploration.events.exploration.EntityRunningKeyEvent;
+import core.gui.screen.content.exploration.events.exploration.ExplorationStartMenuKeyEvent;
 import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.entities.player.Player;
 import jutils.global.Global;
@@ -39,6 +41,7 @@ public class ExplorationKeyPressHandler extends OnKeyPressHandler {
 		keyMap.put(KeyEvent.VK_RIGHT, new EntityFacingKeyEvent(KeyEvent.VK_RIGHT, Directions.RIGHT, entity, this));
 		keyMap.put(KeyEvent.VK_R, new EntityRunningKeyEvent(KeyEvent.VK_R, null, entity, this));
 		keyMap.put(KeyEvent.VK_SPACE, new ExplorationSpaceBarEvent(KeyEvent.VK_SPACE, entity, this));
+		keyMap.put(KeyEvent.VK_ENTER, new ExplorationStartMenuKeyEvent(KeyEvent.VK_ENTER, GameStates.EXPLORATION));
 	}
 
 	

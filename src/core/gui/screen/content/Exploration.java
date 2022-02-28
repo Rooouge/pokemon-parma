@@ -16,6 +16,7 @@ import core.gui.screen.content.exploration.painters.ExplorationEntityScriptPaint
 import core.gui.screen.content.exploration.painters.ExplorationFadeInPainter;
 import core.gui.screen.content.exploration.painters.ExplorationFadeOutPainter;
 import core.gui.screen.content.exploration.painters.ExplorationPainter;
+import core.gui.screen.content.exploration.painters.ExplorationStartMenuPainter;
 import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.entities.player.Player;
 import core.obj.maps.Map;
@@ -55,6 +56,7 @@ public class Exploration extends Content {
 		painters.put(GameStates.EXPLORATION_ENTITY_SCRIPT, new ExplorationEntityScriptPainter(this));
 		painters.put(GameStates.EXPLORATION_FADE_IN, new ExplorationFadeInPainter(this));
 		painters.put(GameStates.EXPLORATION_FADE_OUT, new ExplorationFadeOutPainter(this));
+		painters.put(GameStates.EXPLORATION_START_MENU, new ExplorationStartMenuPainter(this));
 		
 		
 		Log.log("Initializing Player...");
