@@ -38,7 +38,7 @@ public class ExplorationStartMenuPainter extends Painter<Exploration> {
 		int bottom = dim.height - top;
 		
 
-		font = new Font(font.deriveFont(3f/4f*font.getSize()).deriveFont(Font.BOLD));
+		font = new Font(font.deriveFont(3f/4f*font.getSize())/*.deriveFont(Font.BOLD)*/);
 		selected = 0;
 		
 		x = left + ContentSettings.tileSize/2;
@@ -65,6 +65,7 @@ public class ExplorationStartMenuPainter extends Painter<Exploration> {
 		g.fillRoundRect(white.x, white.y, white.width, white.height, arc, arc);
 		
 		g.setFont(font);
+//		System.out.println(selected);
 		for(int i = 0; i < items.size(); i++) {
 			StartMenuItems item = items.get(i);
 			

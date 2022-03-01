@@ -15,7 +15,7 @@
 			<at>67890000</at>
 			<to>520000</to>
 		</loop>
-		<volume>0.5f</volume>
+		<volume>0.1f</volume>
 	</music>
 	<movements>
 		rows(0,5) {
