@@ -1,15 +1,15 @@
-package core.gui.screen.content.exploration.events.exploration;
+package core.events.exploration;
 
 import java.util.function.Function;
 
 import javax.sound.sampled.Clip;
 
 import core.enums.GameStates;
-import core.events.exploration.ExplorationKeyEvent;
+import core.events.GlobalKeyEvent;
 import core.files.SoundsHandler;
 import core.gui.interfaces.OnKeyPressHandler;
 
-public class ExplorationStartMenuKeyEvent extends ExplorationKeyEvent {
+public class ExplorationStartMenuKeyEvent extends GlobalKeyEvent {
 
 	
 	private final GameStates toSet;

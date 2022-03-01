@@ -1,8 +1,7 @@
-package core.gui.screen.content.exploration.events.exploration;
+package core.events.exploration;
 
 import core.enums.Directions;
 import core.enums.GameStates;
-import core.events.exploration.ExplorationEntityKeyEvent;
 import core.gui.screen.content.ContentSettings;
 import core.gui.screen.content.Exploration;
 import core.gui.screen.content.exploration.ExplorationKeyPressHandler;

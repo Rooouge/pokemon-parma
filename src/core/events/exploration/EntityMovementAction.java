@@ -1,4 +1,4 @@
-package core.gui.screen.content.exploration.events.exploration;
+package core.events.exploration;
 
 import java.util.List;
 

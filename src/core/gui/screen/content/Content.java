@@ -33,7 +33,6 @@ public class Content extends ColoredPanel {
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		paintComponent((Graphics2D) g);
-		
 	}
 	
 	protected void paintComponent(Graphics2D g) {

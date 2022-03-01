@@ -2,6 +2,7 @@ package core.events.exploration;
 
 import core.enums.Directions;
 import core.enums.GameStates;
+import core.events.GlobalKeyEvent;
 import core.gui.GridPosition;
 import core.gui.screen.GlobalKeyEventHandler;
 import core.gui.screen.content.exploration.ExplorationEntityScriptKeyPressHandler;
@@ -9,7 +10,7 @@ import core.gui.screen.content.exploration.ExplorationKeyPressHandler;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.scripts.statescripts.EntityScripts;
 
-public class ExplorationSpaceBarEvent extends ExplorationKeyEvent {
+public class ExplorationSpaceBarEvent extends GlobalKeyEvent {
 
 	private final OverworldEntity player;
 	private final ExplorationKeyPressHandler handler;

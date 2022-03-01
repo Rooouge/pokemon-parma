@@ -2,12 +2,13 @@ package core.events.exploration;
 
 import core.enums.Directions;
 import core.enums.GameStates;
+import core.events.GlobalKeyEvent;
 import core.gui.screen.content.exploration.ExplorationKeyPressHandler;
 import core.obj.entities.overworld.OverworldEntity;
 import lombok.Getter;
 
 @Getter
-public abstract class ExplorationEntityKeyEvent extends ExplorationKeyEvent {
+public abstract class ExplorationEntityKeyEvent extends GlobalKeyEvent {
 
 	protected final Directions dir;
 	protected final OverworldEntity entity;

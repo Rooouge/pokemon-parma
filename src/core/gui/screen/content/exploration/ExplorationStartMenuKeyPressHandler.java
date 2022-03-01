@@ -4,13 +4,13 @@ import java.awt.event.KeyEvent;
 import java.util.HashMap;
 
 import core.enums.GameStates;
-import core.events.exploration.ExplorationKeyEvent;
+import core.events.GlobalKeyEvent;
+import core.events.exploration.ExplorationStartMenuArrowKeyEvent;
+import core.events.exploration.ExplorationStartMenuEnterEvent;
+import core.events.exploration.ExplorationStartMenuKeyEvent;
 import core.gui.interfaces.OnKeyPressHandler;
 import core.gui.screen.GlobalKeyEventHandler;
 import core.gui.screen.content.Exploration;
-import core.gui.screen.content.exploration.events.exploration.ExplorationStartMenuArrowKeyEvent;
-import core.gui.screen.content.exploration.events.exploration.ExplorationStartMenuEnterEvent;
-import core.gui.screen.content.exploration.events.exploration.ExplorationStartMenuKeyEvent;
 import core.gui.screen.content.exploration.painters.ExplorationStartMenuPainter;
 import lombok.Getter;
 
@@ -18,7 +18,7 @@ public class ExplorationStartMenuKeyPressHandler extends OnKeyPressHandler {
 
 	@Getter
 	private final Exploration exploration;
-	private final HashMap<Integer, ExplorationKeyEvent> keyMap;
+	private final HashMap<Integer, GlobalKeyEvent> keyMap;
 	
 	
 	public ExplorationStartMenuKeyPressHandler(Exploration exploration) {
@@ -43,7 +43,7 @@ public class ExplorationStartMenuKeyPressHandler extends OnKeyPressHandler {
 	public void keyPressed(KeyEvent e) throws Exception {
 		if(!pressed) {
 			if(keyMap.containsKey(e.getKeyCode()) && !keyMap.get(e.getKeyCode()).isActive()) {
-				ExplorationKeyEvent evt = keyMap.get(e.getKeyCode());
+				GlobalKeyEvent evt = keyMap.get(e.getKeyCode());
 				
 				if(evt.canActivate()) {
 					evt.start();
@@ -66,7 +66,7 @@ public class ExplorationStartMenuKeyPressHandler extends OnKeyPressHandler {
 	@Override
 	public void update() {
 		if(pressed) {
-			for(ExplorationKeyEvent evt : keyMap.values()) {
+			for(GlobalKeyEvent evt : keyMap.values()) {
 				if(evt.isActive()) {
 					evt.execute();
 					pressed = false;

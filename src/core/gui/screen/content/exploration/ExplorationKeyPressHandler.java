@@ -5,15 +5,15 @@ import java.util.HashMap;
 
 import core.enums.Directions;
 import core.enums.GameStates;
-import core.events.exploration.ExplorationKeyEvent;
+import core.events.GlobalKeyEvent;
+import core.events.exploration.EntityFacingKeyEvent;
+import core.events.exploration.EntityMovementKeyEvent;
+import core.events.exploration.EntityRunningKeyEvent;
 import core.events.exploration.ExplorationSpaceBarEvent;
+import core.events.exploration.ExplorationStartMenuKeyEvent;
 import core.gui.interfaces.OnKeyPressHandler;
 import core.gui.screen.GlobalKeyEventHandler;
 import core.gui.screen.content.Exploration;
-import core.gui.screen.content.exploration.events.exploration.EntityFacingKeyEvent;
-import core.gui.screen.content.exploration.events.exploration.EntityMovementKeyEvent;
-import core.gui.screen.content.exploration.events.exploration.EntityRunningKeyEvent;
-import core.gui.screen.content.exploration.events.exploration.ExplorationStartMenuKeyEvent;
 import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.entities.player.Player;
 import jutils.global.Global;
@@ -23,7 +23,7 @@ public class ExplorationKeyPressHandler extends OnKeyPressHandler {
 
 	@Getter
 	private final Exploration exploration;
-	private final HashMap<Integer, ExplorationKeyEvent> keyMap;
+	private final HashMap<Integer, GlobalKeyEvent> keyMap;
 	
 	
 	public ExplorationKeyPressHandler(Exploration exploration) {
@@ -50,7 +50,7 @@ public class ExplorationKeyPressHandler extends OnKeyPressHandler {
 	public void keyPressed(KeyEvent e) throws Exception {
 		if(!pressed) {
 			if(keyMap.containsKey(e.getKeyCode()) && !keyMap.get(e.getKeyCode()).isActive()) {
-				ExplorationKeyEvent evt = keyMap.get(e.getKeyCode());
+				GlobalKeyEvent evt = keyMap.get(e.getKeyCode());
 				
 				if(evt.canActivate()) {
 					evt.start();
@@ -70,7 +70,7 @@ public class ExplorationKeyPressHandler extends OnKeyPressHandler {
 	@Override
 	public void update() {
 		if(pressed) {
-			for(ExplorationKeyEvent evt : keyMap.values()) {
+			for(GlobalKeyEvent evt : keyMap.values()) {
 				if(evt.isActive()) {
 //					System.out.println(this.getClass().getSimpleName() + ": pressed");
 					evt.execute();
@@ -91,7 +91,7 @@ public class ExplorationKeyPressHandler extends OnKeyPressHandler {
 	
 	public void setNoEventActive() {
 		pressed = false;
-		for(ExplorationKeyEvent evt : keyMap.values()) {
+		for(GlobalKeyEvent evt : keyMap.values()) {
 			evt.end();
 		}
 	}

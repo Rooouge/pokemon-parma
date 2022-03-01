@@ -1,7 +1,5 @@
 package core.gui.screen;
 
-import java.lang.reflect.InvocationTargetException;
-
 import javax.swing.JFrame;
 
 import core.gui.screen.content.Content;
@@ -13,6 +11,9 @@ import lombok.Getter;
 @SuppressWarnings("serial")
 public class GameScreen extends JFrame {
 
+	public static final String KEY = "screen";
+	
+	
 	private Content content;
 	@Getter
 	private int maxFps;
@@ -21,6 +22,12 @@ public class GameScreen extends JFrame {
 	
 	public GameScreen(Class<? extends Content> contentClass) throws Exception {
 		init(contentClass);
+		Global.add(KEY, this);
+	}
+	
+	
+	public static GameScreen instance() {
+		return Global.get(KEY, GameScreen.class);
 	}
 	
 	
@@ -35,7 +42,6 @@ public class GameScreen extends JFrame {
 		
 		switchContent(contentClass);
 		
-		setToCenter();
 		setResizable(false);
 		requestFocus();
 	}
@@ -56,6 +62,7 @@ public class GameScreen extends JFrame {
 		content = contentClass.getDeclaredConstructor().newInstance();
 		Global.add("content", content);
 		setContentPane(content);
+		setToCenter();
 	}
 	
 }

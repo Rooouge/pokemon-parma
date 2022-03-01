@@ -1,4 +1,4 @@
-package core.gui.screen.content.exploration.events.entityscript;
+package core.events;
 
 import lombok.Getter;
 import lombok.Setter;

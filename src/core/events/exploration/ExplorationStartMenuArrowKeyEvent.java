@@ -1,9 +1,9 @@
-package core.gui.screen.content.exploration.events.exploration;
+package core.events.exploration;
 
 import core.enums.GameStates;
-import core.events.exploration.ExplorationKeyEvent;
+import core.events.GlobalKeyEvent;
 
-public class ExplorationStartMenuArrowKeyEvent extends ExplorationKeyEvent {
+public class ExplorationStartMenuArrowKeyEvent extends GlobalKeyEvent {
 
 	private final Runnable ref;
 //	private final Clip clip;

@@ -1,18 +1,18 @@
-package core.events.exploration;
+package core.events;
 
 import core.enums.GameStates;
 import jutils.global.Global;
 import lombok.Getter;
 
 @Getter
-public abstract class ExplorationKeyEvent {
+public abstract class GlobalKeyEvent {
 
 	protected final int keyCode;
 	protected GameStates state;
 	protected boolean active;
 	
 	
-	public ExplorationKeyEvent(int keyCode) {
+	public GlobalKeyEvent(int keyCode) {
 		this.keyCode = keyCode;
 		active = false;
 	}
