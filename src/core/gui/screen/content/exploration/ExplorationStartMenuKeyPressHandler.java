@@ -7,7 +7,9 @@ import core.enums.GameStates;
 import core.events.exploration.ExplorationKeyEvent;
 import core.gui.interfaces.OnKeyPressHandler;
 import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.events.exploration.ExplorationStartMenuArrowKeyEvent;
 import core.gui.screen.content.exploration.events.exploration.ExplorationStartMenuKeyEvent;
+import core.gui.screen.content.exploration.painters.ExplorationStartMenuPainter;
 import lombok.Getter;
 
 public class ExplorationStartMenuKeyPressHandler extends OnKeyPressHandler {
@@ -19,9 +21,13 @@ public class ExplorationStartMenuKeyPressHandler extends OnKeyPressHandler {
 	
 	public ExplorationStartMenuKeyPressHandler(Exploration exploration) {
 		this.exploration = exploration;
-
+		
+		ExplorationStartMenuPainter painter = (ExplorationStartMenuPainter) exploration.getPainters().get(GameStates.EXPLORATION_START_MENU);
+		
 		keyMap = new HashMap<>();
 		keyMap.put(KeyEvent.VK_ESCAPE, new ExplorationStartMenuKeyEvent(KeyEvent.VK_ESCAPE, GameStates.EXPLORATION_START_MENU));
+		keyMap.put(KeyEvent.VK_UP, new ExplorationStartMenuArrowKeyEvent(KeyEvent.VK_UP, painter::before));
+		keyMap.put(KeyEvent.VK_DOWN, new ExplorationStartMenuArrowKeyEvent(KeyEvent.VK_DOWN, painter::after));
 	}
 	
 	
@@ -53,8 +59,8 @@ public class ExplorationStartMenuKeyPressHandler extends OnKeyPressHandler {
 				if(evt.isActive()) {
 //					System.out.println(this.getClass().getSimpleName() + ": pressed");
 					evt.execute();
+					pressed = false;
 					if(evt instanceof ExplorationStartMenuKeyEvent) {
-						pressed = false;
 						evt.end();
 					}
 				}

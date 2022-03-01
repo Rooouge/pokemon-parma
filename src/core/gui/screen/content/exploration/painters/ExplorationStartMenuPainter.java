@@ -12,7 +12,6 @@ import core.gui.interfaces.Painter;
 import core.gui.screen.content.ContentSettings;
 import core.gui.screen.content.Exploration;
 import core.obj.entities.player.Player;
-import jutils.global.Global;
 
 public class ExplorationStartMenuPainter extends Painter<Exploration> {
 
@@ -32,7 +31,6 @@ public class ExplorationStartMenuPainter extends Painter<Exploration> {
 		Dimension dim = ContentSettings.dimension;
 
 		int size = ContentSettings.tileResize;
-		int padding = size*4;
 		
 		int right = dim.width - ContentSettings.tileSize/2;
 		int left = right - ContentSettings.tileSize*3;
@@ -55,6 +53,7 @@ public class ExplorationStartMenuPainter extends Painter<Exploration> {
 		items.add(new StartMenuItems("Pokédex"));
 		items.add(new StartMenuItems("Pokémon"));
 		items.add(new StartMenuItems(Player.instance().getName()));
+		items.add(new StartMenuItems("Zaino"));
 	}
 
 
@@ -66,15 +65,18 @@ public class ExplorationStartMenuPainter extends Painter<Exploration> {
 		g.fillRoundRect(white.x, white.y, white.width, white.height, arc, arc);
 		
 		g.setFont(font);
-		g.setColor(Color.black);
 		for(int i = 0; i < items.size(); i++) {
 			StartMenuItems item = items.get(i);
 			
 			int y = firstY + ContentSettings.tileSize*i;
 			
 			String label = item.getLabel();
-			if(i == selected)
+			if(i == selected) {
 				label = "> " + label;
+				g.setColor(Color.red);
+			} else 
+				g.setColor(Color.black);
+			
 			g.drawString(label, x, y);
 		}
 	}
