@@ -37,7 +37,7 @@ public class ExplorationSpaceBarEvent extends ExplorationKeyEvent {
 				active = false;
 //				System.out.println("Activated script!");
 				GameStates.set(GameStates.EXPLORATION_ENTITY_SCRIPT);
-				GlobalKeyEventHandler.getInstance().get(GameStates.EXPLORATION_ENTITY_SCRIPT, ExplorationEntityScriptKeyPressHandler.class).setScripts(scripts);
+				GlobalKeyEventHandler.instance().get(GameStates.EXPLORATION_ENTITY_SCRIPT, ExplorationEntityScriptKeyPressHandler.class).setScripts(scripts);
 			}
 		}
 		

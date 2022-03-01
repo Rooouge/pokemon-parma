@@ -1,20 +1,26 @@
 package core.gui.screen.content.exploration.events.exploration;
 
+import java.util.function.Function;
+
 import javax.sound.sampled.Clip;
 
 import core.enums.GameStates;
 import core.events.exploration.ExplorationKeyEvent;
 import core.files.SoundsHandler;
+import core.gui.interfaces.OnKeyPressHandler;
 
 public class ExplorationStartMenuKeyEvent extends ExplorationKeyEvent {
 
+	
 	private final GameStates toSet;
 	private final Clip clip;
+	private final Function<GameStates, OnKeyPressHandler> ref;
 	
 	
-	public ExplorationStartMenuKeyEvent(int keyCode, GameStates state) {
+	public ExplorationStartMenuKeyEvent(int keyCode, GameStates state, Function<GameStates, OnKeyPressHandler> ref) {
 		super(keyCode);
 		this.state = state;
+		this.ref = ref;
 		
 		if(state.equals(GameStates.EXPLORATION))
 			toSet = GameStates.EXPLORATION_START_MENU;
@@ -26,6 +32,7 @@ public class ExplorationStartMenuKeyEvent extends ExplorationKeyEvent {
 
 	@Override
 	public void execute() {
+		ref.apply(toSet).onLoad();
 		GameStates.set(toSet);
 		SoundsHandler.playSound(clip);
 	}

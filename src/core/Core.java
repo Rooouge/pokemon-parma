@@ -22,7 +22,7 @@ public class Core {
 	
 	
 	public void init() throws Exception {
-		GameStates.set(GameStates.EXPLORATION_FADE_IN);
+		GameStates.set(GameStates.FADE_IN);
 		
 		Log.log("Initializing Exp types...");
 		ExpHandler.init();

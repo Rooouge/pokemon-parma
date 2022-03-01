@@ -73,4 +73,9 @@ public class ExplorationEntityScriptKeyPressHandler extends OnKeyPressHandler {
 		}
 	}
 
+	@Override
+	public void onLoad() {
+		// Empty
+	}
+
 }

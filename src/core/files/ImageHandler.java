@@ -35,22 +35,23 @@ public class ImageHandler {
 		return new File(Config.getValue("images") + subFolder + "/" + resName + ".png");
 	}
 	
+	public TiledImage getImage(String resName, String subfolder) throws IOException {
+		BufferedImage input = ImageIO.read(getImageFile(resName, subfolder));
+		return resize(input);
+	}
+	
 	public TiledImage getMapImage(String resName) throws IOException {
 		BufferedImage input = ImageIO.read(getImageFile(resName, "maps"));
-		
-		
 		return resize(input);
 	}
 	
 	public TiledImage getEntityExplorationImage(String entityName) throws IOException {
 		BufferedImage input = ImageIO.read(getImageFile(entityName + "_exploration", "entities/overworld"));
-		
 		return resize(input);
 	}
 	
 	public TiledImage getAutotileImage(String resName) throws IOException {
 		BufferedImage input = ImageIO.read(FileHandler.getFile("autotiles", resName, "png"));
-		
 		return resize(input);
 	}
 	

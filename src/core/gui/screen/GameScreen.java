@@ -1,5 +1,7 @@
 package core.gui.screen;
 
+import java.lang.reflect.InvocationTargetException;
+
 import javax.swing.JFrame;
 
 import core.gui.screen.content.Content;
@@ -31,9 +33,7 @@ public class GameScreen extends JFrame {
 		addKeyListener(keyHandler);
 		Global.add(GlobalKeyEventHandler.KEY, keyHandler);
 		
-		content = contentClass.getDeclaredConstructor().newInstance();
-		Global.add("content", content);
-		setContentPane(content);
+		switchContent(contentClass);
 		
 		setToCenter();
 		setResizable(false);
@@ -49,6 +49,13 @@ public class GameScreen extends JFrame {
 	public void update() throws Exception {
 		keyHandler.update();
 		content.update();
+	}
+	
+	
+	public void switchContent(Class<? extends Content> contentClass) throws Exception {
+		content = contentClass.getDeclaredConstructor().newInstance();
+		Global.add("content", content);
+		setContentPane(content);
 	}
 	
 }

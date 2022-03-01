@@ -45,7 +45,7 @@ public class MoveAction extends ScriptAction {
 						ContentSettings.tileOriginalSize, 
 						exploration.getActiveMaps(), 
 						dir, 
-						GlobalKeyEventHandler.getInstance().get(GameStates.EXPLORATION, ExplorationKeyPressHandler.class),
+						GlobalKeyEventHandler.instance().get(GameStates.EXPLORATION, ExplorationKeyPressHandler.class),
 						false)
 				);
 			}

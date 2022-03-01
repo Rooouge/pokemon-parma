@@ -5,11 +5,14 @@ import jutils.global.Global;
 public enum GameStates {
 
 	NONE,
+	FADE_IN,
+	FADE_OUT,
+	
 	EXPLORATION,
-	EXPLORATION_FADE_IN,
-	EXPLORATION_FADE_OUT,
 	EXPLORATION_ENTITY_SCRIPT,
-	EXPLORATION_START_MENU;
+	EXPLORATION_START_MENU,
+	
+	POKEDEX;
 
 	
 	public static final String KEY = "state";

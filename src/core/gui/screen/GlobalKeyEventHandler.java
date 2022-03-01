@@ -13,7 +13,7 @@ public class GlobalKeyEventHandler implements KeyListener {
 
 	public static final String KEY = GlobalKeyEventHandler.class.getName();
 	
-	public static GlobalKeyEventHandler getInstance() {
+	public static GlobalKeyEventHandler instance() {
 		return Global.get(GlobalKeyEventHandler.KEY, GlobalKeyEventHandler.class);
 	}
 	
@@ -36,6 +36,10 @@ public class GlobalKeyEventHandler implements KeyListener {
 	
 	public <T> T get(GameStates state, Class<T> clazz) {
 		return clazz.cast(handlers.get(state));
+	}
+	
+	public static OnKeyPressHandler get(GameStates state) {
+		return instance().handlers.get(state);
 	}
 	
 	public void remove(OnKeyPressHandler l, GameStates state) {

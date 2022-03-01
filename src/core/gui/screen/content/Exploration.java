@@ -50,8 +50,6 @@ public class Exploration extends Content {
 	
 	
 	public Exploration() throws Exception {
-		super();
-		
 		Log.log("Initializing Player...");
 		Player player = new Player("player");
 		Global.add("player", player);
@@ -61,8 +59,8 @@ public class Exploration extends Content {
 		painters = new HashMap<>();
 		painters.put(GameStates.EXPLORATION, new ExplorationPainter(this));
 		painters.put(GameStates.EXPLORATION_ENTITY_SCRIPT, new ExplorationEntityScriptPainter(this));
-		painters.put(GameStates.EXPLORATION_FADE_IN, new ExplorationFadeInPainter(this));
-		painters.put(GameStates.EXPLORATION_FADE_OUT, new ExplorationFadeOutPainter(this));
+		painters.put(GameStates.FADE_IN, new ExplorationFadeInPainter(this));
+		painters.put(GameStates.FADE_OUT, new ExplorationFadeOutPainter(this));
 		painters.put(GameStates.EXPLORATION_START_MENU, new ExplorationStartMenuPainter(this));
 		
 		
@@ -74,7 +72,7 @@ public class Exploration extends Content {
 		currentState = GameStates.current();
 		
 
-		GlobalKeyEventHandler keyHandler = GlobalKeyEventHandler.getInstance();
+		GlobalKeyEventHandler keyHandler = GlobalKeyEventHandler.instance();
 		keyHandler.add(new ExplorationKeyPressHandler(this), GameStates.EXPLORATION);
 		keyHandler.add(new ExplorationEntityScriptKeyPressHandler(this), GameStates.EXPLORATION_ENTITY_SCRIPT);
 		keyHandler.add(new ExplorationStartMenuKeyPressHandler(this), GameStates.EXPLORATION_START_MENU);
@@ -149,12 +147,12 @@ public class Exploration extends Content {
 			if(painter != null)
 				painter.paint(g);
 			break;
-		case EXPLORATION_FADE_IN:
+		case FADE_IN:
 			painters.get(GameStates.EXPLORATION).paint(g);
 			if(painter != null)
 				painter.paint(g);
 			break;
-		case EXPLORATION_FADE_OUT:
+		case FADE_OUT:
 			painters.get(GameStates.EXPLORATION).paint(g);
 			if(painter != null)
 				painter.paint(g);

@@ -7,6 +7,7 @@ import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.List;
 
+import core.enums.GameStates;
 import core.fonts.Font;
 import core.gui.interfaces.Painter;
 import core.gui.screen.content.ContentSettings;
@@ -50,10 +51,10 @@ public class ExplorationStartMenuPainter extends Painter<Exploration> {
 		white = new Rectangle(black.x + size, black.y + size, black.width - 2*size, black.height - 2*size);
 		
 		items = new ArrayList<>();
-		items.add(new StartMenuItems("Pokédex"));
-		items.add(new StartMenuItems("Pokémon"));
-		items.add(new StartMenuItems(Player.instance().getName()));
-		items.add(new StartMenuItems("Zaino"));
+		items.add(new StartMenuItems("Pokédex", GameStates.POKEDEX));
+		items.add(new StartMenuItems("Pokémon", null));
+		items.add(new StartMenuItems(Player.instance().getName(), null));
+		items.add(new StartMenuItems("Zaino", null));
 	}
 
 
@@ -93,5 +94,9 @@ public class ExplorationStartMenuPainter extends Painter<Exploration> {
 		selected++;
 		if(selected >= items.size())
 			selected = 0;
+	}
+	
+	public StartMenuItems get() {
+		return items.get(selected);
 	}
 }

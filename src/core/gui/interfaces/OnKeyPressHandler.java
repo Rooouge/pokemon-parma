@@ -12,6 +12,7 @@ public abstract class OnKeyPressHandler {
 	}
 	
 	
+	public abstract void onLoad();
 	public abstract void keyPressed(KeyEvent e) throws Exception;
 	public abstract void keyReleased(KeyEvent e);
 	public abstract void update();

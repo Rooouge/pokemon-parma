@@ -30,7 +30,7 @@ public class MoveCameraAction extends ScriptAction {
 				ContentSettings.tileOriginalSize, 
 				exploration.getActiveMaps(), 
 				dir, 
-				GlobalKeyEventHandler.getInstance().get(GameStates.EXPLORATION, ExplorationKeyPressHandler.class),
+				GlobalKeyEventHandler.instance().get(GameStates.EXPLORATION, ExplorationKeyPressHandler.class),
 				false)
 		);
 		exploration.getEntityHandler().addCameraMovementCounterpart(dir);
