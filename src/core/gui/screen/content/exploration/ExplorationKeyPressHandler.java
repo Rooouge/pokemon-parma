@@ -70,10 +70,13 @@ public class ExplorationKeyPressHandler extends OnKeyPressHandler {
 	public void update() {
 		if(pressed) {
 			for(ExplorationKeyEvent evt : keyMap.values()) {
-				if(evt.isActive()) {					
+				if(evt.isActive()) {
+//					System.out.println(this.getClass().getSimpleName() + ": pressed");
 					evt.execute();
-					if(evt instanceof ExplorationSpaceBarEvent)
+					if(evt instanceof ExplorationSpaceBarEvent || evt instanceof ExplorationStartMenuKeyEvent) {
 						pressed = false;
+						evt.end();
+					}
 				}
 			}
 		}

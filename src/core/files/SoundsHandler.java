@@ -64,7 +64,15 @@ public class SoundsHandler {
 	
 	
 	public void playSound(Clip clip) {
+		if(clip.isActive() || clip.isRunning()) {
+			clip.stop();
+		}
+		
 		clip.setFramePosition(0);
 		clip.start();
+	}
+
+	public static void playSound(String key) {
+		playSound(get(key));
 	}
 }

@@ -3,6 +3,7 @@ package core.obj.entities.player;
 import java.io.IOException;
 
 import core.obj.entities.overworld.PlayerOverworldEntity;
+import jutils.global.Global;
 import lombok.Getter;
 
 @Getter
@@ -17,4 +18,8 @@ public class Player {
 		overworldEntity = new PlayerOverworldEntity(name);
 	}
 	
+	
+	public static Player instance() {
+		return Global.get("player", Player.class);
+	}
 }

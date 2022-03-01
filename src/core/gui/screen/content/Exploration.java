@@ -12,6 +12,7 @@ import core.gui.interfaces.Painter;
 import core.gui.screen.GlobalKeyEventHandler;
 import core.gui.screen.content.exploration.ExplorationEntityScriptKeyPressHandler;
 import core.gui.screen.content.exploration.ExplorationKeyPressHandler;
+import core.gui.screen.content.exploration.ExplorationStartMenuKeyPressHandler;
 import core.gui.screen.content.exploration.painters.ExplorationEntityScriptPainter;
 import core.gui.screen.content.exploration.painters.ExplorationFadeInPainter;
 import core.gui.screen.content.exploration.painters.ExplorationFadeOutPainter;
@@ -51,6 +52,12 @@ public class Exploration extends Content {
 	public Exploration() throws Exception {
 		super();
 		
+		Log.log("Initializing Player...");
+		Player player = new Player("player");
+		Global.add("player", player);
+		Log.log("Player initialized with name '" + player.getName() + "'");
+		
+		
 		painters = new HashMap<>();
 		painters.put(GameStates.EXPLORATION, new ExplorationPainter(this));
 		painters.put(GameStates.EXPLORATION_ENTITY_SCRIPT, new ExplorationEntityScriptPainter(this));
@@ -58,11 +65,6 @@ public class Exploration extends Content {
 		painters.put(GameStates.EXPLORATION_FADE_OUT, new ExplorationFadeOutPainter(this));
 		painters.put(GameStates.EXPLORATION_START_MENU, new ExplorationStartMenuPainter(this));
 		
-		
-		Log.log("Initializing Player...");
-		Player player = new Player("player");
-		Global.add("player", player);
-		Log.log("Player initialized with name '" + player.getName() + "'");
 		
 		activeMaps = new ArrayList<>();
 		Map map = Maps.getMap(Config.getValue("game.active-map"));
@@ -75,6 +77,7 @@ public class Exploration extends Content {
 		GlobalKeyEventHandler keyHandler = GlobalKeyEventHandler.getInstance();
 		keyHandler.add(new ExplorationKeyPressHandler(this), GameStates.EXPLORATION);
 		keyHandler.add(new ExplorationEntityScriptKeyPressHandler(this), GameStates.EXPLORATION_ENTITY_SCRIPT);
+		keyHandler.add(new ExplorationStartMenuKeyPressHandler(this), GameStates.EXPLORATION_START_MENU);
 	}
 	
 	
@@ -156,6 +159,10 @@ public class Exploration extends Content {
 			if(painter != null)
 				painter.paint(g);
 			break;
+		case EXPLORATION_START_MENU:
+			painters.get(GameStates.EXPLORATION).paint(g);
+			if(painter != null)
+				painter.paint(g);
 		default:
 			break;
 		}

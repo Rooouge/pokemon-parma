@@ -6,14 +6,12 @@ import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.Rectangle;
 
-import core.fonts.Font;
-import core.fonts.Fonts;
 import core.gui.interfaces.Painter;
 import core.gui.screen.content.ContentSettings;
 import core.gui.screen.content.Exploration;
 import core.obj.scripts.ScriptAction;
-import core.obj.scripts.actions.WaitPressAction;
 import core.obj.scripts.actions.TextAction;
+import core.obj.scripts.actions.WaitPressAction;
 import jutils.global.Global;
 
 public class ExplorationEntityScriptPainter extends Painter<Exploration> {
@@ -49,7 +47,6 @@ public class ExplorationEntityScriptPainter extends Painter<Exploration> {
 		white = new Rectangle(black.x + size, black.y + size, black.width - 2*size, black.height - 2*size);
 		
 		
-		Font font = Fonts.SCRIPT_TEXT_FONT;
 		int height = font.height();
 		
 		line1 = new Point(white.x + padding, white.y + padding + height);
@@ -113,7 +110,7 @@ public class ExplorationEntityScriptPainter extends Painter<Exploration> {
 //			g.drawLine(line1.x, line1.y, white.width - padding, line1.y);
 //			g.drawLine(line2.x, line2.y, white.width - padding, line2.y);
 			
-			g.setFont(Fonts.SCRIPT_TEXT_FONT);
+			g.setFont(font);
 			g.setColor(Color.black);
 			g.drawString(tAction.getLine1(), line1.x, line1.y);
 			g.drawString(tAction.getLine2(), line2.x, line2.y);
