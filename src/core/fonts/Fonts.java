@@ -16,9 +16,9 @@ public class Fonts {
 	public void init() throws Exception {
 		GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
 		
-		java.awt.Font font = Font.createFont(Font.TRUETYPE_FONT, FileHandler.getFile("fonts", "exploration", "ttf"));
+		java.awt.Font font = Font.createFont(Font.TRUETYPE_FONT, FileHandler.getFile("fonts", "exploration-1", "ttf"));
 		ge.registerFont(font);
 		Log.log("Registered Font '" + font.getName() + "'");
-		SCRIPT_TEXT_FONT = new Font(new java.awt.Font("Power Clear", Font.TRUETYPE_FONT, 12*ContentSettings.tileResize));
+		SCRIPT_TEXT_FONT = new Font(new java.awt.Font(font.getName(), Font.TRUETYPE_FONT, 12*ContentSettings.tileResize));
 	}
 }

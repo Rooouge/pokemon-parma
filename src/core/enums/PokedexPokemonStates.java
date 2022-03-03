@@ -18,7 +18,7 @@ public enum PokedexPokemonStates {
 	}
 	
 	public boolean founded() {
-		return equals(FOUNDED);
+		return equals(FOUNDED) || equals(CAUGHT);
 	}
 	
 	public boolean caught() {
