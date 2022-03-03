@@ -45,6 +45,8 @@ public class Exploration extends Content<Exploration> {
 	
 	
 	public Exploration() throws Exception {
+		super(true);
+		
 		Log.log("Initializing Player...");
 		Player player = new Player("player");
 		Global.add("player", player);

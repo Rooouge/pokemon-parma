@@ -10,11 +10,13 @@ public abstract class OnKeyPressHandler<T extends ColoredPanel> {
 	@Getter
 	protected final T parent;
 	protected boolean pressed;
+	protected boolean firstLoad;
 	
 	
 	public OnKeyPressHandler(T parent) {
 		this.parent = parent;
 		pressed = false;
+		firstLoad = true;
 	}
 	
 	

@@ -1,5 +1,9 @@
 package core.gui.screen;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TimerTask;
+
 import javax.swing.JFrame;
 
 import core.Log;
@@ -15,7 +19,7 @@ public class GameScreen extends JFrame {
 
 	public static final String KEY = "screen";
 	
-	
+	private final Map<String, Content<? extends ColoredPanel>> map;
 	private Content<? extends ColoredPanel> content;
 	@Getter
 	private int maxFps;
@@ -23,6 +27,7 @@ public class GameScreen extends JFrame {
 	
 	
 	public GameScreen(Class<? extends Content<? extends ColoredPanel>> contentClass) throws Exception {
+		map = new HashMap<>();
 		init(contentClass);
 		Global.add(KEY, this);
 	}
@@ -63,7 +68,34 @@ public class GameScreen extends JFrame {
 	
 	
 	public void switchContent(Class<? extends Content<? extends ColoredPanel>> contentClass) throws Exception {
-		content = contentClass.getDeclaredConstructor().newInstance();
+		final Content<? extends ColoredPanel> test = content;
+		if(test != null) {
+			String name = test.getClass().getSimpleName();
+			if(content.isForceChache()) {
+				Log.log("Not checking " + name);
+			} else {
+				content.getDeallocator().schedule(new TimerTask() {
+					@Override
+					public void run() {
+						Log.log("Checking " + name + " with " + content.getClass().getSimpleName());
+						if(!test.equals(content)) {
+							Log.log("Memory of " + name + " is now free");
+							map.remove(test.getClass().getName());
+						} else {
+							Log.log("Not removing " + name);
+						}
+					}
+				}, 10000);
+			}
+		}
+		
+		if(!map.containsKey(contentClass.getName())) {
+			content = contentClass.getDeclaredConstructor().newInstance();
+			map.put(contentClass.getName(), content);
+		} else {
+			content = map.get(contentClass.getName());
+		}
+		
 		Global.add("content", content);
 		setContentPane(content);
 		pack();

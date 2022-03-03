@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Timer;
 
 import core.Core;
 import core.enums.GameStates;
@@ -24,19 +25,22 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	protected final List<Action> toAdd;
 	protected final GlobalKeyEventHandler keyHandler;
 	protected final java.util.Map<GameStates, Painter<T>> painters;
+	protected final Timer deallocator;
+	protected final boolean forceChache;
 	protected GameStates currentState;
 	
 	
-	public Content() {
+	public Content(boolean forceCache) {
 		super(Color.black);
 		setPreferredSize(ContentSettings.dimension);
 		
 		actions = new ArrayList<>();
 		toAdd = new ArrayList<>();
-		
-
 		painters = new HashMap<>();
 		keyHandler = GlobalKeyEventHandler.instance();
+		
+		this.forceChache = forceCache;
+		deallocator = new Timer();
 		
 		currentState = GameStates.current();
 	}

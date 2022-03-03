@@ -12,6 +12,7 @@ import core.gui.screen.content.pokedex.painters.PokedexPainter;
 public class Pokedex extends Content<Pokedex> {	
 	
 	public Pokedex() throws IOException {
+		super(false);
 		currentState = GameStates.current();
 
 		initPainters();

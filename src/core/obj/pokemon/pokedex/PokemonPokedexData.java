@@ -16,7 +16,7 @@ public class PokemonPokedexData {
 	
 	
 	public PokemonPokedexData(Node root) {
-		this(root, PokedexPokemonStates.UNKNOWN);
+		this(root, PokedexPokemonStates.CAUGHT);
 	}
 	
 	public PokemonPokedexData(Node root, PokedexPokemonStates state) {

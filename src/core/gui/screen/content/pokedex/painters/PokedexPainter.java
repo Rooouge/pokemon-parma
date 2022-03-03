@@ -26,7 +26,6 @@ public class PokedexPainter extends Painter<Pokedex> {
 	private int listSelected;
 	private final TiledImage unknown;
 	private TiledImage image;
-	private TiledImage shinyImage;
 	
 	
 	public PokedexPainter(Pokedex parent) throws IOException {
@@ -53,14 +52,12 @@ public class PokedexPainter extends Painter<Pokedex> {
 		g.drawImage(background.getImage(), 0, 0, null);
 		
 		TiledImage image = unknown;
-		TiledImage shinyImage = unknown;
 		
 		for(int i = listIndex; i < listIndex + 7; i++) {
 			String str = "---";
 			PokemonPokedex p = pokedex.get(i);
 			PokedexPokemonStates state = p.getData().getState();
 			boolean founded = state.founded();
-			boolean caught = state.caught();
 			
 			if(state.founded())
 				str = p.getData().getBaseData().getName();
@@ -73,9 +70,6 @@ public class PokedexPainter extends Painter<Pokedex> {
 				refreshImage();
 				if(founded)
 					image = this.image;
-				if(caught)
-					shinyImage = this.shinyImage;
-				
 			} else {
 				g.setFont(listFont);
 				g.setColor(Color.black);
@@ -84,8 +78,7 @@ public class PokedexPainter extends Painter<Pokedex> {
 			g.drawString(i + ") " + str, listX, firstListY + ContentSettings.tileSize*(i-listIndex));
 		}
 		
-		g.drawImage(image.getImage(), ContentSettings.tileSize, (int) (ContentSettings.tileSize*5f/2f), null);
-		g.drawImage(shinyImage.getImage(), ContentSettings.tileSize*4, (int) (ContentSettings.tileSize*5f/2f), null);
+		g.drawImage(image.getImage(), (int) (ContentSettings.tileSize*5f/4f), (int) (ContentSettings.tileSize*5f/2f), null);
 	}
 	
 	
@@ -143,7 +136,6 @@ public class PokedexPainter extends Painter<Pokedex> {
 	private void refreshImage() {
 		try {
 			image = ImageHandler.getPokemonEnemyImage(get().getData().getBaseData().getId(), false);
-			shinyImage = ImageHandler.getPokemonEnemyImage(get().getData().getBaseData().getId(), true);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

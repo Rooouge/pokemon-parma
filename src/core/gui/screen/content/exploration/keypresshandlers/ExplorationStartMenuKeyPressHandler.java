@@ -4,12 +4,11 @@ import java.awt.event.KeyEvent;
 import java.util.HashMap;
 
 import core.enums.GameStates;
+import core.events.ChangeStateKeyEvent;
 import core.events.GlobalKeyEvent;
 import core.events.exploration.ExplorationStartMenuArrowKeyEvent;
 import core.events.exploration.ExplorationStartMenuSpacebarEvent;
-import core.events.exploration.ExplorationStartMenuKeyEvent;
 import core.gui.interfaces.OnKeyPressHandler;
-import core.gui.screen.GlobalKeyEventHandler;
 import core.gui.screen.content.Exploration;
 import core.gui.screen.content.exploration.painters.ExplorationStartMenuPainter;
 
@@ -24,7 +23,7 @@ public class ExplorationStartMenuKeyPressHandler extends OnKeyPressHandler<Explo
 		ExplorationStartMenuPainter painter = (ExplorationStartMenuPainter) exploration.getPainters().get(GameStates.EXPLORATION_START_MENU);
 		
 		keyMap = new HashMap<>();
-		keyMap.put(KeyEvent.VK_ESCAPE, new ExplorationStartMenuKeyEvent(KeyEvent.VK_ESCAPE, GameStates.EXPLORATION_START_MENU, GlobalKeyEventHandler::get));
+		keyMap.put(KeyEvent.VK_ESCAPE, new ChangeStateKeyEvent(KeyEvent.VK_ESCAPE, GameStates.EXPLORATION_START_MENU, GameStates.EXPLORATION));
 		keyMap.put(KeyEvent.VK_UP, new ExplorationStartMenuArrowKeyEvent(KeyEvent.VK_UP, painter::before));
 		keyMap.put(KeyEvent.VK_DOWN, new ExplorationStartMenuArrowKeyEvent(KeyEvent.VK_DOWN, painter::after));
 		keyMap.put(KeyEvent.VK_SPACE, new ExplorationStartMenuSpacebarEvent(KeyEvent.VK_SPACE, painter::get));
@@ -33,13 +32,12 @@ public class ExplorationStartMenuKeyPressHandler extends OnKeyPressHandler<Explo
 	
 	@Override
 	public void onLoad() {
-//		pressed = true;
-		// Empty
+		firstLoad = true;
 	}
 	
 	@Override
 	public void keyPressed(KeyEvent e) throws Exception {
-		if(!pressed) {
+		if(!pressed && !firstLoad) {
 			if(keyMap.containsKey(e.getKeyCode()) && !keyMap.get(e.getKeyCode()).isActive()) {
 				GlobalKeyEvent evt = keyMap.get(e.getKeyCode());
 				
@@ -59,6 +57,8 @@ public class ExplorationStartMenuKeyPressHandler extends OnKeyPressHandler<Explo
 //			else
 //				keyMap.get(e.getKeyCode()).end();
 //		}
+		if(firstLoad)
+			firstLoad = false;
 		
 		if(keyMap.containsKey(e.getKeyCode())) {
 			keyMap.get(e.getKeyCode()).end();
@@ -72,7 +72,7 @@ public class ExplorationStartMenuKeyPressHandler extends OnKeyPressHandler<Explo
 				if(evt.isActive()) {
 					evt.execute();
 					pressed = false;
-					if(evt instanceof ExplorationStartMenuKeyEvent) {
+					if(evt instanceof ChangeStateKeyEvent) {
 						evt.end();
 					}
 				}

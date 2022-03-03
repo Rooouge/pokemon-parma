@@ -5,14 +5,13 @@ import java.util.HashMap;
 
 import core.enums.Directions;
 import core.enums.GameStates;
+import core.events.ChangeStateKeyEvent;
 import core.events.GlobalKeyEvent;
 import core.events.exploration.EntityFacingKeyEvent;
 import core.events.exploration.EntityMovementKeyEvent;
 import core.events.exploration.EntityRunningKeyEvent;
 import core.events.exploration.ExplorationSpaceBarEvent;
-import core.events.exploration.ExplorationStartMenuKeyEvent;
 import core.gui.interfaces.OnKeyPressHandler;
-import core.gui.screen.GlobalKeyEventHandler;
 import core.gui.screen.content.Exploration;
 import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.entities.player.Player;
@@ -39,9 +38,14 @@ public class ExplorationKeyPressHandler extends OnKeyPressHandler<Exploration> {
 		keyMap.put(KeyEvent.VK_RIGHT, new EntityFacingKeyEvent(KeyEvent.VK_RIGHT, Directions.RIGHT, entity, this));
 		keyMap.put(KeyEvent.VK_R, new EntityRunningKeyEvent(KeyEvent.VK_R, null, entity, this));
 		keyMap.put(KeyEvent.VK_SPACE, new ExplorationSpaceBarEvent(KeyEvent.VK_SPACE, entity, this));
-		keyMap.put(KeyEvent.VK_ENTER, new ExplorationStartMenuKeyEvent(KeyEvent.VK_ENTER, GameStates.EXPLORATION, GlobalKeyEventHandler::get));
+		keyMap.put(KeyEvent.VK_ENTER, new ChangeStateKeyEvent(KeyEvent.VK_ENTER, GameStates.EXPLORATION, GameStates.EXPLORATION_START_MENU));
 	}
 
+	
+	@Override
+	public void onLoad() {
+		// Empty
+	}
 	
 	@Override
 	public void keyPressed(KeyEvent e) throws Exception {
@@ -71,18 +75,13 @@ public class ExplorationKeyPressHandler extends OnKeyPressHandler<Exploration> {
 				if(evt.isActive()) {
 //					System.out.println(this.getClass().getSimpleName() + ": pressed");
 					evt.execute();
-					if(evt instanceof ExplorationSpaceBarEvent || evt instanceof ExplorationStartMenuKeyEvent) {
+					if(evt instanceof ExplorationSpaceBarEvent || evt instanceof ChangeStateKeyEvent) {
 						pressed = false;
 						evt.end();
 					}
 				}
 			}
 		}
-	}
-	
-	@Override
-	public void onLoad() {
-		// Empty
 	}
 	
 	
