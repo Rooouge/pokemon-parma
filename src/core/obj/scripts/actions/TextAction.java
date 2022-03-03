@@ -31,7 +31,7 @@ public class TextAction extends ScriptAction {
 		
 		Font font = Fonts.SCRIPT_TEXT_FONT;
 		FontRenderContext frc = font.getFrc();
-		int maxWidth = Global.get(MAX_WIDTH, Integer.class);		
+		int maxWidth = Global.get(MAX_WIDTH, Integer.class);
 		int stringWidth = (int) font.getStringBounds(text, frc).getWidth();
 		Assert.isFalse(stringWidth > maxWidth*2, "[The given text is too long/width {extra: " + calculateExtraString(text, maxWidth*2, font) + "}]");
 		

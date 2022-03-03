@@ -5,8 +5,8 @@ import core.enums.GameStates;
 import core.events.GlobalKeyEvent;
 import core.gui.GridPosition;
 import core.gui.screen.GlobalKeyEventHandler;
-import core.gui.screen.content.exploration.ExplorationEntityScriptKeyPressHandler;
-import core.gui.screen.content.exploration.ExplorationKeyPressHandler;
+import core.gui.screen.content.exploration.keypresshandlers.ExplorationEntityScriptKeyPressHandler;
+import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.scripts.statescripts.EntityScripts;
 
@@ -28,7 +28,7 @@ public class ExplorationSpaceBarEvent extends GlobalKeyEvent {
 	@Override
 	public void execute() {
 		GridPosition targetPos = getPlayerRelativePos();
-		OverworldEntity target = handler.getExploration().getActiveMap().getEntities().getEntityFromPos(targetPos);
+		OverworldEntity target = handler.getParent().getActiveMap().getEntities().getEntityFromPos(targetPos);
 		
 //		System.out.println("Target: " + target);
 		

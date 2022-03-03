@@ -5,7 +5,7 @@ import java.util.List;
 import core.enums.Directions;
 import core.gui.GridPosition;
 import core.gui.screen.content.ContentSettings;
-import core.gui.screen.content.exploration.ExplorationKeyPressHandler;
+import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
 import core.obj.actions.SequenceAction;
 import core.obj.entities.player.Player;
 import core.obj.maps.Map;
@@ -48,7 +48,7 @@ public class EntityMovementAction extends SequenceAction {
 		
 		AutoTile at = map.getAutoTiles().getFromPos(newPos);
 		if(at != null)
-			handler.getExploration().toAddAction(at);
+			handler.getParent().toAddAction(at);
 		
 		
 		TileEntity te = map.getTileEntities().getFromPos(newPos);
@@ -56,7 +56,7 @@ public class EntityMovementAction extends SequenceAction {
 		if(te != null) {
 			Script script = te.getData().getScripts().getCurrent();
 			do {
-				ScriptExecutor.execute(script, handler.getExploration());
+				ScriptExecutor.execute(script, handler.getParent());
 			} while(script.getIndex() != 0);
 		}		
 		

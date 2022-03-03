@@ -2,17 +2,15 @@ package core.gui.screen.content;
 
 import java.awt.Graphics2D;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import core.Log;
 import core.enums.GameStates;
 import core.files.MusicHandler;
 import core.gui.interfaces.Painter;
-import core.gui.screen.GlobalKeyEventHandler;
-import core.gui.screen.content.exploration.ExplorationEntityScriptKeyPressHandler;
-import core.gui.screen.content.exploration.ExplorationKeyPressHandler;
-import core.gui.screen.content.exploration.ExplorationStartMenuKeyPressHandler;
+import core.gui.screen.content.exploration.keypresshandlers.ExplorationEntityScriptKeyPressHandler;
+import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
+import core.gui.screen.content.exploration.keypresshandlers.ExplorationStartMenuKeyPressHandler;
 import core.gui.screen.content.exploration.painters.ExplorationEntityScriptPainter;
 import core.gui.screen.content.exploration.painters.ExplorationFadeInPainter;
 import core.gui.screen.content.exploration.painters.ExplorationFadeOutPainter;
@@ -34,16 +32,13 @@ import lombok.Getter;
 import lombok.Setter;
 
 @SuppressWarnings("serial")
-public class Exploration extends Content {
+public class Exploration extends Content<Exploration> {
 
 	@Getter
 	private final List<Map> activeMaps;
 	@Getter
-	private final java.util.Map<GameStates, Painter<Exploration>> painters;
-	@Getter
 	private MapEntitiesHandler entityHandler;
 	private MapAutoTilesHandler autoTilesHandler;
-	private GameStates currentState;
 	@Getter
 	@Setter
 	private boolean onMapChange;
@@ -54,25 +49,27 @@ public class Exploration extends Content {
 		Player player = new Player("player");
 		Global.add("player", player);
 		Log.log("Player initialized with name '" + player.getName() + "'");
+
+		initPainters();
+		initKeyHandlers();
 		
-		
-		painters = new HashMap<>();
+		activeMaps = new ArrayList<>();
+		Map map = Maps.getMap(Config.getValue("game.active-map"));
+		setActiveMap(map, player.getOverworldEntity(), true);
+	}
+	
+	
+	@Override
+	protected void initPainters() {
 		painters.put(GameStates.EXPLORATION, new ExplorationPainter(this));
 		painters.put(GameStates.EXPLORATION_ENTITY_SCRIPT, new ExplorationEntityScriptPainter(this));
 		painters.put(GameStates.FADE_IN, new ExplorationFadeInPainter(this));
 		painters.put(GameStates.FADE_OUT, new ExplorationFadeOutPainter(this));
 		painters.put(GameStates.EXPLORATION_START_MENU, new ExplorationStartMenuPainter(this));
-		
-		
-		activeMaps = new ArrayList<>();
-		Map map = Maps.getMap(Config.getValue("game.active-map"));
-		setActiveMap(map, player.getOverworldEntity(), true);
-		
-		
-		currentState = GameStates.current();
-		
-
-		GlobalKeyEventHandler keyHandler = GlobalKeyEventHandler.instance();
+	}
+	
+	@Override
+	protected void initKeyHandlers() {
 		keyHandler.add(new ExplorationKeyPressHandler(this), GameStates.EXPLORATION);
 		keyHandler.add(new ExplorationEntityScriptKeyPressHandler(this), GameStates.EXPLORATION_ENTITY_SCRIPT);
 		keyHandler.add(new ExplorationStartMenuKeyPressHandler(this), GameStates.EXPLORATION_START_MENU);

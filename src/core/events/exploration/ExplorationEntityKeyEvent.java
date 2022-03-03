@@ -3,7 +3,7 @@ package core.events.exploration;
 import core.enums.Directions;
 import core.enums.GameStates;
 import core.events.GlobalKeyEvent;
-import core.gui.screen.content.exploration.ExplorationKeyPressHandler;
+import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
 import core.obj.entities.overworld.OverworldEntity;
 import lombok.Getter;
 

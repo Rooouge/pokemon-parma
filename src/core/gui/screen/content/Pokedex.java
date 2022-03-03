@@ -2,26 +2,33 @@ package core.gui.screen.content;
 
 import java.awt.Graphics2D;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 import core.enums.GameStates;
 import core.gui.interfaces.Painter;
+import core.gui.screen.content.pokedex.keypresshandlers.PokedexKeyPressHandler;
 import core.gui.screen.content.pokedex.painters.PokedexPainter;
 
 @SuppressWarnings("serial")
-public class Pokedex extends Content {
-
-	private GameStates currentState;
-	private final Map<GameStates, Painter<Pokedex>> painters;
-	
+public class Pokedex extends Content<Pokedex> {	
 	
 	public Pokedex() throws IOException {
 		currentState = GameStates.current();
-		
-		painters = new HashMap<>();
+
+		initPainters();
+		initKeyHandlers();
+	}
+	
+	
+	@Override
+	protected void initKeyHandlers() {
+		keyHandler.add(new PokedexKeyPressHandler(this), GameStates.POKEDEX);
+	}
+	
+	@Override
+	protected void initPainters() throws IOException {
 		painters.put(GameStates.POKEDEX, new PokedexPainter(this));
 	}
+	
 	
 	@Override
 	protected void paintComponent(Graphics2D g) {

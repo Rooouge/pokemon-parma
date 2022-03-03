@@ -8,16 +8,17 @@ import core.enums.GameStates;
 import core.events.GlobalKeyEvent;
 import core.files.SoundsHandler;
 import core.gui.interfaces.OnKeyPressHandler;
+import jutils.gui.ColoredPanel;
 
 public class ExplorationStartMenuKeyEvent extends GlobalKeyEvent {
 
 	
 	private final GameStates toSet;
 	private final Clip clip;
-	private final Function<GameStates, OnKeyPressHandler> ref;
+	private final Function<GameStates, OnKeyPressHandler<? extends ColoredPanel>> ref;
 	
 	
-	public ExplorationStartMenuKeyEvent(int keyCode, GameStates state, Function<GameStates, OnKeyPressHandler> ref) {
+	public ExplorationStartMenuKeyEvent(int keyCode, GameStates state, Function<GameStates, OnKeyPressHandler<? extends ColoredPanel>> ref) {
 		super(keyCode);
 		this.state = state;
 		this.ref = ref;

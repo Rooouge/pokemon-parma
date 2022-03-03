@@ -3,21 +3,28 @@ package core.gui.screen.content;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import core.Core;
+import core.enums.GameStates;
+import core.gui.interfaces.Painter;
+import core.gui.screen.GlobalKeyEventHandler;
 import core.obj.actions.Action;
 import jutils.gui.ColoredPanel;
 import lombok.Getter;
 
 @SuppressWarnings("serial")
 @Getter
-public class Content extends ColoredPanel {
+public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 
 	protected final List<Action> actions;
 	protected final List<Action> toAdd;
-	
+	protected final GlobalKeyEventHandler keyHandler;
+	protected final java.util.Map<GameStates, Painter<T>> painters;
+	protected GameStates currentState;
 	
 	
 	public Content() {
@@ -26,6 +33,12 @@ public class Content extends ColoredPanel {
 		
 		actions = new ArrayList<>();
 		toAdd = new ArrayList<>();
+		
+
+		painters = new HashMap<>();
+		keyHandler = GlobalKeyEventHandler.instance();
+		
+		currentState = GameStates.current();
 	}
 	
 
@@ -83,4 +96,8 @@ public class Content extends ColoredPanel {
 	public boolean hasNoAction() {
 		return actions.isEmpty();
 	}
+	
+	
+	protected abstract void initKeyHandlers();
+	protected abstract void initPainters() throws IOException;
 }

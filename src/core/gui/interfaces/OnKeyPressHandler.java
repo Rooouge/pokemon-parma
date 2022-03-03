@@ -2,12 +2,18 @@ package core.gui.interfaces;
 
 import java.awt.event.KeyEvent;
 
-public abstract class OnKeyPressHandler {
+import jutils.gui.ColoredPanel;
+import lombok.Getter;
 
+public abstract class OnKeyPressHandler<T extends ColoredPanel> {
+
+	@Getter
+	protected final T parent;
 	protected boolean pressed;
 	
 	
-	public OnKeyPressHandler() {
+	public OnKeyPressHandler(T parent) {
+		this.parent = parent;
 		pressed = false;
 	}
 	

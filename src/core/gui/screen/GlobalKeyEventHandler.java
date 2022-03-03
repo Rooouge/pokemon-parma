@@ -8,6 +8,7 @@ import java.util.Map;
 import core.enums.GameStates;
 import core.gui.interfaces.OnKeyPressHandler;
 import jutils.global.Global;
+import jutils.gui.ColoredPanel;
 
 public class GlobalKeyEventHandler implements KeyListener {
 
@@ -18,7 +19,7 @@ public class GlobalKeyEventHandler implements KeyListener {
 	}
 	
 	
-	protected Map<GameStates, OnKeyPressHandler> handlers;
+	protected Map<GameStates, OnKeyPressHandler<? extends ColoredPanel>> handlers;
 	protected boolean sleep; // Allow only one key pressed at a time
 	protected KeyEvent event;
 	
@@ -29,7 +30,7 @@ public class GlobalKeyEventHandler implements KeyListener {
 	}
 	
 	
-	public void add(OnKeyPressHandler l, GameStates state) {
+	public void add(OnKeyPressHandler<? extends ColoredPanel> l, GameStates state) {
 		if(!handlers.containsValue(l))		
 			handlers.put(state, l);
 	}
@@ -38,17 +39,17 @@ public class GlobalKeyEventHandler implements KeyListener {
 		return clazz.cast(handlers.get(state));
 	}
 	
-	public static OnKeyPressHandler get(GameStates state) {
+	public static OnKeyPressHandler<? extends ColoredPanel> get(GameStates state) {
 		return instance().handlers.get(state);
 	}
 	
-	public void remove(OnKeyPressHandler l, GameStates state) {
+	public void remove(OnKeyPressHandler<? extends ColoredPanel> l, GameStates state) {
 		if(!handlers.containsValue(l) || handlers.isEmpty())
 			handlers.remove(state, l);
 	}
 	
 	public void update() throws Exception {
-		OnKeyPressHandler handler = handlers.get(Global.get("state", GameStates.class));
+		OnKeyPressHandler<? extends ColoredPanel> handler = handlers.get(Global.get("state", GameStates.class));
 		if(handler == null)
 			return;
 		

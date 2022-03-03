@@ -8,7 +8,7 @@ import core.events.exploration.EntityMovementAction;
 import core.gui.screen.GlobalKeyEventHandler;
 import core.gui.screen.content.ContentSettings;
 import core.gui.screen.content.Exploration;
-import core.gui.screen.content.exploration.ExplorationKeyPressHandler;
+import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.maps.entities.MapEntitiesHandler;
