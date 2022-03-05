@@ -16,7 +16,7 @@ public class PokemonPokedexData {
 	
 	
 	public PokemonPokedexData(Node root) {
-		this(root, PokedexPokemonStates.CAUGHT);
+		this(root, PokedexPokemonStates.random());
 	}
 	
 	public PokemonPokedexData(Node root, PokedexPokemonStates state) {

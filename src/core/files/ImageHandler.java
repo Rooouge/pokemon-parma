@@ -58,7 +58,10 @@ public class ImageHandler {
 	public TiledImage getPokemonEnemyImage(int id, boolean shiny) throws IOException {
 		BufferedImage input = ImageIO.read(getImageFile("" + id, "pokemon"));
 		
-		return resize(input.getSubimage(shiny ? (int) (input.getWidth()*2f/5f) : 0, 0, input.getWidth()/5, input.getHeight()), 3f/4f);
+		BufferedImage subImage = input.getSubimage(shiny ? (int) (input.getWidth()*2f/5f) : 0, 0, input.getWidth()/5, input.getHeight());
+		System.out.println("- " + subImage.getWidth() + " x " + subImage.getHeight());
+		
+		return resize(subImage, 3f/4f);
 	}
 	
 	/*
@@ -78,13 +81,15 @@ public class ImageHandler {
 	}
 	
 	public TiledImage resize(BufferedImage input, float refactor) {
-		int resize = (int) (ContentSettings.tileResize * refactor);
+		float resize = ContentSettings.tileResize * refactor;
 		
-		BufferedImage image = new BufferedImage(input.getWidth()*resize, input.getHeight()*resize, input.getType());
+		BufferedImage image = new BufferedImage((int) (input.getWidth()*resize), (int) (input.getHeight()*resize), input.getType());
 		Graphics g = image.getGraphics();
 		
 		g.drawImage(input, 0, 0, image.getWidth(), image.getHeight(), null);
 		g.dispose();
+		
+		System.out.println("-- " + image.getWidth() + " x " + image.getHeight());
 		
 		return new TiledImage(optimize(image));
 	}
