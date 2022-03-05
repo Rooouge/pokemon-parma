@@ -12,10 +12,10 @@ import core.gui.screen.content.exploration.keypresshandlers.ExplorationEntityScr
 import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
 import core.gui.screen.content.exploration.keypresshandlers.ExplorationStartMenuKeyPressHandler;
 import core.gui.screen.content.exploration.painters.ExplorationEntityScriptPainter;
-import core.gui.screen.content.exploration.painters.ExplorationFadeInPainter;
-import core.gui.screen.content.exploration.painters.ExplorationFadeOutPainter;
 import core.gui.screen.content.exploration.painters.ExplorationPainter;
 import core.gui.screen.content.exploration.painters.ExplorationStartMenuPainter;
+import core.gui.screen.content.painters.FadeInPainter;
+import core.gui.screen.content.painters.FadeOutPainter;
 import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.entities.player.Player;
 import core.obj.maps.Map;
@@ -63,10 +63,17 @@ public class Exploration extends Content<Exploration> {
 	
 	@Override
 	protected void initPainters() {
+		/*
+		 * Required
+		 */
+		painters.put(GameStates.FADE_IN, new FadeInPainter<Exploration>(this, GameStates.EXPLORATION));
+		painters.put(GameStates.FADE_OUT, new FadeOutPainter<Exploration>(this, GameStates.NONE));
+		
+		/*
+		 * Others
+		 */
 		painters.put(GameStates.EXPLORATION, new ExplorationPainter(this));
 		painters.put(GameStates.EXPLORATION_ENTITY_SCRIPT, new ExplorationEntityScriptPainter(this));
-		painters.put(GameStates.FADE_IN, new ExplorationFadeInPainter(this));
-		painters.put(GameStates.FADE_OUT, new ExplorationFadeOutPainter(this));
 		painters.put(GameStates.EXPLORATION_START_MENU, new ExplorationStartMenuPainter(this));
 	}
 	

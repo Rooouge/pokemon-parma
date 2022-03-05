@@ -5,6 +5,8 @@ import java.io.IOException;
 
 import core.enums.GameStates;
 import core.gui.interfaces.Painter;
+import core.gui.screen.content.painters.FadeInPainter;
+import core.gui.screen.content.painters.FadeOutPainter;
 import core.gui.screen.content.pokedex.keypresshandlers.PokedexKeyPressHandler;
 import core.gui.screen.content.pokedex.painters.PokedexPainter;
 
@@ -22,6 +24,15 @@ public class Pokedex extends Content<Pokedex> {
 	
 	@Override
 	protected void initKeyHandlers() {
+		/*
+		 * Required
+		 */
+		painters.put(GameStates.FADE_IN, new FadeInPainter<Pokedex>(this, GameStates.POKEDEX));
+		painters.put(GameStates.FADE_OUT, new FadeOutPainter<Pokedex>(this, GameStates.EXPLORATION_START_MENU));
+		
+		/*
+		 * Others
+		 */
 		keyHandler.add(new PokedexKeyPressHandler(this), GameStates.POKEDEX);
 	}
 	

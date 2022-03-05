@@ -59,9 +59,13 @@ public class ImageHandler {
 		BufferedImage input = ImageIO.read(getImageFile("" + id, "pokemon"));
 		
 		BufferedImage subImage = input.getSubimage(shiny ? (int) (input.getWidth()*2f/5f) : 0, 0, input.getWidth()/5, input.getHeight());
-		System.out.println("- " + subImage.getWidth() + " x " + subImage.getHeight());
-		
 		return resize(subImage, 3f/4f);
+	}
+	
+	public TiledImage getUnknownImage() throws IOException {
+		BufferedImage input = ImageIO.read(getImageFile("unknown", "pokemon"));
+		
+		return resize(input, 3f/4f);
 	}
 	
 	/*
@@ -88,8 +92,6 @@ public class ImageHandler {
 		
 		g.drawImage(input, 0, 0, image.getWidth(), image.getHeight(), null);
 		g.dispose();
-		
-		System.out.println("-- " + image.getWidth() + " x " + image.getHeight());
 		
 		return new TiledImage(optimize(image));
 	}

@@ -1,4 +1,4 @@
-package core.gui.screen.content.exploration.painters;
+package core.gui.screen.content.painters;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -7,20 +7,22 @@ import java.awt.Graphics2D;
 import core.enums.GameStates;
 import core.gui.interfaces.Painter;
 import core.gui.screen.content.ContentSettings;
-import core.gui.screen.content.Exploration;
 import jutils.config.Config;
+import jutils.gui.ColoredPanel;
 
-public class ExplorationFadeOutPainter extends Painter<Exploration> {
+public class FadeOutPainter<T extends ColoredPanel> extends Painter<T> {
 
 	private final int fadeTime;
+	private final GameStates state;
 	private final Dimension dim;
 	private int tick;
 	
 	
-	public ExplorationFadeOutPainter(Exploration parent) {
+	public FadeOutPainter(T parent, GameStates state) {
 		super(parent);
 		
-		fadeTime = Integer.parseInt(Config.getValue("screen.fade-in"));
+		fadeTime = Integer.parseInt(Config.getValue("screen.fade"));
+		this.state = state;
 		dim = ContentSettings.dimension;
 	}
 	
@@ -33,7 +35,7 @@ public class ExplorationFadeOutPainter extends Painter<Exploration> {
 		tick++;
 		if(tick >= fadeTime) {
 			tick = 0;
-			GameStates.set(GameStates.NONE);
+			GameStates.set(state);
 		}
 	}
 

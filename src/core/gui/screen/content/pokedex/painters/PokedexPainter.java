@@ -48,8 +48,8 @@ public class PokedexPainter extends Painter<Pokedex> {
 		defColor = Color.decode("#0088FF");
 		selColor = Color.decode("#00BBFF");
 		
-		unknown = ImageHandler.resize(ImageHandler.getImage("unknown", "pokemon").getImage(), 1f/5f);
-		caught = ImageHandler.resize(ImageHandler.getImage("caught", "pokedex").getImage(), 1f/8f);
+		unknown = ImageHandler.getUnknownImage();
+		caught = ImageHandler.resize(ImageHandler.getImage("caught", "pokedex").getImage(), 1f/(ContentSettings.tileResize*2f));
 		
 		refreshImage();
 	}
@@ -94,7 +94,6 @@ public class PokedexPainter extends Painter<Pokedex> {
 			g.drawString(i + ") " + str, listX, y);
 		}
 
-		System.out.println(drawImage.getWidth() + " x " + drawImage.getHeight());
 		g.drawImage(drawImage.getImage(), (int) (ContentSettings.tileSize*5f/4f), (int) (ContentSettings.tileSize*5f/2f), null);
 	}
 	
