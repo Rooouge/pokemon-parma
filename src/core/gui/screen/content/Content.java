@@ -12,7 +12,9 @@ import java.util.Timer;
 import core.Core;
 import core.enums.GameStates;
 import core.gui.interfaces.Painter;
+import core.gui.screen.GameScreen;
 import core.gui.screen.GlobalKeyEventHandler;
+import core.gui.screen.painters.ScreenPainter;
 import core.obj.actions.Action;
 import jutils.gui.ColoredPanel;
 import lombok.Getter;
@@ -27,6 +29,7 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	protected final java.util.Map<GameStates, Painter<T>> painters;
 	protected final Timer deallocator;
 	protected final boolean forceChache;
+	protected final ScreenPainter screenPainter;
 	protected GameStates currentState;
 	
 	
@@ -41,7 +44,8 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 		
 		this.forceChache = forceCache;
 		deallocator = new Timer();
-		
+
+		screenPainter = GameScreen.instance().getPainter();
 		currentState = GameStates.current();
 	}
 	
@@ -49,13 +53,20 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	@Override
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		paintComponent((Graphics2D) g);
+		Graphics2D g2d = (Graphics2D) g;
+		paintComponent(g2d);
+		afterPaint(g2d);
 	}
 	
 	protected void paintComponent(Graphics2D g) {
 		g.setColor(Color.white);
 		g.drawString("Current fps: " + Core.fps, 10, 20);
 	}
+	
+	protected void afterPaint(Graphics2D g) {
+		screenPainter.paint(g);
+	}
+	
 	
 	public void update() throws Exception {
 		List<Action> over = new ArrayList<>();

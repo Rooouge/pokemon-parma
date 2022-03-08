@@ -7,7 +7,9 @@ import java.util.TimerTask;
 import javax.swing.JFrame;
 
 import core.Log;
+import core.enums.GameStates;
 import core.gui.screen.content.Content;
+import core.gui.screen.painters.ScreenPainter;
 import jutils.config.Config;
 import jutils.global.Global;
 import jutils.gui.ColoredPanel;
@@ -20,25 +22,19 @@ public class GameScreen extends JFrame {
 	public static final String KEY = "screen";
 	
 	private final Map<String, Content<? extends ColoredPanel>> map;
-	private Content<? extends ColoredPanel> content;
 	@Getter
-	private int maxFps;
-	private GlobalKeyEventHandler keyHandler;
+	private final ScreenPainter painter;
+	@Getter
+	private final int maxFps;
+	private final GlobalKeyEventHandler keyHandler;
+	@Getter
+	private Content<? extends ColoredPanel> content;
 	
 	
 	public GameScreen(Class<? extends Content<? extends ColoredPanel>> contentClass) throws Exception {
-		map = new HashMap<>();
-		init(contentClass);
 		Global.add(KEY, this);
-	}
-	
-	
-	public static GameScreen instance() {
-		return Global.get(KEY, GameScreen.class);
-	}
-	
-	
-	private void init(Class<? extends Content<? extends ColoredPanel>> contentClass) throws Exception {
+		map = new HashMap<>();
+		
 		maxFps = Integer.parseInt(Config.getValue("screen.max-fps"));
 		setTitle(Config.getValue("screen.title"));
 		addWindowListener(new OnExitListener());
@@ -49,12 +45,20 @@ public class GameScreen extends JFrame {
 		Global.add(GlobalKeyEventHandler.KEY, keyHandler);
 		Log.log("GlobalKeyEventHandler initialized.");
 		
-		switchContent(contentClass);
-		setToCenter();
+		painter = new ScreenPainter(this);
+		painter.fadeIn(GameStates.EXPLORATION);
 		
+		switchContent(contentClass);
+		setToCenter();		
 		setResizable(false);
 		requestFocus();
 	}
+	
+	
+	public static GameScreen instance() {
+		return Global.get(KEY, GameScreen.class);
+	}
+	
 	
 	public void setToCenter() {
 		setLocationRelativeTo(null);
