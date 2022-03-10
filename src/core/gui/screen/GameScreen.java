@@ -1,5 +1,7 @@
 package core.gui.screen;
 
+import java.awt.CardLayout;
+import java.awt.Color;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TimerTask;
@@ -27,12 +29,17 @@ public class GameScreen extends JFrame {
 	@Getter
 	private final int maxFps;
 	private final GlobalKeyEventHandler keyHandler;
+	private final CardLayout layout;
+	private final ColoredPanel pane;
 	@Getter
 	private Content<? extends ColoredPanel> content;
 	
 	
 	public GameScreen(Class<? extends Content<? extends ColoredPanel>> contentClass) throws Exception {
 		Global.add(KEY, this);
+		layout = new CardLayout();
+		pane = new ColoredPanel(Color.black, layout);
+		setContentPane(pane);
 		map = new HashMap<>();
 		
 		maxFps = Integer.parseInt(Config.getValue("screen.max-fps"));
@@ -81,10 +88,13 @@ public class GameScreen extends JFrame {
 				content.getDeallocator().schedule(new TimerTask() {
 					@Override
 					public void run() {
-						Log.log("Checking " + name + " with " + content.getClass().getSimpleName());
+						String className = contentClass.getSimpleName();
+						Log.log("Checking " + name + " with " + className);
+						
 						if(!test.equals(content)) {
 							Log.log("Memory of " + name + " is now free");
-							map.remove(test.getClass().getName());
+							Content<? extends ColoredPanel> panel = map.remove(name);
+							remove(panel);
 						} else {
 							Log.log("Not removing " + name);
 						}
@@ -93,15 +103,19 @@ public class GameScreen extends JFrame {
 			}
 		}
 		
-		if(!map.containsKey(contentClass.getName())) {
+		String className = contentClass.getSimpleName();
+		if(!map.containsKey(className)) {
 			content = contentClass.getDeclaredConstructor().newInstance();
-			map.put(contentClass.getName(), content);
+			map.put(className, content);
+			add(content, className);
+			layout.show(pane, className);
 		} else {
-			content = map.get(contentClass.getName());
+			content = map.get(className);
+			layout.show(pane, className);
 		}
 		
 		Global.add("content", content);
-		setContentPane(content);
+//		setContentPane(content);
 		pack();
 	}
 	
