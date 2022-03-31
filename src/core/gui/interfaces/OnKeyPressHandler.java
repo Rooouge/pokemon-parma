@@ -2,6 +2,7 @@ package core.gui.interfaces;
 
 import java.awt.event.KeyEvent;
 
+import core.events.GlobalKeyEvent;
 import jutils.gui.ColoredPanel;
 import lombok.Getter;
 
@@ -20,7 +21,14 @@ public abstract class OnKeyPressHandler<T extends ColoredPanel> {
 	}
 	
 	
-	public abstract void onLoad();
+	public void onLoad() {
+		firstLoad = true;
+		
+		GlobalKeyEvent.schedule(250, () -> {
+			firstLoad = false;
+		});
+	}
+	
 	public abstract void keyPressed(KeyEvent e) throws Exception;
 	public abstract void keyReleased(KeyEvent e);
 	public abstract void update();

@@ -29,12 +29,6 @@ public class ExplorationStartMenuKeyPressHandler extends OnKeyPressHandler<Explo
 		keyMap.put(KeyEvent.VK_SPACE, new ExplorationStartMenuSpacebarEvent(KeyEvent.VK_SPACE, painter::get));
 	}
 	
-	
-	@Override
-	public void onLoad() {
-		firstLoad = true;
-	}
-	
 	@Override
 	public void keyPressed(KeyEvent e) throws Exception {
 		if(!pressed && !firstLoad) {

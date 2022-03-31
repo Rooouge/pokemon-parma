@@ -31,11 +31,6 @@ public class PokedexKeyPressHandler extends OnKeyPressHandler<Pokedex> {
 		keyMap.put(KeyEvent.VK_RIGHT, new PokedexArrowKeyEvent(KeyEvent.VK_RIGHT, painter::fastDown));
 	}
 	
-	
-	@Override
-	public void onLoad() {
-		firstLoad = true;
-	}
 
 	@Override
 	public void keyPressed(KeyEvent e) throws Exception {

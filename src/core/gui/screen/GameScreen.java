@@ -1,12 +1,12 @@
 package core.gui.screen;
 
 import java.awt.CardLayout;
-import java.awt.Color;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TimerTask;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 import core.Log;
 import core.enums.GameStates;
@@ -29,17 +29,14 @@ public class GameScreen extends JFrame {
 	@Getter
 	private final int maxFps;
 	private final GlobalKeyEventHandler keyHandler;
-	private final CardLayout layout;
-	private final ColoredPanel pane;
 	@Getter
 	private Content<? extends ColoredPanel> content;
+	private final CardLayout layout;
+	private final JPanel container;
 	
 	
 	public GameScreen(Class<? extends Content<? extends ColoredPanel>> contentClass) throws Exception {
 		Global.add(KEY, this);
-		layout = new CardLayout();
-		pane = new ColoredPanel(Color.black, layout);
-		setContentPane(pane);
 		map = new HashMap<>();
 		
 		maxFps = Integer.parseInt(Config.getValue("screen.max-fps"));
@@ -54,6 +51,10 @@ public class GameScreen extends JFrame {
 		
 		painter = new ScreenPainter(this);
 		painter.fadeIn(GameStates.EXPLORATION);
+		
+		layout = new CardLayout();
+		container = new JPanel(layout);
+		setContentPane(container);
 		
 		switchContent(contentClass);
 		setToCenter();		
@@ -83,18 +84,15 @@ public class GameScreen extends JFrame {
 		if(test != null) {
 			String name = test.getClass().getSimpleName();
 			if(content.isForceChache()) {
-				Log.log("Not checking " + name);
+				Log.log(name + " will be kept loaded");
 			} else {
 				content.getDeallocator().schedule(new TimerTask() {
 					@Override
 					public void run() {
-						String className = contentClass.getSimpleName();
-						Log.log("Checking " + name + " with " + className);
-						
+						Log.log("Checking " + name + " with " + content.getClass().getSimpleName());
 						if(!test.equals(content)) {
 							Log.log("Memory of " + name + " is now free");
-							Content<? extends ColoredPanel> panel = map.remove(name);
-							remove(panel);
+							map.remove(test.getClass().getName());
 						} else {
 							Log.log("Not removing " + name);
 						}
@@ -103,20 +101,20 @@ public class GameScreen extends JFrame {
 			}
 		}
 		
-		String className = contentClass.getSimpleName();
-		if(!map.containsKey(className)) {
+		String key = contentClass.getName();
+		if(!map.containsKey(key)) {
 			content = contentClass.getDeclaredConstructor().newInstance();
-			map.put(className, content);
-			add(content, className);
-			layout.show(pane, className);
+			map.put(contentClass.getName(), content);
+			add(content, key);
 		} else {
-			content = map.get(className);
-			layout.show(pane, className);
+			content = map.get(contentClass.getName());
 		}
 		
 		Global.add("content", content);
 //		setContentPane(content);
+		layout.show(container, key);
 		pack();
+		
 	}
 	
 }

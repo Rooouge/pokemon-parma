@@ -1,5 +1,8 @@
 package core.events;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import core.enums.GameStates;
 import jutils.global.Global;
 import lombok.Getter;
@@ -10,6 +13,8 @@ public abstract class GlobalKeyEvent {
 	protected final int keyCode;
 	protected GameStates state;
 	protected boolean active;
+	
+	private static final Timer timer = new Timer("GlobalKeyEventTimer");
 	
 	
 	public GlobalKeyEvent(int keyCode) {
@@ -32,4 +37,15 @@ public abstract class GlobalKeyEvent {
 	
 	
 	public abstract void execute();
+	
+	
+	public static void schedule(int mills, Runnable r) {
+		timer.schedule(new TimerTask() {
+			
+			@Override
+			public void run() {
+				r.run();
+			}
+		}, mills);
+	}
 }

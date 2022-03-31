@@ -43,6 +43,11 @@ public class ScreenPainter {
 		fadeOut.setActive(true);
 	}
 	
+	public void fadeOut(Runnable r) {
+		fadeOut.setOnEnd(r);
+		fadeOut();
+	}
+	
 	public boolean isFadingIn() {
 		return fadeIn.isActive();
 	}

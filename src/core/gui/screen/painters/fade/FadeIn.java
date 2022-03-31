@@ -17,7 +17,9 @@ public class FadeIn extends Fade {
 		if(tick == 0)
 			GameStates.set(start);
 		
-		g.setColor(new Color(0f, 0f, 0f, 1f - (1f*tick)/fadeTime));
+		Color c = new Color(0f, 0f, 0f, 1f - (1f*tick)/fadeTime);
+//		System.out.println("[IN]   " + c + " [a=" + c.getAlpha() + "]");
+		g.setColor(c);
 		g.fillRect(0, 0, dim.width, dim.height);
 		
 		tick++;

@@ -43,11 +43,6 @@ public class ExplorationKeyPressHandler extends OnKeyPressHandler<Exploration> {
 
 	
 	@Override
-	public void onLoad() {
-		// Empty
-	}
-	
-	@Override
 	public void keyPressed(KeyEvent e) throws Exception {
 		if(!pressed) {
 			if(keyMap.containsKey(e.getKeyCode()) && !keyMap.get(e.getKeyCode()).isActive()) {

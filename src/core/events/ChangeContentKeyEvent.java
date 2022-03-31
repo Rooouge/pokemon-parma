@@ -21,20 +21,19 @@ public class ChangeContentKeyEvent extends ChangeStateKeyEvent {
 	@Override
 	public void execute() {
 		Threads.run(() -> {
-			try {
-				GameScreen screen = GameScreen.instance();
-				ScreenPainter painter = screen.getPainter();
-				
-				painter.fadeOut();
-				while(painter.isFadingOut()) { System.out.println("Wait"); }
-				
-				screen.switchContent(clazz);
-				
-				painter.fadeIn(toSet);
-				super.execute();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+			GameScreen screen = GameScreen.instance();
+			ScreenPainter painter = screen.getPainter();
+			
+			painter.fadeOut(() -> {
+				try {
+					screen.switchContent(clazz);
+					
+					painter.fadeIn(toSet);
+					super.execute();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			});
 		});
 	}
 	
