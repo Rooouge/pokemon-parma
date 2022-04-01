@@ -8,8 +8,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Timer;
+import java.util.TimerTask;
 
 import core.Core;
+import core.Log;
 import core.enums.GameStates;
 import core.gui.interfaces.Painter;
 import core.gui.screen.GameScreen;
@@ -27,7 +29,7 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	protected final List<Action> toAdd;
 	protected final GlobalKeyEventHandler keyHandler;
 	protected final java.util.Map<GameStates, Painter<T>> painters;
-	protected final Timer deallocator;
+	protected Timer deallocator;
 	protected final boolean forceChache;
 	protected final ScreenPainter screenPainter;
 	protected GameStates currentState;
@@ -110,6 +112,18 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	
 	public boolean hasNoAction() {
 		return actions.isEmpty();
+	}
+	
+	public void scheduleDeallocation(TimerTask task) {
+		String name = getClass().getSimpleName();
+		int mills = 10000;
+		
+		deallocator.cancel();
+		deallocator.purge();
+		deallocator = new Timer();		
+		deallocator.schedule(task, mills);
+		
+		Log.log("Scheduled deallocation for " + name + " in " + (mills/1000) + " second(s)");
 	}
 	
 	

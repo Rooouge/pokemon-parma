@@ -86,7 +86,7 @@ public class GameScreen extends JFrame {
 			if(content.isForceChache()) {
 				Log.log(name + " will be kept loaded");
 			} else {
-				content.getDeallocator().schedule(new TimerTask() {
+				content.scheduleDeallocation(new TimerTask() {
 					@Override
 					public void run() {
 						Log.log("Checking " + name + " with " + content.getClass().getSimpleName());
@@ -97,7 +97,7 @@ public class GameScreen extends JFrame {
 							Log.log("Not removing " + name);
 						}
 					}
-				}, 10000);
+				});
 			}
 		}
 		
