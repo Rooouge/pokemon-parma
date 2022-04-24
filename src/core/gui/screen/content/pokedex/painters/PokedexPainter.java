@@ -24,6 +24,8 @@ public class PokedexPainter extends Painter<Pokedex> {
 	private final Font listFont;
 	private int listIndex;
 	private int listSelected;
+	private int tempIndex;
+	private int tempSelected;
 	private final TiledImage unknown;
 	private final TiledImage caught;
 	private final Color defColor;
@@ -36,14 +38,12 @@ public class PokedexPainter extends Painter<Pokedex> {
 		
 		background = ImageHandler.getImage("pokedex_background", "pokedex");
 		pokedex = PokedexHandler.get();
-		listIndex = 1;
 		
 		int tile = ContentSettings.tileSize;
 
 		listFont = new Font(Fonts.SCRIPT_TEXT_FONT.deriveFont(3f/4f*Fonts.SCRIPT_TEXT_FONT.getSize2D()));
 		listX = (ContentSettings.horTiles - 5)*tile;
 		firstListY = 2*tile - listFont.height();
-		listSelected = 0;
 		
 		defColor = Color.decode("#0088FF");
 		selColor = Color.decode("#00BBFF");
@@ -51,6 +51,10 @@ public class PokedexPainter extends Painter<Pokedex> {
 		unknown = ImageHandler.getUnknownImage();
 		caught = ImageHandler.resize(ImageHandler.getImage("caught", "pokedex").getImage(), 1f/(ContentSettings.tileResize*2f));
 		
+		listIndex = 1;
+		listSelected = 0;
+		tempIndex = listIndex;
+		tempSelected = listSelected;
 		refreshImage();
 	}
 	
@@ -101,11 +105,14 @@ public class PokedexPainter extends Painter<Pokedex> {
 	public void scrollDown() {
 //		System.out.println("D.PRE:   " + listSelected + " --- " + listIndex + " (" + pokedex.size() + ")");
 		
-		if(listSelected < 6) {
-			if((listIndex < 3 && (listSelected < 3 || listSelected <= listIndex)) || (listIndex == pokedex.size() - 7))
-				listSelected++;
+		tempIndex = listIndex;
+		tempSelected = listSelected;
+		
+		if(tempSelected < 6) {
+			if((tempIndex < 3 && (tempSelected < 3 || tempSelected <= tempIndex)) || (tempIndex == pokedex.size() - 7))
+				tempSelected++;
 			else 
-				listIndex++;
+				tempIndex++;
 		}
 		
 		refreshImage();
@@ -116,11 +123,14 @@ public class PokedexPainter extends Painter<Pokedex> {
 	public void scrollUp() {
 //		System.out.println("U.PRE:   " + listSelected + " --- " + listIndex + " (" + pokedex.size() + ")");
 		
-		if(listSelected > 0) {
-			if((listIndex > pokedex.size() - 10 && (listSelected > 3 || listSelected >= listIndex)) || (listIndex == 1))
-				listSelected--;
+		tempIndex = listIndex;
+		tempSelected = listSelected;
+		
+		if(tempSelected > 0) {
+			if((tempIndex > pokedex.size() - 10 && (tempSelected > 3 || tempSelected >= tempIndex)) || (tempIndex == 1))
+				tempSelected--;
 			else
-				listIndex--;
+				tempIndex--;
 		}
 		
 		refreshImage();
@@ -129,12 +139,15 @@ public class PokedexPainter extends Painter<Pokedex> {
 	}
 
 	public void fastDown() {
-		listIndex += 7;
-		listSelected = 3;
+		tempIndex = listIndex;
+		tempSelected = listSelected;
 		
-		if(listIndex > pokedex.size() - 7) {
-			listSelected = 6;
-			listIndex = pokedex.size() - 7;
+		tempIndex += 7;
+		tempSelected = 3;
+		
+		if(tempIndex > pokedex.size() - 7) {
+			tempSelected = 6;
+			tempIndex = pokedex.size() - 7;
 		}
 		
 		refreshImage();
@@ -143,12 +156,15 @@ public class PokedexPainter extends Painter<Pokedex> {
 	}
 	
 	public void fastUp() {
-		listIndex -= 7;
-		listSelected = 3;
+		tempIndex = listIndex;
+		tempSelected = listSelected;
 		
-		if(listIndex < 1) {
-			listIndex = 1;
-			listSelected = 0;
+		tempIndex -= 7;
+		tempSelected = 3;
+		
+		if(tempIndex < 1) {
+			tempIndex = 1;
+			tempSelected = 0;
 		}
 		
 		refreshImage();
@@ -160,12 +176,14 @@ public class PokedexPainter extends Painter<Pokedex> {
 	private void refreshImage() {
 		try {
 			image = ImageHandler.getPokemonEnemyImage(get().getData().getBaseData().getId(), false);
+			listIndex = tempIndex;
+			listSelected = tempSelected;
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 	
 	public PokemonPokedex get() {
-		return pokedex.get(listIndex + listSelected);
+		return pokedex.get(tempIndex + tempSelected);
 	}
 }
