@@ -41,6 +41,7 @@ public enum PokedexPokemonStates {
 	
 	
 	public static PokedexPokemonStates random() {
-		return getFromValue(new Random().nextInt(3) - 1);
+//		return getFromValue(new Random().nextInt(3) - 1);
+		return CAUGHT;
 	}
 }

@@ -24,7 +24,7 @@ public class PokedexKeyPressHandler extends OnKeyPressHandler<Pokedex> {
 		PokedexPainter painter = (PokedexPainter) parent.getPainters().get(GameStates.POKEDEX);
 		
 		keyMap = new HashMap<>();
-		keyMap.put(KeyEvent.VK_ESCAPE, new ChangeContentKeyEvent(KeyEvent.VK_ESCAPE, GameStates.POKEDEX, GameStates.EXPLORATION_START_MENU, Exploration.class));
+		keyMap.put(KeyEvent.VK_ESCAPE, new ChangeContentKeyEvent(KeyEvent.VK_ESCAPE, GameStates.POKEDEX, GameStates.EXPLORATION_START_MENU, Exploration.class, Pokedex.TURN_OFF));
 		keyMap.put(KeyEvent.VK_DOWN, new PokedexArrowKeyEvent(KeyEvent.VK_DOWN, painter::scrollDown));
 		keyMap.put(KeyEvent.VK_UP, new PokedexArrowKeyEvent(KeyEvent.VK_UP, painter::scrollUp));
 		keyMap.put(KeyEvent.VK_LEFT, new PokedexArrowKeyEvent(KeyEvent.VK_LEFT, painter::fastUp));

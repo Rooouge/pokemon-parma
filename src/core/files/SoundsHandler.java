@@ -12,7 +12,7 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class SoundsHandler {
 
-	public static final String SPACE_PRESS = "space_press";
+	public final String PRESS = "press";
 	
 	private Map<String, Clip> clips;
 	
@@ -20,7 +20,7 @@ public class SoundsHandler {
 	public void init() {
 		clips = new HashMap<>();
 		
-		register(SPACE_PRESS, getSound(SPACE_PRESS));
+		register(PRESS, getSound(PRESS));
 	}
 	
 	
@@ -69,7 +69,7 @@ public class SoundsHandler {
 		clip.start();
 	}
 
-	public static void playSound(String key) {
+	public void playSound(String key) {
 		playSound(get(key));
 	}
 }

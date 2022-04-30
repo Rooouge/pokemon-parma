@@ -11,6 +11,10 @@ import core.gui.screen.content.pokedex.painters.PokedexPainter;
 @SuppressWarnings("serial")
 public class Pokedex extends Content<Pokedex> {	
 	
+	public static final String TURN_ON = "pokédex-on";
+	public static final String TURN_OFF = "pokédex-off";
+	
+	
 	public Pokedex() throws IOException {
 		super(false);
 		currentState = GameStates.current();

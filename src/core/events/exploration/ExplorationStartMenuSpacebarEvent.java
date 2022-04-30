@@ -13,7 +13,7 @@ public class ExplorationStartMenuSpacebarEvent extends ChangeContentKeyEvent {
 	
 	
 	public ExplorationStartMenuSpacebarEvent(int keyCode, Supplier<StartMenuItems> ref) {
-		super(keyCode, GameStates.EXPLORATION_START_MENU, ref.get().getState(), Pokedex.class);
+		super(keyCode, GameStates.EXPLORATION_START_MENU, ref.get().getState(), Pokedex.class, Pokedex.TURN_ON);
 		this.ref = ref;
 	}
 	

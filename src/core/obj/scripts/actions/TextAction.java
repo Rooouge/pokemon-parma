@@ -27,7 +27,7 @@ public class TextAction extends ScriptAction {
 	public TextAction(String text) throws AssertException {
 		super(false, NO_DELAY);
 		
-		sound = SoundsHandler.get(SoundsHandler.SPACE_PRESS);
+		sound = SoundsHandler.get(SoundsHandler.PRESS);
 		
 		Font font = Fonts.SCRIPT_TEXT_FONT;
 		FontRenderContext frc = font.getFrc();
