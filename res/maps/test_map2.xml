@@ -36,7 +36,15 @@
 			fillRow(13,_w,OBSTACLE)
 		}
 
-		rows(11,15) {
+		rows(11,12) {
+			fillRow(0,6,OBSTACLE)
+			fillRow(7,7,WALK_0)
+			fillRow(8,11,WP_GRASS)
+			fillRow(12,12,WALK_0)
+			fillRow(13,_w,OBSTACLE)
+		}
+		
+		rows(13,15) {
 			fillRow(0,6,OBSTACLE)
 			fillRow(7,12,WALK_0)
 			fillRow(13,_w,OBSTACLE)
@@ -58,6 +66,19 @@
 			</spawnpoint>
 		</entity>
 	</entities>
+	<wilds>
+		<wild id="25" min="5" max="10" chance="1" bound="25"/>
+	</wilds>
+	<autotiles>
+		<autotile name="grass_bottom" pos="11,8"/>
+		<autotile name="grass_bottom" pos="11,9"/>
+		<autotile name="grass_bottom" pos="11,10"/>
+		<autotile name="grass_bottom" pos="11,11"/>
+		<autotile name="grass_bottom" pos="12,8"/>
+		<autotile name="grass_bottom" pos="12,9"/>
+		<autotile name="grass_bottom" pos="12,10"/>
+		<autotile name="grass_bottom" pos="12,11"/>
+	</autotiles>
 	<scripts>
 		<script type="tileScript" tile="15,8" />
 	</scripts>

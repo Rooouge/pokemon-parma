@@ -200,6 +200,15 @@ public class MapEntities extends ArrayList<OverworldEntity> {
 		add(pos1, temp);
 	}
 	
+	public boolean hasEntityInPos(GridPosition pos) {
+		for(OverworldEntity e : this) {
+			if(e.getData().getPos().equals(pos) && e.getData().isVisible())
+				return false;
+		}
+		
+		return true;
+	}
+	
 	
 	@Override
 	public String toString() {

@@ -2,7 +2,6 @@ package core.gui.screen.content.pokedex.keypresshandlers;
 
 import core.enums.GameStates;
 import core.events.GlobalKeyEvent;
-import core.files.SoundsHandler;
 import jutils.threads.Threads;
 
 public class PokedexArrowKeyEvent extends GlobalKeyEvent {
@@ -24,7 +23,7 @@ public class PokedexArrowKeyEvent extends GlobalKeyEvent {
 		exec = true;
 		thread = Threads.run(() -> {
 			do {
-				SoundsHandler.playSound(SoundsHandler.PRESS);
+//				SoundsHandler.playSound(SoundsHandler.PRESS);
 				ref.run();
 				try {
 					Thread.sleep(100);

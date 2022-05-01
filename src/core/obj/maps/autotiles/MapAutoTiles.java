@@ -41,15 +41,26 @@ public class MapAutoTiles extends ArrayList<AutoTile> {
 					args = br.readLine().split(";");
 				}
 				
-				int numOfSprite = Integer.parseInt(args[0]);
+				char typeChar = args[0].charAt(0);
+				int type;
+				switch (typeChar) {
+				case 'T':
+					type = AutoTile.TYPE_TOP;
+					break;
+				default:
+					type = AutoTile.TYPE_BOTTOM;
+					break;
+				}
+				
+				int numOfSprite = Integer.parseInt(args[1]);
 				int times = numOfSprite;
-				int delay = Integer.parseInt(args[1]);
+				int delay = Integer.parseInt(args[2]);
 				
 				
 				String[] posString = n.valueOf("@pos").split(",");
 				GridPosition pos = new GridPosition(Integer.parseInt(posString[0]), Integer.parseInt(posString[1]));
 				
-				AutoTile at = new AutoTile(resName, image, times, numOfSprite, delay);
+				AutoTile at = new AutoTile(resName, image, type, times, numOfSprite, delay);
 				spawn(at, pos);
 				Log.log("Added AutoTile '" + at.getResName() + "' at pos: " + at.getPos());
 			}

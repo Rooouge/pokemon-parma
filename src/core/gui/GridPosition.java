@@ -61,4 +61,9 @@ public class GridPosition {
 	private boolean after(GridPosition pos) {
 		return row > pos.row || (row == pos.row && column > pos.column);
 	}
+	
+	public GridPosition relative(int rows, int columns) {
+		return new GridPosition(this.row + rows, this.column + columns);
+	}
+	
 }

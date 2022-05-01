@@ -1,7 +1,5 @@
 package core.enums;
 
-import java.util.Random;
-
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

@@ -16,10 +16,14 @@ import core.obj.maps.autotiles.AutoTile;
 import core.obj.maps.autotiles.MapAutoTiles;
 import core.obj.maps.entities.MapEntities;
 import core.obj.maps.images.MapImages;
+import lombok.Setter;
 
 public class ExplorationPainter extends Painter<Exploration> {
 	
 	private final OnMapChangeLabel onMapChange;
+	@Setter
+	private boolean isMovingDown;
+	
 	
 	public ExplorationPainter(Exploration parent) {
 		super(parent);
@@ -43,12 +47,14 @@ public class ExplorationPainter extends Painter<Exploration> {
 			
 			g.drawImage(mImages.get(0).getImage(), mLoc.x, mLoc.y, null);
 			
-			//Drawing autotiles
+			//Drawing bottom autotiles
 			MapAutoTiles autoTiles = map.getAutoTiles();
 			for(AutoTile at : autoTiles) {
-				XYLocation atLoc = at.getLoc();
-				
-				g.drawImage(at.getImage().getImage(), atLoc.x, atLoc.y, null);
+				if(at.getType() == AutoTile.TYPE_BOTTOM) {
+					XYLocation atLoc = at.getLoc();
+					
+					g.drawImage(at.getImage().getImage(), atLoc.x, atLoc.y, null);
+				}
 			}
 		}
 		
@@ -70,6 +76,16 @@ public class ExplorationPainter extends Painter<Exploration> {
 					x = eLoc.x - ContentSettings.tileSize*eImage.getHorTilesDelta();
 					y = eLoc.y - ContentSettings.tileSize*eImage.getVerTilesDelta();
 					g.drawImage(eImage.getImage(), x, y, null);
+				}
+			}
+			
+			//Drawing top autotiles if no entity behind it
+			MapAutoTiles autoTiles = map.getAutoTiles();
+			for(AutoTile at : autoTiles) {
+				if(at.getType() == AutoTile.TYPE_TOP && !isMovingDown && !mEntities.hasEntityInPos(at.getPos().relative(0, 0))) {
+					XYLocation atLoc = at.getLoc();
+					
+					g.drawImage(at.getImage().getImage(), atLoc.x, atLoc.y, null);
 				}
 			}
 			

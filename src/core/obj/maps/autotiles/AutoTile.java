@@ -10,7 +10,12 @@ import lombok.Setter;
 
 @Getter
 public class AutoTile extends Animation {
+
+	public static final int TYPE_BOTTOM = 0;
+	public static final int TYPE_TOP = 1;
 	
+	
+	private final int type;
 	private final String resName;
 	@Setter
 	protected GridPosition originalPos;
@@ -21,8 +26,9 @@ public class AutoTile extends Animation {
 	private final TiledImage sourceImage;
 	
 	
-	public AutoTile(String resName, TiledImage sourceImage, int times, int numOfSprite, int delay) {
+	public AutoTile(String resName, TiledImage sourceImage, int type, int times, int numOfSprite, int delay) {
 		super(times, numOfSprite, delay);
+		this.type = type;
 		this.resName = resName;
 		this.sourceImage = sourceImage;
 		

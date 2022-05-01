@@ -87,14 +87,9 @@ public class MapUtils {
 		}
 		
 //		System.out.println(entity.getData().getName() + ": " + new GridPosition(nextRow, nextColumn) + " - " + grid.length + "," + grid[0].length);
-		if(TileMovements.canMoveTo(grid[nextRow][nextColumn])) {
+		if(TileMovements.canMove(grid[nextRow][nextColumn])) {
 			GridPosition newPos = new GridPosition(nextRow, nextColumn);
-			for(OverworldEntity e : activeMap.getEntities()) {
-				if(e.getData().getPos().equals(newPos) && e.getData().isVisible())
-					return false;
-			}
-			
-			return true;
+			return activeMap.getEntities().hasEntityInPos(newPos);
 		}
 					
 		return false;
