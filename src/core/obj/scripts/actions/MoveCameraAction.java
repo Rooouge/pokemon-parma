@@ -5,7 +5,7 @@ import core.enums.GameStates;
 import core.events.exploration.EntityMovementAction;
 import core.gui.screen.GlobalKeyEventHandler;
 import core.gui.screen.content.ContentSettings;
-import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.Exploration;
 import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
 import core.obj.scripts.ScriptAction;
 import jutils.global.Global;

@@ -12,14 +12,7 @@ import jutils.global.Global;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
-public class PokedexHandler {
-
-	public final String KEY = "pokedex";
-	
-	
-	public Pokedex get() {
-		return Global.get(KEY, Pokedex.class);
-	}
+public class PokedexHandler {	
 	
 	public void create() throws Exception {
 		Pokedex pokedex = new Pokedex();
@@ -36,7 +29,7 @@ public class PokedexHandler {
 			Log.log("- Founded Pokémon '" + data.getName() + "' with Id: " + data.getId());
 		}
 		
-		Global.add(KEY, pokedex);
+		Global.add(Pokedex.KEY, pokedex);
 	}
 	
 }

@@ -5,7 +5,7 @@ import java.awt.Dimension;
 import core.enums.Directions;
 import core.enums.TileMovements;
 import core.gui.GridPosition;
-import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.Exploration;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.overworld.OverworldEntityData;
 import core.obj.entities.overworld.PlayerOverworldEntity;

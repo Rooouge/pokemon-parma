@@ -13,7 +13,9 @@ public enum GameStates {
 	EXPLORATION_START_MENU,
 	EXPLORATION_WILD,
 	
-	POKEDEX;
+	POKEDEX,
+	
+	BATTLE;
 
 	
 	public static final String KEY = "state";

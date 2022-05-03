@@ -6,6 +6,10 @@ import java.util.Random;
 import org.dom4j.Node;
 
 import core.Log;
+import core.enums.TileMovements;
+import core.events.exploration.ExplorationBattleEventHandler;
+import core.gui.GridPosition;
+import core.obj.entities.player.Player;
 import core.obj.maps.Map;
 import lombok.Getter;
 
@@ -35,7 +39,20 @@ public class MapWild extends ArrayList<WildPokemonEvent> {
 	}
 	
 	
+	public void wildPokemonAttempt() {
+		GridPosition playerPos = Player.instance().getOverworldEntity().getData().getPos();
+		TileMovements tile = TileMovements.getFromValue(map.getMovement().getMovement(playerPos.row, playerPos.column));
+		
+		if(TileMovements.canSpawn(tile)) {
+			WildPokemonEvent evt = map.getWild().random();
+			
+			if(evt.attempt())
+				ExplorationBattleEventHandler.wildBattle(evt, tile);
+		}
+	}
+	
 	public WildPokemonEvent random() {
 		return get(new Random().nextInt(size()));
 	}
+	
 }

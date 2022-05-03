@@ -7,7 +7,7 @@ import core.files.TiledImage;
 import core.gui.XYLocation;
 import core.gui.interfaces.Painter;
 import core.gui.screen.content.ContentSettings;
-import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.Exploration;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.overworld.OverworldEntityData;
 import core.obj.maps.Map;

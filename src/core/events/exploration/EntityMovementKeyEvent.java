@@ -3,7 +3,7 @@ package core.events.exploration;
 import core.enums.Directions;
 import core.enums.GameStates;
 import core.gui.screen.content.ContentSettings;
-import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.Exploration;
 import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.maps.MapUtils;

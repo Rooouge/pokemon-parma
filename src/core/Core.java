@@ -6,8 +6,9 @@ import core.files.SoundsHandler;
 import core.fonts.Fonts;
 import core.gui.screen.GameScreen;
 import core.gui.screen.content.ContentSettings;
-import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.Exploration;
 import core.obj.maps.links.Links;
+import core.obj.pokemon.containers.Boxes;
 import core.obj.pokemon.entity.ExpHandler;
 import core.obj.pokemon.pokedex.PokedexHandler;
 import jutils.global.Global;
@@ -51,6 +52,10 @@ public class Core {
 		Log.log("Initializing map links...");
 		Links.init();
 		Log.log("Map links initialized.");
+		
+		Log.log("Initializing Pokémon boxes...");
+		Boxes.init();
+		Log.log("Pokémon boxes initialized.");
 		
 		Log.log("Initializing GameScreen...");		
 		screen = new GameScreen(Exploration.class);

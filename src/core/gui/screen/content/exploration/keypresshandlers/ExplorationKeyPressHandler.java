@@ -12,7 +12,7 @@ import core.events.exploration.EntityMovementKeyEvent;
 import core.events.exploration.EntityRunningKeyEvent;
 import core.events.exploration.ExplorationSpaceBarEvent;
 import core.gui.interfaces.OnKeyPressHandler;
-import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.Exploration;
 import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.entities.player.Player;
 import jutils.global.Global;

@@ -10,7 +10,7 @@ import org.dom4j.io.SAXReader;
 import core.Log;
 import core.enums.Stats;
 import core.files.XMLHandler;
-import core.obj.pokemon.pokedex.PokedexHandler;
+import core.obj.pokemon.pokedex.Pokedex;
 
 @SuppressWarnings("serial")
 public class EntityPokemonStats extends EnumMap<Stats, Integer> {
@@ -21,7 +21,7 @@ public class EntityPokemonStats extends EnumMap<Stats, Integer> {
 	
 	
 	public static EntityPokemonStats create(int id) throws Exception {
-		Log.log("Parsing stats for " + PokedexHandler.get().baseData(id).getName() + " (" + id + ")");
+		Log.log("Parsing stats for " + Pokedex.instance().baseData(id).getName() + " (" + id + ")");
 		
 		EntityPokemonStats stats = new EntityPokemonStats();
 		

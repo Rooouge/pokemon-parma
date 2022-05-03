@@ -8,7 +8,7 @@ import java.awt.Rectangle;
 
 import core.gui.interfaces.Painter;
 import core.gui.screen.content.ContentSettings;
-import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.Exploration;
 import core.obj.scripts.ScriptAction;
 import core.obj.scripts.actions.TextAction;
 import core.obj.scripts.actions.WaitPressAction;

@@ -2,7 +2,9 @@ package core.obj.pokemon.entity;
 
 import core.enums.Genders;
 import core.obj.pokemon.PokemonBaseData;
+import lombok.Getter;
 
+@Getter
 public class EntityPokemon {
 
 	protected final EntityPokemonData data;

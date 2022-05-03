@@ -4,8 +4,8 @@ import java.util.function.Supplier;
 
 import core.enums.GameStates;
 import core.events.ChangeContentKeyEvent;
-import core.gui.screen.content.Pokedex;
 import core.gui.screen.content.exploration.painters.StartMenuItems;
+import core.gui.screen.content.pokedex.Pokedex;
 
 public class ExplorationStartMenuSpacebarEvent extends ChangeContentKeyEvent {
 

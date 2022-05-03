@@ -9,7 +9,7 @@ import core.events.GlobalKeyEvent;
 import core.events.exploration.ExplorationStartMenuArrowKeyEvent;
 import core.events.exploration.ExplorationStartMenuSpacebarEvent;
 import core.gui.interfaces.OnKeyPressHandler;
-import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.Exploration;
 import core.gui.screen.content.exploration.painters.ExplorationStartMenuPainter;
 
 public class ExplorationStartMenuKeyPressHandler extends OnKeyPressHandler<Exploration> {

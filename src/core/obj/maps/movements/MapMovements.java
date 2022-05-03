@@ -4,25 +4,21 @@ import java.io.IOException;
 
 import org.dom4j.Node;
 
-import core.Log;
 import core.enums.Directions;
 import core.enums.GameStates;
-import core.enums.TileMovements;
 import core.gui.GridPosition;
 import core.gui.XYLocation;
 import core.gui.screen.content.ContentSettings;
-import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.Exploration;
 import core.gui.screen.content.exploration.painters.ExplorationPainter;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.overworld.OverworldEntityData;
 import core.obj.entities.overworld.PlayerOverworldEntity;
-import core.obj.entities.player.Player;
 import core.obj.maps.Map;
 import core.obj.maps.MapData;
 import core.obj.maps.autotiles.AutoTile;
 import core.obj.maps.autotiles.MapAutoTiles;
 import core.obj.maps.entities.MapEntities;
-import core.obj.maps.wild.WildPokemonEvent;
 import jutils.global.Global;
 import lombok.Getter;
 
@@ -90,16 +86,7 @@ public class MapMovements {
 				entities.checkPos(indexToCheck, direction); //Resets entity drawing order
 				
 				// Checking possible wild Pokémon spawn
-				GridPosition playerPos = Player.instance().getOverworldEntity().getData().getPos();
-				TileMovements tile = TileMovements.getFromValue(map.getMovement().getMovement(playerPos.row, playerPos.column));
-				
-				if(TileMovements.canSpawn(tile)) {
-					WildPokemonEvent evt = map.getWild().random();
-					if(evt.attempt()) {
-						Log.log(evt.generate().toString());
-						GameStates.set(GameStates.EXPLORATION_WILD);
-					}
-				}
+				map.getWild().wildPokemonAttempt();
 			}
 		}
 		

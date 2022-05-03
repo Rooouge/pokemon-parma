@@ -11,7 +11,7 @@ import core.enums.GameStates;
 import core.fonts.Font;
 import core.gui.interfaces.Painter;
 import core.gui.screen.content.ContentSettings;
-import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.Exploration;
 import core.obj.entities.player.Player;
 
 public class ExplorationStartMenuPainter extends Painter<Exploration> {

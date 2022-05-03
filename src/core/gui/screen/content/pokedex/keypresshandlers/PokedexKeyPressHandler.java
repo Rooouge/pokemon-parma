@@ -9,8 +9,8 @@ import core.events.ChangeContentKeyEvent;
 import core.events.ChangeStateKeyEvent;
 import core.events.GlobalKeyEvent;
 import core.gui.interfaces.OnKeyPressHandler;
-import core.gui.screen.content.Exploration;
-import core.gui.screen.content.Pokedex;
+import core.gui.screen.content.exploration.Exploration;
+import core.gui.screen.content.pokedex.Pokedex;
 import core.gui.screen.content.pokedex.painters.PokedexPainter;
 
 public class PokedexKeyPressHandler extends OnKeyPressHandler<Pokedex> {

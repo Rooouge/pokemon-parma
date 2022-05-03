@@ -62,6 +62,13 @@ public class ImageHandler {
 		return resize(subImage, 3f/4f);
 	}
 	
+	public TiledImage getPokemonPlayerImage(int id, boolean shiny) throws IOException {
+		BufferedImage input = ImageIO.read(getImageFile("" + id, "pokemon"));
+		
+		BufferedImage subImage = input.getSubimage(shiny ? (int) (input.getWidth()*3f/5f) : (int) (input.getWidth()*1f/5f), 0, input.getWidth()/5, input.getHeight());
+		return resize(subImage, 3f/4f);
+	}
+	
 	public TiledImage getUnknownImage() throws IOException {
 		BufferedImage input = ImageIO.read(getImageFile("unknown", "pokemon"));
 		
@@ -87,6 +94,7 @@ public class ImageHandler {
 	public TiledImage resize(BufferedImage input, float refactor) {
 		float resize = ContentSettings.tileResize * refactor;
 		
+//		System.out.println("--- " + input.getWidth() + " - " + input.getHeight() + " [R: " + refactor + ", " + resize + "]");
 		BufferedImage image = new BufferedImage((int) (input.getWidth()*resize), (int) (input.getHeight()*resize), input.getType());
 		Graphics g = image.getGraphics();
 		
@@ -127,4 +135,7 @@ public class ImageHandler {
 	}
 	
 	
+	public boolean isTransparent(int pixel) {
+		return (pixel>>24) == 0x00;
+	}
 }

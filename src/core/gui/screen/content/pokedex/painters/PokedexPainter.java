@@ -11,8 +11,7 @@ import core.fonts.Font;
 import core.fonts.Fonts;
 import core.gui.interfaces.Painter;
 import core.gui.screen.content.ContentSettings;
-import core.gui.screen.content.Pokedex;
-import core.obj.pokemon.pokedex.PokedexHandler;
+import core.gui.screen.content.pokedex.Pokedex;
 import core.obj.pokemon.pokedex.PokemonPokedex;
 
 public class PokedexPainter extends Painter<Pokedex> {
@@ -37,7 +36,7 @@ public class PokedexPainter extends Painter<Pokedex> {
 		super(parent);
 		
 		background = ImageHandler.getImage("pokedex_background", "pokedex");
-		pokedex = PokedexHandler.get();
+		pokedex = core.obj.pokemon.pokedex.Pokedex.instance();
 		
 		int tile = ContentSettings.tileSize;
 

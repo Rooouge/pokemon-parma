@@ -1,10 +1,11 @@
-package core.gui.screen.content;
+package core.gui.screen.content.pokedex;
 
 import java.awt.Graphics2D;
 import java.io.IOException;
 
 import core.enums.GameStates;
 import core.gui.interfaces.Painter;
+import core.gui.screen.content.Content;
 import core.gui.screen.content.pokedex.keypresshandlers.PokedexKeyPressHandler;
 import core.gui.screen.content.pokedex.painters.PokedexPainter;
 

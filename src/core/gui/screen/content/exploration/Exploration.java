@@ -1,4 +1,4 @@
-package core.gui.screen.content;
+package core.gui.screen.content.exploration;
 
 import java.awt.Graphics2D;
 import java.util.ArrayList;
@@ -8,6 +8,8 @@ import core.Log;
 import core.enums.GameStates;
 import core.files.MusicHandler;
 import core.gui.interfaces.Painter;
+import core.gui.screen.content.Content;
+import core.gui.screen.content.ContentSettings;
 import core.gui.screen.content.exploration.keypresshandlers.ExplorationEntityScriptKeyPressHandler;
 import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
 import core.gui.screen.content.exploration.keypresshandlers.ExplorationStartMenuKeyPressHandler;
@@ -153,6 +155,10 @@ public class Exploration extends Content<Exploration> {
 				painter.paint(g);
 			break;
 		case EXPLORATION_START_MENU:
+			painters.get(GameStates.EXPLORATION).paint(g);
+			if(painter != null)
+				painter.paint(g);
+		case EXPLORATION_WILD:
 			painters.get(GameStates.EXPLORATION).paint(g);
 			if(painter != null)
 				painter.paint(g);

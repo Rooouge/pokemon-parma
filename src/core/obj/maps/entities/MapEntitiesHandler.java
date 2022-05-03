@@ -9,7 +9,7 @@ import java.util.Random;
 import core.enums.Directions;
 import core.enums.MovementsDescriptor;
 import core.gui.screen.content.ContentSettings;
-import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.Exploration;
 import core.obj.actions.SequenceAction;
 import core.obj.animation.OverworldMovementAction;
 import core.obj.entities.overworld.OverworldEntity;

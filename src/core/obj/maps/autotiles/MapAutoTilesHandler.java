@@ -3,7 +3,7 @@ package core.obj.maps.autotiles;
 import java.util.Date;
 import java.util.Random;
 
-import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.Exploration;
 
 public class MapAutoTilesHandler {
 

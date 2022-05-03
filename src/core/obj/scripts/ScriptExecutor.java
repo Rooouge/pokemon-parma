@@ -1,7 +1,7 @@
 package core.obj.scripts;
 
 import core.enums.GameStates;
-import core.gui.screen.content.Exploration;
+import core.gui.screen.content.exploration.Exploration;
 import core.gui.screen.content.exploration.keypresshandlers.ExplorationEntityScriptKeyPressHandler;
 import core.gui.screen.content.exploration.painters.ExplorationEntityScriptPainter;
 import lombok.experimental.UtilityClass;
