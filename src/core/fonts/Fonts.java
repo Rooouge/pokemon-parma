@@ -10,7 +10,8 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class Fonts {
 
-	public static Font SCRIPT_TEXT_FONT;
+	public Font SCRIPT_TEXT_FONT;
+	public Font BATTLE_FONT;
 	
 	
 	public void init() throws Exception {
@@ -20,5 +21,10 @@ public class Fonts {
 		ge.registerFont(font);
 		Log.log("Registered Font '" + font.getName() + "'");
 		SCRIPT_TEXT_FONT = new Font(new java.awt.Font(font.getName(), Font.TRUETYPE_FONT, 12*ContentSettings.tileResize));
+		
+		font = Font.createFont(Font.TRUETYPE_FONT, FileHandler.getFile("fonts", "Power Green", "ttf"));
+		ge.registerFont(font);
+		Log.log("Registered Font '" + font.getName() + "'");
+		BATTLE_FONT = new Font(new java.awt.Font(font.getName(), Font.TRUETYPE_FONT, 6*ContentSettings.tileResize));
 	}
 }

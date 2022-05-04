@@ -13,7 +13,7 @@ import core.gui.screen.content.battle.Battle;
 import core.obj.entities.player.Player;
 import core.obj.pokemon.entity.EntityPokemon;
 
-public class BattlePlayerPainter extends Painter<Battle> {
+public class BattlePlayerPokemonPainter extends Painter<Battle> {
 
 	private final EntityPokemon player;
 	private final TiledImage playerImage;
@@ -22,7 +22,7 @@ public class BattlePlayerPainter extends Painter<Battle> {
 	private final Point terrainPoint;
 	
 	
-	public BattlePlayerPainter(Battle parent) throws IOException {
+	public BattlePlayerPokemonPainter(Battle parent) throws IOException {
 		super(parent);
 		
 		player = Player.instance().getTeam().get(0);

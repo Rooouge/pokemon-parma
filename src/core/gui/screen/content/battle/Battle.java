@@ -12,8 +12,9 @@ import core.events.battle.BattleEvent;
 import core.gui.interfaces.Painter;
 import core.gui.screen.content.Content;
 import core.gui.screen.content.battle.painters.BattleBackgroundPainter;
-import core.gui.screen.content.battle.painters.BattleEnemyPainter;
-import core.gui.screen.content.battle.painters.BattlePlayerPainter;
+import core.gui.screen.content.battle.painters.BattleEnemyPokemonLabelPainter;
+import core.gui.screen.content.battle.painters.BattleEnemyPokemonPainter;
+import core.gui.screen.content.battle.painters.BattlePlayerPokemonPainter;
 import lombok.Getter;
 
 @SuppressWarnings("serial")
@@ -45,11 +46,17 @@ public class Battle extends Content<Battle> {
 
 	@Override
 	protected void initPainters() throws IOException {
+		BattleBackgroundPainter bbp = new BattleBackgroundPainter(this);
+		BattlePlayerPokemonPainter bppp = new BattlePlayerPokemonPainter(this);
+		BattleEnemyPokemonPainter bepp = new BattleEnemyPokemonPainter(this);
+		BattleEnemyPokemonLabelPainter beplp = new BattleEnemyPokemonLabelPainter(this);
+		
 		// BATTLE
 		List<Painter<Battle>> battlePainter = new ArrayList<>();
-		battlePainter.add(new BattleBackgroundPainter(this));
-		battlePainter.add(new BattlePlayerPainter(this));
-		battlePainter.add(new BattleEnemyPainter(this));
+		battlePainter.add(bbp);
+		battlePainter.add(bppp);
+		battlePainter.add(bepp);
+		battlePainter.add(beplp);
 		
 		painterLists.put(GameStates.BATTLE, battlePainter);
 	}

@@ -13,8 +13,7 @@ import core.gui.screen.content.ContentSettings;
 import core.gui.screen.content.battle.Battle;
 import core.obj.pokemon.entity.EntityPokemon;
 
-public class BattleEnemyPainter extends Painter<Battle> {
-
+public class BattleEnemyPokemonPainter extends Painter<Battle> {
 
 	private final EntityPokemon enemy;
 	private final TiledImage enemyImage;
@@ -23,7 +22,7 @@ public class BattleEnemyPainter extends Painter<Battle> {
 	private final Point terrainPoint;
 	
 	
-	public BattleEnemyPainter(Battle parent) throws IOException {
+	public BattleEnemyPokemonPainter(Battle parent) throws IOException {
 		super(parent);
 		
 		WildPokemonBattle wildBattle = (WildPokemonBattle) parent.getBattle();
