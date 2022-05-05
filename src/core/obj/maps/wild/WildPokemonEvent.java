@@ -2,6 +2,7 @@ package core.obj.maps.wild;
 
 import java.util.Random;
 
+import core.enums.Genders;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
@@ -17,6 +18,7 @@ public class WildPokemonEvent {
 	private final int bound;
 	private int level;
 	private boolean shiny;
+	private Genders gender;
 	
 	
 	public boolean attempt() {
@@ -30,6 +32,7 @@ public class WildPokemonEvent {
 		
 		level = random.nextInt(maxLevel-minLevel) + minLevel;
 		shiny = random.nextInt(8192) == 0;
+		gender = Genders.randomWild();
 		
 		return this;
 	}

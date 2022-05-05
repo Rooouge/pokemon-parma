@@ -30,8 +30,9 @@ public class EntityPokemonData {
 	}
 	
 	public void setLevel(int level) {
-		if(level > this.level) {
+		if(level != this.level) {
 			exp.setExp(level);
+			this.level = level;
 		}
 	}
 }

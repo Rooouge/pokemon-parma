@@ -22,4 +22,8 @@ public class Font extends java.awt.Font {
 	public int height() {
 		return (int)(getStringBounds("SAMPLE", frc)).getHeight();
 	}
+	
+	public int getWidth(String s) {
+		return (int)(getStringBounds(s, frc)).getWidth();
+	}
 }

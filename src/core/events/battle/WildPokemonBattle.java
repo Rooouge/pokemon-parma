@@ -16,7 +16,7 @@ public class WildPokemonBattle extends BattleEvent {
 	public WildPokemonBattle(WildPokemonEvent event, TileMovements tile) throws Exception {
 		super(tile);
 		this.event = event;
-		entityPokemon = new EntityPokemon(Pokedex.instance().baseData(event.getId()));
+		entityPokemon = new EntityPokemon(Pokedex.instance().baseData(event.getId())).level(event.getLevel()).gender(event.getGender()).shiny(event.isShiny());
 	}
 	
 }
