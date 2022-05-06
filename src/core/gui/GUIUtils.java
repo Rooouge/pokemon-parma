@@ -3,9 +3,20 @@ package core.gui;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
+import javax.imageio.ImageIO;
+
+import core.gui.screen.GameScreen;
 import core.gui.screen.content.ContentSettings;
+import jutils.asserts.Assert;
+import jutils.config.Config;
+import jutils.log.Log;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
@@ -21,6 +32,25 @@ public class GUIUtils {
 		
 		g.setColor(preColor);
 	}
+	
+	public void fillRect(Graphics2D g, Rectangle r, Color c) {
+		Color pre = g.getColor();
+		
+		g.setColor(c);
+		g.fillRect(r.x, r.y, r.width, r.height);
+		
+		g.setColor(pre);
+	}
+	
+	public void fillRoungRect(Graphics2D g, Rectangle r, Color c, int arcW, int arcH) {
+		Color pre = g.getColor();
+		
+		g.setColor(c);
+		g.fillRoundRect(r.x, r.y, r.width, r.height, arcW, arcH);
+		
+		g.setColor(pre);
+	}
+	
 	
 	public void drawString(Graphics g, String string, int x, int y, Color color) {
 		Color preColor = g.getColor();
@@ -51,5 +81,26 @@ public class GUIUtils {
 		}
 		
 		return gridImage;
+	}
+	
+	
+	public void screenshot() {
+		Log.info("Saving screenshot...");
+		try {
+			File folder = new File(Config.getValue("screenshot-output"));
+			Assert.isTrue(folder.exists() && folder.isDirectory(), "Impossibile salvare screenshot: la cartella specificata non esiste o non è una cartella");
+			
+			String filename = new SimpleDateFormat("yyyy-MM-dd hh-mm-ss").format(new Date()) + ".png";
+			File file = new File(folder, filename);
+			
+			BufferedImage img = new BufferedImage(ContentSettings.dimension.width, ContentSettings.dimension.height, BufferedImage.TYPE_INT_RGB);
+			GameScreen.instance().getContent().paint(img.getGraphics());
+			ImageIO.write(img, "png", file);
+			
+			Log.info("Screenshot created: " + file.getAbsolutePath());
+		} catch(Exception e) {
+			Log.error("Failed to create screenshot: " + e.getLocalizedMessage());
+			e.printStackTrace();
+		}
 	}
 }

@@ -16,7 +16,7 @@ public class PokemonBaseData {
 	
 	public PokemonBaseData(Node root) {
 		id = Integer.parseInt(root.valueOf("@id"));
-		name = root.valueOf("@name");
+		name = root.valueOf("@name").toUpperCase();
 		mainType = Types.getFromName(root.valueOf("@maintype"));
 		secondaryType = Types.getFromName(root.valueOf("@secondarytype"));
 	}

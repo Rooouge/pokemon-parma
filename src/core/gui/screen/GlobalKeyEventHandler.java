@@ -6,6 +6,7 @@ import java.util.EnumMap;
 import java.util.Map;
 
 import core.enums.GameStates;
+import core.gui.GUIUtils;
 import core.gui.interfaces.OnKeyPressHandler;
 import jutils.global.Global;
 import jutils.gui.ColoredPanel;
@@ -90,7 +91,9 @@ public class GlobalKeyEventHandler implements KeyListener {
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		if(event != null && event.getKeyCode() == e.getKeyCode())
+		if(e.getKeyCode() == KeyEvent.VK_F2)
+			GUIUtils.screenshot();
+		else if(event != null && event.getKeyCode() == e.getKeyCode())
 			event = e;
 	}
 }

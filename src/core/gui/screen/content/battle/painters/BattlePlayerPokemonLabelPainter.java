@@ -68,7 +68,7 @@ public class BattlePlayerPokemonLabelPainter extends Painter<Battle> {
 		
 		
 		name = player.getData().getDisplayName();
-		namePoint = new Point(labelPoint.x + 32*labelImage.getWidth()/185, labelPoint.y + 17*labelImage.getHeight()/66);
+		namePoint = new Point(labelPoint.x + 32*labelImage.getWidth()/185, labelPoint.y + 20*labelImage.getHeight()/66);
 		nameFont = new Font(Fonts.BATTLE_FONT.deriveFont(3f*Fonts.BATTLE_FONT.getSize2D()/2f));
 		
 		gender = player.getData().getGender();

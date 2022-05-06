@@ -14,6 +14,7 @@ import core.gui.screen.content.Content;
 import core.gui.screen.content.battle.painters.BattleBackgroundPainter;
 import core.gui.screen.content.battle.painters.BattleEnemyPokemonLabelPainter;
 import core.gui.screen.content.battle.painters.BattleEnemyPokemonPainter;
+import core.gui.screen.content.battle.painters.BattleIntroPainter;
 import core.gui.screen.content.battle.painters.BattlePlayerPokemonLabelPainter;
 import core.gui.screen.content.battle.painters.BattlePlayerPokemonPainter;
 import lombok.Getter;
@@ -52,6 +53,7 @@ public class Battle extends Content<Battle> {
 		BattlePlayerPokemonLabelPainter bpplp = new BattlePlayerPokemonLabelPainter(this);
 		BattleEnemyPokemonPainter bepp = new BattleEnemyPokemonPainter(this);
 		BattleEnemyPokemonLabelPainter beplp = new BattleEnemyPokemonLabelPainter(this);
+		BattleIntroPainter bip = new BattleIntroPainter(this);
 		
 		// BATTLE
 		List<Painter<Battle>> battlePainter = new ArrayList<>();
@@ -60,8 +62,9 @@ public class Battle extends Content<Battle> {
 		battlePainter.add(bpplp);
 		battlePainter.add(bepp);
 		battlePainter.add(beplp);
+		battlePainter.add(bip);
 		
-		painterLists.put(GameStates.BATTLE, battlePainter);
+		painterLists.put(GameStates.BATTLE_INTRO, battlePainter);
 	}
 
 	
@@ -70,7 +73,6 @@ public class Battle extends Content<Battle> {
 		if(!currentState.name().startsWith("BATTLE"))
 			return;
 		
-//		System.out.println(currentState + ": " + painterLists.get(currentState));
 		for(Painter<Battle> p : painterLists.get(currentState)) {
 			p.paint(g);
 		}

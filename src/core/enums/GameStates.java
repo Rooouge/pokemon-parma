@@ -15,7 +15,12 @@ public enum GameStates {
 	
 	POKEDEX,
 	
-	BATTLE;
+	BATTLE_INTRO,
+	BATTLE_OPTIONS,
+	BATTLE_FIRST_MOVE,
+	BATTLE_SECOND_MOVE,
+	BATTLE_POST_MOVES,
+	BATTLE_CHECK_OVER;
 
 	
 	public static final String KEY = "state";

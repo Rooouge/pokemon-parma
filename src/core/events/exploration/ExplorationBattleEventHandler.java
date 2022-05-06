@@ -26,7 +26,7 @@ public class ExplorationBattleEventHandler {
 				try {
 					screen.switchContent(Battle.class);
 					Global.get("content", Battle.class).setEvent(new WildPokemonBattle(event, tile));
-					painter.fadeIn(GameStates.BATTLE);
+					painter.fadeIn(GameStates.BATTLE_INTRO);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

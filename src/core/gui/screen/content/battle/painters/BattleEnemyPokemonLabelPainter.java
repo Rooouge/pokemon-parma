@@ -58,7 +58,7 @@ public class BattleEnemyPokemonLabelPainter extends Painter<Battle> {
 		
 		
 		name = enemy.getData().getDisplayName();
-		namePoint = new Point(labelPoint.x + 12*labelImage.getWidth()/175, labelPoint.y + 17*labelImage.getHeight()/62);
+		namePoint = new Point(labelPoint.x + 12*labelImage.getWidth()/175, labelPoint.y + 20*labelImage.getHeight()/62);
 		nameFont = new Font(Fonts.BATTLE_FONT.deriveFont(3f*Fonts.BATTLE_FONT.getSize2D()/2f));
 		
 		gender = enemy.getData().getGender();
