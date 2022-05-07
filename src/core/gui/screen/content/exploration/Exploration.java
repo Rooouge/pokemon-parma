@@ -96,7 +96,7 @@ public class Exploration extends Content<Exploration> {
 		if(!init) {
 			Map aMap = getActiveMap();
 			aMap.getEntities().remove(pEntity);
-			MusicHandler.stopMapMusic(aMap.getData());
+			MusicHandler.stopMapMusic(aMap);
 			map.getEntities().respawnAll();
 			map.getAutoTiles().respawnAll();
 		} else {			
@@ -118,7 +118,7 @@ public class Exploration extends Content<Exploration> {
 			});
 		}
 		
-		MusicHandler.playMapMusic(map.getData());
+		MusicHandler.playMapMusic(map);
 		onMapChange = true;
 		
 		entityHandler = new MapEntitiesHandler(ContentSettings.tileOriginalSize, map.getEntities(), 2, this);

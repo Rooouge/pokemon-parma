@@ -6,7 +6,7 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class Log {
 	
-	private LogLevel logLevel = new LogLevel("2DCORE", System.out);
+	private LogLevel logLevel = new LogLevel("CORE", System.out);
 	
 	
 	public void log(String msg) {

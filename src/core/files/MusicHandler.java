@@ -3,6 +3,7 @@ package core.files;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
+import core.obj.maps.Map;
 import core.obj.maps.MapData;
 import jutils.threads.Threads;
 import lombok.experimental.UtilityClass;
@@ -24,8 +25,9 @@ public class MusicHandler {
 	}
 	
 	
-	public void playMapMusic(MapData data) {
+	public void playMapMusic(Map map) {
 		Threads.run(() -> {
+			MapData data = map.getData();
 			Clip music = data.getMusic();
 			
 			music.setFramePosition(0);
@@ -39,8 +41,8 @@ public class MusicHandler {
 		});
 	}
 	
-	public void stopMapMusic(MapData data) {
-		Clip music = data.getMusic();
+	public void stopMapMusic(Map map) {
+		Clip music = map.getData().getMusic();
 		music.stop();
 		music.setFramePosition(0);
 	}

@@ -12,6 +12,7 @@ public class EntityPokemonData {
 	protected final PokemonBaseData baseData;
 	protected final EntityPokemonStats stats;
 	protected final EntityPokemonExpHandler exp;
+	protected final EntityPokemonMoves moves;
 	protected int level;
 	protected String nickname;
 	protected Genders gender;
@@ -22,6 +23,7 @@ public class EntityPokemonData {
 		this.baseData = baseData;
 		stats = EntityPokemonStats.create(baseData.getId());
 		exp = new EntityPokemonExpHandler(baseData.getId());
+		moves = new EntityPokemonMoves();
 	}
 	
 	
