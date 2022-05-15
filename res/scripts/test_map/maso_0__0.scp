@@ -1,0 +1,29 @@
+text "MASO:  TOSO... Quante volte te lo devo dire?! Non andare in pressing su ALLE!"
+waitpress
+wait 1
+text "TOSO:  Si ma se non usciamo in pressing, poi lui calcia da fuori e fa gol..."
+waitpress
+wait 1
+text "MASO:  Ok, ma se si trova uno davanti al massimo gli calcia addosso, se esci ti salta!"
+waitpress
+wait 1
+text "TOSO:  Ma no! Se non usciamo in pressing, sai che ALLE ha un buon tiro, segna sicuro"
+waitpress
+wait 3
+text "MASO:  ..."
+waitpress
+wait 1
+text "MASO:  Io ci rinuncio..."
+waitpress
+move maso-0_left
+move maso-0_left
+face player_left
+move maso-0_left
+move maso-0_left
+move maso-0_left
+move maso-0_left
+move maso-0_left
+move maso-0_left
+move maso-0_left
+hide maso-0
+state 1

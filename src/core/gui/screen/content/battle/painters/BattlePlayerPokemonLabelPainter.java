@@ -32,6 +32,10 @@ public class BattlePlayerPokemonLabelPainter extends Painter<Battle> {
 	private final Color hpBarBackground;
 	private Color hpBarColor;
 	private int hpBarLimit;
+	
+	private String hp;
+	private Point hpPoint;
+	private final Font hpFont;
 
 	private final Rectangle expBarBounds;
 	private final Color expBarBackground;
@@ -79,6 +83,7 @@ public class BattlePlayerPokemonLabelPainter extends Painter<Battle> {
 		levelFont = new Font(nameFont.deriveFont(2f*nameFont.getSize2D()/3f));
 		levelPoint = new Point(labelPoint.x + 172*labelImage.getWidth()/185 - levelFont.getWidth(level), namePoint.y);
 		
+		hpFont = new Font(levelFont.deriveFont(2f*levelFont.getSize2D()/3f));
 		
 		refresh();
 	}
@@ -108,21 +113,27 @@ public class BattlePlayerPokemonLabelPainter extends Painter<Battle> {
 		g.setFont(nameFont);
 		g.drawString(name, namePoint.x, namePoint.y);
 		
-		//Gender
+		// Gender
 		g.setColor(gender.getColor());
 		g.setFont(genderFont);
 		g.drawString(gender.getCode() + "", genderPoint.x, genderPoint.y);
 		
-		//Level
+		// Level
 		g.setColor(Colors.GRAY_32);
 		g.setFont(levelFont);
 		g.drawString(level, levelPoint.x, levelPoint.y);
+		
+		// HP
+		g.setColor(Colors.GRAY_32);
+		g.setFont(hpFont);
+		g.drawString(hp, hpPoint.x, hpPoint.y);
 	}
 	
 	
 	public void refresh() {
 		setHpBar();
 		setExpBar();
+		setHp();
 	}
 	
 	private void setHpBar() {
@@ -167,6 +178,14 @@ public class BattlePlayerPokemonLabelPainter extends Painter<Battle> {
 		
 //		System.out.println("LV: " + levelExp + ", NX: " + nextLevelExp + ", AC: " + actualExp + ", MX: " + maxExp);
 //		System.out.println("W: " + expBarBounds.getWidth() + ", L: " + expBarLimit);
+	}
+	
+	private void setHp() {
+		EntityPokemonStats stats = player.getData().getStats();
+		int hp = stats.get(Stats.HP);
+		int hpTot = stats.get(Stats.TOT_HP);
 		
+		this.hp = hp + "/" + hpTot;
+		hpPoint = new Point(labelPoint.x + 172*labelImage.getWidth()/185 - hpFont.getWidth(this.hp), labelPoint.y + 50*labelImage.getHeight()/66);
 	}
 }

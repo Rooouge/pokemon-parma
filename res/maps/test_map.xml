@@ -1,6 +1,6 @@
 <map>
 	<name name="Test Map"/>
-	<label value="Community Area"/>
+	<label value="Vicofertile"/>
 	<size>
 		<width>40</width>
 		<height>23</height>
@@ -34,50 +34,22 @@
 	</movements>
 	<entities>
 		<entity>
-			<name>Gazza-0</name>
+			<name>Maso-0</name>
 			<spawnpoint>
-				<row>10</row>
-				<column>10</column>
-				<facing>2</facing>
-			</spawnpoint>
-			<visible>false</visible>
-		</entity>
-		<entity>
-			<name>Seba-0</name>
-			<spawnpoint>
-				<row>12</row>
-				<column>15</column>
+				<row>11</row>
+				<column>19</column>
 				<facing>3</facing>
 			</spawnpoint>
-			<movements>moving-hor</movements>
-			<visible>false</visible>
-		</entity>
-		<entity>
-			<name>Zappa-0</name>
-			<spawnpoint>
-				<row>15</row>
-				<column>25</column>
-				<facing>3</facing>
-			</spawnpoint>
-			<movements>facing</movements>
-			<visible>false</visible>
-		</entity>
-		<entity>
-			<name>Clara-0</name>
-			<spawnpoint>
-				<row>16</row>
-				<column>18</column>
-				<facing>3</facing>
-			</spawnpoint>
+			<visible>true</visible>
 		</entity>
 		<entity>
 			<name>Giubi-0</name>
 			<spawnpoint>
-				<row>7</row>
-				<column>19</column>
+				<row>11</row>
+				<column>20</column>
 				<facing>2</facing>
 			</spawnpoint>
-			<visible>false</visible>
+			<visible>true</visible>
 		</entity>
 	</entities>
 	<autotiles>

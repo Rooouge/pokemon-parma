@@ -3,7 +3,8 @@ package core.enums;
 public enum MoveTypes {
 	PHYSICAL,
     SPECIAL,
-    STATE,
+    STATUS,
+    STAT,
     CLIMATE,
     CHANGE;
 	

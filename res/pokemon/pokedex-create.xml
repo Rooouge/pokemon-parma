@@ -69,7 +69,7 @@
 	<pokemon id="68" name="Machamp" maintype="FIGHTING" secondarytype="NULL"/>
 	<pokemon id="69" name="Bellsprout" maintype="GRASS" secondarytype="POISON"/>
 	<pokemon id="70" name="Weepinbell" maintype="GRASS" secondarytype="POISON"/>
-	<pokemon id="71" name="Victribell" maintype="GRASS" secondarytype="POISON"/>
+	<pokemon id="71" name="Victreebel" maintype="GRASS" secondarytype="POISON"/>
 	<pokemon id="72" name="Tentacool" maintype="WATER" secondarytype="POISON"/>
 	<pokemon id="73" name="Tentacruel" maintype="WATER" secondarytype="POISON"/>
 	<pokemon id="74" name="Geodude" maintype="ROCK" secondarytype="GROUND"/>
@@ -100,7 +100,7 @@
 	<pokemon id="99" name="Kingler" maintype="WATER" secondarytype="NULL"/>
 	<pokemon id="100" name="Voltorb" maintype="ELECTRIC" secondarytype="NULL"/>
 	<pokemon id="101" name="Electrode" maintype="ELECTRIC" secondarytype="NULL"/>
-	<pokemon id="102" name="Exeggute" maintype="GRASS" secondarytype="PSYCHIC"/>
+	<pokemon id="102" name="Exeggcute" maintype="GRASS" secondarytype="PSYCHIC"/>
 	<pokemon id="103" name="Exeggutor" maintype="GRASS" secondarytype="PSYCHIC"/>
 	<pokemon id="104" name="Cubone" maintype="GROUND" secondarytype="NULL"/>
 	<pokemon id="105" name="Marowak" maintype="GROUND" secondarytype="NULL"/>
@@ -233,7 +233,7 @@
 	<pokemon id="232" name="Donphan" maintype="GROUND" secondarytype="NULL"/>
 	<pokemon id="233" name="Porygon2" maintype="NORMAL" secondarytype="NULL"/>
 	<pokemon id="234" name="Stantler" maintype="NORMAL" secondarytype="NULL"/>
-	<pokemon id="235" name="Smeralge" maintype="NORMAL" secondarytype="NULL"/>
+	<pokemon id="235" name="Smeargle" maintype="NORMAL" secondarytype="NULL"/>
 	<pokemon id="236" name="Tyrogue" maintype="PSYCHIC" secondarytype="NULL"/>
 	<pokemon id="237" name="Hitmontop" maintype="PSYCHIC" secondarytype="NULL"/>
 	<pokemon id="238" name="Smoochum" maintype="ICE" secondarytype="PSYCHIC"/>
@@ -309,8 +309,8 @@
 	<pokemon id="308" name="Medicham" maintype="FIGHTING" secondarytype="PSYCHIC"/>
 	<pokemon id="309" name="Electrike" maintype="ELECTRIC" secondarytype="NULL"/>
 	<pokemon id="310" name="Manectric" maintype="ELECTRIC" secondarytype="NULL"/>
-	<pokemon id="311" name="Pluse" maintype="ELECTRIC" secondarytype="NULL"/>
-	<pokemon id="312" name="Minum" maintype="ELECTRIC" secondarytype="NULL"/>
+	<pokemon id="311" name="Plusle" maintype="ELECTRIC" secondarytype="NULL"/>
+	<pokemon id="312" name="Minun" maintype="ELECTRIC" secondarytype="NULL"/>
 	<pokemon id="313" name="Volbeat" maintype="BUG" secondarytype="NULL"/>
 	<pokemon id="314" name="Illumise" maintype="BUG" secondarytype="NULL"/>
 	<pokemon id="315" name="Roselia" maintype="GRASS" secondarytype="POISON"/>
@@ -333,7 +333,7 @@
 	<pokemon id="332" name="Cacturne" maintype="GRASS" secondarytype="DARK"/>
 	<pokemon id="333" name="Swablu" maintype="NORMAL" secondarytype="FLYING"/>
 	<pokemon id="334" name="Altaria" maintype="DRAGON" secondarytype="FLYING"/>
-	<pokemon id="335" name="Zangzoose" maintype="NORMAL" secondarytype="NULL"/>
+	<pokemon id="335" name="Zangoose" maintype="NORMAL" secondarytype="NULL"/>
 	<pokemon id="336" name="Seviper" maintype="POISON" secondarytype="NULL"/>
 	<pokemon id="337" name="Lunatone" maintype="ROCK" secondarytype="PSYCHIC"/>
 	<pokemon id="338" name="Solrock" maintype="ROCK" secondarytype="PSYCHIC"/>
@@ -359,12 +359,12 @@
 	<pokemon id="358" name="Chimecho" maintype="PSYCHIC" secondarytype="NULL"/>
 	<pokemon id="359" name="Absol" maintype="DARK" secondarytype="NULL"/>
 	<pokemon id="360" name="Wynaut" maintype="PSYCHIC" secondarytype="NULL"/>
-	<pokemon id="361" name="Snorut" maintype="ICE" secondarytype="NULL"/>
+	<pokemon id="361" name="Snorunt" maintype="ICE" secondarytype="NULL"/>
 	<pokemon id="362" name="Glalie" maintype="ICE" secondarytype="NULL"/>
 	<pokemon id="363" name="Spheal" maintype="ICE" secondarytype="WATER"/>
 	<pokemon id="364" name="Sealeo" maintype="ICE" secondarytype="WATER"/>
 	<pokemon id="365" name="Walrein" maintype="ICE" secondarytype="WATER"/>
-	<pokemon id="366" name="Clampert" maintype="WATER" secondarytype="NULL"/>
+	<pokemon id="366" name="Clamperl" maintype="WATER" secondarytype="NULL"/>
 	<pokemon id="367" name="Huntail" maintype="WATER" secondarytype="NULL"/>
 	<pokemon id="368" name="Gorebyss" maintype="WATER" secondarytype="NULL"/>
 	<pokemon id="369" name="Relicanth" maintype="ROCK" secondarytype="NULL"/>

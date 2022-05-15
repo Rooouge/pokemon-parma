@@ -10,6 +10,7 @@ import core.gui.screen.content.exploration.Exploration;
 import core.obj.maps.links.Links;
 import core.obj.pokemon.containers.Boxes;
 import core.obj.pokemon.entity.ExpHandler;
+import core.obj.pokemon.moves.Dictionary;
 import core.obj.pokemon.pokedex.PokedexHandler;
 import jutils.global.Global;
 import jutils.threads.Threads;
@@ -36,6 +37,10 @@ public class Core {
 		Log.log("Creating new Pokédex...");
 		PokedexHandler.create();
 		Log.log("Pokédex succesfully created...");
+		
+		Log.log("Initializing moves Dictionary...");
+		Dictionary.init();
+		Log.log("Moves Dictionary initialized.");
 		
 		Log.log("Initializing sounds...");
 		SoundsHandler.init();
