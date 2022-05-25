@@ -13,12 +13,18 @@ public class ChangeContentKeyEvent extends ChangeStateKeyEvent {
 
 	private final Class<? extends Content<? extends ColoredPanel>> clazz;
 	private final String soundKey;
+	private Runnable extra;
 	
 	
 	public ChangeContentKeyEvent(int keyCode, GameStates state, GameStates toSet, Class<? extends Content<? extends ColoredPanel>> clazz, String soundKey) {
 		super(keyCode, state, toSet);
 		this.clazz = clazz;
 		this.soundKey = soundKey;
+	}
+	
+	public ChangeContentKeyEvent withExtra(Runnable extra) {
+		this.extra = extra;
+		return this;
 	}
 	
 
@@ -34,6 +40,10 @@ public class ChangeContentKeyEvent extends ChangeStateKeyEvent {
 						SoundsHandler.playSound(soundKey);
 					
 					screen.switchContent(clazz);
+					
+					if(extra != null)
+						extra.run();
+					
 					painter.fadeIn(toSet);
 					super.execute();
 				} catch (Exception e) {

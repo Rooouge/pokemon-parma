@@ -2,7 +2,7 @@ package core.obj.scripts;
 
 import core.enums.GameStates;
 import core.gui.screen.content.exploration.Exploration;
-import core.gui.screen.content.exploration.keypresshandlers.ExplorationEntityScriptKeyPressHandler;
+import core.gui.screen.content.exploration.keyhandlers.ExplorationEntityScriptKeyHandler;
 import core.gui.screen.content.exploration.painters.ExplorationEntityScriptPainter;
 import lombok.experimental.UtilityClass;
 
@@ -33,7 +33,7 @@ public class ScriptExecutor {
 		return true;
 	}
 	
-	public boolean execute(Script script, ExplorationEntityScriptKeyPressHandler handler) {
+	public boolean execute(Script script, ExplorationEntityScriptKeyHandler handler) {
 		return execute(script, handler.getParent());
 	}
 }

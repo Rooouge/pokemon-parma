@@ -8,7 +8,7 @@ import core.events.exploration.EntityMovementAction;
 import core.gui.screen.GlobalKeyEventHandler;
 import core.gui.screen.content.ContentSettings;
 import core.gui.screen.content.exploration.Exploration;
-import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
+import core.gui.screen.content.exploration.keyhandlers.ExplorationKeyHandler;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.maps.entities.MapEntitiesHandler;
@@ -45,7 +45,7 @@ public class MoveAction extends ScriptAction {
 						ContentSettings.tileOriginalSize, 
 						exploration.getActiveMaps(), 
 						dir, 
-						GlobalKeyEventHandler.instance().get(GameStates.EXPLORATION, ExplorationKeyPressHandler.class),
+						GlobalKeyEventHandler.instance().get(GameStates.EXPLORATION, ExplorationKeyHandler.class),
 						false)
 				);
 			}

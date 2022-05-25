@@ -5,18 +5,18 @@ import core.enums.GameStates;
 import core.events.GlobalKeyEvent;
 import core.gui.GridPosition;
 import core.gui.screen.GlobalKeyEventHandler;
-import core.gui.screen.content.exploration.keypresshandlers.ExplorationEntityScriptKeyPressHandler;
-import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
+import core.gui.screen.content.exploration.keyhandlers.ExplorationEntityScriptKeyHandler;
+import core.gui.screen.content.exploration.keyhandlers.ExplorationKeyHandler;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.scripts.statescripts.EntityScripts;
 
 public class ExplorationSpaceBarEvent extends GlobalKeyEvent {
 
 	private final OverworldEntity player;
-	private final ExplorationKeyPressHandler handler;
+	private final ExplorationKeyHandler handler;
 	
 	
-	public ExplorationSpaceBarEvent(int keyCode, OverworldEntity player, ExplorationKeyPressHandler handler) {
+	public ExplorationSpaceBarEvent(int keyCode, OverworldEntity player, ExplorationKeyHandler handler) {
 		super(keyCode);
 		this.player = player;
 		this.handler = handler;
@@ -38,7 +38,7 @@ public class ExplorationSpaceBarEvent extends GlobalKeyEvent {
 				active = false;
 //				System.out.println("Activated script!");
 				GameStates.set(GameStates.EXPLORATION_ENTITY_SCRIPT);
-				GlobalKeyEventHandler.instance().get(GameStates.EXPLORATION_ENTITY_SCRIPT, ExplorationEntityScriptKeyPressHandler.class).setScripts(scripts);
+				GlobalKeyEventHandler.instance().get(GameStates.EXPLORATION_ENTITY_SCRIPT, ExplorationEntityScriptKeyHandler.class).setScripts(scripts);
 			}
 		}
 		

@@ -10,9 +10,9 @@ import core.files.MusicHandler;
 import core.gui.interfaces.Painter;
 import core.gui.screen.content.Content;
 import core.gui.screen.content.ContentSettings;
-import core.gui.screen.content.exploration.keypresshandlers.ExplorationEntityScriptKeyPressHandler;
-import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
-import core.gui.screen.content.exploration.keypresshandlers.ExplorationStartMenuKeyPressHandler;
+import core.gui.screen.content.exploration.keyhandlers.ExplorationEntityScriptKeyHandler;
+import core.gui.screen.content.exploration.keyhandlers.ExplorationKeyHandler;
+import core.gui.screen.content.exploration.keyhandlers.ExplorationStartMenuKeyHandler;
 import core.gui.screen.content.exploration.painters.ExplorationEntityScriptPainter;
 import core.gui.screen.content.exploration.painters.ExplorationPainter;
 import core.gui.screen.content.exploration.painters.ExplorationStartMenuPainter;
@@ -45,7 +45,7 @@ public class Exploration extends Content<Exploration> {
 	
 	
 	public Exploration() throws Exception {
-		super(true);
+		super(true, -1);
 		
 		Log.log("Initializing Player...");
 		Player player = new Player("player");
@@ -70,9 +70,9 @@ public class Exploration extends Content<Exploration> {
 	
 	@Override
 	protected void initKeyHandlers() {
-		keyHandler.add(new ExplorationKeyPressHandler(this), GameStates.EXPLORATION);
-		keyHandler.add(new ExplorationEntityScriptKeyPressHandler(this), GameStates.EXPLORATION_ENTITY_SCRIPT);
-		keyHandler.add(new ExplorationStartMenuKeyPressHandler(this), GameStates.EXPLORATION_START_MENU);
+		keyHandler.add(new ExplorationKeyHandler(this), GameStates.EXPLORATION);
+		keyHandler.add(new ExplorationEntityScriptKeyHandler(this), GameStates.EXPLORATION_ENTITY_SCRIPT);
+		keyHandler.add(new ExplorationStartMenuKeyHandler(this), GameStates.EXPLORATION_START_MENU);
 	}
 	
 	

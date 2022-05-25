@@ -1,4 +1,4 @@
-package core.gui.screen.content.exploration.keypresshandlers;
+package core.gui.screen.content.exploration.keyhandlers;
 
 import java.awt.event.KeyEvent;
 import java.util.HashMap;
@@ -12,12 +12,12 @@ import core.gui.interfaces.OnKeyPressHandler;
 import core.gui.screen.content.exploration.Exploration;
 import core.gui.screen.content.exploration.painters.ExplorationStartMenuPainter;
 
-public class ExplorationStartMenuKeyPressHandler extends OnKeyPressHandler<Exploration> {
+public class ExplorationStartMenuKeyHandler extends OnKeyPressHandler<Exploration> {
 	
 	private final HashMap<Integer, GlobalKeyEvent> keyMap;
 	
 	
-	public ExplorationStartMenuKeyPressHandler(Exploration exploration) {
+	public ExplorationStartMenuKeyHandler(Exploration exploration) {
 		super(exploration);
 		
 		ExplorationStartMenuPainter painter = (ExplorationStartMenuPainter) exploration.getPainters().get(GameStates.EXPLORATION_START_MENU);

@@ -32,13 +32,14 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	protected final java.util.Map<GameStates, Painter<T>> painters;
 	protected Timer deallocator;
 	protected final boolean forceChache;
+	protected final int deallocationDelay;
 	protected final ScreenPainter screenPainter;
 	protected GameStates currentState;
 	@Setter
 	protected boolean forceStop;
 	
 	
-	public Content(boolean forceCache) {
+	public Content(boolean forceCache, int deallocationDelay) {
 		super(Color.black);
 		setPreferredSize(ContentSettings.dimension);
 		
@@ -48,6 +49,7 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 		keyHandler = GlobalKeyEventHandler.instance();
 		
 		this.forceChache = forceCache;
+		this.deallocationDelay = deallocationDelay;
 		deallocator = new Timer();
 
 		screenPainter = GameScreen.instance().getPainter();
@@ -122,14 +124,14 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	
 	public void scheduleDeallocation(TimerTask task) {
 		String name = getClass().getSimpleName();
-		int mills = 10000;
+		int mills = deallocationDelay * 1000;
 		
 		deallocator.cancel();
 		deallocator.purge();
 		deallocator = new Timer();		
 		deallocator.schedule(task, mills);
 		
-		Log.log("Scheduled deallocation for " + name + " in " + (mills/1000) + " second(s)");
+		Log.log("Scheduled deallocation for " + name + " in " + deallocationDelay + " second(s)");
 	}
 	
 	

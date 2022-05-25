@@ -5,7 +5,7 @@ import java.util.List;
 import core.enums.Directions;
 import core.gui.GridPosition;
 import core.gui.screen.content.ContentSettings;
-import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
+import core.gui.screen.content.exploration.keyhandlers.ExplorationKeyHandler;
 import core.obj.actions.SequenceAction;
 import core.obj.entities.player.Player;
 import core.obj.maps.Map;
@@ -20,10 +20,10 @@ public class EntityMovementAction extends SequenceAction {
 	private final List<Map> activeMaps;
 	private final Directions dir;
 	private final int pixels;
-	private final ExplorationKeyPressHandler handler;
+	private final ExplorationKeyHandler handler;
 	
 	
-	public EntityMovementAction(int times, List<Map> activeMaps, Directions dir, ExplorationKeyPressHandler handler, boolean running) {
+	public EntityMovementAction(int times, List<Map> activeMaps, Directions dir, ExplorationKeyHandler handler, boolean running) {
 		super(running ? times/2 : times);
 		this.activeMaps = activeMaps;
 		this.dir = dir;

@@ -1,4 +1,4 @@
-package core.gui.screen.content.exploration.keypresshandlers;
+package core.gui.screen.content.exploration.keyhandlers;
 
 import java.awt.event.KeyEvent;
 import java.util.HashMap;
@@ -9,7 +9,7 @@ import core.gui.screen.content.exploration.Exploration;
 import core.obj.scripts.ScriptExecutor;
 import core.obj.scripts.statescripts.EntityScripts;
 
-public class ExplorationEntityScriptKeyPressHandler extends OnKeyPressHandler<Exploration> {
+public class ExplorationEntityScriptKeyHandler extends OnKeyPressHandler<Exploration> {
 	
 	private final HashMap<Integer, ScriptKeyEvent> keyMap;
 	private EntityScripts scripts;
@@ -18,7 +18,7 @@ public class ExplorationEntityScriptKeyPressHandler extends OnKeyPressHandler<Ex
 	private boolean released;
 	
 
-	public ExplorationEntityScriptKeyPressHandler(Exploration exploration) {
+	public ExplorationEntityScriptKeyHandler(Exploration exploration) {
 		super(exploration);
 		
 		keyMap = new HashMap<>();

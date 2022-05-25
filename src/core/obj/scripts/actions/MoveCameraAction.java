@@ -6,7 +6,7 @@ import core.events.exploration.EntityMovementAction;
 import core.gui.screen.GlobalKeyEventHandler;
 import core.gui.screen.content.ContentSettings;
 import core.gui.screen.content.exploration.Exploration;
-import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
+import core.gui.screen.content.exploration.keyhandlers.ExplorationKeyHandler;
 import core.obj.scripts.ScriptAction;
 import jutils.global.Global;
 
@@ -30,7 +30,7 @@ public class MoveCameraAction extends ScriptAction {
 				ContentSettings.tileOriginalSize, 
 				exploration.getActiveMaps(), 
 				dir, 
-				GlobalKeyEventHandler.instance().get(GameStates.EXPLORATION, ExplorationKeyPressHandler.class),
+				GlobalKeyEventHandler.instance().get(GameStates.EXPLORATION, ExplorationKeyHandler.class),
 				false)
 		);
 		exploration.getEntityHandler().addCameraMovementCounterpart(dir);

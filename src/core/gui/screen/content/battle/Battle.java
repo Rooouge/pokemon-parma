@@ -11,6 +11,7 @@ import core.enums.GameStates;
 import core.events.battle.BattleEvent;
 import core.gui.interfaces.Painter;
 import core.gui.screen.content.Content;
+import core.gui.screen.content.battle.keyhandlers.BattleIntroKeyHandler;
 import core.gui.screen.content.battle.painters.BattleBackgroundPainter;
 import core.gui.screen.content.battle.painters.BattleEnemyPokemonLabelPainter;
 import core.gui.screen.content.battle.painters.BattleEnemyPokemonPainter;
@@ -28,7 +29,7 @@ public class Battle extends Content<Battle> {
 	
 	
 	public Battle() {
-		super(false);
+		super(false, 0);
 		
 		currentState = GameStates.current();
 		painterLists = new HashMap<>();
@@ -43,7 +44,7 @@ public class Battle extends Content<Battle> {
 	
 	@Override
 	protected void initKeyHandlers() {
-		// Empty
+		keyHandler.add(new BattleIntroKeyHandler(this), GameStates.BATTLE_INTRO);
 	}
 
 	@Override

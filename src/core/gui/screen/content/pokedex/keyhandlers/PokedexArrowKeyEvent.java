@@ -1,4 +1,4 @@
-package core.gui.screen.content.pokedex.keypresshandlers;
+package core.gui.screen.content.pokedex.keyhandlers;
 
 import core.enums.GameStates;
 import core.events.GlobalKeyEvent;

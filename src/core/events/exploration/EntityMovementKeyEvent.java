@@ -4,14 +4,14 @@ import core.enums.Directions;
 import core.enums.GameStates;
 import core.gui.screen.content.ContentSettings;
 import core.gui.screen.content.exploration.Exploration;
-import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
+import core.gui.screen.content.exploration.keyhandlers.ExplorationKeyHandler;
 import core.obj.entities.overworld.OverworldEntity;
 import core.obj.maps.MapUtils;
 
 public class EntityMovementKeyEvent extends ExplorationEntityKeyEvent {
 	
 	
-	public EntityMovementKeyEvent(int keyCode, Directions dir, OverworldEntity entity, ExplorationKeyPressHandler handler) {
+	public EntityMovementKeyEvent(int keyCode, Directions dir, OverworldEntity entity, ExplorationKeyHandler handler) {
 		super(keyCode, dir, entity, handler, GameStates.EXPLORATION);
 	}
 	

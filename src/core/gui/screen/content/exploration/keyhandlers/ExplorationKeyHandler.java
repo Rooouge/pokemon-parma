@@ -1,7 +1,8 @@
-package core.gui.screen.content.exploration.keypresshandlers;
+package core.gui.screen.content.exploration.keyhandlers;
 
 import java.awt.event.KeyEvent;
 import java.util.HashMap;
+import java.util.Map;
 
 import core.enums.Directions;
 import core.enums.GameStates;
@@ -17,12 +18,12 @@ import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.entities.player.Player;
 import jutils.global.Global;
 
-public class ExplorationKeyPressHandler extends OnKeyPressHandler<Exploration> {
+public class ExplorationKeyHandler extends OnKeyPressHandler<Exploration> {
 	
-	private final HashMap<Integer, GlobalKeyEvent> keyMap;
+	private final Map<Integer, GlobalKeyEvent> keyMap;
 	
 	
-	public ExplorationKeyPressHandler(Exploration exploration) {
+	public ExplorationKeyHandler(Exploration exploration) {
 		super(exploration);
 		
 		PlayerOverworldEntity entity = Global.get("player", Player.class).getOverworldEntity();

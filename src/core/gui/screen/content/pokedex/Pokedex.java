@@ -6,7 +6,7 @@ import java.io.IOException;
 import core.enums.GameStates;
 import core.gui.interfaces.Painter;
 import core.gui.screen.content.Content;
-import core.gui.screen.content.pokedex.keypresshandlers.PokedexKeyPressHandler;
+import core.gui.screen.content.pokedex.keyhandlers.PokedexKeyHandler;
 import core.gui.screen.content.pokedex.painters.PokedexPainter;
 
 @SuppressWarnings("serial")
@@ -17,7 +17,7 @@ public class Pokedex extends Content<Pokedex> {
 	
 	
 	public Pokedex() throws IOException {
-		super(false);
+		super(false, 10);
 		currentState = GameStates.current();
 
 		initPainters();
@@ -27,7 +27,7 @@ public class Pokedex extends Content<Pokedex> {
 	
 	@Override
 	protected void initKeyHandlers() {
-		keyHandler.add(new PokedexKeyPressHandler(this), GameStates.POKEDEX);
+		keyHandler.add(new PokedexKeyHandler(this), GameStates.POKEDEX);
 	}
 	
 	@Override

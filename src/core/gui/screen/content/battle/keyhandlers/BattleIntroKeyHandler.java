@@ -1,4 +1,4 @@
-package core.gui.screen.content.pokedex.keypresshandlers;
+package core.gui.screen.content.battle.keyhandlers;
 
 import java.awt.event.KeyEvent;
 import java.util.HashMap;
@@ -9,29 +9,28 @@ import core.events.ChangeContentKeyEvent;
 import core.events.ChangeStateKeyEvent;
 import core.events.GlobalKeyEvent;
 import core.gui.interfaces.OnKeyPressHandler;
+import core.gui.screen.content.battle.Battle;
 import core.gui.screen.content.exploration.Exploration;
-import core.gui.screen.content.pokedex.Pokedex;
-import core.gui.screen.content.pokedex.painters.PokedexPainter;
+import core.gui.screen.content.exploration.keyhandlers.ExplorationKeyHandler;
+import jutils.global.Global;
 
-public class PokedexKeyPressHandler extends OnKeyPressHandler<Pokedex> {
-	
+public class BattleIntroKeyHandler extends OnKeyPressHandler<Battle> {
+
 	private final Map<Integer, GlobalKeyEvent> keyMap;
 	
 	
-	public PokedexKeyPressHandler(Pokedex parent) {
-		super(parent);
-		
-		PokedexPainter painter = (PokedexPainter) parent.getPainters().get(GameStates.POKEDEX);
-		
+	public BattleIntroKeyHandler(Battle battle) {
+		super(battle);
 		keyMap = new HashMap<>();
-		keyMap.put(KeyEvent.VK_ESCAPE, new ChangeContentKeyEvent(KeyEvent.VK_ESCAPE, GameStates.POKEDEX, GameStates.EXPLORATION_START_MENU, Exploration.class, Pokedex.TURN_OFF));
-		keyMap.put(KeyEvent.VK_DOWN, new PokedexArrowKeyEvent(KeyEvent.VK_DOWN, painter::scrollDown));
-		keyMap.put(KeyEvent.VK_UP, new PokedexArrowKeyEvent(KeyEvent.VK_UP, painter::scrollUp));
-		keyMap.put(KeyEvent.VK_LEFT, new PokedexArrowKeyEvent(KeyEvent.VK_LEFT, painter::fastUp));
-		keyMap.put(KeyEvent.VK_RIGHT, new PokedexArrowKeyEvent(KeyEvent.VK_RIGHT, painter::fastDown));
+		keyMap.put(KeyEvent.VK_F12, new ChangeContentKeyEvent(KeyEvent.VK_F12, GameStates.BATTLE_INTRO, GameStates.EXPLORATION, Exploration.class, null).withExtra(() -> {
+			Exploration exp = Global.get("content", Exploration.class);
+			exp.getKeyHandler().get(GameStates.EXPLORATION, ExplorationKeyHandler.class).setNoEventActive();
+		}));
+		
+		onLoad();
 	}
 	
-
+	
 	@Override
 	public void keyPressed(KeyEvent e) throws Exception {
 		if(!pressed && !firstLoad) {

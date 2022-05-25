@@ -2,13 +2,13 @@ package core.events.exploration;
 
 import core.enums.Directions;
 import core.enums.GameStates;
-import core.gui.screen.content.exploration.keypresshandlers.ExplorationKeyPressHandler;
+import core.gui.screen.content.exploration.keyhandlers.ExplorationKeyHandler;
 import core.obj.entities.overworld.OverworldEntity;
 import jutils.threads.Threads;
 
 public class EntityRunningKeyEvent extends ExplorationEntityKeyEvent {
 
-	public EntityRunningKeyEvent(int keyCode, Directions dir, OverworldEntity entity, ExplorationKeyPressHandler handler) {
+	public EntityRunningKeyEvent(int keyCode, Directions dir, OverworldEntity entity, ExplorationKeyHandler handler) {
 		super(keyCode, dir, entity, handler, GameStates.EXPLORATION);
 	}
 	
