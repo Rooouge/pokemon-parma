@@ -44,7 +44,14 @@ public enum Types {
 	}
     
     
-    
+    public double getMultiplierForType(Types type) {
+    	if(mod05x.contains(type))
+    		return 0.5;
+    	if(mod2x.contains(type))
+    		return 2.0;
+    	
+    	return 1.0;
+    }
     
     /*
      * Static

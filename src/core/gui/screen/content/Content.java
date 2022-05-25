@@ -20,6 +20,7 @@ import core.gui.screen.painters.ScreenPainter;
 import core.obj.actions.Action;
 import jutils.gui.ColoredPanel;
 import lombok.Getter;
+import lombok.Setter;
 
 @SuppressWarnings("serial")
 @Getter
@@ -33,6 +34,8 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	protected final boolean forceChache;
 	protected final ScreenPainter screenPainter;
 	protected GameStates currentState;
+	@Setter
+	protected boolean forceStop;
 	
 	
 	public Content(boolean forceCache) {
@@ -49,6 +52,7 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 
 		screenPainter = GameScreen.instance().getPainter();
 		currentState = GameStates.current();
+		forceStop = false;
 	}
 	
 
@@ -70,7 +74,7 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	}
 	
 	
-	public void update() throws Exception {
+	public void update() throws Exception {		
 		List<Action> over = new ArrayList<>();
 		
 		if(!toAdd.isEmpty()) {
@@ -80,7 +84,7 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 		
 		//Executing actions
 		for(Action a : actions) {
-			if(a.execute())
+			if(forceStop || a.execute())
 				over.add(a);
 		}
 		
@@ -95,11 +99,13 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	}
 	
 	public void addAction(Action action) {
-		actions.add(action);
+		if(!forceStop)
+			actions.add(action);
 	}
 	
 	public void toAddAction(Action action) {
-		toAdd.add(action);
+		if(!forceStop)
+			toAdd.add(action);
 	}
 	
 	public boolean removeAction(Action action) {

@@ -33,7 +33,7 @@ public class MapWild extends ArrayList<WildPokemonEvent> {
 				int bound = Integer.parseInt(wildNode.valueOf("@bound"));
 				
 				add(new WildPokemonEvent(id, minLv, maxLv, chance, bound));
-				Log.log("[X] Founded wild event for Pokémon with id: " + id);
+				Log.log("[X] Founded wild event for Pokémon with id: " + id + " (Min: " + minLv + ", Max: " + maxLv + ")");
 			}
 		}
 	}

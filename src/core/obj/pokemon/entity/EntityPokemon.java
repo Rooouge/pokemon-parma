@@ -14,7 +14,7 @@ public class EntityPokemon {
 		this.data = new EntityPokemonData(baseData);
 	}
 	
-	public EntityPokemon level(int level) {
+	public EntityPokemon level(int level) throws Exception {
 		data.setLevel(level);
 		return this;
 	}

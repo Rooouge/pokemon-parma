@@ -16,9 +16,12 @@ import lombok.experimental.UtilityClass;
 
 @UtilityClass
 public class ExplorationBattleEventHandler {
-
+	
 	public void wildBattle(WildPokemonEvent event, TileMovements tile) {
 		Threads.run(() -> {
+			Exploration exp = Global.get("content", Exploration.class);
+			exp.setForceStop(true);
+			
 			Log.log(event.generate().toString());
 			
 			GameScreen screen = GameScreen.instance();
@@ -26,12 +29,12 @@ public class ExplorationBattleEventHandler {
 			
 			painter.fadeOut(() -> {
 				try {
-					Exploration exp = Global.get("content", Exploration.class);
 					MusicHandler.stopMapMusic(exp.getActiveMap());
 					
 					screen.switchContent(Battle.class);
 					
 					Global.get("content", Battle.class).setEvent(new WildPokemonBattle(event, tile));
+					exp.setForceStop(false);
 					painter.fadeIn(GameStates.BATTLE_INTRO);
 				} catch (Exception e) {
 					e.printStackTrace();

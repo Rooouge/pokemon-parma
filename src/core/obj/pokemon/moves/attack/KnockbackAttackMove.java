@@ -1,17 +1,16 @@
 package core.obj.pokemon.moves.attack;
 
-import core.enums.MoveTypes;
 import core.enums.Types;
 import lombok.Getter;
 
 @Getter
-public class KnockbackAttackMove extends AttackMove {
+public class KnockbackAttackMove extends PhysicalAttackMove {
 
 	protected final int knokback;
 	
-	public KnockbackAttackMove(String name, Types type, MoveTypes moveType, int precision, int pp, int damage, int knockback) {
-		super(name, type, moveType, precision, pp, damage);
+	public KnockbackAttackMove(String name, Types type, int precision, int pp, int damage, int knockback) {
+		super(name, type, precision, pp, damage);
 		this.knokback = knockback;
 	}
-
+	
 }

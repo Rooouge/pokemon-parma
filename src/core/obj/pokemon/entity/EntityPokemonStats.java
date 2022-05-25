@@ -11,17 +11,26 @@ import core.Log;
 import core.enums.Stats;
 import core.files.XMLHandler;
 import core.obj.pokemon.pokedex.Pokedex;
+import lombok.Getter;
 
 @SuppressWarnings("serial")
+@Getter
 public class EntityPokemonStats extends EnumMap<Stats, Integer> {
 	
-	public EntityPokemonStats() {
+	protected final EntityPokemonIVs IVs;
+	protected final EntityPokemonEVs EVs;
+	
+	
+	protected EntityPokemonStats() {
 		super(Stats.class);
+		
+		IVs = EntityPokemonIVs.generate();
+		EVs = EntityPokemonEVs.generate();
 	}
 	
 	
-	public static EntityPokemonStats create(int id) throws Exception {
-		Log.log("Parsing stats for " + Pokedex.instance().baseData(id).getName() + " (" + id + ")");
+	public static EntityPokemonStats create(int id, int level) throws Exception {
+		Log.log("Generating stats for " + Pokedex.instance().baseData(id).getName() + " (" + id + ")");
 		
 		EntityPokemonStats stats = new EntityPokemonStats();
 		
@@ -30,10 +39,37 @@ public class EntityPokemonStats extends EnumMap<Stats, Integer> {
 		Node node = root.selectSingleNode("pokemon[@id='" + id + "']");
 		
 		for(Stats stat : Stats.values()) {
-			int value = Integer.parseInt(node.selectSingleNode(stat.getXmlNode()).getStringValue());
+			if(stat.equals(Stats.HP))
+				continue;
+			
+			/*
+			 * For HP:
+			 * (((2 * BS) + IV + (EV / 4)) * L / 100) + 10 + L
+			 * 
+			 * For Stats:
+			 * ((((2 * BS) + IV + (EV / 4)) * L / 100) + 5) * N
+			 */
+			double BS = 1.0*Integer.parseInt(node.selectSingleNode(stat.getXmlNode()).getStringValue());
+			double IV = 1.0*stats.IVs.get(stat);
+			double EV = 1.0*stats.EVs.get(stat);
+			double L = 1.0*level;
+			int value = 0;
+			
+			if(stat.equals(Stats.TOT_HP)) {
+				value = (int) ((((2.0 * BS) + IV + (EV / 4.0)) * L / 100.0) + 10.0 + L);
+			} else {
+				/*
+				 * TODO: Add nature handling
+				 */
+				double N = 1.0;
+				value = (int) (((((2 * BS) + IV + (EV / 4)) * L / 100) + 5) * N);
+			}
+			
 			stats.put(stat, value);
 			Log.log("- " + stat.getLabel() + ": " + value);
 		}
+		
+		stats.put(Stats.HP, stats.get(Stats.TOT_HP));
 		
 		return stats;
 	}

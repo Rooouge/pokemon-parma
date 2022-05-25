@@ -10,10 +10,15 @@ import core.gui.GUIUtils;
 import core.gui.interfaces.OnKeyPressHandler;
 import jutils.global.Global;
 import jutils.gui.ColoredPanel;
+import lombok.Setter;
 
 public class GlobalKeyEventHandler implements KeyListener {
 
+	
 	public static final String KEY = GlobalKeyEventHandler.class.getName();
+	@Setter
+	protected boolean forceStop;
+	
 	
 	public static GlobalKeyEventHandler instance() {
 		return Global.get(GlobalKeyEventHandler.KEY, GlobalKeyEventHandler.class);
@@ -28,6 +33,7 @@ public class GlobalKeyEventHandler implements KeyListener {
 	public GlobalKeyEventHandler() {		
 		handlers = new EnumMap<>(GameStates.class);
 		sleep = false;
+		forceStop = false;
 	}
 	
 	
@@ -50,6 +56,9 @@ public class GlobalKeyEventHandler implements KeyListener {
 	}
 	
 	public void update() throws Exception {
+		if(forceStop)
+			return;
+		
 		OnKeyPressHandler<? extends ColoredPanel> handler = handlers.get(Global.get("state", GameStates.class));
 		if(handler == null)
 			return;

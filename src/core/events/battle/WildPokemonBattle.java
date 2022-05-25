@@ -17,6 +17,11 @@ public class WildPokemonBattle extends BattleEvent {
 		super(tile);
 		this.event = event;
 		entityPokemon = new EntityPokemon(Pokedex.instance().baseData(event.getId())).level(event.getLevel()).gender(event.getGender()).shiny(event.isShiny());
+		
+		int id = entityPokemon.getData().getBaseData().getId();
+		int level = event.getLevel();
+		
+		entityPokemon.getData().getMoves().generateMovesForWildPokemon(id, level);
 	}
 	
 }
