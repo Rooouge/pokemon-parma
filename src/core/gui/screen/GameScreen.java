@@ -108,6 +108,7 @@ public class GameScreen extends JFrame {
 			add(content, key);
 		} else {
 			content = map.get(contentClass.getName());
+			content.reload();
 		}
 		
 		Global.add("content", content);

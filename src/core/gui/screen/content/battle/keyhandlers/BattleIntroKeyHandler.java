@@ -11,8 +11,6 @@ import core.events.GlobalKeyEvent;
 import core.gui.interfaces.OnKeyPressHandler;
 import core.gui.screen.content.battle.Battle;
 import core.gui.screen.content.exploration.Exploration;
-import core.gui.screen.content.exploration.keyhandlers.ExplorationKeyHandler;
-import jutils.global.Global;
 
 public class BattleIntroKeyHandler extends OnKeyPressHandler<Battle> {
 
@@ -22,10 +20,7 @@ public class BattleIntroKeyHandler extends OnKeyPressHandler<Battle> {
 	public BattleIntroKeyHandler(Battle battle) {
 		super(battle);
 		keyMap = new HashMap<>();
-		keyMap.put(KeyEvent.VK_F12, new ChangeContentKeyEvent(KeyEvent.VK_F12, GameStates.BATTLE_INTRO, GameStates.EXPLORATION, Exploration.class, null).withExtra(() -> {
-			Exploration exp = Global.get("content", Exploration.class);
-			exp.getKeyHandler().get(GameStates.EXPLORATION, ExplorationKeyHandler.class).setNoEventActive();
-		}));
+		keyMap.put(KeyEvent.VK_F12, new ChangeContentKeyEvent(KeyEvent.VK_F12, GameStates.BATTLE_INTRO, GameStates.EXPLORATION, Exploration.class, null));
 		
 		onLoad();
 	}

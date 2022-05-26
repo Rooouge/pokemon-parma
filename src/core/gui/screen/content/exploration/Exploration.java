@@ -70,9 +70,15 @@ public class Exploration extends Content<Exploration> {
 	
 	@Override
 	protected void initKeyHandlers() {
-		keyHandler.add(new ExplorationKeyHandler(this), GameStates.EXPLORATION);
-		keyHandler.add(new ExplorationEntityScriptKeyHandler(this), GameStates.EXPLORATION_ENTITY_SCRIPT);
-		keyHandler.add(new ExplorationStartMenuKeyHandler(this), GameStates.EXPLORATION_START_MENU);
+		keyHandlers.add(new ExplorationKeyHandler(this), GameStates.EXPLORATION);
+		keyHandlers.add(new ExplorationEntityScriptKeyHandler(this), GameStates.EXPLORATION_ENTITY_SCRIPT);
+		keyHandlers.add(new ExplorationStartMenuKeyHandler(this), GameStates.EXPLORATION_START_MENU);
+	}
+	
+	@Override
+	public void reload() {
+		keyHandlers.get(GameStates.EXPLORATION, ExplorationKeyHandler.class).setNoEventActive();
+		MusicHandler.playMapMusic(getActiveMap());
 	}
 	
 	

@@ -27,7 +27,7 @@ public class Pokedex extends Content<Pokedex> {
 	
 	@Override
 	protected void initKeyHandlers() {
-		keyHandler.add(new PokedexKeyHandler(this), GameStates.POKEDEX);
+		keyHandlers.add(new PokedexKeyHandler(this), GameStates.POKEDEX);
 	}
 	
 	@Override
@@ -35,6 +35,10 @@ public class Pokedex extends Content<Pokedex> {
 		painters.put(GameStates.POKEDEX, new PokedexPainter(this));
 	}
 	
+	@Override
+	public void reload() {
+		// Empty
+	}
 	
 	@Override
 	protected void paintComponent(Graphics2D g) {

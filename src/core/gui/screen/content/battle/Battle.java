@@ -44,7 +44,7 @@ public class Battle extends Content<Battle> {
 	
 	@Override
 	protected void initKeyHandlers() {
-		keyHandler.add(new BattleIntroKeyHandler(this), GameStates.BATTLE_INTRO);
+		keyHandlers.add(new BattleIntroKeyHandler(this), GameStates.BATTLE_INTRO);
 	}
 
 	@Override
@@ -67,7 +67,11 @@ public class Battle extends Content<Battle> {
 		
 		painterLists.put(GameStates.BATTLE_INTRO, battlePainter);
 	}
-
+	
+	@Override
+	public void reload() {
+		// Empty
+	}
 	
 	@Override
 	protected void paintComponent(Graphics2D g) {

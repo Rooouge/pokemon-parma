@@ -28,7 +28,7 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 
 	protected final List<Action> actions;
 	protected final List<Action> toAdd;
-	protected final GlobalKeyEventHandler keyHandler;
+	protected final GlobalKeyEventHandler keyHandlers;
 	protected final java.util.Map<GameStates, Painter<T>> painters;
 	protected Timer deallocator;
 	protected final boolean forceChache;
@@ -46,7 +46,7 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 		actions = new ArrayList<>();
 		toAdd = new ArrayList<>();
 		painters = new HashMap<>();
-		keyHandler = GlobalKeyEventHandler.instance();
+		keyHandlers = GlobalKeyEventHandler.instance();
 		
 		this.forceChache = forceCache;
 		this.deallocationDelay = deallocationDelay;
@@ -137,4 +137,5 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	
 	protected abstract void initKeyHandlers();
 	protected abstract void initPainters() throws IOException;
+	public abstract void reload();
 }
