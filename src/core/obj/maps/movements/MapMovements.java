@@ -20,6 +20,7 @@ import core.obj.maps.autotiles.AutoTile;
 import core.obj.maps.autotiles.MapAutoTiles;
 import core.obj.maps.entities.MapEntities;
 import jutils.global.Global;
+import jutils.log.Log;
 import lombok.Getter;
 
 public class MapMovements {
@@ -86,7 +87,12 @@ public class MapMovements {
 				entities.checkPos(indexToCheck, direction); //Resets entity drawing order
 				
 				// Checking possible wild Pokémon spawn
-				map.getWild().wildPokemonAttempt();
+				try {
+					map.getWild().wildPokemonAttempt();
+				} catch (IOException e) {
+					Log.error("Failed to create wild Pokémon");
+					e.printStackTrace();
+				}
 			}
 		}
 		

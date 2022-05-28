@@ -16,6 +16,7 @@ import core.gui.screen.content.exploration.keyhandlers.ExplorationStartMenuKeyHa
 import core.gui.screen.content.exploration.painters.ExplorationEntityScriptPainter;
 import core.gui.screen.content.exploration.painters.ExplorationPainter;
 import core.gui.screen.content.exploration.painters.ExplorationStartMenuPainter;
+import core.gui.screen.content.exploration.transitions.BattleTransitions;
 import core.obj.entities.overworld.PlayerOverworldEntity;
 import core.obj.entities.player.Player;
 import core.obj.maps.Map;
@@ -58,6 +59,8 @@ public class Exploration extends Content<Exploration> {
 		activeMaps = new ArrayList<>();
 		Map map = Maps.getMap(Config.getValue("game.active-map"));
 		setActiveMap(map, player.getOverworldEntity(), true);
+		
+		BattleTransitions.init(this);
 	}
 	
 	
@@ -171,6 +174,9 @@ public class Exploration extends Content<Exploration> {
 		default:
 			break;
 		}
+		
+		if(animation != null)
+			animation.paint(g);
 	}
 	
 	@Override

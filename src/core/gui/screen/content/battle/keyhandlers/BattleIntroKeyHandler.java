@@ -8,6 +8,8 @@ import core.enums.GameStates;
 import core.events.ChangeContentKeyEvent;
 import core.events.ChangeStateKeyEvent;
 import core.events.GlobalKeyEvent;
+import core.events.battle.BattleEvent;
+import core.files.MusicHandler;
 import core.gui.interfaces.OnKeyPressHandler;
 import core.gui.screen.content.battle.Battle;
 import core.gui.screen.content.exploration.Exploration;
@@ -20,7 +22,9 @@ public class BattleIntroKeyHandler extends OnKeyPressHandler<Battle> {
 	public BattleIntroKeyHandler(Battle battle) {
 		super(battle);
 		keyMap = new HashMap<>();
-		keyMap.put(KeyEvent.VK_F12, new ChangeContentKeyEvent(KeyEvent.VK_F12, GameStates.BATTLE_INTRO, GameStates.EXPLORATION, Exploration.class, null));
+		keyMap.put(KeyEvent.VK_F12, new ChangeContentKeyEvent(KeyEvent.VK_F12, GameStates.BATTLE_INTRO, GameStates.EXPLORATION, Exploration.class, null).withExtra(() -> {
+			MusicHandler.stopMusic(BattleEvent.BATTLE_MUSIC);
+		}));
 		
 		onLoad();
 	}

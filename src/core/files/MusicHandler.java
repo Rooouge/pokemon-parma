@@ -10,7 +10,6 @@ import lombok.experimental.UtilityClass;
 
 @UtilityClass
 public class MusicHandler {
-
 	
 	public Clip get(String resName) {
 		try {
@@ -43,6 +42,19 @@ public class MusicHandler {
 	
 	public void stopMapMusic(Map map) {
 		Clip music = map.getData().getMusic();
+		music.stop();
+		music.setFramePosition(0);
+	}
+	
+	
+	public void playMusic(Clip music) {
+		Threads.run(() -> {
+			music.setFramePosition(0);
+			music.start();
+		});
+	}
+	
+	public void stopMusic(Clip music) {
 		music.stop();
 		music.setFramePosition(0);
 	}

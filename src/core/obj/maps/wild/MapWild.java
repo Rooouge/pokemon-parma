@@ -1,5 +1,6 @@
 package core.obj.maps.wild;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -39,7 +40,7 @@ public class MapWild extends ArrayList<WildPokemonEvent> {
 	}
 	
 	
-	public void wildPokemonAttempt() {
+	public void wildPokemonAttempt() throws IOException {
 		GridPosition playerPos = Player.instance().getOverworldEntity().getData().getPos();
 		TileMovements tile = TileMovements.getFromValue(map.getMovement().getMovement(playerPos.row, playerPos.column));
 		

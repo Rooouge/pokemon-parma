@@ -17,6 +17,7 @@ import core.gui.interfaces.Painter;
 import core.gui.screen.GameScreen;
 import core.gui.screen.GlobalKeyEventHandler;
 import core.gui.screen.painters.ScreenPainter;
+import core.gui.screen.painters.animations.GUIAnimation;
 import core.obj.actions.Action;
 import jutils.gui.ColoredPanel;
 import lombok.Getter;
@@ -37,6 +38,8 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	protected GameStates currentState;
 	@Setter
 	protected boolean forceStop;
+	@Setter
+	protected GUIAnimation animation;
 	
 	
 	public Content(boolean forceCache, int deallocationDelay) {
@@ -76,7 +79,13 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	}
 	
 	
-	public void update() throws Exception {		
+	public void update() throws Exception {
+		if(animation != null) {
+			animation.update();
+			if(animation != null && animation.isForceLock())
+				return;
+		}
+		
 		List<Action> over = new ArrayList<>();
 		
 		if(!toAdd.isEmpty()) {
@@ -132,6 +141,10 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 		deallocator.schedule(task, mills);
 		
 		Log.log("Scheduled deallocation for " + name + " in " + deallocationDelay + " second(s)");
+	}
+	
+	public void animationOver() {
+		this.animation = null;
 	}
 	
 	
