@@ -2,38 +2,34 @@ package core.gui.screen.content.battle.keyhandlers;
 
 import java.awt.event.KeyEvent;
 import java.util.HashMap;
-import java.util.Map;
 
 import core.enums.GameStates;
-import core.events.ChangeContentKeyEvent;
 import core.events.ChangeStateKeyEvent;
 import core.events.GlobalKeyEvent;
-import core.events.battle.BattleEvent;
-import core.files.MusicHandler;
-import core.files.SoundsHandler;
+import core.events.KeyEventWithRunnable;
 import core.gui.interfaces.OnKeyPressHandler;
 import core.gui.screen.content.battle.Battle;
-import core.gui.screen.content.exploration.Exploration;
+import core.gui.screen.content.battle.painters.BattleOptionsPainter;
+import core.gui.screen.content.battle.painters.elements.OptionsRect;
 
-public class BattleIntroKeyHandler extends OnKeyPressHandler<Battle> {
+public class BattleOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 
-	private final Map<Integer, GlobalKeyEvent> keyMap;
+	private final HashMap<Integer, GlobalKeyEvent> keyMap;
 	
 	
-	public BattleIntroKeyHandler(Battle battle) {
-		super(battle);
+	public BattleOptionsKeyHandler(Battle parent) {
+		super(parent);
+		
+		BattleOptionsPainter painter = (BattleOptionsPainter) parent.getPainterLists().get(GameStates.BATTLE_OPTIONS).get(5);
+		OptionsRect rect = painter.getOptionsRect();
 		
 		keyMap = new HashMap<>();
-		keyMap.put(KeyEvent.VK_F12, new ChangeContentKeyEvent(KeyEvent.VK_F12, GameStates.BATTLE_INTRO, GameStates.EXPLORATION, Exploration.class, null).withExtra(() -> {
-			MusicHandler.stopMusic(BattleEvent.BATTLE_MUSIC);
-		}));
-		keyMap.put(KeyEvent.VK_SPACE, new ChangeStateKeyEvent(KeyEvent.VK_SPACE, GameStates.BATTLE_INTRO, GameStates.BATTLE_OPTIONS).withExtra(() -> {
-			SoundsHandler.playSound(SoundsHandler.PRESS);
-		}));
-		
-		onLoad();
+		keyMap.put(KeyEvent.VK_DOWN, new KeyEventWithRunnable(KeyEvent.VK_DOWN, rect::down));
+		keyMap.put(KeyEvent.VK_UP, new KeyEventWithRunnable(KeyEvent.VK_UP, rect::up));
+		keyMap.put(KeyEvent.VK_LEFT, new KeyEventWithRunnable(KeyEvent.VK_LEFT, rect::left));
+		keyMap.put(KeyEvent.VK_RIGHT, new KeyEventWithRunnable(KeyEvent.VK_RIGHT, rect::right));
 	}
-	
+
 	
 	@Override
 	public void keyPressed(KeyEvent e) throws Exception {
@@ -55,10 +51,7 @@ public class BattleIntroKeyHandler extends OnKeyPressHandler<Battle> {
 			firstLoad = false;
 		
 		if(keyMap.containsKey(e.getKeyCode())) {
-			if(!keyMap.get(e.getKeyCode()).isActive())
-				pressed = false;
-			else
-				keyMap.get(e.getKeyCode()).end();
+			keyMap.get(e.getKeyCode()).end();
 		}
 	}
 

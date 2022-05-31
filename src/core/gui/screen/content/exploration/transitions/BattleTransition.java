@@ -21,10 +21,13 @@ import core.gui.screen.painters.animations.GUIAnimation;
 import core.obj.maps.wild.WildPokemonEvent;
 import jutils.global.Global;
 import jutils.threads.Threads;
+import lombok.Getter;
 
 public class BattleTransition extends GUIAnimation {
 	
 	protected final Exploration exp;
+	@Getter
+	protected final String resName;
 	protected final BufferedImage[] animation;
 	protected WildPokemonEvent event;
 	protected TileMovements tile;
@@ -35,6 +38,7 @@ public class BattleTransition extends GUIAnimation {
 	public BattleTransition(Exploration parent, String resName) throws IOException {
 		super(parent, 150, true);
 		this.exp = parent;
+		this.resName = resName;
 		
 		TiledImage animationRaw = ImageHandler.getImage(resName, "battle/transitions");
 		BufferedImage img = new BufferedImage(animationRaw.getWidth(), animationRaw.getHeight(), BufferedImage.TYPE_INT_ARGB);

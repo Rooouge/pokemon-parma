@@ -29,6 +29,9 @@ public class MusicHandler {
 			MapData data = map.getData();
 			Clip music = data.getMusic();
 			
+			if(music.isRunning())
+				return;
+			
 			music.setFramePosition(0);
 			music.start();
 			

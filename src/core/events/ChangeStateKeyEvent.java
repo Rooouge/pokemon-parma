@@ -6,6 +6,7 @@ import core.gui.screen.GlobalKeyEventHandler;
 public class ChangeStateKeyEvent extends GlobalKeyEvent {
 	
 	protected final GameStates toSet;
+	protected Runnable extra;
 	
 	
 	public ChangeStateKeyEvent(int keyCode, GameStates state, GameStates toSet) {
@@ -14,9 +15,18 @@ public class ChangeStateKeyEvent extends GlobalKeyEvent {
 		this.toSet = toSet;
 	}
 	
+	
+	public ChangeStateKeyEvent withExtra(Runnable extra) {
+		this.extra = extra;
+		return this;
+	}
+	
 
 	@Override
 	public void execute() {
+		if(extra != null)
+			extra.run();
+		
 		GlobalKeyEventHandler.get(toSet).onLoad();
 		GameStates.set(toSet);
 	}

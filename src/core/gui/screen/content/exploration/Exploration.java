@@ -47,6 +47,7 @@ public class Exploration extends Content<Exploration> {
 	
 	public Exploration() throws Exception {
 		super(true, -1);
+		BattleTransitions.init(this);
 		
 		Log.log("Initializing Player...");
 		Player player = new Player("player");
@@ -59,8 +60,6 @@ public class Exploration extends Content<Exploration> {
 		activeMaps = new ArrayList<>();
 		Map map = Maps.getMap(Config.getValue("game.active-map"));
 		setActiveMap(map, player.getOverworldEntity(), true);
-		
-		BattleTransitions.init(this);
 	}
 	
 	
