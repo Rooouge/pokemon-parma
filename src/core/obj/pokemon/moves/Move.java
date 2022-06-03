@@ -13,6 +13,7 @@ public class Move {
 	protected final int precision;
     protected final int pp;
     protected final int ppMax;
+    protected int currentPp;
     
 	
     protected Move(String name, Types type, MoveTypes moveType, int precision, int pp) {
@@ -21,7 +22,9 @@ public class Move {
 		this.moveType = moveType;
 		this.precision = precision;
 		this.pp = pp;
-		ppMax = 5*pp/8;
+		ppMax = 8*pp/5;
+		
+		currentPp = pp;
 	}
     
     

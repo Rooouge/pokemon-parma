@@ -11,11 +11,13 @@ import core.enums.GameStates;
 import core.events.battle.BattleEvent;
 import core.gui.interfaces.Painter;
 import core.gui.screen.content.Content;
+import core.gui.screen.content.battle.keyhandlers.BattleFightOptionsKeyHandler;
 import core.gui.screen.content.battle.keyhandlers.BattleIntroKeyHandler;
 import core.gui.screen.content.battle.keyhandlers.BattleOptionsKeyHandler;
 import core.gui.screen.content.battle.painters.BattleBackgroundPainter;
 import core.gui.screen.content.battle.painters.BattleEnemyPokemonLabelPainter;
 import core.gui.screen.content.battle.painters.BattleEnemyPokemonPainter;
+import core.gui.screen.content.battle.painters.BattleFightOptionsPainter;
 import core.gui.screen.content.battle.painters.BattleIntroPainter;
 import core.gui.screen.content.battle.painters.BattleOptionsPainter;
 import core.gui.screen.content.battle.painters.BattlePlayerPokemonLabelPainter;
@@ -48,6 +50,7 @@ public class Battle extends Content<Battle> {
 	protected void initKeyHandlers() {
 		keyHandlers.add(new BattleIntroKeyHandler(this), GameStates.BATTLE_INTRO);
 		keyHandlers.add(new BattleOptionsKeyHandler(this), GameStates.BATTLE_OPTIONS);
+		keyHandlers.add(new BattleFightOptionsKeyHandler(this), GameStates.BATTLE_FIGHT_OPTIONS);
 	}
 
 	@Override
@@ -79,6 +82,17 @@ public class Battle extends Content<Battle> {
 		optionsPainter.add(beplp);
 		optionsPainter.add(bop);
 		painterLists.put(GameStates.BATTLE_OPTIONS, optionsPainter);
+		
+		// FIGHT-OPTIONS
+		BattleFightOptionsPainter bfop = new BattleFightOptionsPainter(this);
+		List<Painter<Battle>> fightoptionsPainter = new ArrayList<>();
+		fightoptionsPainter.add(bbp);
+		fightoptionsPainter.add(bppp);
+		fightoptionsPainter.add(bpplp);
+		fightoptionsPainter.add(bepp);
+		fightoptionsPainter.add(beplp);
+		fightoptionsPainter.add(bfop);
+		painterLists.put(GameStates.BATTLE_FIGHT_OPTIONS, fightoptionsPainter);
 	}
 	
 	@Override

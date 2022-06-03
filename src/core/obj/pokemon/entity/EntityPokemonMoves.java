@@ -53,16 +53,23 @@ public class EntityPokemonMoves extends ArrayList<Move> {
 				Node moveNode = movesRoot.selectSingleNode("move[@name='" + m.getName() + "']");
 //				System.out.println("- " + moveNode);
 				String category = moveNode.valueOf("@category");
+				Move move;
 				
 				switch (category) {
 				case "Physical":
-					add(MoveParser.parsePhysical(moveNode));
+					move = MoveParser.parsePhysical(moveNode);
+					if(!alreadyKnows(move))
+						add(move);
 					break;
 				case "Special":
-					add(MoveParser.parseSpecial(moveNode));
+					move = MoveParser.parseSpecial(moveNode);
+					if(!alreadyKnows(move))
+						add(move);
 					break;
 				case "Status":
-					add(MoveParser.parseStatus(moveNode));
+					move = MoveParser.parseStatus(moveNode);
+					if(!alreadyKnows(move))
+						add(move);
 					break;
 				default:
 					throw new Exception("Failed to recognize move category: '" + category + "'");

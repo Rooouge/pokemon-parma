@@ -56,7 +56,7 @@ public class OptionsRect {
 		
 		
 		options = new String[] {"LOTTA","ZAINO", "POKÈMON", "FUGA"};
-		optionsFont = new Font(Fonts.BATTLE_FONT.deriveFont(3f*Fonts.BATTLE_FONT.getSize2D()/2f));
+		optionsFont = Fonts.BATTLE_OPTIONS_FONT;
 		optionsColor = Color.black;
 		points = new Point[4];
 		points[0] = new Point(innerRect.x + 4*margin, innerRect.y + (int) (2*innerRect.getHeight()/5));
@@ -82,11 +82,12 @@ public class OptionsRect {
 	
 	public void paint(Graphics2D g) {
 		GUIUtils.fillRect(g, backgroundRect, backgroundColor);
-		GUIUtils.fillRoungRect(g, innerRect, innerColor, innerArcW, innerArcH);
+		GUIUtils.fillRoundedRect(g, innerRect, innerColor, innerArcW, innerArcH);
 		GUIUtils.fillRect(g, topBorderRect, topBorderColor);
 		GUIUtils.fillRect(g, leftBorderRect, leftBorderColor);
 		
 		g.setColor(optionsColor);
+		g.setFont(optionsFont);
 		for(int i = 0; i < options.length; i++) {
 			g.drawString(options[i], points[i].x, points[i].y);
 		}

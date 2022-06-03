@@ -7,36 +7,33 @@ import core.enums.GameStates;
 import core.events.ChangeStateKeyEvent;
 import core.events.GlobalKeyEvent;
 import core.events.KeyEventWithRunnable;
-import core.files.SoundsHandler;
 import core.gui.interfaces.OnKeyPressHandler;
 import core.gui.screen.content.battle.Battle;
-import core.gui.screen.content.battle.painters.BattleOptionsPainter;
-import core.gui.screen.content.battle.painters.elements.OptionsRect;
+import core.gui.screen.content.battle.painters.BattleFightOptionsPainter;
+import core.gui.screen.content.battle.painters.elements.FightOptionsRect;
 
-public class BattleOptionsKeyHandler extends OnKeyPressHandler<Battle> {
+public class BattleFightOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 
 	private final HashMap<Integer, GlobalKeyEvent> keyMap;
 	
 	
-	public BattleOptionsKeyHandler(Battle parent) {
+	public BattleFightOptionsKeyHandler(Battle parent) {
 		super(parent);
 		
-		BattleOptionsPainter painter = (BattleOptionsPainter) parent.getPainterLists().get(GameStates.BATTLE_OPTIONS).get(5);
-		OptionsRect rect = painter.getOptionsRect();
+		BattleFightOptionsPainter painter = (BattleFightOptionsPainter) parent.getPainterLists().get(GameStates.BATTLE_FIGHT_OPTIONS).get(5);
+		FightOptionsRect rect = painter.getFightOptionsRect();
 		
 		keyMap = new HashMap<>();
 		keyMap.put(KeyEvent.VK_DOWN, new KeyEventWithRunnable(KeyEvent.VK_DOWN, rect::down));
 		keyMap.put(KeyEvent.VK_UP, new KeyEventWithRunnable(KeyEvent.VK_UP, rect::up));
 		keyMap.put(KeyEvent.VK_LEFT, new KeyEventWithRunnable(KeyEvent.VK_LEFT, rect::left));
 		keyMap.put(KeyEvent.VK_RIGHT, new KeyEventWithRunnable(KeyEvent.VK_RIGHT, rect::right));
-		keyMap.put(KeyEvent.VK_SPACE, new ChangeStateKeyEvent(KeyEvent.VK_SPACE, GameStates.BATTLE_OPTIONS, GameStates.BATTLE_FIGHT_OPTIONS).withExtra(() -> {
-			SoundsHandler.playSound(SoundsHandler.PRESS);
-		}));
+		
 		
 		firstLoad = true;
 	}
 
-	
+
 	@Override
 	public void keyPressed(KeyEvent e) throws Exception {
 		if(!pressed && !firstLoad) {
@@ -51,6 +48,7 @@ public class BattleOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 		}
 	}
 
+
 	@Override
 	public void keyReleased(KeyEvent e) {
 		if(firstLoad)
@@ -60,6 +58,7 @@ public class BattleOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 			keyMap.get(e.getKeyCode()).end();
 		}
 	}
+
 
 	@Override
 	public void update() {
@@ -75,5 +74,6 @@ public class BattleOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 			}
 		}
 	}
-
+	
+	
 }

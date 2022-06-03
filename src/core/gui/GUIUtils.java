@@ -42,7 +42,7 @@ public class GUIUtils {
 		g.setColor(pre);
 	}
 	
-	public void fillRoungRect(Graphics2D g, Rectangle r, Color c, int arcW, int arcH) {
+	public void fillRoundedRect(Graphics2D g, Rectangle r, Color c, int arcW, int arcH) {
 		Color pre = g.getColor();
 		
 		g.setColor(c);

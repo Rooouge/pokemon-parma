@@ -14,13 +14,13 @@ public enum Types {
     FLYING("volante", new String[] {}, new String[] {"roccia", "acciaio", "elettro"}, new String[] {"volante", "coleottero", "erba"}),
     POISON("veleno", new String[] {"acciaio"}, new String[] {"veleno", "terra", "roccia", "spettro"}, new String[] {"erba"}),
     GROUND("terra", new String[] {"volante"}, new String[] {"coleottero", "erba"}, new String[] {"veleno", "roccia", "acciaio", "fuoco", "elettro"}),
-    ROCK("roccia", new String[] {}, new String[] {"lotta", "terra", "acciaio"}, new String[] {"volante", "insetto", "fuoco", "ghiaccio"}),
+    ROCK("roccia", new String[] {}, new String[] {"lotta", "terra", "acciaio"}, new String[] {"volante", "coleottero", "fuoco", "ghiaccio"}),
     BUG("coleottero", new String[] {}, new String[] {"lotta", "volante", "veleno", "spettro", "acciaio", "fuoco"}, new String[] {"erba", "psico", "buio"}),
     GHOST("spettro", new String[] {"normale"}, new String[] {"buio"}, new String[] {"spettro", "psico"}),
     STEEL("acciaio", new String[] {}, new String[] {"acciaio", "fuoco", "acqua", "elettro"}, new String[] {"roccia", "ghiaccio"}),
     FIRE("fuoco", new String[] {}, new String[] {"roccia", "fuoco", "acqua", "drago"}, new String[] {"coleottero", "acciaio", "erba", "ghiaccio"}),
     WATER("acqua", new String[] {}, new String[] {"acqua", "erba", "drago"}, new String[] {"terra", "roccia", "fuoco"}),
-    GRASS("erba", new String[] {}, new String[] {"volante", "veleno", "insetto", "acciaio", "fuoco", "erba", "drago"}, new String[] {"terra", "roccia", "acqua"}),
+    GRASS("erba", new String[] {}, new String[] {"volante", "veleno", "coleottero", "acciaio", "fuoco", "erba", "drago"}, new String[] {"terra", "roccia", "acqua"}),
     ELECTRIC("elettro", new String[] {"terra"}, new String[] {"erba", "elettro", "drago"}, new String[] {"volante", "acqua"}),
     PSYCHIC("psico", new String[] {"buio"}, new String[] {"acciaio", "psico"}, new String[] {"lotta", "veleno"}),
     ICE("ghiaccio", new String[] {}, new String[] {"acciaio", "fuoco", "acqua", "ghiaccio"}, new String[] {"volante", "terra", "erba", "drago"}),
@@ -79,10 +79,11 @@ public enum Types {
     
     public static Types getFromName(String name) {
     	for(Types t : values()) {
-    		if(t.name.equalsIgnoreCase(name))
+    		if(t.name.equalsIgnoreCase(name) || t.name().equalsIgnoreCase(name))
     			return t;
     	}
     	
+    	System.out.println("Founded null for: '" + name + "'");
     	return null;
     }
 	

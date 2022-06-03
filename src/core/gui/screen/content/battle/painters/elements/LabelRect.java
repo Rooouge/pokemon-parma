@@ -71,8 +71,8 @@ public class LabelRect {
 	
 	public void paint(Graphics2D g) {
 		GUIUtils.fillRect(g, backgroundRect, backgroundColor);
-		GUIUtils.fillRoungRect(g, innerRect, innerColor, innerArcW, innerArcH);
-		GUIUtils.fillRoungRect(g, mainRect, mainColor, mainArcW, mainArcH);
+		GUIUtils.fillRoundedRect(g, innerRect, innerColor, innerArcW, innerArcH);
+		GUIUtils.fillRoundedRect(g, mainRect, mainColor, mainArcW, mainArcH);
 		GUIUtils.fillRect(g, topBorderRect, topBorderColor);
 		
 		g.setFont(textFont);

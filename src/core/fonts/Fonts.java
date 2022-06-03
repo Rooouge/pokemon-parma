@@ -12,6 +12,7 @@ public class Fonts {
 
 	public Font SCRIPT_TEXT_FONT;
 	public Font BATTLE_FONT;
+	public Font BATTLE_OPTIONS_FONT;
 	
 	
 	public void init() throws Exception {
@@ -26,5 +27,7 @@ public class Fonts {
 		ge.registerFont(font);
 		Log.log("Registered Font '" + font.getName() + "'");
 		BATTLE_FONT = new Font(new java.awt.Font(font.getName(), Font.TRUETYPE_FONT, 6*ContentSettings.tileResize));
+		
+		BATTLE_OPTIONS_FONT = new Font(BATTLE_FONT.deriveFont(3f*Fonts.BATTLE_FONT.getSize2D()/2f));
 	}
 }
