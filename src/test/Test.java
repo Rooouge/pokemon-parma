@@ -16,7 +16,7 @@ public class Test {
 			Core.init();
 			int id = new Random().nextInt(Pokedex.instance().size());
 			Log.log("Player pokemon with id: " + id);
-			Player.instance().getTeam().add(new EntityPokemon(Pokedex.instance().baseData(id)).gender(Genders.MALE).level(45).shiny(false));
+			Player.instance().getTeam().add(new EntityPokemon(Pokedex.instance().baseData(3)).gender(Genders.MALE).level(45));
 			Core.run();
 			
 		} catch (Exception e) {

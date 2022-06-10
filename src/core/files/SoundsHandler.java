@@ -13,6 +13,7 @@ import lombok.experimental.UtilityClass;
 public class SoundsHandler {
 
 	public final String PRESS = "press";
+	public final String DAMAGE = "damage";
 	
 	private Map<String, Clip> clips;
 	
@@ -21,6 +22,7 @@ public class SoundsHandler {
 		clips = new HashMap<>();
 		
 		register(PRESS, getSound(PRESS));
+		register(DAMAGE, getSound(DAMAGE));
 	}
 	
 	

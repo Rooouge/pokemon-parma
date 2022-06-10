@@ -1,39 +1,54 @@
 <moves>
+	<move name="Aerial Ace" type="Flying" category="Physical" power="60" accuracy="-1" pp="20"/>
+	<move name="Arm Thrust" type="Fighting" category="Physical" power="15" accuracy="100" pp="20"/>
+	<move name="Astonish" type="Ghost" category="Physical" power="30" accuracy="100" pp="15"/>
 	<move name="Barrage" type="Normal" category="Physical" power="15" accuracy="85" pp="20"/>
 	<move name="Beat Up" type="Dark" category="Physical" power="-1" accuracy="100" pp="10"/>
 	<move name="Bide" type="Normal" category="Physical" power="-1" accuracy="-1" pp="10"/>
 	<move name="Bind" type="Normal" category="Physical" power="15" accuracy="85" pp="20"/>
 	<move name="Bite" type="Dark" category="Physical" power="60" accuracy="100" pp="25"/>
+	<move name="Blaze Kick" type="Fire" category="Physical" power="85" accuracy="90" pp="10"/>
 	<move name="Body Slam" type="Normal" category="Physical" power="85" accuracy="100" pp="15"/>
 	<move name="Bone Club" type="Ground" category="Physical" power="65" accuracy="85" pp="20"/>
 	<move name="Bone Rush" type="Ground" category="Physical" power="25" accuracy="90" pp="10"/>
 	<move name="Bonemerang" type="Ground" category="Physical" power="50" accuracy="90" pp="10"/>
+	<move name="Bounce" type="Flying" category="Physical" power="85" accuracy="85" pp="5"/>
+	<move name="Brick Break" type="Fighting" category="Physical" power="75" accuracy="100" pp="15"/>
+	<move name="Bullet Seed" type="Grass" category="Physical" power="25" accuracy="100" pp="30"/>
 	<move name="Clamp" type="Water" category="Physical" power="35" accuracy="85" pp="15"/>
 	<move name="Comet Punch" type="Normal" category="Physical" power="18" accuracy="85" pp="15"/>
 	<move name="Constrict" type="Normal" category="Physical" power="10" accuracy="100" pp="35"/>
 	<move name="Counter" type="Fighting" category="Physical" power="-1" accuracy="100" pp="20"/>
+	<move name="Covet" type="Normal" category="Physical" power="60" accuracy="100" pp="25"/>
 	<move name="Crabhammer" type="Water" category="Physical" power="100" accuracy="90" pp="10"/>
 	<move name="Cross Chop" type="Fighting" category="Physical" power="100" accuracy="80" pp="5"/>
 	<move name="Crunch" type="Dark" category="Physical" power="80" accuracy="100" pp="15"/>
+	<move name="Crush Claw" type="Normal" category="Physical" power="75" accuracy="95" pp="10"/>
 	<move name="Cut" type="Normal" category="Physical" power="50" accuracy="95" pp="30"/>
 	<move name="Dig" type="Ground" category="Physical" power="80" accuracy="100" pp="10"/>
+	<move name="Dive" type="Water" category="Physical" power="80" accuracy="100" pp="10"/>
 	<move name="Dizzy Punch" type="Normal" category="Physical" power="70" accuracy="100" pp="10"/>
 	<move name="Double Kick" type="Fighting" category="Physical" power="30" accuracy="100" pp="30"/>
 	<move name="Double Slap" type="Normal" category="Physical" power="15" accuracy="85" pp="10"/>
 	<move name="Double-Edge" type="Normal" category="Physical" power="120" accuracy="100" pp="15"/>
+	<move name="Dragon Claw" type="Dragon" category="Physical" power="80" accuracy="100" pp="15"/>
 	<move name="Drill Peck" type="Flying" category="Physical" power="80" accuracy="100" pp="20"/>
 	<move name="Dynamic Punch" type="Fighting" category="Physical" power="100" accuracy="50" pp="5"/>
 	<move name="Earthquake" type="Ground" category="Physical" power="100" accuracy="100" pp="10"/>
 	<move name="Egg Bomb" type="Normal" category="Physical" power="100" accuracy="75" pp="10"/>
+	<move name="Endeavor" type="Normal" category="Physical" power="-1" accuracy="100" pp="5"/>
 	<move name="Explosion" type="Normal" category="Physical" power="250" accuracy="100" pp="5"/>
 	<move name="Extreme Speed" type="Normal" category="Physical" power="80" accuracy="100" pp="5"/>
+	<move name="Facade" type="Normal" category="Physical" power="70" accuracy="100" pp="20"/>
+	<move name="Fake Out" type="Normal" category="Physical" power="40" accuracy="100" pp="10"/>
 	<move name="False Swipe" type="Normal" category="Physical" power="40" accuracy="100" pp="40"/>
-	<move name="Feint Attack" type="Dark" category="Physical" power="60" accuracy="inf" pp="20"/>
+	<move name="Feint Attack" type="Dark" category="Physical" power="60" accuracy="-1" pp="20"/>
 	<move name="Fire Punch" type="Fire" category="Physical" power="75" accuracy="100" pp="15"/>
-	<move name="Fissure" type="Ground" category="Physical" power="ko" accuracy="30" pp="5"/>
+	<move name="Fissure" type="Ground" category="Physical" power="-1" accuracy="30" pp="5"/>
 	<move name="Flail" type="Normal" category="Physical" power="-1" accuracy="100" pp="15"/>
 	<move name="Flame Wheel" type="Fire" category="Physical" power="60" accuracy="100" pp="25"/>
 	<move name="Fly" type="Flying" category="Physical" power="90" accuracy="95" pp="15"/>
+	<move name="Focus Punch" type="Fighting" category="Physical" power="150" accuracy="100" pp="20"/>
 	<move name="Frustration" type="Normal" category="Physical" power="-1" accuracy="100" pp="20"/>
 	<move name="Fury Attack" type="Normal" category="Physical" power="15" accuracy="85" pp="20"/>
 	<move name="Fury Cutter" type="Bug" category="Physical" power="40" accuracy="95" pp="20"/>
@@ -44,10 +59,14 @@
 	<move name="Horn Attack" type="Normal" category="Physical" power="65" accuracy="100" pp="25"/>
 	<move name="Horn Drill" type="Normal" category="Physical" power="-1" accuracy="30" pp="5"/>
 	<move name="Hyper Fang" type="Normal" category="Physical" power="80" accuracy="90" pp="15"/>
+	<move name="Ice Ball" type="Ice" category="Physical" power="30" accuracy="90" pp="20"/>
 	<move name="Ice Punch" type="Ice" category="Physical" power="75" accuracy="100" pp="15"/>
+	<move name="Icicle Spear" type="Ice" category="Physical" power="25" accuracy="100" pp="30"/>
 	<move name="Iron Tail" type="Steel" category="Physical" power="100" accuracy="75" pp="15"/>
 	<move name="Jump Kick" type="Fighting" category="Physical" power="100" accuracy="95" pp="10"/>
 	<move name="Karate Chop" type="Fighting" category="Physical" power="50" accuracy="100" pp="25"/>
+	<move name="Knock Off" type="Dark" category="Physical" power="65" accuracy="100" pp="20"/>
+	<move name="Leaf Blade" type="Grass" category="Physical" power="90" accuracy="100" pp="15"/>
 	<move name="Leech Life" type="Bug" category="Physical" power="80" accuracy="100" pp="10"/>
 	<move name="Lick" type="Ghost" category="Physical" power="30" accuracy="100" pp="30"/>
 	<move name="Low Kick" type="Fighting" category="Physical" power="-1" accuracy="100" pp="20"/>
@@ -57,11 +76,15 @@
 	<move name="Mega Punch" type="Normal" category="Physical" power="80" accuracy="85" pp="20"/>
 	<move name="Megahorn" type="Bug" category="Physical" power="120" accuracy="85" pp="10"/>
 	<move name="Metal Claw" type="Steel" category="Physical" power="50" accuracy="95" pp="35"/>
+	<move name="Meteor Mash" type="Steel" category="Physical" power="90" accuracy="90" pp="10"/>
+	<move name="Needle Arm" type="Grass" category="Physical" power="60" accuracy="100" pp="15"/>
 	<move name="Outrage" type="Dragon" category="Physical" power="120" accuracy="100" pp="10"/>
 	<move name="Pay Day" type="Normal" category="Physical" power="40" accuracy="100" pp="20"/>
 	<move name="Peck" type="Flying" category="Physical" power="35" accuracy="100" pp="35"/>
 	<move name="Pin Missile" type="Bug" category="Physical" power="25" accuracy="95" pp="20"/>
+	<move name="Poison Fang" type="Poison" category="Physical" power="50" accuracy="100" pp="15"/>
 	<move name="Poison Sting" type="Poison" category="Physical" power="15" accuracy="100" pp="35"/>
+	<move name="Poison Tail" type="Poison" category="Physical" power="50" accuracy="100" pp="25"/>
 	<move name="Pound" type="Normal" category="Physical" power="40" accuracy="100" pp="35"/>
 	<move name="Present" type="Normal" category="Physical" power="-1" accuracy="90" pp="15"/>
 	<move name="Pursuit" type="Dark" category="Physical" power="40" accuracy="100" pp="20"/>
@@ -70,20 +93,28 @@
 	<move name="Rapid Spin" type="Normal" category="Physical" power="50" accuracy="100" pp="40"/>
 	<move name="Razor Leaf" type="Grass" category="Physical" power="55" accuracy="95" pp="25"/>
 	<move name="Return" type="Normal" category="Physical" power="-1" accuracy="100" pp="20"/>
+	<move name="Revenge" type="Fighting" category="Physical" power="60" accuracy="100" pp="10"/>
 	<move name="Reversal" type="Fighting" category="Physical" power="-1" accuracy="100" pp="15"/>
+	<move name="Rock Blast" type="Rock" category="Physical" power="25" accuracy="90" pp="10"/>
 	<move name="Rock Slide" type="Rock" category="Physical" power="75" accuracy="90" pp="10"/>
 	<move name="Rock Smash" type="Fighting" category="Physical" power="40" accuracy="100" pp="15"/>
 	<move name="Rock Throw" type="Rock" category="Physical" power="50" accuracy="90" pp="15"/>
+	<move name="Rock Tomb" type="Rock" category="Physical" power="60" accuracy="95" pp="15"/>
 	<move name="Rolling Kick" type="Fighting" category="Physical" power="60" accuracy="85" pp="15"/>
 	<move name="Rollout" type="Rock" category="Physical" power="30" accuracy="90" pp="20"/>
 	<move name="Sacred Fire" type="Fire" category="Physical" power="100" accuracy="95" pp="5"/>
+	<move name="Sand Tomb" type="Ground" category="Physical" power="35" accuracy="85" pp="15"/>
 	<move name="Scratch" type="Normal" category="Physical" power="40" accuracy="100" pp="35"/>
+	<move name="Secret Power" type="Normal" category="Physical" power="70" accuracy="100" pp="20"/>
 	<move name="Seismic Toss" type="Fighting" category="Physical" power="-1" accuracy="100" pp="20"/>
 	<move name="Self-Destruct" type="Normal" category="Physical" power="200" accuracy="100" pp="5"/>
+	<move name="Shadow Punch" type="Ghost" category="Physical" power="60" accuracy="-1" pp="20"/>
 	<move name="Skull Bash" type="Normal" category="Physical" power="130" accuracy="100" pp="10"/>
 	<move name="Sky Attack" type="Flying" category="Physical" power="140" accuracy="90" pp="5"/>
+	<move name="Sky Uppercut" type="Fighting" category="Physical" power="85" accuracy="90" pp="15"/>
 	<move name="Slam" type="Normal" category="Physical" power="80" accuracy="75" pp="20"/>
 	<move name="Slash" type="Normal" category="Physical" power="70" accuracy="100" pp="20"/>
+	<move name="Smelling Salts" type="Normal" category="Physical" power="70" accuracy="100" pp="10"/>
 	<move name="Spark" type="Electric" category="Physical" power="65" accuracy="100" pp="20"/>
 	<move name="Spike Cannon" type="Normal" category="Physical" power="20" accuracy="100" pp="15"/>
 	<move name="Steel Wing" type="Steel" category="Physical" power="70" accuracy="90" pp="25"/>
@@ -92,6 +123,7 @@
 	<move name="Struggle" type="Normal" category="Physical" power="50" accuracy="-1" pp="-1"/>
 	<move name="Submission" type="Fighting" category="Physical" power="80" accuracy="80" pp="20"/>
 	<move name="Super Fang" type="Normal" category="Physical" power="-1" accuracy="90" pp="10"/>
+	<move name="Superpower" type="Fighting" category="Physical" power="120" accuracy="100" pp="5"/>
 	<move name="Tackle" type="Normal" category="Physical" power="40" accuracy="100" pp="35"/>
 	<move name="Take Down" type="Normal" category="Physical" power="90" accuracy="85" pp="20"/>
 	<move name="Thief" type="Dark" category="Physical" power="60" accuracy="100" pp="25"/>
@@ -100,74 +132,108 @@
 	<move name="Triple Kick" type="Fighting" category="Physical" power="10" accuracy="90" pp="10"/>
 	<move name="Twineedle" type="Bug" category="Physical" power="25" accuracy="100" pp="20"/>
 	<move name="Vine Whip" type="Grass" category="Physical" power="45" accuracy="100" pp="25"/>
-	<move name="Vise Grip" type="Normal" category="Physical" power="55" accuracy="100" pp="30"/>
-	<move name="Vital Throw" type="Fighting" category="Physical" power="70" accuracy="100" pp="10"/>
+	<move name="Vice Grip" type="Normal" category="Physical" power="55" accuracy="100" pp="30"/>
+	<move name="Vital Throw" type="Fighting" category="Physical" power="70" accuracy="-1" pp="10"/>
+	<move name="Volt Tackle" type="Electric" category="Physical" power="120" accuracy="100" pp="15"/>
 	<move name="Waterfall" type="Water" category="Physical" power="80" accuracy="100" pp="15"/>
 	<move name="Wing Attack" type="Flying" category="Physical" power="60" accuracy="100" pp="35"/>
 	<move name="Wrap" type="Normal" category="Physical" power="15" accuracy="90" pp="20"/>
 	<move name="Absorb" type="Grass" category="Special" power="20" accuracy="100" pp="25"/>
 	<move name="Acid" type="Poison" category="Special" power="40" accuracy="100" pp="30"/>
 	<move name="Aeroblast" type="Flying" category="Special" power="100" accuracy="95" pp="5"/>
-	<move name="Ancient Power" type="Rock" category="Special" power="60" accuracy="100" pp="5"/>
+	<move name="Air Cutter" type="Flying" category="Special" power="60" accuracy="95" pp="25"/>
+	<move name="Ancientpower" type="Rock" category="Special" power="60" accuracy="100" pp="5"/>
 	<move name="Aurora Beam" type="Ice" category="Special" power="65" accuracy="100" pp="20"/>
+	<move name="Blast Burn" type="Fire" category="Special" power="150" accuracy="90" pp="5"/>
 	<move name="Blizzard" type="Ice" category="Special" power="110" accuracy="70" pp="5"/>
 	<move name="Bubble" type="Water" category="Special" power="40" accuracy="100" pp="30"/>
-	<move name="Bubble Beam" type="Water" category="Special" power="65" accuracy="100" pp="20"/>
+	<move name="Bubblebeam" type="Water" category="Special" power="65" accuracy="100" pp="20"/>
 	<move name="Confusion" type="Psychic" category="Special" power="50" accuracy="100" pp="25"/>
-	<move name="Dragon Breath" type="Dragon" category="Special" power="60" accuracy="100" pp="20"/>
+	<move name="Doom Desire" type="Steel" category="Special" power="140" accuracy="100" pp="5"/>
+	<move name="Dragonbreath" type="Dragon" category="Special" power="60" accuracy="100" pp="20"/>
 	<move name="Dragon Rage" type="Dragon" category="Special" power="-1" accuracy="100" pp="10"/>
 	<move name="Dream Eater" type="Psychic" category="Special" power="100" accuracy="100" pp="15"/>
 	<move name="Ember" type="Fire" category="Special" power="40" accuracy="100" pp="25"/>
+	<move name="Eruption" type="Fire" category="Special" power="150" accuracy="100" pp="5"/>
+	<move name="Extrasensory" type="Psychic" category="Special" power="80" accuracy="100" pp="20"/>
 	<move name="Fire Blast" type="Fire" category="Special" power="110" accuracy="85" pp="5"/>
 	<move name="Fire Spin" type="Fire" category="Special" power="35" accuracy="85" pp="15"/>
 	<move name="Flamethrower" type="Fire" category="Special" power="90" accuracy="100" pp="15"/>
+	<move name="Frenzy Plant" type="Grass" category="Special" power="150" accuracy="90" pp="5"/>
 	<move name="Future Sight" type="Psychic" category="Special" power="120" accuracy="100" pp="10"/>
 	<move name="Giga Drain" type="Grass" category="Special" power="75" accuracy="100" pp="10"/>
 	<move name="Gust" type="Flying" category="Special" power="40" accuracy="100" pp="35"/>
+	<move name="Heat Wave" type="Fire" category="Special" power="95" accuracy="90" pp="10"/>
 	<move name="Hidden Power" type="Normal" category="Special" power="60" accuracy="100" pp="15"/>
+	<move name="Hydro Cannon" type="Water" category="Special" power="150" accuracy="90" pp="5"/>
 	<move name="Hydro Pump" type="Water" category="Special" power="110" accuracy="80" pp="5"/>
 	<move name="Hyper Beam" type="Normal" category="Special" power="150" accuracy="90" pp="5"/>
+	<move name="Hyper Voice" type="Normal" category="Special" power="90" accuracy="100" pp="10"/>
 	<move name="Ice Beam" type="Ice" category="Special" power="90" accuracy="100" pp="10"/>
 	<move name="Icy Wind" type="Ice" category="Special" power="55" accuracy="95" pp="15"/>
+	<move name="Luster Purge" type="Psychic" category="Special" power="70" accuracy="100" pp="5"/>
+	<move name="Magical Leaf" type="Grass" category="Special" power="60" accuracy="-1" pp="20"/>
 	<move name="Mega Drain" type="Grass" category="Special" power="40" accuracy="100" pp="15"/>
 	<move name="Mirror Coat" type="Psychic" category="Special" power="-1" accuracy="100" pp="20"/>
+	<move name="Mist Ball" type="Psychic" category="Special" power="70" accuracy="100" pp="5"/>
+	<move name="Mud Shot" type="Ground" category="Special" power="55" accuracy="95" pp="15"/>
 	<move name="Mud-Slap" type="Ground" category="Special" power="20" accuracy="100" pp="10"/>
+	<move name="Muddy Water" type="Water" category="Special" power="90" accuracy="85" pp="10"/>
 	<move name="Night Shade" type="Ghost" category="Special" power="-1" accuracy="100" pp="15"/>
 	<move name="Octazooka" type="Water" category="Special" power="65" accuracy="85" pp="10"/>
+	<move name="Overheat" type="Fire" category="Special" power="130" accuracy="90" pp="5"/>
 	<move name="Petal Dance" type="Grass" category="Special" power="120" accuracy="100" pp="10"/>
 	<move name="Powder Snow" type="Ice" category="Special" power="40" accuracy="100" pp="25"/>
 	<move name="Psybeam" type="Psychic" category="Special" power="65" accuracy="100" pp="20"/>
 	<move name="Psychic" type="Psychic" category="Special" power="90" accuracy="100" pp="10"/>
+	<move name="Psycho Boost" type="Psychic" category="Special" power="140" accuracy="90" pp="5"/>
 	<move name="Psywave" type="Psychic" category="Special" power="-1" accuracy="100" pp="15"/>
 	<move name="Razor Wind" type="Normal" category="Special" power="80" accuracy="100" pp="10"/>
 	<move name="Shadow Ball" type="Ghost" category="Special" power="80" accuracy="100" pp="15"/>
+	<move name="Sheer Cold" type="Ice" category="Special" power="-1" accuracy="30" pp="5"/>
+	<move name="Shock Wave" type="Electric" category="Special" power="60" accuracy="-1" pp="20"/>
+	<move name="Signal Beam" type="Bug" category="Special" power="75" accuracy="100" pp="15"/>
+	<move name="Silver Wind" type="Bug" category="Special" power="60" accuracy="100" pp="5"/>
 	<move name="Sludge" type="Poison" category="Special" power="65" accuracy="100" pp="20"/>
 	<move name="Sludge Bomb" type="Poison" category="Special" power="90" accuracy="100" pp="10"/>
 	<move name="Smog" type="Poison" category="Special" power="30" accuracy="70" pp="20"/>
 	<move name="Snore" type="Normal" category="Special" power="50" accuracy="100" pp="15"/>
 	<move name="Solar Beam" type="Grass" category="Special" power="120" accuracy="100" pp="10"/>
-	<move name="Sonic Boom" type="Normal" category="Special" power="-1" accuracy="90" pp="20"/>
+	<move name="Sonicboom" type="Normal" category="Special" power="-1" accuracy="90" pp="20"/>
+	<move name="Spit Up" type="Normal" category="Special" power="-1" accuracy="100" pp="10"/>
 	<move name="Surf" type="Water" category="Special" power="90" accuracy="100" pp="15"/>
-	<move name="Swift" type="Normal" category="Special" power="60" accuracy="100" pp="20"/>
+	<move name="Swift" type="Normal" category="Special" power="60" accuracy="-1" pp="20"/>
 	<move name="Thunder" type="Electric" category="Special" power="110" accuracy="70" pp="10"/>
-	<move name="Thunder Shock" type="Electric" category="Special" power="40" accuracy="100" pp="30"/>
+	<move name="Thundershock" type="Electric" category="Special" power="40" accuracy="100" pp="30"/>
 	<move name="Thunderbolt" type="Electric" category="Special" power="90" accuracy="100" pp="15"/>
 	<move name="Tri Attack" type="Normal" category="Special" power="80" accuracy="100" pp="10"/>
 	<move name="Twister" type="Dragon" category="Special" power="40" accuracy="100" pp="20"/>
+	<move name="Uproar" type="Normal" category="Special" power="90" accuracy="100" pp="10"/>
 	<move name="Water Gun" type="Water" category="Special" power="40" accuracy="100" pp="25"/>
+	<move name="Water Pulse" type="Water" category="Special" power="60" accuracy="100" pp="20"/>
+	<move name="Water Spout" type="Water" category="Special" power="150" accuracy="100" pp="5"/>
+	<move name="Weather Ball" type="Normal" category="Special" power="50" accuracy="100" pp="10"/>
 	<move name="Whirlpool" type="Water" category="Special" power="35" accuracy="85" pp="15"/>
 	<move name="Zap Cannon" type="Electric" category="Special" power="120" accuracy="50" pp="5"/>
 	<move name="Acid Armor" type="Poison" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="Agility" type="Psychic" category="Status" power="-1" accuracy="-1" pp="30"/>
 	<move name="Amnesia" type="Psychic" category="Status" power="-1" accuracy="-1" pp="20"/>
+	<move name="Aromatherapy" type="Grass" category="Status" power="-1" accuracy="-1" pp="5"/>
+	<move name="Assist" type="Normal" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="Attract" type="Normal" category="Status" power="-1" accuracy="100" pp="15"/>
 	<move name="Barrier" type="Psychic" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="Baton Pass" type="Normal" category="Status" power="-1" accuracy="-1" pp="40"/>
 	<move name="Belly Drum" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
+	<move name="Block" type="Normal" category="Status" power="-1" accuracy="-1" pp="5"/>
+	<move name="Bulk Up" type="Fighting" category="Status" power="-1" accuracy="-1" pp="20"/>
+	<move name="Calm Mind" type="Psychic" category="Status" power="-1" accuracy="-1" pp="20"/>
+	<move name="Camouflage" type="Normal" category="Status" power="-1" accuracy="-1" pp="20"/>
+	<move name="Charge" type="Electric" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="Charm" type="Fairy" category="Status" power="-1" accuracy="100" pp="20"/>
 	<move name="Confuse Ray" type="Ghost" category="Status" power="-1" accuracy="100" pp="10"/>
 	<move name="Conversion" type="Normal" category="Status" power="-1" accuracy="-1" pp="30"/>
 	<move name="Conversion 2" type="Normal" category="Status" power="-1" accuracy="-1" pp="30"/>
+	<move name="Cosmic Power" type="Psychic" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="Cotton Spore" type="Grass" category="Status" power="-1" accuracy="100" pp="40"/>
 	<move name="Curse" type="Ghost" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Defense Curl" type="Normal" category="Status" power="-1" accuracy="-1" pp="40"/>
@@ -175,26 +241,42 @@
 	<move name="Detect" type="Fighting" category="Status" power="-1" accuracy="-1" pp="5"/>
 	<move name="Disable" type="Normal" category="Status" power="-1" accuracy="100" pp="20"/>
 	<move name="Double Team" type="Normal" category="Status" power="-1" accuracy="-1" pp="15"/>
+	<move name="Dragon Dance" type="Dragon" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="Encore" type="Normal" category="Status" power="-1" accuracy="100" pp="5"/>
 	<move name="Endure" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
+	<move name="Fake Tears" type="Dark" category="Status" power="-1" accuracy="100" pp="20"/>
+	<move name="Featherdance" type="Flying" category="Status" power="-1" accuracy="100" pp="15"/>
 	<move name="Flash" type="Normal" category="Status" power="-1" accuracy="100" pp="20"/>
+	<move name="Flatter" type="Dark" category="Status" power="-1" accuracy="100" pp="15"/>
 	<move name="Focus Energy" type="Normal" category="Status" power="-1" accuracy="-1" pp="30"/>
+	<move name="Follow Me" type="Normal" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="Foresight" type="Normal" category="Status" power="-1" accuracy="-1" pp="40"/>
 	<move name="Glare" type="Normal" category="Status" power="-1" accuracy="100" pp="30"/>
+	<move name="Grass Whistle" type="Grass" category="Status" power="-1" accuracy="55" pp="15"/>
 	<move name="Growl" type="Normal" category="Status" power="-1" accuracy="100" pp="40"/>
 	<move name="Growth" type="Normal" category="Status" power="-1" accuracy="-1" pp="20"/>
+	<move name="Grudge" type="Ghost" category="Status" power="-1" accuracy="-1" pp="5"/>
+	<move name="Hail" type="Ice" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Harden" type="Normal" category="Status" power="-1" accuracy="-1" pp="30"/>
 	<move name="Haze" type="Ice" category="Status" power="-1" accuracy="-1" pp="30"/>
 	<move name="Heal Bell" type="Normal" category="Status" power="-1" accuracy="-1" pp="5"/>
+	<move name="Helping Hand" type="Normal" category="Status" power="-1" accuracy="-1" pp="20"/>
+	<move name="Howl" type="Normal" category="Status" power="-1" accuracy="-1" pp="40"/>
 	<move name="Hypnosis" type="Psychic" category="Status" power="-1" accuracy="60" pp="20"/>
+	<move name="Imprison" type="Psychic" category="Status" power="-1" accuracy="-1" pp="10"/>
+	<move name="Ingrain" type="Grass" category="Status" power="-1" accuracy="-1" pp="20"/>
+	<move name="Iron Defense" type="Steel" category="Status" power="-1" accuracy="-1" pp="15"/>
 	<move name="Kinesis" type="Psychic" category="Status" power="-1" accuracy="80" pp="15"/>
 	<move name="Leech Seed" type="Grass" category="Status" power="-1" accuracy="90" pp="10"/>
 	<move name="Leer" type="Normal" category="Status" power="-1" accuracy="100" pp="30"/>
 	<move name="Light Screen" type="Psychic" category="Status" power="-1" accuracy="-1" pp="30"/>
 	<move name="Lock-On" type="Normal" category="Status" power="-1" accuracy="-1" pp="5"/>
 	<move name="Lovely Kiss" type="Normal" category="Status" power="-1" accuracy="75" pp="10"/>
+	<move name="Magic Coat" type="Psychic" category="Status" power="-1" accuracy="-1" pp="15"/>
 	<move name="Mean Look" type="Normal" category="Status" power="-1" accuracy="-1" pp="5"/>
 	<move name="Meditate" type="Psychic" category="Status" power="-1" accuracy="-1" pp="40"/>
+	<move name="Memento" type="Dark" category="Status" power="-1" accuracy="100" pp="10"/>
+	<move name="Metal Sound" type="Steel" category="Status" power="-1" accuracy="85" pp="40"/>
 	<move name="Metronome" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Milk Drink" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Mimic" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
@@ -204,7 +286,10 @@
 	<move name="Mist" type="Ice" category="Status" power="-1" accuracy="-1" pp="30"/>
 	<move name="Moonlight" type="Fairy" category="Status" power="-1" accuracy="-1" pp="5"/>
 	<move name="Morning Sun" type="Normal" category="Status" power="-1" accuracy="-1" pp="5"/>
+	<move name="Mud Sport" type="Ground" category="Status" power="-1" accuracy="-1" pp="15"/>
+	<move name="Nature Power" type="Normal" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="Nightmare" type="Ghost" category="Status" power="-1" accuracy="100" pp="15"/>
+	<move name="Odor Sleuth" type="Normal" category="Status" power="-1" accuracy="-1" pp="40"/>
 	<move name="Pain Split" type="Normal" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="Perish Song" type="Normal" category="Status" power="-1" accuracy="-1" pp="5"/>
 	<move name="Poison Gas" type="Poison" category="Status" power="-1" accuracy="90" pp="40"/>
@@ -213,9 +298,12 @@
 	<move name="Psych Up" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Rain Dance" type="Water" category="Status" power="-1" accuracy="-1" pp="5"/>
 	<move name="Recover" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
+	<move name="Recycle" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Reflect" type="Psychic" category="Status" power="-1" accuracy="-1" pp="20"/>
+	<move name="Refresh" type="Normal" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="Rest" type="Psychic" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Roar" type="Normal" category="Status" power="-1" accuracy="-1" pp="20"/>
+	<move name="Role Play" type="Psychic" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Safeguard" type="Normal" category="Status" power="-1" accuracy="-1" pp="25"/>
 	<move name="Sand Attack" type="Ground" category="Status" power="-1" accuracy="100" pp="15"/>
 	<move name="Sandstorm" type="Rock" category="Status" power="-1" accuracy="-1" pp="10"/>
@@ -224,30 +312,45 @@
 	<move name="Sharpen" type="Normal" category="Status" power="-1" accuracy="-1" pp="30"/>
 	<move name="Sing" type="Normal" category="Status" power="-1" accuracy="55" pp="15"/>
 	<move name="Sketch" type="Normal" category="Status" power="-1" accuracy="-1" pp="1"/>
+	<move name="Skill Swap" type="Psychic" category="Status" power="-1" accuracy="-1" pp="10"/>
+	<move name="Slack Off" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Sleep Powder" type="Grass" category="Status" power="-1" accuracy="75" pp="15"/>
 	<move name="Sleep Talk" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Smokescreen" type="Normal" category="Status" power="-1" accuracy="100" pp="20"/>
-	<move name="Soft-Boiled" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
+	<move name="Snatch" type="Dark" category="Status" power="-1" accuracy="-1" pp="10"/>
+	<move name="Softboiled" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Spider Web" type="Bug" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Spikes" type="Ground" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="Spite" type="Ghost" category="Status" power="-1" accuracy="100" pp="10"/>
 	<move name="Splash" type="Normal" category="Status" power="-1" accuracy="-1" pp="40"/>
 	<move name="Spore" type="Grass" category="Status" power="-1" accuracy="100" pp="15"/>
+	<move name="Stockpile" type="Normal" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="String Shot" type="Bug" category="Status" power="-1" accuracy="95" pp="40"/>
 	<move name="Stun Spore" type="Grass" category="Status" power="-1" accuracy="75" pp="30"/>
 	<move name="Substitute" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Sunny Day" type="Fire" category="Status" power="-1" accuracy="-1" pp="5"/>
 	<move name="Supersonic" type="Normal" category="Status" power="-1" accuracy="55" pp="20"/>
 	<move name="Swagger" type="Normal" category="Status" power="-1" accuracy="85" pp="15"/>
+	<move name="Swallow" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Sweet Kiss" type="Fairy" category="Status" power="-1" accuracy="75" pp="10"/>
 	<move name="Sweet Scent" type="Normal" category="Status" power="-1" accuracy="100" pp="20"/>
 	<move name="Swords Dance" type="Normal" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="Synthesis" type="Grass" category="Status" power="-1" accuracy="-1" pp="5"/>
+	<move name="Tail Glow" type="Bug" category="Status" power="-1" accuracy="-1" pp="20"/>
 	<move name="Tail Whip" type="Normal" category="Status" power="-1" accuracy="100" pp="30"/>
+	<move name="Taunt" type="Dark" category="Status" power="-1" accuracy="100" pp="20"/>
+	<move name="Teeter Dance" type="Normal" category="Status" power="-1" accuracy="100" pp="20"/>
 	<move name="Teleport" type="Psychic" category="Status" power="-1" accuracy="-1" pp="20"/>
-	<move name="Thunder Wave" type="Electric" category="Status" power="-1" accuracy="90" pp="20"/>
+	<move name="Thunderwave" type="Electric" category="Status" power="-1" accuracy="90" pp="20"/>
+	<move name="Tickle" type="Normal" category="Status" power="-1" accuracy="100" pp="20"/>
+	<move name="Torment" type="Dark" category="Status" power="-1" accuracy="100" pp="15"/>
 	<move name="Toxic" type="Poison" category="Status" power="-1" accuracy="90" pp="10"/>
 	<move name="Transform" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
+	<move name="Trick" type="Psychic" category="Status" power="-1" accuracy="100" pp="10"/>
+	<move name="Water Sport" type="Water" category="Status" power="-1" accuracy="-1" pp="15"/>
 	<move name="Whirlwind" type="Normal" category="Status" power="-1" accuracy="-1" pp="20"/>
+	<move name="Will-O-Wisp" type="Fire" category="Status" power="-1" accuracy="85" pp="15"/>
+	<move name="Wish" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
 	<move name="Withdraw" type="Water" category="Status" power="-1" accuracy="-1" pp="40"/>
+	<move name="Yawn" type="Normal" category="Status" power="-1" accuracy="-1" pp="10"/>
 </moves>

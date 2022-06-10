@@ -1,7 +1,9 @@
 package core.events;
 
 import core.enums.GameStates;
+import core.gui.interfaces.OnKeyPressHandler;
 import core.gui.screen.GlobalKeyEventHandler;
+import jutils.gui.ColoredPanel;
 
 public class ChangeStateKeyEvent extends GlobalKeyEvent {
 	
@@ -27,7 +29,10 @@ public class ChangeStateKeyEvent extends GlobalKeyEvent {
 		if(extra != null)
 			extra.run();
 		
-		GlobalKeyEventHandler.get(toSet).onLoad();
+		OnKeyPressHandler<? extends ColoredPanel> listener = GlobalKeyEventHandler.get(toSet);
+		if(listener != null)
+			listener.onLoad();
+		
 		GameStates.set(toSet);
 	}
 }

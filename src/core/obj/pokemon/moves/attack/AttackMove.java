@@ -2,9 +2,11 @@ package core.obj.pokemon.moves.attack;
 
 import java.util.function.Function;
 
+import core.Log;
 import core.enums.MoveTypes;
 import core.enums.Types;
 import core.events.battle.BattleMap;
+import core.obj.pokemon.battle.BattlePokemonData;
 import core.obj.pokemon.moves.Move;
 import lombok.Getter;
 
@@ -33,6 +35,30 @@ public abstract class AttackMove extends Move {
 	public AttackMove withDamageFunction(Function<BattleMap, Integer> damageSupplier) {
 		this.damageFunction = damageSupplier;
 		return this;
+	}
+	
+	
+	public double getTypeModifier(BattlePokemonData data) {
+		Types dfType1 = data.getEntityData().getBaseData().getMainType();
+		Types dfType2 = data.getEntityData().getBaseData().getSecondaryType();
+		double M1 = type.getMultiplierForType(dfType1);
+		double M2 = type.getMultiplierForType(dfType2);
+		double M = M1*M2;
+
+		Log.log("T: " + type);
+		Log.log("1: " + dfType1 + " " + M1);
+		Log.log("2: " + dfType2 + " " + M2);
+		Log.log("M: " + M);
+		
+		return M;
+	}
+	
+	public double getSameTypeAttackBonus(BattlePokemonData data) {
+		Types dfType1 = data.getEntityData().getBaseData().getMainType();
+		Types dfType2 = data.getEntityData().getBaseData().getSecondaryType();
+		double STAB = (type.equals(dfType1) || type.equals(dfType2)) ? 1.5 : 1.0;
+		
+		return STAB;
 	}
 	
 	/**

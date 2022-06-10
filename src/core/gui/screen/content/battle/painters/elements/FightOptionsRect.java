@@ -166,7 +166,7 @@ public class FightOptionsRect {
 				g.drawString(ppLabel, rightPoints[i].x, rightPoints[i].y);
 				break;
 			case 2:
-				g.drawString("TYPE", rightPoints[i].x, rightPoints[i].y);
+				g.drawString("TIPO", rightPoints[i].x, rightPoints[i].y);
 				break;
 			default:
 				if(rightPoints[i] != null)
@@ -227,7 +227,10 @@ public class FightOptionsRect {
 			typeImage = null;
 			rightPoints[3] = null;
 		}
-		
-		
+	}
+	
+	
+	public Move getSelected() {
+		return moves.get(selected);
 	}
 }

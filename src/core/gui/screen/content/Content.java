@@ -39,7 +39,7 @@ public abstract class Content<T extends ColoredPanel> extends ColoredPanel {
 	@Setter
 	protected boolean forceStop;
 	@Setter
-	protected GUIAnimation animation;
+	protected GUIAnimation<? extends Content<? extends ColoredPanel>> animation;
 	
 	
 	public Content(boolean forceCache, int deallocationDelay) {

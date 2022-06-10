@@ -59,20 +59,18 @@ public enum Types {
     
     public static void init() {
     	for(Types t : values()) {
-    		initList(t.raw0x, t.mod0x);
-    		initList(t.raw05x, t.mod05x);
-    		initList(t.raw2x, t.mod2x);
+    		t.mod0x = initList(t.raw0x);
+    		t.mod05x = initList(t.raw05x);
+    		t.mod2x = initList(t.raw2x);
     	}
     }
 
-    private static List<Types> initList(String[] raw, List<Types> mod) {
-    	mod = new ArrayList<>();
+    private static List<Types> initList(String[] raw) {
+    	List<Types> mod = new ArrayList<>();
     	
     	for(String s : raw) {
     		mod.add(getFromName(s));
     	}
-    	
-    	raw = null;
     	
     	return mod;
     }

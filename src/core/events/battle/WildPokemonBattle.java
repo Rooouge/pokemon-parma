@@ -9,19 +9,20 @@ import lombok.Getter;
 @Getter
 public class WildPokemonBattle extends BattleEvent {
 
+	public static final String KEY = "WildPokemonBattle";
+	
 	private final WildPokemonEvent event;
-	private final EntityPokemon entityPokemon;
 	
 	
 	public WildPokemonBattle(WildPokemonEvent event, TileMovements tile) throws Exception {
-		super(tile);
+		super(tile, new EntityPokemon(Pokedex.instance().baseData(event.getId())).level(event.getLevel()).gender(event.getGender()).shiny(event.isShiny()));
 		this.event = event;
-		entityPokemon = new EntityPokemon(Pokedex.instance().baseData(event.getId())).level(event.getLevel()).gender(event.getGender()).shiny(event.isShiny());
 		
 		int id = entityPokemon.getData().getBaseData().getId();
 		int level = event.getLevel();
 		
 		entityPokemon.getData().getMoves().generateMovesForWildPokemon(id, level);
 	}
+	
 	
 }

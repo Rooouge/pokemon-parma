@@ -5,6 +5,13 @@ import java.util.Map;
 
 public class BattleMap {
 
+	public static final String BATTLE_CLASS_KEY = "battle_class_key";
+	public static final String PLAYER_PKM = "player_pkm";
+	public static final String ENEMY_PKM = "enemy_pkm";
+	public static final String ATK = "atk";
+	public static final String DEF = "def";
+	public static final String MOVE = "move";
+	
 	private Map<String, Object> map;
 	
 	
@@ -13,7 +20,7 @@ public class BattleMap {
 	}
 	
 	
-	public void add(String key, Object obj) {
+	public void put(String key, Object obj) {
 		map.put(key, obj);
 	}
 	
@@ -23,5 +30,9 @@ public class BattleMap {
 	
 	public <T> T get(String key, Class<T> clazz) {
 		return clazz.cast(map.get(key));
+	}
+	
+	public void clear() {
+		map.clear();
 	}
 }

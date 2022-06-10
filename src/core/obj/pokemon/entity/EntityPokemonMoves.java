@@ -13,6 +13,7 @@ import core.files.XMLHandler;
 import core.obj.pokemon.moves.Move;
 import core.obj.pokemon.moves.MoveAtLevel;
 import core.obj.pokemon.moves.MoveParser;
+import core.obj.pokemon.pokedex.Pokedex;
 import jutils.log.Log;
 
 @SuppressWarnings("serial")
@@ -24,6 +25,7 @@ public class EntityPokemonMoves extends ArrayList<Move> {
 	 * Gets the last 4 moves for the specified pokemon at the specified level
 	 */
 	public void generateMovesForWildPokemon(int id, int level) throws Exception {
+		Log.info("Generating moves for wild pokémon " + Pokedex.instance().baseData(id).getName() + " at level " + level);
 		try {
 			File xml = XMLHandler.getFile("pokemon", "moves/learnsets");
 			Document doc = new SAXReader().read(xml);
@@ -49,9 +51,9 @@ public class EntityPokemonMoves extends ArrayList<Move> {
 				
 				if(m.getLevel() > level)
 					continue;
-				
+
+				Log.info("Creating move '" + m.getName() + "'");
 				Node moveNode = movesRoot.selectSingleNode("move[@name='" + m.getName() + "']");
-//				System.out.println("- " + moveNode);
 				String category = moveNode.valueOf("@category");
 				Move move;
 				

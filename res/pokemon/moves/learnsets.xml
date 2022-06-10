@@ -181,7 +181,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -245,7 +245,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -311,7 +311,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -380,7 +380,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Icy Wind</move>
@@ -445,7 +445,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Icy Wind</move>
@@ -511,7 +511,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Icy Wind</move>
@@ -686,12 +686,12 @@
 	<pokemon id="16">
 		<levelup>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="5">Sand-Attack</move>
+			<move atlevel="5">Sand Attack</move>
 			<move atlevel="9">Gust</move>
 			<move atlevel="13">Quick Attack</move>
 			<move atlevel="19">Whirlwind</move>
 			<move atlevel="25">Wing Attack</move>
-			<move atlevel="31">FeatherDance</move>
+			<move atlevel="31">Featherdance</move>
 			<move atlevel="39">Agility</move>
 			<move atlevel="47">Mirror Move</move>
 		</levelup>
@@ -730,14 +730,14 @@
 	<pokemon id="17">
 		<levelup>
 			<move atlevel="1">Gust</move>
-			<move atlevel="1">Sand-Attack</move>
+			<move atlevel="1">Sand Attack</move>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="5">Sand-Attack</move>
+			<move atlevel="5">Sand Attack</move>
 			<move atlevel="9">Gust</move>
 			<move atlevel="13">Quick Attack</move>
 			<move atlevel="20">Whirlwind</move>
 			<move atlevel="27">Wing Attack</move>
-			<move atlevel="34">FeatherDance</move>
+			<move atlevel="34">Featherdance</move>
 			<move atlevel="43">Agility</move>
 			<move atlevel="52">Mirror Move</move>
 		</levelup>
@@ -777,14 +777,14 @@
 		<levelup>
 			<move atlevel="1">Gust</move>
 			<move atlevel="1">Quick Attack</move>
-			<move atlevel="1">Sand-Attack</move>
+			<move atlevel="1">Sand Attack</move>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="5">Sand-Attack</move>
+			<move atlevel="5">Sand Attack</move>
 			<move atlevel="9">Gust</move>
 			<move atlevel="13">Quick Attack</move>
 			<move atlevel="20">Whirlwind</move>
 			<move atlevel="27">Wing Attack</move>
-			<move atlevel="34">FeatherDance</move>
+			<move atlevel="34">Featherdance</move>
 			<move atlevel="48">Agility</move>
 			<move atlevel="62">Mirror Move</move>
 		</levelup>
@@ -846,7 +846,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -903,7 +903,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -1135,9 +1135,9 @@
 	<pokemon id="25">
 		<levelup>
 			<move atlevel="1">Growl</move>
-			<move atlevel="1">ThunderShock</move>
+			<move atlevel="1">Thundershock</move>
 			<move atlevel="6">Tail Whip</move>
-			<move atlevel="8">Thunder Wave</move>
+			<move atlevel="8">Thunderwave</move>
 			<move atlevel="11">Quick Attack</move>
 			<move atlevel="15">Double Team</move>
 			<move atlevel="20">Slam</move>
@@ -1151,7 +1151,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Mega Kick</move>
 			<move>Mega Punch</move>
@@ -1164,8 +1164,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -1198,7 +1198,7 @@
 		<levelup>
 			<move atlevel="1">Quick Attack</move>
 			<move atlevel="1">Tail Whip</move>
-			<move atlevel="1">ThunderShock</move>
+			<move atlevel="1">Thundershock</move>
 			<move atlevel="1">Thunderbolt</move>
 		</levelup>
 		<tutor>
@@ -1206,7 +1206,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Mega Kick</move>
 			<move>Mega Punch</move>
@@ -1219,8 +1219,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -1255,7 +1255,7 @@
 		<levelup>
 			<move atlevel="1">Scratch</move>
 			<move atlevel="6">Defense Curl</move>
-			<move atlevel="11">Sand-Attack</move>
+			<move atlevel="11">Sand Attack</move>
 			<move atlevel="17">Poison Sting</move>
 			<move atlevel="23">Slash</move>
 			<move atlevel="30">Swift</move>
@@ -1268,7 +1268,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Mimic</move>
@@ -1314,10 +1314,10 @@
 	<pokemon id="28">
 		<levelup>
 			<move atlevel="1">Defense Curl</move>
-			<move atlevel="1">Sand-Attack</move>
+			<move atlevel="1">Sand Attack</move>
 			<move atlevel="1">Scratch</move>
 			<move atlevel="6">Defense Curl</move>
-			<move atlevel="11">Sand-Attack</move>
+			<move atlevel="11">Sand Attack</move>
 			<move atlevel="17">Poison Sting</move>
 			<move atlevel="24">Slash</move>
 			<move atlevel="33">Swift</move>
@@ -1330,7 +1330,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Mimic</move>
@@ -1501,7 +1501,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -1517,7 +1517,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -1688,7 +1688,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -1704,7 +1704,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -1755,7 +1755,7 @@
 			<move atlevel="1">Pound</move>
 			<move atlevel="5">Encore</move>
 			<move atlevel="9">Sing</move>
-			<move atlevel="13">DoubleSlap</move>
+			<move atlevel="13">Double Slap</move>
 			<move atlevel="17">Follow Me</move>
 			<move atlevel="21">Minimize</move>
 			<move atlevel="25">Defense Curl</move>
@@ -1771,7 +1771,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -1788,8 +1788,8 @@
 			<move>Softboiled</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -1832,7 +1832,7 @@
 	</pokemon>
 	<pokemon id="36">
 		<levelup>
-			<move atlevel="1">DoubleSlap</move>
+			<move atlevel="1">Double Slap</move>
 			<move atlevel="1">Metronome</move>
 			<move atlevel="1">Minimize</move>
 			<move atlevel="1">Sing</move>
@@ -1843,7 +1843,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -1860,8 +1860,8 @@
 			<move>Softboiled</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -1997,7 +1997,7 @@
 			<move atlevel="9">Pound</move>
 			<move atlevel="14">Disable</move>
 			<move atlevel="19">Rollout</move>
-			<move atlevel="24">DoubleSlap</move>
+			<move atlevel="24">Double Slap</move>
 			<move atlevel="29">Rest</move>
 			<move atlevel="34">Body Slam</move>
 			<move atlevel="39">Mimic</move>
@@ -2010,7 +2010,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -2025,8 +2025,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -2069,7 +2069,7 @@
 		<levelup>
 			<move atlevel="1">Defense Curl</move>
 			<move atlevel="1">Disable</move>
-			<move atlevel="1">DoubleSlap</move>
+			<move atlevel="1">Double Slap</move>
 			<move atlevel="1">Sing</move>
 		</levelup>
 		<tutor>
@@ -2078,7 +2078,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -2093,8 +2093,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -2568,7 +2568,7 @@
 	</pokemon>
 	<pokemon id="50">
 		<levelup>
-			<move atlevel="1">Sand-Attack</move>
+			<move atlevel="1">Sand Attack</move>
 			<move atlevel="1">Scratch</move>
 			<move atlevel="5">Growl</move>
 			<move atlevel="9">Magnitude</move>
@@ -2617,7 +2617,7 @@
 	<pokemon id="51">
 		<levelup>
 			<move atlevel="1">Growl</move>
-			<move atlevel="1">Sand-Attack</move>
+			<move atlevel="1">Sand Attack</move>
 			<move atlevel="1">Scratch</move>
 			<move atlevel="1">Tri Attack</move>
 			<move atlevel="5">Growl</move>
@@ -2672,7 +2672,7 @@
 			<move atlevel="1">Scratch</move>
 			<move atlevel="11">Bite</move>
 			<move atlevel="20">Pay Day</move>
-			<move atlevel="28">Faint Attack</move>
+			<move atlevel="28">Feint Attack</move>
 			<move atlevel="35">Screech</move>
 			<move atlevel="41">Fury Swipes</move>
 			<move atlevel="46">Slash</move>
@@ -2732,7 +2732,7 @@
 			<move atlevel="1">Scratch</move>
 			<move atlevel="11">Bite</move>
 			<move atlevel="20">Pay Day</move>
-			<move atlevel="29">Faint Attack</move>
+			<move atlevel="29">Feint Attack</move>
 			<move atlevel="38">Screech</move>
 			<move atlevel="46">Fury Swipes</move>
 			<move atlevel="53">Slash</move>
@@ -2803,7 +2803,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Icy Wind</move>
@@ -2869,7 +2869,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Ice Punch</move>
@@ -2937,7 +2937,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -2954,7 +2954,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -3009,7 +3009,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -3026,7 +3026,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -3117,7 +3117,7 @@
 			<move atlevel="1">Ember</move>
 			<move atlevel="1">Odor Sleuth</move>
 			<move atlevel="1">Roar</move>
-			<move atlevel="49">ExtremeSpeed</move>
+			<move atlevel="49">Extreme Speed</move>
 		</levelup>
 		<tutor>
 			<move>Body Slam</move>
@@ -3162,7 +3162,7 @@
 			<move atlevel="1">Bubble</move>
 			<move atlevel="7">Hypnosis</move>
 			<move atlevel="13">Water Gun</move>
-			<move atlevel="19">DoubleSlap</move>
+			<move atlevel="19">Double Slap</move>
 			<move atlevel="25">Rain Dance</move>
 			<move atlevel="31">Body Slam</move>
 			<move atlevel="37">Belly Drum</move>
@@ -3213,7 +3213,7 @@
 			<move atlevel="1">Water Gun</move>
 			<move atlevel="7">Hypnosis</move>
 			<move atlevel="13">Water Gun</move>
-			<move atlevel="19">DoubleSlap</move>
+			<move atlevel="19">Double Slap</move>
 			<move atlevel="27">Rain Dance</move>
 			<move atlevel="35">Body Slam</move>
 			<move atlevel="43">Belly Drum</move>
@@ -3271,7 +3271,7 @@
 	</pokemon>
 	<pokemon id="62">
 		<levelup>
-			<move atlevel="1">DoubleSlap</move>
+			<move atlevel="1">Double Slap</move>
 			<move atlevel="1">Hypnosis</move>
 			<move atlevel="1">Submission</move>
 			<move atlevel="1">Water Gun</move>
@@ -3283,7 +3283,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Icy Wind</move>
@@ -3341,7 +3341,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -3355,8 +3355,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -3410,7 +3410,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -3424,8 +3424,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -3479,7 +3479,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -3493,8 +3493,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -3542,13 +3542,13 @@
 			<move atlevel="37">Submission</move>
 			<move atlevel="40">Cross Chop</move>
 			<move atlevel="43">Scary Face</move>
-			<move atlevel="49">DynamicPunch</move>
+			<move atlevel="49">Dynamic Punch</move>
 		</levelup>
 		<tutor>
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -3563,7 +3563,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -3607,13 +3607,13 @@
 			<move atlevel="41">Submission</move>
 			<move atlevel="46">Cross Chop</move>
 			<move atlevel="51">Scary Face</move>
-			<move atlevel="59">DynamicPunch</move>
+			<move atlevel="59">Dynamic Punch</move>
 		</levelup>
 		<tutor>
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -3628,7 +3628,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -3672,13 +3672,13 @@
 			<move atlevel="41">Submission</move>
 			<move atlevel="46">Cross Chop</move>
 			<move atlevel="51">Scary Face</move>
-			<move atlevel="59">DynamicPunch</move>
+			<move atlevel="59">Dynamic Punch</move>
 		</levelup>
 		<tutor>
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -3693,7 +3693,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -3866,7 +3866,7 @@
 			<move atlevel="6">Supersonic</move>
 			<move atlevel="12">Constrict</move>
 			<move atlevel="19">Acid</move>
-			<move atlevel="25">BubbleBeam</move>
+			<move atlevel="25">Bubblebeam</move>
 			<move atlevel="30">Wrap</move>
 			<move atlevel="36">Barrier</move>
 			<move atlevel="43">Screech</move>
@@ -3918,7 +3918,7 @@
 			<move atlevel="6">Supersonic</move>
 			<move atlevel="12">Constrict</move>
 			<move atlevel="19">Acid</move>
-			<move atlevel="25">BubbleBeam</move>
+			<move atlevel="25">Bubblebeam</move>
 			<move atlevel="30">Wrap</move>
 			<move atlevel="38">Barrier</move>
 			<move atlevel="47">Screech</move>
@@ -3970,7 +3970,7 @@
 			<move atlevel="6">Mud Sport</move>
 			<move atlevel="11">Rock Throw</move>
 			<move atlevel="16">Magnitude</move>
-			<move atlevel="21">Selfdestruct</move>
+			<move atlevel="21">Self-Destruct</move>
 			<move atlevel="26">Rollout</move>
 			<move atlevel="31">Rock Blast</move>
 			<move atlevel="36">Earthquake</move>
@@ -3982,7 +3982,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fire Punch</move>
@@ -4033,7 +4033,7 @@
 			<move atlevel="6">Mud Sport</move>
 			<move atlevel="11">Rock Throw</move>
 			<move atlevel="16">Magnitude</move>
-			<move atlevel="21">Selfdestruct</move>
+			<move atlevel="21">Self-Destruct</move>
 			<move atlevel="29">Rollout</move>
 			<move atlevel="37">Rock Blast</move>
 			<move atlevel="45">Earthquake</move>
@@ -4045,7 +4045,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fire Punch</move>
@@ -4096,7 +4096,7 @@
 			<move atlevel="6">Mud Sport</move>
 			<move atlevel="11">Rock Throw</move>
 			<move atlevel="16">Magnitude</move>
-			<move atlevel="21">Selfdestruct</move>
+			<move atlevel="21">Self-Destruct</move>
 			<move atlevel="29">Rollout</move>
 			<move atlevel="37">Rock Blast</move>
 			<move atlevel="45">Earthquake</move>
@@ -4108,7 +4108,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fire Punch</move>
@@ -4278,7 +4278,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -4335,7 +4335,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Ice Punch</move>
@@ -4351,7 +4351,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -4396,10 +4396,10 @@
 		<levelup>
 			<move atlevel="1">Metal Sound</move>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="6">ThunderShock</move>
+			<move atlevel="6">Thundershock</move>
 			<move atlevel="11">Supersonic</move>
-			<move atlevel="16">SonicBoom</move>
-			<move atlevel="21">Thunder Wave</move>
+			<move atlevel="16">Sonicboom</move>
+			<move atlevel="21">Thunderwave</move>
 			<move atlevel="26">Spark</move>
 			<move atlevel="32">Lock-On</move>
 			<move atlevel="38">Swift</move>
@@ -4416,7 +4416,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -4444,11 +4444,11 @@
 			<move atlevel="1">Metal Sound</move>
 			<move atlevel="1">Supersonic</move>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="1">ThunderShock</move>
-			<move atlevel="6">ThunderShock</move>
+			<move atlevel="1">Thundershock</move>
+			<move atlevel="6">Thundershock</move>
 			<move atlevel="11">Supersonic</move>
-			<move atlevel="16">SonicBoom</move>
-			<move atlevel="21">Thunder Wave</move>
+			<move atlevel="16">Sonicboom</move>
+			<move atlevel="21">Thunderwave</move>
 			<move atlevel="26">Spark</move>
 			<move atlevel="35">Lock-On</move>
 			<move atlevel="44">Tri Attack</move>
@@ -4465,7 +4465,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -4492,7 +4492,7 @@
 	<pokemon id="83">
 		<levelup>
 			<move atlevel="1">Peck</move>
-			<move atlevel="6">Sand-Attack</move>
+			<move atlevel="6">Sand Attack</move>
 			<move atlevel="11">Leer</move>
 			<move atlevel="16">Fury Attack</move>
 			<move atlevel="21">Knock Off</move>
@@ -4745,7 +4745,7 @@
 		</levelup>
 		<tutor>
 			<move>Body Slam</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fire Punch</move>
@@ -4756,7 +4756,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<tm>
 			<move tm="06">Toxic</move>
@@ -4801,7 +4801,7 @@
 		</levelup>
 		<tutor>
 			<move>Body Slam</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fire Punch</move>
@@ -4812,7 +4812,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -5055,7 +5055,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fire Punch</move>
@@ -5070,7 +5070,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -5177,7 +5177,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -5191,8 +5191,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -5245,7 +5245,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -5259,8 +5259,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -5298,7 +5298,7 @@
 		<levelup>
 			<move atlevel="1">Bubble</move>
 			<move atlevel="5">Leer</move>
-			<move atlevel="12">ViceGrip</move>
+			<move atlevel="12">Vice Grip</move>
 			<move atlevel="16">Harden</move>
 			<move atlevel="23">Mud Shot</move>
 			<move atlevel="27">Stomp</move>
@@ -5352,9 +5352,9 @@
 		<levelup>
 			<move atlevel="1">Bubble</move>
 			<move atlevel="1">Leer</move>
-			<move atlevel="1">ViceGrip</move>
+			<move atlevel="1">Vice Grip</move>
 			<move atlevel="5">Leer</move>
-			<move atlevel="12">ViceGrip</move>
+			<move atlevel="12">Vice Grip</move>
 			<move atlevel="16">Harden</move>
 			<move atlevel="23">Mud Shot</move>
 			<move atlevel="27">Stomp</move>
@@ -5410,9 +5410,9 @@
 			<move atlevel="1">Charge</move>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="8">Screech</move>
-			<move atlevel="15">SonicBoom</move>
+			<move atlevel="15">Sonicboom</move>
 			<move atlevel="21">Spark</move>
-			<move atlevel="27">Selfdestruct</move>
+			<move atlevel="27">Self-Destruct</move>
 			<move atlevel="32">Rollout</move>
 			<move atlevel="37">Light Screen</move>
 			<move atlevel="42">Swift</move>
@@ -5429,7 +5429,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -5458,12 +5458,12 @@
 		<levelup>
 			<move atlevel="1">Charge</move>
 			<move atlevel="1">Screech</move>
-			<move atlevel="1">SonicBoom</move>
+			<move atlevel="1">Sonicboom</move>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="8">Screech</move>
-			<move atlevel="15">SonicBoom</move>
+			<move atlevel="15">Sonicboom</move>
 			<move atlevel="21">Spark</move>
-			<move atlevel="27">Selfdestruct</move>
+			<move atlevel="27">Self-Destruct</move>
 			<move atlevel="34">Rollout</move>
 			<move atlevel="41">Light Screen</move>
 			<move atlevel="48">Swift</move>
@@ -5480,7 +5480,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -5627,7 +5627,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Icy Wind</move>
@@ -5642,7 +5642,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -5697,7 +5697,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Icy Wind</move>
@@ -5712,7 +5712,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -5755,7 +5755,7 @@
 			<move atlevel="16">Jump Kick</move>
 			<move atlevel="20">Brick Break</move>
 			<move atlevel="21">Focus Energy</move>
-			<move atlevel="26">Hi Jump Kick</move>
+			<move atlevel="26">High Jump Kick</move>
 			<move atlevel="31">Mind Reader</move>
 			<move atlevel="36">Foresight</move>
 			<move atlevel="41">Endure</move>
@@ -5766,7 +5766,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Mega Kick</move>
 			<move>Mega Punch</move>
@@ -5815,7 +5815,7 @@
 			<move atlevel="20">Mach Punch</move>
 			<move atlevel="26">Fire Punch</move>
 			<move atlevel="26">Ice Punch</move>
-			<move atlevel="26">ThunderPunch</move>
+			<move atlevel="26">Thunder Punch</move>
 			<move atlevel="32">Sky Uppercut</move>
 			<move atlevel="38">Mega Punch</move>
 			<move atlevel="44">Detect</move>
@@ -5825,7 +5825,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -5841,7 +5841,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -5887,7 +5887,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -5905,7 +5905,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -5952,7 +5952,7 @@
 			<move atlevel="1">Poison Gas</move>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="9">Smog</move>
-			<move atlevel="17">Selfdestruct</move>
+			<move atlevel="17">Self-Destruct</move>
 			<move atlevel="21">Sludge</move>
 			<move atlevel="25">Smokescreen</move>
 			<move atlevel="33">Haze</move>
@@ -6001,11 +6001,11 @@
 	<pokemon id="110">
 		<levelup>
 			<move atlevel="1">Poison Gas</move>
-			<move atlevel="1">Selfdestruct</move>
+			<move atlevel="1">Self-Destruct</move>
 			<move atlevel="1">Smog</move>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="9">Smog</move>
-			<move atlevel="17">Selfdestruct</move>
+			<move atlevel="17">Self-Destruct</move>
 			<move atlevel="21">Sludge</move>
 			<move atlevel="25">Smokescreen</move>
 			<move atlevel="33">Haze</move>
@@ -6133,7 +6133,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -6150,7 +6150,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -6197,7 +6197,7 @@
 			<move atlevel="5">Tail Whip</move>
 			<move atlevel="9">Refresh</move>
 			<move atlevel="13">Softboiled</move>
-			<move atlevel="17">DoubleSlap</move>
+			<move atlevel="17">Double Slap</move>
 			<move atlevel="23">Minimize</move>
 			<move atlevel="29">Sing</move>
 			<move atlevel="35">Egg Bomb</move>
@@ -6211,7 +6211,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Icy Wind</move>
 			<move>Mega Kick</move>
@@ -6227,7 +6227,7 @@
 			<move>Softboiled</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -6342,7 +6342,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -6358,7 +6358,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -6602,7 +6602,7 @@
 			<move atlevel="15">Recover</move>
 			<move atlevel="19">Camouflage</move>
 			<move atlevel="24">Swift</move>
-			<move atlevel="28">BubbleBeam</move>
+			<move atlevel="28">Bubblebeam</move>
 			<move atlevel="33">Minimize</move>
 			<move atlevel="37">Light Screen</move>
 			<move atlevel="42">Cosmic Power</move>
@@ -6619,7 +6619,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -6669,7 +6669,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -6707,7 +6707,7 @@
 			<move atlevel="5">Confusion</move>
 			<move atlevel="9">Substitute</move>
 			<move atlevel="13">Meditate</move>
-			<move atlevel="17">DoubleSlap</move>
+			<move atlevel="17">Double Slap</move>
 			<move atlevel="21">Light Screen</move>
 			<move atlevel="21">Reflect</move>
 			<move atlevel="25">Encore</move>
@@ -6738,8 +6738,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -6835,7 +6835,7 @@
 			<move atlevel="1">Powder Snow</move>
 			<move atlevel="9">Lovely Kiss</move>
 			<move atlevel="13">Powder Snow</move>
-			<move atlevel="21">DoubleSlap</move>
+			<move atlevel="21">Double Slap</move>
 			<move atlevel="25">Ice Punch</move>
 			<move atlevel="35">Mean Look</move>
 			<move atlevel="41">Fake Tears</move>
@@ -6848,7 +6848,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Icy Wind</move>
@@ -6901,8 +6901,8 @@
 		<levelup>
 			<move atlevel="1">Leer</move>
 			<move atlevel="1">Quick Attack</move>
-			<move atlevel="1">ThunderPunch</move>
-			<move atlevel="9">ThunderPunch</move>
+			<move atlevel="1">Thunder Punch</move>
+			<move atlevel="9">Thunder Punch</move>
 			<move atlevel="17">Light Screen</move>
 			<move atlevel="25">Swift</move>
 			<move atlevel="36">Screech</move>
@@ -6913,7 +6913,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -6927,8 +6927,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -6978,7 +6978,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Mega Kick</move>
@@ -6990,7 +6990,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -7021,7 +7021,7 @@
 	<pokemon id="127">
 		<levelup>
 			<move atlevel="1">Focus Energy</move>
-			<move atlevel="1">ViceGrip</move>
+			<move atlevel="1">Vice Grip</move>
 			<move atlevel="7">Bind</move>
 			<move atlevel="13">Seismic Toss</move>
 			<move atlevel="19">Harden</move>
@@ -7159,7 +7159,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -7266,7 +7266,7 @@
 			<move atlevel="1">Helping Hand</move>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="1">Tail Whip</move>
-			<move atlevel="8">Sand-Attack</move>
+			<move atlevel="8">Sand Attack</move>
 			<move atlevel="16">Growl</move>
 			<move atlevel="23">Quick Attack</move>
 			<move atlevel="30">Bite</move>
@@ -7308,7 +7308,7 @@
 			<move atlevel="1">Helping Hand</move>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="1">Tail Whip</move>
-			<move atlevel="8">Sand-Attack</move>
+			<move atlevel="8">Sand Attack</move>
 			<move atlevel="16">Water Gun</move>
 			<move atlevel="23">Quick Attack</move>
 			<move atlevel="30">Bite</move>
@@ -7364,12 +7364,12 @@
 			<move atlevel="1">Helping Hand</move>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="1">Tail Whip</move>
-			<move atlevel="8">Sand-Attack</move>
-			<move atlevel="16">ThunderShock</move>
+			<move atlevel="8">Sand Attack</move>
+			<move atlevel="16">Thundershock</move>
 			<move atlevel="23">Quick Attack</move>
 			<move atlevel="30">Double Kick</move>
 			<move atlevel="36">Pin Missile</move>
-			<move atlevel="42">Thunder Wave</move>
+			<move atlevel="42">Thunderwave</move>
 			<move atlevel="47">Agility</move>
 			<move atlevel="52">Thunder</move>
 		</levelup>
@@ -7384,7 +7384,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -7417,7 +7417,7 @@
 			<move atlevel="1">Helping Hand</move>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="1">Tail Whip</move>
-			<move atlevel="8">Sand-Attack</move>
+			<move atlevel="8">Sand Attack</move>
 			<move atlevel="16">Ember</move>
 			<move atlevel="23">Quick Attack</move>
 			<move atlevel="30">Bite</move>
@@ -7487,7 +7487,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -7528,7 +7528,7 @@
 			<move atlevel="31">Leer</move>
 			<move atlevel="37">Protect</move>
 			<move atlevel="43">Tickle</move>
-			<move atlevel="49">AncientPower</move>
+			<move atlevel="49">Ancientpower</move>
 			<move atlevel="55">Hydro Pump</move>
 		</levelup>
 		<tutor>
@@ -7583,7 +7583,7 @@
 			<move atlevel="37">Protect</move>
 			<move atlevel="40">Spike Cannon</move>
 			<move atlevel="46">Tickle</move>
-			<move atlevel="55">AncientPower</move>
+			<move atlevel="55">Ancientpower</move>
 			<move atlevel="65">Hydro Pump</move>
 		</levelup>
 		<tutor>
@@ -7635,11 +7635,11 @@
 			<move atlevel="13">Absorb</move>
 			<move atlevel="19">Leer</move>
 			<move atlevel="25">Mud Shot</move>
-			<move atlevel="31">Sand-Attack</move>
+			<move atlevel="31">Sand Attack</move>
 			<move atlevel="37">Endure</move>
 			<move atlevel="43">Metal Sound</move>
 			<move atlevel="49">Mega Drain</move>
-			<move atlevel="55">AncientPower</move>
+			<move atlevel="55">Ancientpower</move>
 		</levelup>
 		<tutor>
 			<move>Body Slam</move>
@@ -7691,12 +7691,12 @@
 			<move atlevel="13">Absorb</move>
 			<move atlevel="19">Leer</move>
 			<move atlevel="25">Mud Shot</move>
-			<move atlevel="31">Sand-Attack</move>
+			<move atlevel="31">Sand Attack</move>
 			<move atlevel="37">Endure</move>
 			<move atlevel="40">Slash</move>
 			<move atlevel="46">Metal Sound</move>
 			<move atlevel="55">Mega Drain</move>
-			<move atlevel="65">AncientPower</move>
+			<move atlevel="65">Ancientpower</move>
 		</levelup>
 		<tutor>
 			<move>Body Slam</move>
@@ -7754,7 +7754,7 @@
 			<move atlevel="8">Agility</move>
 			<move atlevel="15">Bite</move>
 			<move atlevel="22">Supersonic</move>
-			<move atlevel="29">AncientPower</move>
+			<move atlevel="29">Ancientpower</move>
 			<move atlevel="36">Scary Face</move>
 			<move atlevel="43">Take Down</move>
 			<move atlevel="50">Hyper Beam</move>
@@ -7825,7 +7825,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -7843,7 +7843,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -7936,8 +7936,8 @@
 	<pokemon id="145">
 		<levelup>
 			<move atlevel="1">Peck</move>
-			<move atlevel="1">ThunderShock</move>
-			<move atlevel="13">Thunder Wave</move>
+			<move atlevel="1">Thundershock</move>
+			<move atlevel="13">Thunderwave</move>
 			<move atlevel="25">Agility</move>
 			<move atlevel="37">Detect</move>
 			<move atlevel="49">Drill Peck</move>
@@ -7955,7 +7955,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="02">Fly</move>
@@ -8039,7 +8039,7 @@
 		<levelup>
 			<move atlevel="1">Leer</move>
 			<move atlevel="1">Wrap</move>
-			<move atlevel="8">Thunder Wave</move>
+			<move atlevel="8">Thunderwave</move>
 			<move atlevel="15">Twister</move>
 			<move atlevel="22">Dragon Rage</move>
 			<move atlevel="29">Slam</move>
@@ -8059,7 +8059,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -8095,10 +8095,10 @@
 	<pokemon id="148">
 		<levelup>
 			<move atlevel="1">Leer</move>
-			<move atlevel="1">Thunder Wave</move>
+			<move atlevel="1">Thunderwave</move>
 			<move atlevel="1">Twister</move>
 			<move atlevel="1">Wrap</move>
-			<move atlevel="8">Thunder Wave</move>
+			<move atlevel="8">Thunderwave</move>
 			<move atlevel="15">Twister</move>
 			<move atlevel="22">Dragon Rage</move>
 			<move atlevel="29">Slam</move>
@@ -8118,7 +8118,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -8154,10 +8154,10 @@
 	<pokemon id="149">
 		<levelup>
 			<move atlevel="1">Leer</move>
-			<move atlevel="1">Thunder Wave</move>
+			<move atlevel="1">Thunderwave</move>
 			<move atlevel="1">Twister</move>
 			<move atlevel="1">Wrap</move>
-			<move atlevel="8">Thunder Wave</move>
+			<move atlevel="8">Thunderwave</move>
 			<move atlevel="15">Twister</move>
 			<move atlevel="22">Dragon Rage</move>
 			<move atlevel="29">Slam</move>
@@ -8170,7 +8170,7 @@
 		<tutor>
 			<move>Body Slam</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -8183,8 +8183,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -8250,7 +8250,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -8267,8 +8267,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -8325,7 +8325,7 @@
 			<move atlevel="20">Mega Punch</move>
 			<move atlevel="30">Metronome</move>
 			<move atlevel="40">Psychic</move>
-			<move atlevel="50">AncientPower</move>
+			<move atlevel="50">Ancientpower</move>
 		</levelup>
 		<tutor>
 			<move>Body Slam</move>
@@ -8333,7 +8333,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fire Punch</move>
@@ -8356,8 +8356,8 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -8706,7 +8706,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -8722,7 +8722,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -8769,7 +8769,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Icy Wind</move>
@@ -8831,7 +8831,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Ice Punch</move>
@@ -8898,7 +8898,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Ice Punch</move>
@@ -8966,7 +8966,7 @@
 			<move>Body Slam</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -8979,7 +8979,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -9030,7 +9030,7 @@
 			<move>Body Slam</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -9043,7 +9043,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -9197,7 +9197,7 @@
 		</levelup>
 		<tutor>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Mega Punch</move>
@@ -9209,7 +9209,7 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -9254,7 +9254,7 @@
 		</levelup>
 		<tutor>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Mega Punch</move>
@@ -9266,7 +9266,7 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -9448,7 +9448,7 @@
 	<pokemon id="170">
 		<levelup>
 			<move atlevel="1">Bubble</move>
-			<move atlevel="1">Thunder Wave</move>
+			<move atlevel="1">Thunderwave</move>
 			<move atlevel="5">Supersonic</move>
 			<move atlevel="13">Flail</move>
 			<move atlevel="17">Water Gun</move>
@@ -9466,7 +9466,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -9499,7 +9499,7 @@
 		<levelup>
 			<move atlevel="1">Bubble</move>
 			<move atlevel="1">Supersonic</move>
-			<move atlevel="1">Thunder Wave</move>
+			<move atlevel="1">Thunderwave</move>
 			<move atlevel="5">Supersonic</move>
 			<move atlevel="13">Flail</move>
 			<move atlevel="17">Water Gun</move>
@@ -9517,7 +9517,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -9550,9 +9550,9 @@
 	<pokemon id="172">
 		<levelup>
 			<move atlevel="1">Charm</move>
-			<move atlevel="1">ThunderShock</move>
+			<move atlevel="1">Thundershock</move>
 			<move atlevel="6">Tail Whip</move>
-			<move atlevel="8">Thunder Wave</move>
+			<move atlevel="8">Thunderwave</move>
 			<move atlevel="11">Sweet Kiss</move>
 		</levelup>
 		<tutor>
@@ -9572,7 +9572,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -9625,7 +9625,7 @@
 			<move>Softboiled</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -9684,7 +9684,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -9749,7 +9749,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -9814,7 +9814,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="02">Fly</move>
@@ -9873,7 +9873,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -9926,7 +9926,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="02">Fly</move>
@@ -9963,8 +9963,8 @@
 		<levelup>
 			<move atlevel="1">Growl</move>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="9">ThunderShock</move>
-			<move atlevel="16">Thunder Wave</move>
+			<move atlevel="9">Thundershock</move>
+			<move atlevel="16">Thunderwave</move>
 			<move atlevel="23">Cotton Spore</move>
 			<move atlevel="30">Light Screen</move>
 			<move atlevel="37">Thunder</move>
@@ -9980,7 +9980,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -10008,9 +10008,9 @@
 		<levelup>
 			<move atlevel="1">Growl</move>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="1">ThunderShock</move>
-			<move atlevel="9">ThunderShock</move>
-			<move atlevel="18">Thunder Wave</move>
+			<move atlevel="1">Thundershock</move>
+			<move atlevel="9">Thundershock</move>
+			<move atlevel="18">Thunderwave</move>
 			<move atlevel="27">Cotton Spore</move>
 			<move atlevel="36">Light Screen</move>
 			<move atlevel="45">Thunder</move>
@@ -10020,7 +10020,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Mega Kick</move>
@@ -10032,8 +10032,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -10065,12 +10065,12 @@
 		<levelup>
 			<move atlevel="1">Growl</move>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="1">ThunderShock</move>
-			<move atlevel="1">Thunder Wave</move>
-			<move atlevel="9">ThunderShock</move>
-			<move atlevel="18">Thunder Wave</move>
+			<move atlevel="1">Thundershock</move>
+			<move atlevel="1">Thunderwave</move>
+			<move atlevel="9">Thundershock</move>
+			<move atlevel="18">Thunderwave</move>
 			<move atlevel="27">Cotton Spore</move>
-			<move atlevel="30">ThunderPunch</move>
+			<move atlevel="30">Thunder Punch</move>
 			<move atlevel="42">Light Screen</move>
 			<move atlevel="57">Thunder</move>
 		</levelup>
@@ -10079,7 +10079,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Mega Kick</move>
@@ -10091,8 +10091,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -10171,7 +10171,7 @@
 			<move atlevel="6">Tail Whip</move>
 			<move atlevel="10">Water Gun</move>
 			<move atlevel="15">Rollout</move>
-			<move atlevel="21">BubbleBeam</move>
+			<move atlevel="21">Bubblebeam</move>
 			<move atlevel="28">Double-Edge</move>
 			<move atlevel="36">Rain Dance</move>
 			<move atlevel="45">Hydro Pump</move>
@@ -10180,7 +10180,7 @@
 			<move>Body Slam</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Icy Wind</move>
@@ -10235,7 +10235,7 @@
 			<move atlevel="6">Tail Whip</move>
 			<move atlevel="10">Water Gun</move>
 			<move atlevel="15">Rollout</move>
-			<move atlevel="24">BubbleBeam</move>
+			<move atlevel="24">Bubblebeam</move>
 			<move atlevel="34">Double-Edge</move>
 			<move atlevel="45">Rain Dance</move>
 			<move atlevel="57">Hydro Pump</move>
@@ -10244,7 +10244,7 @@
 			<move>Body Slam</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Icy Wind</move>
@@ -10298,7 +10298,7 @@
 			<move atlevel="17">Low Kick</move>
 			<move atlevel="25">Rock Slide</move>
 			<move atlevel="33">Block</move>
-			<move atlevel="41">Faint Attack</move>
+			<move atlevel="41">Feint Attack</move>
 			<move atlevel="49">Slam</move>
 			<move atlevel="57">Double-Edge</move>
 		</levelup>
@@ -10307,7 +10307,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fire Punch</move>
@@ -10324,7 +10324,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -10355,7 +10355,7 @@
 	</pokemon>
 	<pokemon id="186">
 		<levelup>
-			<move atlevel="1">DoubleSlap</move>
+			<move atlevel="1">Double Slap</move>
 			<move atlevel="1">Hypnosis</move>
 			<move atlevel="1">Perish Song</move>
 			<move atlevel="1">Water Gun</move>
@@ -10367,7 +10367,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Icy Wind</move>
 			<move>Mega Kick</move>
@@ -10559,7 +10559,7 @@
 		<levelup>
 			<move atlevel="1">Scratch</move>
 			<move atlevel="1">Tail Whip</move>
-			<move atlevel="6">Sand-Attack</move>
+			<move atlevel="6">Sand Attack</move>
 			<move atlevel="13">Astonish</move>
 			<move atlevel="18">Baton Pass</move>
 			<move atlevel="25">Tickle</move>
@@ -10574,7 +10574,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -10590,8 +10590,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -10725,7 +10725,7 @@
 			<move atlevel="1">Tackle</move>
 			<move atlevel="7">Quick Attack</move>
 			<move atlevel="13">Double Team</move>
-			<move atlevel="19">SonicBoom</move>
+			<move atlevel="19">Sonicboom</move>
 			<move atlevel="25">Detect</move>
 			<move atlevel="31">Supersonic</move>
 			<move atlevel="37">Uproar</move>
@@ -10784,7 +10784,7 @@
 			<move>Body Slam</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Mimic</move>
@@ -10843,7 +10843,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Mega Kick</move>
@@ -10897,7 +10897,7 @@
 			<move atlevel="1">Helping Hand</move>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="1">Tail Whip</move>
-			<move atlevel="8">Sand-Attack</move>
+			<move atlevel="8">Sand Attack</move>
 			<move atlevel="16">Confusion</move>
 			<move atlevel="23">Quick Attack</move>
 			<move atlevel="30">Swift</move>
@@ -10953,11 +10953,11 @@
 			<move atlevel="1">Helping Hand</move>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="1">Tail Whip</move>
-			<move atlevel="8">Sand-Attack</move>
+			<move atlevel="8">Sand Attack</move>
 			<move atlevel="16">Pursuit</move>
 			<move atlevel="23">Quick Attack</move>
 			<move atlevel="30">Confuse Ray</move>
-			<move atlevel="36">Faint Attack</move>
+			<move atlevel="36">Feint Attack</move>
 			<move atlevel="42">Mean Look</move>
 			<move atlevel="47">Screech</move>
 			<move atlevel="52">Moonlight</move>
@@ -11010,7 +11010,7 @@
 			<move atlevel="14">Pursuit</move>
 			<move atlevel="22">Haze</move>
 			<move atlevel="27">Night Shade</move>
-			<move atlevel="35">Faint Attack</move>
+			<move atlevel="35">Feint Attack</move>
 			<move atlevel="40">Taunt</move>
 			<move atlevel="48">Mean Look</move>
 		</levelup>
@@ -11027,7 +11027,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="02">Fly</move>
@@ -11073,7 +11073,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Ice Punch</move>
@@ -11089,7 +11089,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -11155,7 +11155,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -11226,7 +11226,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -11264,7 +11264,7 @@
 		<levelup>
 			<move atlevel="1">Protect</move>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="8">Selfdestruct</move>
+			<move atlevel="8">Self-Destruct</move>
 			<move atlevel="15">Take Down</move>
 			<move atlevel="22">Rapid Spin</move>
 			<move atlevel="29">Bide</move>
@@ -11315,9 +11315,9 @@
 	<pokemon id="205">
 		<levelup>
 			<move atlevel="1">Protect</move>
-			<move atlevel="1">Selfdestruct</move>
+			<move atlevel="1">Self-Destruct</move>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="8">Selfdestruct</move>
+			<move atlevel="8">Self-Destruct</move>
 			<move atlevel="15">Take Down</move>
 			<move atlevel="22">Rapid Spin</move>
 			<move atlevel="29">Bide</move>
@@ -11394,7 +11394,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -11434,10 +11434,10 @@
 	<pokemon id="207">
 		<levelup>
 			<move atlevel="1">Poison Sting</move>
-			<move atlevel="6">Sand-Attack</move>
+			<move atlevel="6">Sand Attack</move>
 			<move atlevel="13">Harden</move>
 			<move atlevel="20">Quick Attack</move>
-			<move atlevel="28">Faint Attack</move>
+			<move atlevel="28">Feint Attack</move>
 			<move atlevel="36">Slash</move>
 			<move atlevel="44">Screech</move>
 			<move atlevel="52">Guillotine</move>
@@ -11561,7 +11561,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -11575,8 +11575,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -11634,7 +11634,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -11649,8 +11649,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -11718,7 +11718,7 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -11910,7 +11910,7 @@
 			<move atlevel="1">Taunt</move>
 			<move atlevel="8">Quick Attack</move>
 			<move atlevel="15">Screech</move>
-			<move atlevel="22">Faint Attack</move>
+			<move atlevel="22">Feint Attack</move>
 			<move atlevel="29">Fury Swipes</move>
 			<move atlevel="36">Agility</move>
 			<move atlevel="43">Icy Wind</move>
@@ -11923,7 +11923,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Ice Punch</move>
@@ -11980,7 +11980,7 @@
 			<move atlevel="7">Lick</move>
 			<move atlevel="13">Fury Swipes</move>
 			<move atlevel="19">Fake Tears</move>
-			<move atlevel="25">Faint Attack</move>
+			<move atlevel="25">Feint Attack</move>
 			<move atlevel="31">Rest</move>
 			<move atlevel="37">Slash</move>
 			<move atlevel="43">Snore</move>
@@ -11991,7 +11991,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -12009,7 +12009,7 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -12050,7 +12050,7 @@
 			<move atlevel="7">Lick</move>
 			<move atlevel="13">Fury Swipes</move>
 			<move atlevel="19">Fake Tears</move>
-			<move atlevel="25">Faint Attack</move>
+			<move atlevel="25">Feint Attack</move>
 			<move atlevel="31">Rest</move>
 			<move atlevel="37">Slash</move>
 			<move atlevel="43">Snore</move>
@@ -12061,7 +12061,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -12080,7 +12080,7 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -12334,11 +12334,11 @@
 			<move atlevel="12">Bubble</move>
 			<move atlevel="17">Recover</move>
 			<move atlevel="17">Refresh</move>
-			<move atlevel="23">BubbleBeam</move>
+			<move atlevel="23">Bubblebeam</move>
 			<move atlevel="28">Spike Cannon</move>
 			<move atlevel="34">Rock Blast</move>
 			<move atlevel="39">Mirror Coat</move>
-			<move atlevel="45">AncientPower</move>
+			<move atlevel="45">Ancientpower</move>
 		</levelup>
 		<tutor>
 			<move>Body Slam</move>
@@ -12394,7 +12394,7 @@
 			<move atlevel="1">Water Gun</move>
 			<move atlevel="11">Lock-On</move>
 			<move atlevel="22">Aurora Beam</move>
-			<move atlevel="22">BubbleBeam</move>
+			<move atlevel="22">Bubblebeam</move>
 			<move atlevel="22">Psybeam</move>
 			<move atlevel="33">Focus Energy</move>
 			<move atlevel="44">Ice Beam</move>
@@ -12411,7 +12411,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -12446,7 +12446,7 @@
 			<move atlevel="1">Water Gun</move>
 			<move atlevel="11">Constrict</move>
 			<move atlevel="22">Aurora Beam</move>
-			<move atlevel="22">BubbleBeam</move>
+			<move atlevel="22">Bubblebeam</move>
 			<move atlevel="22">Psybeam</move>
 			<move atlevel="25">Octazooka</move>
 			<move atlevel="38">Focus Energy</move>
@@ -12465,7 +12465,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -12547,7 +12547,7 @@
 			<move atlevel="1">Bubble</move>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="8">Supersonic</move>
-			<move atlevel="15">BubbleBeam</move>
+			<move atlevel="15">Bubblebeam</move>
 			<move atlevel="22">Take Down</move>
 			<move atlevel="29">Agility</move>
 			<move atlevel="36">Wing Attack</move>
@@ -12596,7 +12596,7 @@
 		<levelup>
 			<move atlevel="1">Leer</move>
 			<move atlevel="1">Peck</move>
-			<move atlevel="10">Sand-Attack</move>
+			<move atlevel="10">Sand Attack</move>
 			<move atlevel="13">Swift</move>
 			<move atlevel="16">Agility</move>
 			<move atlevel="26">Fury Attack</move>
@@ -12653,7 +12653,7 @@
 			<move atlevel="19">Roar</move>
 			<move atlevel="25">Bite</move>
 			<move atlevel="31">Odor Sleuth</move>
-			<move atlevel="37">Faint Attack</move>
+			<move atlevel="37">Feint Attack</move>
 			<move atlevel="43">Flamethrower</move>
 			<move atlevel="49">Crunch</move>
 		</levelup>
@@ -12710,7 +12710,7 @@
 			<move atlevel="19">Roar</move>
 			<move atlevel="27">Bite</move>
 			<move atlevel="35">Odor Sleuth</move>
-			<move atlevel="43">Faint Attack</move>
+			<move atlevel="43">Feint Attack</move>
 			<move atlevel="51">Flamethrower</move>
 			<move atlevel="59">Crunch</move>
 		</levelup>
@@ -12936,7 +12936,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -12974,7 +12974,7 @@
 			<move atlevel="13">Astonish</move>
 			<move atlevel="19">Hypnosis</move>
 			<move atlevel="25">Stomp</move>
-			<move atlevel="31">Sand-Attack</move>
+			<move atlevel="31">Sand Attack</move>
 			<move atlevel="37">Take Down</move>
 			<move atlevel="43">Confuse Ray</move>
 			<move atlevel="49">Calm Mind</move>
@@ -12992,7 +12992,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -13157,7 +13157,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Icy Wind</move>
@@ -13205,7 +13205,7 @@
 		<levelup>
 			<move atlevel="1">Leer</move>
 			<move atlevel="1">Quick Attack</move>
-			<move atlevel="9">ThunderPunch</move>
+			<move atlevel="9">Thunder Punch</move>
 			<move atlevel="17">Light Screen</move>
 			<move atlevel="25">Swift</move>
 			<move atlevel="33">Screech</move>
@@ -13216,7 +13216,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -13230,8 +13230,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -13275,7 +13275,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Mega Kick</move>
@@ -13287,7 +13287,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="06">Rock Smash</move>
@@ -13330,7 +13330,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -13348,8 +13348,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -13393,7 +13393,7 @@
 			<move atlevel="4">Tail Whip</move>
 			<move atlevel="7">Refresh</move>
 			<move atlevel="10">Softboiled</move>
-			<move atlevel="13">DoubleSlap</move>
+			<move atlevel="13">Double Slap</move>
 			<move atlevel="18">Minimize</move>
 			<move atlevel="23">Sing</move>
 			<move atlevel="28">Egg Bomb</move>
@@ -13407,7 +13407,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Icy Wind</move>
 			<move>Mega Kick</move>
@@ -13422,7 +13422,7 @@
 			<move>Softboiled</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -13472,7 +13472,7 @@
 		<levelup>
 			<move atlevel="1">Bite</move>
 			<move atlevel="1">Leer</move>
-			<move atlevel="11">ThunderShock</move>
+			<move atlevel="11">Thundershock</move>
 			<move atlevel="21">Roar</move>
 			<move atlevel="31">Quick Attack</move>
 			<move atlevel="41">Spark</move>
@@ -13493,7 +13493,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -13585,7 +13585,7 @@
 		<levelup>
 			<move atlevel="1">Bite</move>
 			<move atlevel="1">Leer</move>
-			<move atlevel="11">BubbleBeam</move>
+			<move atlevel="11">Bubblebeam</move>
 			<move atlevel="21">Rain Dance</move>
 			<move atlevel="31">Gust</move>
 			<move atlevel="41">Aurora Beam</move>
@@ -13761,7 +13761,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -13775,7 +13775,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -13829,7 +13829,7 @@
 			<move atlevel="55">Rain Dance</move>
 			<move atlevel="66">Swift</move>
 			<move atlevel="77">Aeroblast</move>
-			<move atlevel="88">AncientPower</move>
+			<move atlevel="88">Ancientpower</move>
 			<move atlevel="99">Future Sight</move>
 		</levelup>
 		<tutor>
@@ -13846,7 +13846,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="02">Fly</move>
@@ -13902,7 +13902,7 @@
 			<move atlevel="55">Sunny Day</move>
 			<move atlevel="66">Swift</move>
 			<move atlevel="77">Sacred Fire</move>
-			<move atlevel="88">AncientPower</move>
+			<move atlevel="88">Ancientpower</move>
 			<move atlevel="99">Future Sight</move>
 		</levelup>
 		<tutor>
@@ -13917,7 +13917,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="02">Fly</move>
@@ -13966,7 +13966,7 @@
 			<move atlevel="1">Leech Seed</move>
 			<move atlevel="1">Recover</move>
 			<move atlevel="10">Safeguard</move>
-			<move atlevel="20">AncientPower</move>
+			<move atlevel="20">Ancientpower</move>
 			<move atlevel="30">Future Sight</move>
 			<move atlevel="40">Baton Pass</move>
 			<move atlevel="50">Perish Song</move>
@@ -14037,7 +14037,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Mega Kick</move>
@@ -14051,7 +14051,7 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -14104,7 +14104,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Mega Kick</move>
@@ -14118,7 +14118,7 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -14171,7 +14171,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Mega Kick</move>
@@ -14185,7 +14185,7 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -14228,7 +14228,7 @@
 			<move atlevel="7">Focus Energy</move>
 			<move atlevel="10">Ember</move>
 			<move atlevel="16">Peck</move>
-			<move atlevel="19">Sand-Attack</move>
+			<move atlevel="19">Sand Attack</move>
 			<move atlevel="25">Fire Spin</move>
 			<move atlevel="28">Quick Attack</move>
 			<move atlevel="34">Slash</move>
@@ -14288,7 +14288,7 @@
 			<move atlevel="13">Ember</move>
 			<move atlevel="16">Double Kick</move>
 			<move atlevel="17">Peck</move>
-			<move atlevel="21">Sand-Attack</move>
+			<move atlevel="21">Sand Attack</move>
 			<move atlevel="28">Bulk Up</move>
 			<move atlevel="32">Quick Attack</move>
 			<move atlevel="39">Slash</move>
@@ -14299,7 +14299,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -14315,7 +14315,7 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -14356,7 +14356,7 @@
 			<move atlevel="13">Ember</move>
 			<move atlevel="16">Double Kick</move>
 			<move atlevel="17">Peck</move>
-			<move atlevel="21">Sand-Attack</move>
+			<move atlevel="21">Sand Attack</move>
 			<move atlevel="28">Bulk Up</move>
 			<move atlevel="32">Quick Attack</move>
 			<move atlevel="36">Blaze Kick</move>
@@ -14368,7 +14368,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -14384,7 +14384,7 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -14497,7 +14497,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Icy Wind</move>
@@ -14565,7 +14565,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Icy Wind</move>
@@ -14618,7 +14618,7 @@
 		<levelup>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="5">Howl</move>
-			<move atlevel="9">Sand-Attack</move>
+			<move atlevel="9">Sand Attack</move>
 			<move atlevel="13">Bite</move>
 			<move atlevel="17">Odor Sleuth</move>
 			<move atlevel="21">Roar</move>
@@ -14672,10 +14672,10 @@
 		<levelup>
 			<move atlevel="1">Bite</move>
 			<move atlevel="1">Howl</move>
-			<move atlevel="1">Sand-Attack</move>
+			<move atlevel="1">Sand Attack</move>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="5">Howl</move>
-			<move atlevel="9">Sand-Attack</move>
+			<move atlevel="9">Sand Attack</move>
 			<move atlevel="13">Bite</move>
 			<move atlevel="17">Odor Sleuth</move>
 			<move atlevel="22">Roar</move>
@@ -14733,7 +14733,7 @@
 			<move atlevel="1">Tackle</move>
 			<move atlevel="5">Tail Whip</move>
 			<move atlevel="9">Headbutt</move>
-			<move atlevel="13">Sand-Attack</move>
+			<move atlevel="13">Sand Attack</move>
 			<move atlevel="17">Odor Sleuth</move>
 			<move atlevel="21">Mud Sport</move>
 			<move atlevel="25">Pin Missile</move>
@@ -14757,7 +14757,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -14797,7 +14797,7 @@
 			<move atlevel="1">Tail Whip</move>
 			<move atlevel="5">Tail Whip</move>
 			<move atlevel="9">Headbutt</move>
-			<move atlevel="13">Sand-Attack</move>
+			<move atlevel="13">Sand Attack</move>
 			<move atlevel="17">Odor Sleuth</move>
 			<move atlevel="23">Mud Sport</move>
 			<move atlevel="29">Fury Swipes</move>
@@ -14821,7 +14821,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -15037,7 +15037,7 @@
 		<tutor>
 			<move>Body Slam</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -15049,7 +15049,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -15094,7 +15094,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -15110,7 +15110,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -15201,7 +15201,7 @@
 			<move atlevel="13">Nature Power</move>
 			<move atlevel="19">Fake Out</move>
 			<move atlevel="25">Torment</move>
-			<move atlevel="31">Faint Attack</move>
+			<move atlevel="31">Feint Attack</move>
 			<move atlevel="37">Razor Wind</move>
 			<move atlevel="43">Swagger</move>
 			<move atlevel="49">Extrasensory</move>
@@ -15537,8 +15537,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -15603,8 +15603,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -15669,8 +15669,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -15710,7 +15710,7 @@
 			<move atlevel="7">Quick Attack</move>
 			<move atlevel="13">Sweet Scent</move>
 			<move atlevel="19">Water Sport</move>
-			<move atlevel="25">BubbleBeam</move>
+			<move atlevel="25">Bubblebeam</move>
 			<move atlevel="31">Agility</move>
 			<move atlevel="37">Haze</move>
 			<move atlevel="37">Mist</move>
@@ -15868,13 +15868,13 @@
 			<move atlevel="28">Counter</move>
 			<move atlevel="36">Sky Uppercut</move>
 			<move atlevel="45">Mind Reader</move>
-			<move atlevel="54">DynamicPunch</move>
+			<move atlevel="54">Dynamic Punch</move>
 		</levelup>
 		<tutor>
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Mega Kick</move>
@@ -15887,7 +15887,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -15926,7 +15926,7 @@
 			<move atlevel="1">Yawn</move>
 			<move atlevel="7">Encore</move>
 			<move atlevel="13">Slack Off</move>
-			<move atlevel="19">Faint Attack</move>
+			<move atlevel="19">Feint Attack</move>
 			<move atlevel="25">Amnesia</move>
 			<move atlevel="31">Covet</move>
 			<move atlevel="37">Counter</move>
@@ -15936,7 +15936,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -15952,7 +15952,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -16007,7 +16007,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -16023,7 +16023,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -16070,7 +16070,7 @@
 			<move atlevel="1">Yawn</move>
 			<move atlevel="7">Encore</move>
 			<move atlevel="13">Slack Off</move>
-			<move atlevel="19">Faint Attack</move>
+			<move atlevel="19">Feint Attack</move>
 			<move atlevel="25">Amnesia</move>
 			<move atlevel="31">Covet</move>
 			<move atlevel="36">Swagger</move>
@@ -16081,7 +16081,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -16097,7 +16097,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -16142,7 +16142,7 @@
 			<move atlevel="1">Harden</move>
 			<move atlevel="1">Scratch</move>
 			<move atlevel="5">Leech Life</move>
-			<move atlevel="9">Sand-Attack</move>
+			<move atlevel="9">Sand Attack</move>
 			<move atlevel="14">Fury Swipes</move>
 			<move atlevel="19">Mind Reader</move>
 			<move atlevel="25">False Swipe</move>
@@ -16188,10 +16188,10 @@
 		<levelup>
 			<move atlevel="1">Harden</move>
 			<move atlevel="1">Leech Life</move>
-			<move atlevel="1">Sand-Attack</move>
+			<move atlevel="1">Sand Attack</move>
 			<move atlevel="1">Scratch</move>
 			<move atlevel="5">Leech Life</move>
-			<move atlevel="9">Sand-Attack</move>
+			<move atlevel="9">Sand Attack</move>
 			<move atlevel="14">Fury Swipes</move>
 			<move atlevel="19">Mind Reader</move>
 			<move atlevel="20">Double Team</move>
@@ -16246,7 +16246,7 @@
 			<move atlevel="1">Harden</move>
 			<move atlevel="1">Scratch</move>
 			<move atlevel="5">Leech Life</move>
-			<move atlevel="9">Sand-Attack</move>
+			<move atlevel="9">Sand Attack</move>
 			<move atlevel="14">Fury Swipes</move>
 			<move atlevel="19">Mind Reader</move>
 			<move atlevel="25">Spite</move>
@@ -16310,7 +16310,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -16326,7 +16326,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<tm>
 			<move tm="03">Water Pulse</move>
@@ -16374,7 +16374,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -16391,7 +16391,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -16449,7 +16449,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -16466,7 +16466,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -16506,13 +16506,13 @@
 		<levelup>
 			<move atlevel="1">Focus Energy</move>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="4">Sand-Attack</move>
+			<move atlevel="4">Sand Attack</move>
 			<move atlevel="10">Arm Thrust</move>
 			<move atlevel="13">Vital Throw</move>
 			<move atlevel="19">Fake Out</move>
 			<move atlevel="22">Whirlwind</move>
 			<move atlevel="28">Knock Off</move>
-			<move atlevel="31">SmellingSalt</move>
+			<move atlevel="31">Smelling Salts</move>
 			<move atlevel="37">Belly Drum</move>
 			<move atlevel="40">Endure</move>
 			<move atlevel="46">Seismic Toss</move>
@@ -16522,7 +16522,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -16537,7 +16537,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -16569,15 +16569,15 @@
 		<levelup>
 			<move atlevel="1">Arm Thrust</move>
 			<move atlevel="1">Focus Energy</move>
-			<move atlevel="1">Sand-Attack</move>
+			<move atlevel="1">Sand Attack</move>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="4">Sand-Attack</move>
+			<move atlevel="4">Sand Attack</move>
 			<move atlevel="10">Arm Thrust</move>
 			<move atlevel="13">Vital Throw</move>
 			<move atlevel="19">Fake Out</move>
 			<move atlevel="22">Whirlwind</move>
 			<move atlevel="29">Knock Off</move>
-			<move atlevel="33">SmellingSalt</move>
+			<move atlevel="33">Smelling Salts</move>
 			<move atlevel="40">Belly Drum</move>
 			<move atlevel="44">Endure</move>
 			<move atlevel="51">Seismic Toss</move>
@@ -16587,7 +16587,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -16602,7 +16602,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -16684,7 +16684,7 @@
 			<move atlevel="7">Harden</move>
 			<move atlevel="13">Rock Throw</move>
 			<move atlevel="16">Block</move>
-			<move atlevel="22">Thunder Wave</move>
+			<move atlevel="22">Thunderwave</move>
 			<move atlevel="28">Rock Slide</move>
 			<move atlevel="31">Sandstorm</move>
 			<move atlevel="37">Rest</move>
@@ -16695,7 +16695,7 @@
 			<move>Body Slam</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fire Punch</move>
@@ -16708,8 +16708,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -16744,10 +16744,10 @@
 			<move atlevel="3">Tail Whip</move>
 			<move atlevel="7">Attract</move>
 			<move atlevel="13">Sing</move>
-			<move atlevel="15">DoubleSlap</move>
+			<move atlevel="15">Double Slap</move>
 			<move atlevel="19">Assist</move>
 			<move atlevel="25">Charm</move>
-			<move atlevel="27">Faint Attack</move>
+			<move atlevel="27">Feint Attack</move>
 			<move atlevel="31">Covet</move>
 			<move atlevel="37">Heal Bell</move>
 			<move atlevel="39">Double-Edge</move>
@@ -16768,7 +16768,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -16803,7 +16803,7 @@
 	<pokemon id="301">
 		<levelup>
 			<move atlevel="1">Attract</move>
-			<move atlevel="1">DoubleSlap</move>
+			<move atlevel="1">Double Slap</move>
 			<move atlevel="1">Growl</move>
 			<move atlevel="1">Sing</move>
 		</levelup>
@@ -16823,7 +16823,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -16868,7 +16868,7 @@
 			<move atlevel="17">Fury Swipes</move>
 			<move atlevel="21">Fake Out</move>
 			<move atlevel="25">Detect</move>
-			<move atlevel="29">Faint Attack</move>
+			<move atlevel="29">Feint Attack</move>
 			<move atlevel="33">Knock Off</move>
 			<move atlevel="37">Confuse Ray</move>
 			<move atlevel="41">Shadow Ball</move>
@@ -16879,7 +16879,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -16895,7 +16895,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -16937,8 +16937,8 @@
 			<move atlevel="6">Fake Tears</move>
 			<move atlevel="11">Bite</move>
 			<move atlevel="16">Sweet Scent</move>
-			<move atlevel="21">ViceGrip</move>
-			<move atlevel="26">Faint Attack</move>
+			<move atlevel="21">Vice Grip</move>
+			<move atlevel="26">Feint Attack</move>
 			<move atlevel="31">Baton Pass</move>
 			<move atlevel="36">Crunch</move>
 			<move atlevel="41">Iron Defense</move>
@@ -16950,7 +16950,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Icy Wind</move>
@@ -16966,7 +16966,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -17143,7 +17143,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -17160,8 +17160,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -17214,7 +17214,7 @@
 			<move atlevel="18">Hidden Power</move>
 			<move atlevel="22">Mind Reader</move>
 			<move atlevel="28">Calm Mind</move>
-			<move atlevel="32">Hi Jump Kick</move>
+			<move atlevel="32">High Jump Kick</move>
 			<move atlevel="38">Psych Up</move>
 			<move atlevel="42">Reversal</move>
 			<move atlevel="48">Recover</move>
@@ -17224,7 +17224,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -17240,7 +17240,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -17279,14 +17279,14 @@
 			<move atlevel="1">Fire Punch</move>
 			<move atlevel="1">Ice Punch</move>
 			<move atlevel="1">Meditate</move>
-			<move atlevel="1">ThunderPunch</move>
+			<move atlevel="1">Thunder Punch</move>
 			<move atlevel="4">Meditate</move>
 			<move atlevel="9">Confusion</move>
 			<move atlevel="12">Detect</move>
 			<move atlevel="18">Hidden Power</move>
 			<move atlevel="22">Mind Reader</move>
 			<move atlevel="28">Calm Mind</move>
-			<move atlevel="32">Hi Jump Kick</move>
+			<move atlevel="32">High Jump Kick</move>
 			<move atlevel="40">Psych Up</move>
 			<move atlevel="46">Reversal</move>
 			<move atlevel="54">Recover</move>
@@ -17296,7 +17296,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -17313,7 +17313,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -17348,7 +17348,7 @@
 	<pokemon id="309">
 		<levelup>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="4">Thunder Wave</move>
+			<move atlevel="4">Thunderwave</move>
 			<move atlevel="9">Leer</move>
 			<move atlevel="12">Howl</move>
 			<move atlevel="17">Quick Attack</move>
@@ -17370,7 +17370,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -17401,8 +17401,8 @@
 			<move atlevel="1">Howl</move>
 			<move atlevel="1">Leer</move>
 			<move atlevel="1">Tackle</move>
-			<move atlevel="1">Thunder Wave</move>
-			<move atlevel="4">Thunder Wave</move>
+			<move atlevel="1">Thunderwave</move>
+			<move atlevel="4">Thunderwave</move>
 			<move atlevel="9">Leer</move>
 			<move atlevel="12">Howl</move>
 			<move atlevel="17">Quick Attack</move>
@@ -17424,7 +17424,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -17454,7 +17454,7 @@
 	<pokemon id="311">
 		<levelup>
 			<move atlevel="1">Growl</move>
-			<move atlevel="4">Thunder Wave</move>
+			<move atlevel="4">Thunderwave</move>
 			<move atlevel="10">Quick Attack</move>
 			<move atlevel="13">Helping Hand</move>
 			<move atlevel="19">Spark</move>
@@ -17470,7 +17470,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Mega Kick</move>
 			<move>Mega Punch</move>
@@ -17484,8 +17484,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -17512,7 +17512,7 @@
 	<pokemon id="312">
 		<levelup>
 			<move atlevel="1">Growl</move>
-			<move atlevel="4">Thunder Wave</move>
+			<move atlevel="4">Thunderwave</move>
 			<move atlevel="10">Quick Attack</move>
 			<move atlevel="13">Helping Hand</move>
 			<move atlevel="19">Spark</move>
@@ -17528,7 +17528,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Mega Kick</move>
 			<move>Mega Punch</move>
@@ -17542,8 +17542,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -17584,7 +17584,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Mega Kick</move>
@@ -17599,8 +17599,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -17649,7 +17649,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Ice Punch</move>
 			<move>Mega Kick</move>
@@ -17664,8 +17664,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -17706,7 +17706,7 @@
 			<move atlevel="17">Mega Drain</move>
 			<move atlevel="21">Leech Seed</move>
 			<move atlevel="25">Magical Leaf</move>
-			<move atlevel="29">GrassWhistle</move>
+			<move atlevel="29">Grass Whistle</move>
 			<move atlevel="33">Giga Drain</move>
 			<move atlevel="37">Sweet Scent</move>
 			<move atlevel="41">Ingrain</move>
@@ -17773,7 +17773,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fire Punch</move>
@@ -17785,7 +17785,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -17839,7 +17839,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fire Punch</move>
@@ -17851,7 +17851,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -18353,7 +18353,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -18369,7 +18369,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -18407,7 +18407,7 @@
 		<levelup>
 			<move atlevel="1">Tackle</move>
 			<move atlevel="5">Uproar</move>
-			<move atlevel="12">Faint Attack</move>
+			<move atlevel="12">Feint Attack</move>
 			<move atlevel="16">Psybeam</move>
 			<move atlevel="23">Hypnosis</move>
 			<move atlevel="27">Dizzy Punch</move>
@@ -18423,7 +18423,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -18442,7 +18442,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -18480,8 +18480,8 @@
 	<pokemon id="328">
 		<levelup>
 			<move atlevel="1">Bite</move>
-			<move atlevel="9">Sand-Attack</move>
-			<move atlevel="17">Faint Attack</move>
+			<move atlevel="9">Sand Attack</move>
+			<move atlevel="17">Feint Attack</move>
 			<move atlevel="25">Sand Tomb</move>
 			<move atlevel="33">Crunch</move>
 			<move atlevel="41">Dig</move>
@@ -18528,14 +18528,14 @@
 	<pokemon id="329">
 		<levelup>
 			<move atlevel="1">Bite</move>
-			<move atlevel="1">Faint Attack</move>
-			<move atlevel="1">Sand-Attack</move>
+			<move atlevel="1">Feint Attack</move>
+			<move atlevel="1">Sand Attack</move>
 			<move atlevel="1">Sand Tomb</move>
-			<move atlevel="9">Sand-Attack</move>
-			<move atlevel="17">Faint Attack</move>
+			<move atlevel="9">Sand Attack</move>
+			<move atlevel="17">Feint Attack</move>
 			<move atlevel="25">Sand Tomb</move>
 			<move atlevel="33">Crunch</move>
-			<move atlevel="35">DragonBreath</move>
+			<move atlevel="35">Dragonbreath</move>
 			<move atlevel="41">Screech</move>
 			<move atlevel="49">Sandstorm</move>
 			<move atlevel="57">Hyper Beam</move>
@@ -18583,14 +18583,14 @@
 	<pokemon id="330">
 		<levelup>
 			<move atlevel="1">Bite</move>
-			<move atlevel="1">Faint Attack</move>
-			<move atlevel="1">Sand-Attack</move>
+			<move atlevel="1">Feint Attack</move>
+			<move atlevel="1">Sand Attack</move>
 			<move atlevel="1">Sand Tomb</move>
-			<move atlevel="9">Sand-Attack</move>
-			<move atlevel="17">Faint Attack</move>
+			<move atlevel="9">Sand Attack</move>
+			<move atlevel="17">Feint Attack</move>
 			<move atlevel="25">Sand Tomb</move>
 			<move atlevel="33">Crunch</move>
-			<move atlevel="35">DragonBreath</move>
+			<move atlevel="35">Dragonbreath</move>
 			<move atlevel="41">Screech</move>
 			<move atlevel="53">Sandstorm</move>
 			<move atlevel="65">Hyper Beam</move>
@@ -18648,10 +18648,10 @@
 			<move atlevel="5">Absorb</move>
 			<move atlevel="9">Growth</move>
 			<move atlevel="13">Leech Seed</move>
-			<move atlevel="17">Sand-Attack</move>
+			<move atlevel="17">Sand Attack</move>
 			<move atlevel="21">Pin Missile</move>
 			<move atlevel="25">Ingrain</move>
-			<move atlevel="29">Faint Attack</move>
+			<move atlevel="29">Feint Attack</move>
 			<move atlevel="33">Spikes</move>
 			<move atlevel="37">Needle Arm</move>
 			<move atlevel="41">Cotton Spore</move>
@@ -18661,7 +18661,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Mega Punch</move>
@@ -18673,7 +18673,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -18707,10 +18707,10 @@
 			<move atlevel="5">Absorb</move>
 			<move atlevel="9">Growth</move>
 			<move atlevel="13">Leech Seed</move>
-			<move atlevel="17">Sand-Attack</move>
+			<move atlevel="17">Sand Attack</move>
 			<move atlevel="21">Pin Missile</move>
 			<move atlevel="25">Ingrain</move>
-			<move atlevel="29">Faint Attack</move>
+			<move atlevel="29">Feint Attack</move>
 			<move atlevel="35">Spikes</move>
 			<move atlevel="41">Needle Arm</move>
 			<move atlevel="47">Cotton Spore</move>
@@ -18720,7 +18720,7 @@
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fury Cutter</move>
 			<move>Mega Kick</move>
@@ -18733,7 +18733,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -18824,7 +18824,7 @@
 			<move atlevel="21">Safeguard</move>
 			<move atlevel="28">Mist</move>
 			<move atlevel="31">Take Down</move>
-			<move atlevel="35">DragonBreath</move>
+			<move atlevel="35">Dragonbreath</move>
 			<move atlevel="40">Dragon Dance</move>
 			<move atlevel="45">Refresh</move>
 			<move atlevel="54">Perish Song</move>
@@ -18895,7 +18895,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -18914,8 +18914,8 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -19241,9 +19241,9 @@
 		<levelup>
 			<move atlevel="1">Bubble</move>
 			<move atlevel="7">Harden</move>
-			<move atlevel="10">ViceGrip</move>
+			<move atlevel="10">Vice Grip</move>
 			<move atlevel="13">Leer</move>
-			<move atlevel="20">BubbleBeam</move>
+			<move atlevel="20">Bubblebeam</move>
 			<move atlevel="23">Protect</move>
 			<move atlevel="26">Knock Off</move>
 			<move atlevel="32">Taunt</move>
@@ -19302,11 +19302,11 @@
 			<move atlevel="1">Bubble</move>
 			<move atlevel="1">Harden</move>
 			<move atlevel="1">Leer</move>
-			<move atlevel="1">ViceGrip</move>
+			<move atlevel="1">Vice Grip</move>
 			<move atlevel="7">Harden</move>
-			<move atlevel="10">ViceGrip</move>
+			<move atlevel="10">Vice Grip</move>
 			<move atlevel="13">Leer</move>
-			<move atlevel="20">BubbleBeam</move>
+			<move atlevel="20">Bubblebeam</move>
 			<move atlevel="23">Protect</move>
 			<move atlevel="26">Knock Off</move>
 			<move atlevel="34">Taunt</move>
@@ -19371,8 +19371,8 @@
 			<move atlevel="7">Mud-Slap</move>
 			<move atlevel="11">Psybeam</move>
 			<move atlevel="15">Rock Tomb</move>
-			<move atlevel="19">Selfdestruct</move>
-			<move atlevel="25">AncientPower</move>
+			<move atlevel="19">Self-Destruct</move>
+			<move atlevel="25">Ancientpower</move>
 			<move atlevel="31">Sandstorm</move>
 			<move atlevel="37">Cosmic Power</move>
 			<move atlevel="45">Explosion</move>
@@ -19430,8 +19430,8 @@
 			<move atlevel="7">Mud-Slap</move>
 			<move atlevel="11">Psybeam</move>
 			<move atlevel="15">Rock Tomb</move>
-			<move atlevel="19">Selfdestruct</move>
-			<move atlevel="25">AncientPower</move>
+			<move atlevel="19">Self-Destruct</move>
+			<move atlevel="25">Ancientpower</move>
 			<move atlevel="31">Sandstorm</move>
 			<move atlevel="36">Hyper Beam</move>
 			<move atlevel="42">Cosmic Power</move>
@@ -19490,7 +19490,7 @@
 			<move atlevel="22">Ingrain</move>
 			<move atlevel="29">Confuse Ray</move>
 			<move atlevel="36">Amnesia</move>
-			<move atlevel="43">AncientPower</move>
+			<move atlevel="43">Ancientpower</move>
 			<move atlevel="50">Spit Up</move>
 			<move atlevel="50">Stockpile</move>
 			<move atlevel="50">Swallow</move>
@@ -19538,7 +19538,7 @@
 			<move atlevel="22">Ingrain</move>
 			<move atlevel="29">Confuse Ray</move>
 			<move atlevel="36">Amnesia</move>
-			<move atlevel="48">AncientPower</move>
+			<move atlevel="48">Ancientpower</move>
 			<move atlevel="60">Spit Up</move>
 			<move atlevel="60">Stockpile</move>
 			<move atlevel="60">Swallow</move>
@@ -19590,7 +19590,7 @@
 			<move atlevel="19">Water Gun</move>
 			<move atlevel="25">Metal Claw</move>
 			<move atlevel="31">Protect</move>
-			<move atlevel="37">AncientPower</move>
+			<move atlevel="37">Ancientpower</move>
 			<move atlevel="43">Fury Cutter</move>
 			<move atlevel="49">Slash</move>
 			<move atlevel="55">Rock Blast</move>
@@ -19644,7 +19644,7 @@
 			<move atlevel="19">Water Gun</move>
 			<move atlevel="25">Metal Claw</move>
 			<move atlevel="31">Protect</move>
-			<move atlevel="37">AncientPower</move>
+			<move atlevel="37">Ancientpower</move>
 			<move atlevel="46">Fury Cutter</move>
 			<move atlevel="55">Slash</move>
 			<move atlevel="64">Rock Blast</move>
@@ -19810,7 +19810,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -19851,20 +19851,20 @@
 			<move atlevel="1">Tail Whip</move>
 			<move atlevel="1">Thief</move>
 			<move atlevel="4">Bind</move>
-			<move atlevel="7">Faint Attack</move>
+			<move atlevel="7">Feint Attack</move>
 			<move atlevel="12">Fury Swipes</move>
 			<move atlevel="17">Psybeam</move>
 			<move atlevel="24">Screech</move>
 			<move atlevel="31">Slash</move>
 			<move atlevel="40">Substitute</move>
-			<move atlevel="49">AncientPower</move>
+			<move atlevel="49">Ancientpower</move>
 		</levelup>
 		<tutor>
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -19884,8 +19884,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -19935,7 +19935,7 @@
 			<move atlevel="20">Curse</move>
 			<move atlevel="25">Spite</move>
 			<move atlevel="32">Will-O-Wisp</move>
-			<move atlevel="37">Faint Attack</move>
+			<move atlevel="37">Feint Attack</move>
 			<move atlevel="44">Shadow Ball</move>
 			<move atlevel="49">Snatch</move>
 			<move atlevel="56">Grudge</move>
@@ -19952,7 +19952,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -19994,7 +19994,7 @@
 			<move atlevel="20">Curse</move>
 			<move atlevel="25">Spite</move>
 			<move atlevel="32">Will-O-Wisp</move>
-			<move atlevel="39">Faint Attack</move>
+			<move atlevel="39">Feint Attack</move>
 			<move atlevel="48">Shadow Ball</move>
 			<move atlevel="55">Snatch</move>
 			<move atlevel="64">Grudge</move>
@@ -20013,7 +20013,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -20122,7 +20122,7 @@
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -20139,7 +20139,7 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -20322,7 +20322,7 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -20813,7 +20813,7 @@
 			<move atlevel="22">Yawn</move>
 			<move atlevel="29">Take Down</move>
 			<move atlevel="36">Mud Sport</move>
-			<move atlevel="43">AncientPower</move>
+			<move atlevel="43">Ancientpower</move>
 			<move atlevel="50">Rest</move>
 			<move atlevel="57">Double-Edge</move>
 			<move atlevel="64">Hydro Pump</move>
@@ -20918,7 +20918,7 @@
 			<move atlevel="17">Headbutt</move>
 			<move atlevel="21">Focus Energy</move>
 			<move atlevel="25">Ember</move>
-			<move atlevel="33">DragonBreath</move>
+			<move atlevel="33">Dragonbreath</move>
 			<move atlevel="37">Scary Face</move>
 			<move atlevel="41">Crunch</move>
 			<move atlevel="49">Dragon Claw</move>
@@ -20976,7 +20976,7 @@
 			<move atlevel="21">Focus Energy</move>
 			<move atlevel="25">Ember</move>
 			<move atlevel="30">Protect</move>
-			<move atlevel="38">DragonBreath</move>
+			<move atlevel="38">Dragonbreath</move>
 			<move atlevel="47">Scary Face</move>
 			<move atlevel="56">Crunch</move>
 			<move atlevel="69">Dragon Claw</move>
@@ -21036,7 +21036,7 @@
 			<move atlevel="21">Focus Energy</move>
 			<move atlevel="25">Ember</move>
 			<move atlevel="30">Protect</move>
-			<move atlevel="38">DragonBreath</move>
+			<move atlevel="38">Dragonbreath</move>
 			<move atlevel="47">Scary Face</move>
 			<move atlevel="50">Fly</move>
 			<move atlevel="61">Crunch</move>
@@ -21113,7 +21113,7 @@
 			<move>Body Slam</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fury Cutter</move>
@@ -21129,7 +21129,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -21182,7 +21182,7 @@
 			<move>Body Slam</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fury Cutter</move>
@@ -21198,7 +21198,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
+			<move>Thunder Punch</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -21237,7 +21237,7 @@
 			<move atlevel="9">Rock Throw</move>
 			<move atlevel="17">Curse</move>
 			<move atlevel="25">Superpower</move>
-			<move atlevel="33">AncientPower</move>
+			<move atlevel="33">Ancientpower</move>
 			<move atlevel="41">Iron Defense</move>
 			<move atlevel="49">Zap Cannon</move>
 			<move atlevel="57">Lock-On</move>
@@ -21248,7 +21248,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Fire Punch</move>
@@ -21265,8 +21265,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -21302,7 +21302,7 @@
 			<move atlevel="9">Icy Wind</move>
 			<move atlevel="17">Curse</move>
 			<move atlevel="25">Superpower</move>
-			<move atlevel="33">AncientPower</move>
+			<move atlevel="33">Ancientpower</move>
 			<move atlevel="41">Amnesia</move>
 			<move atlevel="49">Zap Cannon</move>
 			<move atlevel="57">Lock-On</move>
@@ -21313,7 +21313,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Ice Punch</move>
@@ -21330,8 +21330,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -21367,7 +21367,7 @@
 			<move atlevel="9">Metal Claw</move>
 			<move atlevel="17">Curse</move>
 			<move atlevel="25">Superpower</move>
-			<move atlevel="33">AncientPower</move>
+			<move atlevel="33">Ancientpower</move>
 			<move atlevel="41">Amnesia</move>
 			<move atlevel="41">Iron Defense</move>
 			<move atlevel="49">Zap Cannon</move>
@@ -21379,7 +21379,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Explosion</move>
 			<move>Ice Punch</move>
@@ -21395,8 +21395,8 @@
 			<move>Snore</move>
 			<move>Substitute</move>
 			<move>Swagger</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="04">Strength</move>
@@ -21433,7 +21433,7 @@
 			<move atlevel="5">Wish</move>
 			<move atlevel="10">Helping Hand</move>
 			<move atlevel="15">Safeguard</move>
-			<move atlevel="20">DragonBreath</move>
+			<move atlevel="20">Dragonbreath</move>
 			<move atlevel="25">Water Sport</move>
 			<move atlevel="30">Refresh</move>
 			<move atlevel="35">Mist Ball</move>
@@ -21456,7 +21456,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -21506,7 +21506,7 @@
 			<move atlevel="5">Memento</move>
 			<move atlevel="10">Helping Hand</move>
 			<move atlevel="15">Safeguard</move>
-			<move atlevel="20">DragonBreath</move>
+			<move atlevel="20">Dragonbreath</move>
 			<move atlevel="25">Protect</move>
 			<move atlevel="30">Refresh</move>
 			<move atlevel="35">Luster Purge</move>
@@ -21529,7 +21529,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -21577,7 +21577,7 @@
 		<levelup>
 			<move atlevel="1">Water Pulse</move>
 			<move atlevel="5">Scary Face</move>
-			<move atlevel="15">AncientPower</move>
+			<move atlevel="15">Ancientpower</move>
 			<move atlevel="20">Body Slam</move>
 			<move atlevel="30">Calm Mind</move>
 			<move atlevel="35">Ice Beam</move>
@@ -21602,7 +21602,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="03">Surf</move>
@@ -21642,7 +21642,7 @@
 		<levelup>
 			<move atlevel="1">Mud Shot</move>
 			<move atlevel="5">Scary Face</move>
-			<move atlevel="15">AncientPower</move>
+			<move atlevel="15">Ancientpower</move>
 			<move atlevel="20">Slash</move>
 			<move atlevel="30">Bulk Up</move>
 			<move atlevel="35">Earthquake</move>
@@ -21657,7 +21657,7 @@
 			<move>Counter</move>
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Fury Cutter</move>
@@ -21675,8 +21675,8 @@
 			<move>Swagger</move>
 			<move>Swift</move>
 			<move>Swords Dance</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>
@@ -21719,13 +21719,13 @@
 		<levelup>
 			<move atlevel="1">Twister</move>
 			<move atlevel="5">Scary Face</move>
-			<move atlevel="15">AncientPower</move>
+			<move atlevel="15">Ancientpower</move>
 			<move atlevel="20">Dragon Claw</move>
 			<move atlevel="30">Dragon Dance</move>
 			<move atlevel="35">Crunch</move>
 			<move atlevel="45">Fly</move>
 			<move atlevel="50">Rest</move>
-			<move atlevel="60">ExtremeSpeed</move>
+			<move atlevel="60">Extreme Speed</move>
 			<move atlevel="65">Outrage</move>
 			<move atlevel="75">Hyper Beam</move>
 		</levelup>
@@ -21744,7 +21744,7 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>Thunder Wave</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="02">Fly</move>
@@ -21807,7 +21807,7 @@
 			<move>Defense Curl</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -21821,8 +21821,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="05">Flash</move>
@@ -21868,14 +21868,14 @@
 			<move atlevel="35">Agility</move>
 			<move atlevel="40">Recover</move>
 			<move atlevel="45">Psycho Boost</move>
-			<move atlevel="50">ExtremeSpeed</move>
+			<move atlevel="50">Extreme Speed</move>
 		</levelup>
 		<tutor>
 			<move>Body Slam</move>
 			<move>Counter</move>
 			<move>Double-Edge</move>
 			<move>Dream Eater</move>
-			<move>DynamicPunch</move>
+			<move>Dynamic Punch</move>
 			<move>Endure</move>
 			<move>Fire Punch</move>
 			<move>Ice Punch</move>
@@ -21892,8 +21892,8 @@
 			<move>Substitute</move>
 			<move>Swagger</move>
 			<move>Swift</move>
-			<move>ThunderPunch</move>
-			<move>Thunder Wave</move>
+			<move>Thunder Punch</move>
+			<move>Thunderwave</move>
 		</tutor>
 		<hm>
 			<move hm="01">Cut</move>

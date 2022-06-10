@@ -73,5 +73,23 @@ public class EntityPokemonStats extends EnumMap<Stats, Integer> {
 		
 		return stats;
 	}
-
+	
+	
+	public void hpDamage(int damage) {
+		int current = get(Stats.HP);
+		put(Stats.HP, current - damage);
+	}
+	
+	public boolean isKO() {
+		int current = get(Stats.HP);
+		
+		if(current < 0)
+			put(Stats.HP, 0);
+		
+		return current <= 0;
+	}
+	
+	public void logHp() {
+		jutils.log.Log.info("Hp: " + get(Stats.HP) + "/" + get(Stats.TOT_HP));
+	}
 }

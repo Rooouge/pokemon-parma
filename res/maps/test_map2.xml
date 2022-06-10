@@ -70,6 +70,7 @@
 	</entities>
 	<wilds>
 		<!-- Good is [1/10; 1/15] -->
+		<!--
 		<wild id="1" min="5" max="10" chance="1" bound="1"/>
 		<wild id="4" min="5" max="10" chance="1" bound="1"/>
 		<wild id="7" min="5" max="10" chance="1" bound="1"/>
@@ -79,7 +80,8 @@
 		<wild id="3" min="36" max="50" chance="1" bound="1"/>
 		<wild id="6" min="36" max="50" chance="1" bound="1"/>
 		<wild id="9" min="36" max="50" chance="1" bound="1"/>
-		<wild id="25" min="16" max="30" chance="1" bound="1"/>
+		-->
+		<wild id="9" min="36" max="50" chance="1" bound="1"/>
 	</wilds>
 	<autotiles>
 		<autotile name="grass_bottom" pos="11,8"/>

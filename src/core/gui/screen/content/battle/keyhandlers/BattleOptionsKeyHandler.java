@@ -21,7 +21,7 @@ public class BattleOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 	public BattleOptionsKeyHandler(Battle parent) {
 		super(parent);
 		
-		BattleOptionsPainter painter = (BattleOptionsPainter) parent.getPainterLists().get(GameStates.BATTLE_OPTIONS).get(5);
+		BattleOptionsPainter painter = (BattleOptionsPainter) parent.getPaintersListsMap().get(GameStates.BATTLE_OPTIONS).get(5);
 		OptionsRect rect = painter.getOptionsRect();
 		
 		keyMap = new HashMap<>();
@@ -29,9 +29,7 @@ public class BattleOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 		keyMap.put(KeyEvent.VK_UP, new KeyEventWithRunnable(KeyEvent.VK_UP, rect::up));
 		keyMap.put(KeyEvent.VK_LEFT, new KeyEventWithRunnable(KeyEvent.VK_LEFT, rect::left));
 		keyMap.put(KeyEvent.VK_RIGHT, new KeyEventWithRunnable(KeyEvent.VK_RIGHT, rect::right));
-		keyMap.put(KeyEvent.VK_SPACE, new ChangeStateKeyEvent(KeyEvent.VK_SPACE, GameStates.BATTLE_OPTIONS, GameStates.BATTLE_FIGHT_OPTIONS).withExtra(() -> {
-			SoundsHandler.playSound(SoundsHandler.PRESS);
-		}));
+		keyMap.put(KeyEvent.VK_SPACE, new ChangeStateKeyEvent(KeyEvent.VK_SPACE, GameStates.BATTLE_OPTIONS, GameStates.BATTLE_FIGHT_OPTIONS).withExtra(() -> SoundsHandler.playSound(SoundsHandler.PRESS) ));
 		
 		firstLoad = true;
 	}

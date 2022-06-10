@@ -34,9 +34,9 @@ public class PhysicalAttackMove extends AttackMove {
 		 * round UP final division
 		 */
 		
-		BattlePokemon attacker = map.get("attacker", BattlePokemon.class);
+		BattlePokemon attacker = map.get(BattleMap.ATK, BattlePokemon.class);
 		BattlePokemonData atData = attacker.getData();
-		BattlePokemon defender = map.get("defender", BattlePokemon.class);
+		BattlePokemon defender = map.get(BattleMap.DEF, BattlePokemon.class);
 		BattlePokemonData dfData = defender.getData();
 		
 		
@@ -44,12 +44,8 @@ public class PhysicalAttackMove extends AttackMove {
 		double A = atData.getEntityData().getStats().get(Stats.ATK);
 		double P = damage;
 		double D = dfData.getEntityData().getStats().get(Stats.DEF);
-		Types dfType1 = dfData.getEntityData().getBaseData().getMainType();
-		Types dfType2 = dfData.getEntityData().getBaseData().getMainType();
-		double M1 = type.getMultiplierForType(dfType1);
-		double M2 = type.getMultiplierForType(dfType2);
-		double M = M1*M2;
-		double STAB = (type.equals(dfType1) || type.equals(dfType2)) ? 1.5 : 1.0;
+		double M = getTypeModifier(dfData);
+		double STAB = getSameTypeAttackBonus(atData);
 		double R = new Random().nextInt(238) + 217;
 		
 		/*

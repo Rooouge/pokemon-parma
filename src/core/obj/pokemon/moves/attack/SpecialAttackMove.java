@@ -35,25 +35,33 @@ public class SpecialAttackMove extends AttackMove {
 		 * round UP final division
 		 */
 		
-		BattlePokemon attacker = map.get("attacker", BattlePokemon.class);
+		BattlePokemon attacker = map.get(BattleMap.ATK, BattlePokemon.class);
 		BattlePokemonData atData = attacker.getData();
-		BattlePokemon defender = map.get("defender", BattlePokemon.class);
+		BattlePokemon defender = map.get(BattleMap.DEF, BattlePokemon.class);
 		BattlePokemonData dfData = defender.getData();
 		
 		
 		double L = atData.getEntityData().getLevel();
-		double A = atData.getEntityData().getStats().get(Stats.SP_ATK);
+		double A = atData.getEntityData().getStats().get(Stats.ATK);
 		double P = damage;
-		double D = dfData.getEntityData().getStats().get(Stats.SP_DEF);
-		Types dfType1 = dfData.getEntityData().getBaseData().getMainType();
-		Types dfType2 = dfData.getEntityData().getBaseData().getMainType();
-		double M1 = type.getMultiplierForType(dfType1);
-		double M2 = type.getMultiplierForType(dfType2);
-		double M = M1*M2;
-		double STAB = (type.equals(dfType1) || type.equals(dfType2)) ? 1.5 : 1.0;
+		double D = dfData.getEntityData().getStats().get(Stats.DEF);
+		double M = getTypeModifier(dfData);
+		double STAB = getSameTypeAttackBonus(atData);
 		double R = new Random().nextInt(238) + 217;
 		
-		return (int) Math.ceil((((((((2*L) / 5 ) + 2 ) * A * P ) / D ) / 50 ) + 2 ) * M * STAB * R / 255);
+		/*
+		 * At this point I need to check if any instrument or moves influences the variables
+		 */
+		
+		/*
+		 * If your total after dividing by 50 is more than 997, you take
+		 * 997 instead of what you have.  Your total will NEVER be more than 997
+		 */
+		double value = ((((((2*L) / 5) + 2) * A * P) / D) / 50);
+		if(value > 997.0)
+			value = 997.0;
+		
+		return (int) Math.ceil((value + 2) * M * STAB * R / 255);
 	}
 
 }

@@ -1,29 +1,46 @@
 package core.gui.screen.painters.animations;
 
 import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
 
+import core.files.ImageHandler;
 import core.gui.screen.content.Content;
 import jutils.gui.ColoredPanel;
 import lombok.Getter;
 
 @Getter
-public abstract class GUIAnimation {
+public abstract class GUIAnimation<T extends Content<? extends ColoredPanel>> {
 
-	protected final Content<? extends ColoredPanel> parent;
+	protected final T parent;
+	protected final String resName;
+	protected final BufferedImage[] animation;
 	protected final int duration;
 	protected final boolean forceLock;
 	protected int tick;
 	
 	
-	protected GUIAnimation(Content<? extends ColoredPanel> parent, int duration, boolean forceLock) {
+	protected GUIAnimation(T parent, String resName, String dir, int duration, boolean forceLock) throws IOException {
 		this.parent = parent;
+		this.resName = resName;
 		this.duration = duration;
 		this.forceLock = forceLock;
+		animation = ImageHandler.getAnimation(resName, dir);
 		tick = 0;
 	}
 	
+	protected GUIAnimation(T parent, int duration, boolean forceLock) {
+		this.parent = parent;
+		this.duration = duration;
+		this.forceLock = forceLock;
+		resName = null;
+		animation = null;
+		tick = 0;
+	}
+	
+	
 	public void update() {
-		if(tick == duration) {
+		if(isOver()) {
 			onEnd();
 			parent.animationOver();
 			tick = 0;
@@ -38,6 +55,10 @@ public abstract class GUIAnimation {
 		tick();
 		tick++;
 		
+	}
+	
+	public boolean isOver() {
+		return tick == duration;
 	}
 	
 	
