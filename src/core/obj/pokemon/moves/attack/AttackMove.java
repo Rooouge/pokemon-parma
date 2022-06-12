@@ -2,7 +2,6 @@ package core.obj.pokemon.moves.attack;
 
 import java.util.function.Function;
 
-import core.Log;
 import core.enums.MoveTypes;
 import core.enums.Types;
 import core.events.battle.BattleMap;
@@ -45,10 +44,10 @@ public abstract class AttackMove extends Move {
 		double M2 = type.getMultiplierForType(dfType2);
 		double M = M1*M2;
 
-		Log.log("T: " + type);
-		Log.log("1: " + dfType1 + " " + M1);
-		Log.log("2: " + dfType2 + " " + M2);
-		Log.log("M: " + M);
+//		Log.log("T: " + type);
+//		Log.log("1: " + dfType1 + " " + M1);
+//		Log.log("2: " + dfType2 + " " + M2);
+//		Log.log("M: " + M);
 		
 		return M;
 	}

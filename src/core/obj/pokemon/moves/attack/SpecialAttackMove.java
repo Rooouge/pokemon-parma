@@ -42,12 +42,20 @@ public class SpecialAttackMove extends AttackMove {
 		
 		
 		double L = atData.getEntityData().getLevel();
-		double A = atData.getEntityData().getStats().get(Stats.ATK);
+		double A = atData.getEntityData().getStats().get(Stats.SP_ATK);
 		double P = damage;
-		double D = dfData.getEntityData().getStats().get(Stats.DEF);
+		double D = dfData.getEntityData().getStats().get(Stats.SP_DEF);
 		double M = getTypeModifier(dfData);
 		double STAB = getSameTypeAttackBonus(atData);
-		double R = new Random().nextInt(238) + 217;
+		double R = new Random().nextInt(39) + 217;
+		
+//		System.out.println("L: " + L);
+//		System.out.println("A: " + A);
+//		System.out.println("P: " + P);
+//		System.out.println("D: " + D);
+//		System.out.println("M: " + M);
+//		System.out.println("STAB: " + STAB);
+//		System.out.println("R: " + R);
 		
 		/*
 		 * At this point I need to check if any instrument or moves influences the variables
@@ -57,7 +65,7 @@ public class SpecialAttackMove extends AttackMove {
 		 * If your total after dividing by 50 is more than 997, you take
 		 * 997 instead of what you have.  Your total will NEVER be more than 997
 		 */
-		double value = ((((((2*L) / 5) + 2) * A * P) / D) / 50);
+		double value = Math.floor(Math.floor((Math.floor(((2*L) / 5) + 2) * A * P) / D) / 50);
 		if(value > 997.0)
 			value = 997.0;
 		

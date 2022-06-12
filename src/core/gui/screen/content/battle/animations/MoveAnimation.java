@@ -51,7 +51,6 @@ class MoveAnimation extends GUIAnimation<Battle> {
 		if(end != null)
 			end.run();
 		
-		flag = 0;
 		GameStates.set(GameStates.BATTLE_ENEMY_DAMAGE);
 	}
 

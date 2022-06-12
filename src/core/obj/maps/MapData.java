@@ -3,7 +3,6 @@ package core.obj.maps;
 import java.awt.Dimension;
 
 import javax.sound.sampled.Clip;
-import javax.sound.sampled.FloatControl;
 
 import org.dom4j.Node;
 
@@ -61,9 +60,9 @@ public class MapData {
 		loopAt = Integer.parseInt(loopNode.selectSingleNode("at").getStringValue());
 		loopTo = Integer.parseInt(loopNode.selectSingleNode("to").getStringValue());
 		
-		float volume = Float.parseFloat(musicNode.selectSingleNode("volume").getStringValue());
-		FloatControl control = (FloatControl) music.getControl(FloatControl.Type.MASTER_GAIN);
-		control.setValue(20f * (float) Math.log10(volume));		
+//		float volume = Float.parseFloat(musicNode.selectSingleNode("volume").getStringValue());
+//		FloatControl control = (FloatControl) music.getControl(FloatControl.Type.MASTER_GAIN);
+//		control.setValue(20f * (float) Math.log10(volume));		
 	}
 	
 	

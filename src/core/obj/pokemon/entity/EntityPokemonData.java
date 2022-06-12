@@ -38,7 +38,7 @@ public class EntityPokemonData {
 			this.level = level;
 			
 			moves.generateMovesForWildPokemon(baseData.getId(), level);
-			stats = EntityPokemonStats.create(baseData.getId(), level);
+			stats = EntityPokemonStats.create(this);
 		}
 	}
 }
