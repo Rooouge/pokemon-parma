@@ -230,7 +230,11 @@ public class FightOptionsRect {
 	}
 	
 	
-	public Move getSelected() {
+	public Move getSelectedMove() {
 		return moves.get(selected);
+	}
+	
+	public int getSelected() {
+		return selected;
 	}
 }

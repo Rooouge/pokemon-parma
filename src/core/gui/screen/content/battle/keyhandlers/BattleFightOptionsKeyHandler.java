@@ -32,8 +32,8 @@ public class BattleFightOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 	public BattleFightOptionsKeyHandler(Battle parent) {
 		super(parent);
 		
-		BattleFightOptionsPainter bfop = (BattleFightOptionsPainter) parent.getPaintersListsMap().get(GameStates.BATTLE_FIGHT_OPTIONS).get(5);
-		BattlePlayerMoveAnimationPainter bpmap = (BattlePlayerMoveAnimationPainter) parent.getPaintersListsMap().get(GameStates.BATTLE_PLAYER_MOVE).get(5);
+		BattleFightOptionsPainter bfop = (BattleFightOptionsPainter) parent.getPaintersListsMap().get(GameStates.BATTLE_FIGHT_OPTIONS).get(7);
+		BattlePlayerMoveAnimationPainter bpmap = (BattlePlayerMoveAnimationPainter) parent.getPaintersListsMap().get(GameStates.BATTLE_PLAYER_MOVE).get(7);
 		FightOptionsRect rect = bfop.getFightOptionsRect();
 		
 		keyMap = new KeyMap();
@@ -45,8 +45,27 @@ public class BattleFightOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 		keyMap.put(new ChangeStateKeyEvent(KeyEvent.VK_SPACE, GameStates.BATTLE_FIGHT_OPTIONS, GameStates.BATTLE_PLAYER_MOVE).withExtra(() ->  {
 			SoundsHandler.playSound(SoundsHandler.PRESS);
 			try {
-//				Move move = rect.getSelected();
-				Move move = new SpecialAttackMove("Aerial Ace", Types.GRASS, 100, 25, 20);
+//				Move move = rect.getSelectedMove();
+				
+				Move move;
+				switch (rect.getSelected()) {
+				case 0:
+					move = new SpecialAttackMove("Absorb", Types.GRASS, 100, 25, 20);
+					break;
+				case 1:
+					move = new SpecialAttackMove("Acid", Types.POISON, 100, 30, 40);
+					break;
+				case 2:
+					move = new SpecialAttackMove("Acid Armor", Types.POISON, 100, 30, 40);
+					break;
+				case 3:
+					move = new SpecialAttackMove("Aerial Ace", Types.FLYING, 100, 20, 60);
+					break;
+				default:
+					move = null;
+					break;
+				}
+				
 				bpmap.setMoveAnimations(new MoveAnimations(parent, move.getName()));
 				
 				BattleMap map = new BattleMap();

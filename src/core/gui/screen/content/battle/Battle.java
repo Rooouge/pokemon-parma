@@ -20,12 +20,14 @@ import core.gui.screen.content.battle.painters.BattleBackgroundPainter;
 import core.gui.screen.content.battle.painters.BattleEnemyDamageAnimationPainter;
 import core.gui.screen.content.battle.painters.BattleEnemyPokemonLabelPainter;
 import core.gui.screen.content.battle.painters.BattleEnemyPokemonPainter;
+import core.gui.screen.content.battle.painters.BattleEnemyPokemonTerrainPainter;
 import core.gui.screen.content.battle.painters.BattleFightOptionsPainter;
 import core.gui.screen.content.battle.painters.BattleIntroPainter;
 import core.gui.screen.content.battle.painters.BattleOptionsPainter;
 import core.gui.screen.content.battle.painters.BattlePlayerMoveAnimationPainter;
 import core.gui.screen.content.battle.painters.BattlePlayerPokemonLabelPainter;
 import core.gui.screen.content.battle.painters.BattlePlayerPokemonPainter;
+import core.gui.screen.content.battle.painters.BattlePlayerPokemonTerrainPainter;
 import lombok.Getter;
 
 @SuppressWarnings("serial")
@@ -60,18 +62,22 @@ public class Battle extends Content<Battle> {
 	@Override
 	protected void initPainters() throws IOException {
 		BattleBackgroundPainter bbp = new BattleBackgroundPainter(this);
-		BattlePlayerPokemonPainter bppp = new BattlePlayerPokemonPainter(this);
+		BattlePlayerPokemonTerrainPainter bpptp = new BattlePlayerPokemonTerrainPainter(this);
+		BattlePlayerPokemonPainter bppp = new BattlePlayerPokemonPainter(this, bpptp.getTerrainImage(), bpptp.getTerrainPoint());
 		BattlePlayerPokemonLabelPainter bpplp = new BattlePlayerPokemonLabelPainter(this);
-		BattleEnemyPokemonPainter bepp = new BattleEnemyPokemonPainter(this);
+		BattleEnemyPokemonTerrainPainter beptp = new BattleEnemyPokemonTerrainPainter(this);
+		BattleEnemyPokemonPainter bepp = new BattleEnemyPokemonPainter(this, beptp.getTerrainImage(), beptp.getTerrainPoint());
 		BattleEnemyPokemonLabelPainter beplp = new BattleEnemyPokemonLabelPainter(this);
 		
 		// INTRO
 		BattleIntroPainter bip = new BattleIntroPainter(this);
 		List<Painter<Battle>> introPainters = new ArrayList<>();
 		introPainters.add(bbp);
+		introPainters.add(bpptp);
+		introPainters.add(beptp);
 		introPainters.add(bppp);
-		introPainters.add(bpplp);
 		introPainters.add(bepp);
+		introPainters.add(bpplp);
 		introPainters.add(beplp);
 		introPainters.add(bip);
 		paintersListsMap.put(GameStates.BATTLE_INTRO, introPainters);
@@ -80,9 +86,11 @@ public class Battle extends Content<Battle> {
 		BattleOptionsPainter bop = new BattleOptionsPainter(this);
 		List<Painter<Battle>> optionsPainters = new ArrayList<>();
 		optionsPainters.add(bbp);
+		optionsPainters.add(bpptp);
+		optionsPainters.add(beptp);
 		optionsPainters.add(bppp);
-		optionsPainters.add(bpplp);
 		optionsPainters.add(bepp);
+		optionsPainters.add(bpplp);
 		optionsPainters.add(beplp);
 		optionsPainters.add(bop);
 		paintersListsMap.put(GameStates.BATTLE_OPTIONS, optionsPainters);
@@ -91,9 +99,11 @@ public class Battle extends Content<Battle> {
 		BattleFightOptionsPainter bfop = new BattleFightOptionsPainter(this);
 		List<Painter<Battle>> fightoptionsPainters = new ArrayList<>();
 		fightoptionsPainters.add(bbp);
+		fightoptionsPainters.add(bpptp);
+		fightoptionsPainters.add(beptp);
 		fightoptionsPainters.add(bppp);
-		fightoptionsPainters.add(bpplp);
 		fightoptionsPainters.add(bepp);
+		fightoptionsPainters.add(bpplp);
 		fightoptionsPainters.add(beplp);
 		fightoptionsPainters.add(bfop);
 		paintersListsMap.put(GameStates.BATTLE_FIGHT_OPTIONS, fightoptionsPainters);
@@ -102,6 +112,8 @@ public class Battle extends Content<Battle> {
 		BattlePlayerMoveAnimationPainter bpmap = new BattlePlayerMoveAnimationPainter(this);
 		List<Painter<Battle>> playerMovePainters = new ArrayList<>();
 		playerMovePainters.add(bbp);
+		playerMovePainters.add(bpptp);
+		playerMovePainters.add(beptp);
 		playerMovePainters.add(bppp);
 		playerMovePainters.add(bepp);
 		playerMovePainters.add(beplp);
@@ -113,6 +125,8 @@ public class Battle extends Content<Battle> {
 		BattleEnemyDamageAnimationPainter bedap = new BattleEnemyDamageAnimationPainter(this, beplp);
 		List<Painter<Battle>> enemyDamagePainters = new ArrayList<>();
 		enemyDamagePainters.add(bbp);
+		enemyDamagePainters.add(bpptp);
+		enemyDamagePainters.add(beptp);
 		enemyDamagePainters.add(bppp);
 		enemyDamagePainters.add(bepp);
 		enemyDamagePainters.add(beplp);
@@ -130,17 +144,20 @@ public class Battle extends Content<Battle> {
 	protected void paintComponent(Graphics2D g) {
 		if(currentState.equals(GameStates.BATTLE_PLAYER_MOVE)) {
 			List<Painter<Battle>> painters = paintersListsMap.get(currentState);
-			BattlePlayerMoveAnimationPainter bpmap = (BattlePlayerMoveAnimationPainter) painters.get(5);
+			BattlePlayerMoveAnimationPainter bpmap = (BattlePlayerMoveAnimationPainter) painters.get(7);
 			MoveAnimations ma = bpmap.getAnimations();
 			if(ma != null) {
 				painters.get(0).paint(g);
-				ma.paintBackground(g);
+				ma.paintLayer(g, 0);
 				painters.get(1).paint(g);
 				painters.get(2).paint(g);
-				ma.paintForeground(g);
+				ma.paintLayer(g, 1);
 				painters.get(3).paint(g);
 				painters.get(4).paint(g);
+				ma.paintLayer(g, 2);
 				painters.get(5).paint(g);
+				painters.get(6).paint(g);
+				painters.get(7).paint(g);
 			}
 			return;
 		}
@@ -162,7 +179,7 @@ public class Battle extends Content<Battle> {
 		switch (currentState) {
 		case BATTLE_PLAYER_MOVE:
 			
-			BattlePlayerMoveAnimationPainter bpmap = (BattlePlayerMoveAnimationPainter) painters.get(5);
+			BattlePlayerMoveAnimationPainter bpmap = (BattlePlayerMoveAnimationPainter) painters.get(7);
 			MoveAnimations ma = bpmap.getAnimations();
 			if(ma != null)
 				ma.update();
@@ -170,7 +187,7 @@ public class Battle extends Content<Battle> {
 
 		case BATTLE_ENEMY_DAMAGE:
 			
-			BattleEnemyDamageAnimationPainter bedap = (BattleEnemyDamageAnimationPainter) painters.get(5);
+			BattleEnemyDamageAnimationPainter bedap = (BattleEnemyDamageAnimationPainter) painters.get(7);
 			DamageAnimation da = bedap.getAnimation();
 			if(da != null)
 				da.update();

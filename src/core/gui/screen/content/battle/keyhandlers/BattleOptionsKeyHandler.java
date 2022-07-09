@@ -20,7 +20,7 @@ public class BattleOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 	public BattleOptionsKeyHandler(Battle parent) {
 		super(parent);
 		
-		BattleOptionsPainter painter = (BattleOptionsPainter) parent.getPaintersListsMap().get(GameStates.BATTLE_OPTIONS).get(5);
+		BattleOptionsPainter painter = (BattleOptionsPainter) parent.getPaintersListsMap().get(GameStates.BATTLE_OPTIONS).get(7);
 		OptionsRect rect = painter.getOptionsRect();
 		
 		keyMap = new KeyMap();

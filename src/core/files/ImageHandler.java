@@ -165,4 +165,32 @@ public class ImageHandler {
 		
 		return animation;
 	}
+	
+	public BufferedImage[][] getAnimations(String resName, String dir) throws IOException {
+		TiledImage animationsRaw = ImageHandler.getImage(resName, dir);
+		BufferedImage img = new BufferedImage(animationsRaw.getWidth(), animationsRaw.getHeight(), BufferedImage.TYPE_INT_ARGB);
+//		System.out.println(dir + "/" + resName + ": " + img.getWidth() + "x" + img.getHeight());
+		img.getGraphics().drawImage(animationsRaw.getImage(), 0, 0, null);
+		
+		int w = ContentSettings.horTiles * ContentSettings.tileSize;
+		int h = ContentSettings.verTiles * ContentSettings.tileSize;
+		int r = img.getHeight() / h;
+		int c = img.getWidth() / w;
+//		System.out.println(r + ", " + c + " --- " + w + "x" + h);
+		BufferedImage[][] animations = new BufferedImage[c][r];
+		
+		for(int i = 0; i < c; i++) {
+			for(int j = 0; j < r; j++) {
+				animations[i][j] = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
+				Graphics g = animations[i][j].getGraphics();
+				int x = i*w;
+				int y = j*h;
+
+//				System.out.println(x + "," + y + " > " + (x+w) + "," + (y+h) + " --- " + w + ", " + h);
+				g.drawImage(img.getSubimage(x, y, w, h), 0, 0, null);
+			}
+		}
+		
+		return animations;
+	}
 }

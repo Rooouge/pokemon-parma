@@ -1,6 +1,7 @@
 package core.gui.screen.content.battle.animations;
 
 import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 import javax.sound.sampled.Clip;
@@ -21,6 +22,26 @@ class MoveAnimation extends GUIAnimation<Battle> {
 		super(parent, resName, "battle/animations", true);
 		flag = 0;
 	}
+	
+	public MoveAnimation(Battle parent, String resName, BufferedImage[] animation) throws IOException {
+		super(parent, resName, animation, true);
+		
+//		System.out.println("--- SAVE " + resName + " ---");
+//		
+//		BufferedImage img = new BufferedImage(animation[0].getWidth(), animation.length*animation[0].getHeight(), BufferedImage.TYPE_INT_ARGB);
+//		System.out.println(img.getWidth() + "x" + img.getHeight());
+//		Graphics g = img.getGraphics();
+//		
+//		for(int i = 0; i < animation.length; i++) {
+//			BufferedImage bi = animation[i];
+//			g.drawImage(bi, 0, i*bi.getHeight(), null);
+//		}
+//		
+//		ImageIO.write(img, "png", new File("C:\\Users\\Andrea Rossi\\Desktop\\test\\" + resName + ".png"));
+		
+		flag = 0;
+	}
+	
 	
 	public MoveAnimation withClip(Clip clip) {
 		this.clip = clip;

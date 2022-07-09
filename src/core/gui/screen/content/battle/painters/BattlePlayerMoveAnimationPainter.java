@@ -25,9 +25,14 @@ public class BattlePlayerMoveAnimationPainter extends Painter<Battle> {
 	
 	public void setMoveAnimations(MoveAnimations animations) {
 		this.animations = animations;
+		
 		String pkmName = Player.instance().getTeam().get(0).getData().getDisplayName();
 		labelRect.setTopText(pkmName + " usa");
-		labelRect.setBottomText(Dictionary.instance().get(animations.getMoveName()).toUpperCase());
+		
+		String moveName = Dictionary.instance().get(animations.getMoveName()).toUpperCase();
+		if(!moveName.endsWith("!"))
+			moveName += "!";
+		labelRect.setBottomText(moveName);
 	}
 	
 	@Override
