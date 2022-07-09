@@ -1,6 +1,7 @@
 package core.events;
 
 import core.enums.GameStates;
+import core.files.SoundsHandler;
 import core.gui.interfaces.OnKeyPressHandler;
 import core.gui.screen.GlobalKeyEventHandler;
 import jutils.gui.ColoredPanel;
@@ -20,6 +21,11 @@ public class ChangeStateKeyEvent extends GlobalKeyEvent {
 	
 	public ChangeStateKeyEvent withExtra(Runnable extra) {
 		this.extra = extra;
+		return this;
+	}
+	
+	public ChangeStateKeyEvent pressSound() {
+		extra = () -> SoundsHandler.playSound(SoundsHandler.PRESS);
 		return this;
 	}
 	

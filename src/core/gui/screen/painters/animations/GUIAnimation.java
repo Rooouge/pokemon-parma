@@ -29,6 +29,15 @@ public abstract class GUIAnimation<T extends Content<? extends ColoredPanel>> {
 		tick = 0;
 	}
 	
+	protected GUIAnimation(T parent, String resName, String dir, boolean forceLock) throws IOException {
+		this.parent = parent;
+		this.resName = resName;
+		this.forceLock = forceLock;
+		animation = ImageHandler.getAnimation(resName, dir);
+		duration = animation.length*5;
+		tick = 0;
+	}
+	
 	protected GUIAnimation(T parent, int duration, boolean forceLock) {
 		this.parent = parent;
 		this.duration = duration;

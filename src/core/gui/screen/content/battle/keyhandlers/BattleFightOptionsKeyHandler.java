@@ -2,13 +2,13 @@ package core.gui.screen.content.battle.keyhandlers;
 
 import java.awt.event.KeyEvent;
 import java.io.IOException;
-import java.util.HashMap;
 
 import core.enums.GameStates;
 import core.enums.Types;
 import core.events.ChangeStateKeyEvent;
 import core.events.GlobalKeyEvent;
 import core.events.KeyEventWithRunnable;
+import core.events.KeyMap;
 import core.events.battle.BattleEvent;
 import core.events.battle.BattleMap;
 import core.events.battle.WildPokemonBattle;
@@ -26,7 +26,7 @@ import core.obj.pokemon.moves.attack.SpecialAttackMove;
 
 public class BattleFightOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 
-	private final HashMap<Integer, GlobalKeyEvent> keyMap;
+	private final KeyMap keyMap;
 	
 	
 	public BattleFightOptionsKeyHandler(Battle parent) {
@@ -36,16 +36,17 @@ public class BattleFightOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 		BattlePlayerMoveAnimationPainter bpmap = (BattlePlayerMoveAnimationPainter) parent.getPaintersListsMap().get(GameStates.BATTLE_PLAYER_MOVE).get(5);
 		FightOptionsRect rect = bfop.getFightOptionsRect();
 		
-		keyMap = new HashMap<>();
-		keyMap.put(KeyEvent.VK_DOWN, new KeyEventWithRunnable(KeyEvent.VK_DOWN, rect::down));
-		keyMap.put(KeyEvent.VK_UP, new KeyEventWithRunnable(KeyEvent.VK_UP, rect::up));
-		keyMap.put(KeyEvent.VK_LEFT, new KeyEventWithRunnable(KeyEvent.VK_LEFT, rect::left));
-		keyMap.put(KeyEvent.VK_RIGHT, new KeyEventWithRunnable(KeyEvent.VK_RIGHT, rect::right));
-		keyMap.put(KeyEvent.VK_SPACE, new ChangeStateKeyEvent(KeyEvent.VK_SPACE, GameStates.BATTLE_FIGHT_OPTIONS, GameStates.BATTLE_PLAYER_MOVE).withExtra(() ->  {
+		keyMap = new KeyMap();
+		keyMap.put(new KeyEventWithRunnable(KeyEvent.VK_DOWN, rect::down));
+		keyMap.put(new KeyEventWithRunnable(KeyEvent.VK_UP, rect::up));
+		keyMap.put(new KeyEventWithRunnable(KeyEvent.VK_LEFT, rect::left));
+		keyMap.put(new KeyEventWithRunnable(KeyEvent.VK_RIGHT, rect::right));
+		keyMap.put(new ChangeStateKeyEvent(KeyEvent.VK_ESCAPE, GameStates.BATTLE_FIGHT_OPTIONS, GameStates.BATTLE_OPTIONS).pressSound());
+		keyMap.put(new ChangeStateKeyEvent(KeyEvent.VK_SPACE, GameStates.BATTLE_FIGHT_OPTIONS, GameStates.BATTLE_PLAYER_MOVE).withExtra(() ->  {
 			SoundsHandler.playSound(SoundsHandler.PRESS);
 			try {
 //				Move move = rect.getSelected();
-				Move move = new SpecialAttackMove("Absorb", Types.GRASS, 100, 25, 20);
+				Move move = new SpecialAttackMove("Aerial Ace", Types.GRASS, 100, 25, 20);
 				bpmap.setMoveAnimations(new MoveAnimations(parent, move.getName()));
 				
 				BattleMap map = new BattleMap();

@@ -18,7 +18,7 @@ class MoveAnimation extends GUIAnimation<Battle> {
 	
 	
 	public MoveAnimation(Battle parent, String resName) throws IOException {
-		super(parent, resName, "battle/animations", 150, true);
+		super(parent, resName, "battle/animations", true);
 		flag = 0;
 	}
 	

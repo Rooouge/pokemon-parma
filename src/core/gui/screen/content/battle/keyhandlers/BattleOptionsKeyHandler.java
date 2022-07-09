@@ -1,13 +1,12 @@
 package core.gui.screen.content.battle.keyhandlers;
 
 import java.awt.event.KeyEvent;
-import java.util.HashMap;
 
 import core.enums.GameStates;
 import core.events.ChangeStateKeyEvent;
 import core.events.GlobalKeyEvent;
 import core.events.KeyEventWithRunnable;
-import core.files.SoundsHandler;
+import core.events.KeyMap;
 import core.gui.interfaces.OnKeyPressHandler;
 import core.gui.screen.content.battle.Battle;
 import core.gui.screen.content.battle.painters.BattleOptionsPainter;
@@ -15,7 +14,7 @@ import core.gui.screen.content.battle.painters.elements.OptionsRect;
 
 public class BattleOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 
-	private final HashMap<Integer, GlobalKeyEvent> keyMap;
+	private final KeyMap keyMap;
 	
 	
 	public BattleOptionsKeyHandler(Battle parent) {
@@ -24,12 +23,12 @@ public class BattleOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 		BattleOptionsPainter painter = (BattleOptionsPainter) parent.getPaintersListsMap().get(GameStates.BATTLE_OPTIONS).get(5);
 		OptionsRect rect = painter.getOptionsRect();
 		
-		keyMap = new HashMap<>();
-		keyMap.put(KeyEvent.VK_DOWN, new KeyEventWithRunnable(KeyEvent.VK_DOWN, rect::down));
-		keyMap.put(KeyEvent.VK_UP, new KeyEventWithRunnable(KeyEvent.VK_UP, rect::up));
-		keyMap.put(KeyEvent.VK_LEFT, new KeyEventWithRunnable(KeyEvent.VK_LEFT, rect::left));
-		keyMap.put(KeyEvent.VK_RIGHT, new KeyEventWithRunnable(KeyEvent.VK_RIGHT, rect::right));
-		keyMap.put(KeyEvent.VK_SPACE, new ChangeStateKeyEvent(KeyEvent.VK_SPACE, GameStates.BATTLE_OPTIONS, GameStates.BATTLE_FIGHT_OPTIONS).withExtra(() -> SoundsHandler.playSound(SoundsHandler.PRESS) ));
+		keyMap = new KeyMap();
+		keyMap.put(new KeyEventWithRunnable(KeyEvent.VK_DOWN, rect::down));
+		keyMap.put(new KeyEventWithRunnable(KeyEvent.VK_UP, rect::up));
+		keyMap.put(new KeyEventWithRunnable(KeyEvent.VK_LEFT, rect::left));
+		keyMap.put(new KeyEventWithRunnable(KeyEvent.VK_RIGHT, rect::right));
+		keyMap.put(new ChangeStateKeyEvent(KeyEvent.VK_SPACE, GameStates.BATTLE_OPTIONS, GameStates.BATTLE_FIGHT_OPTIONS).pressSound());
 		
 		firstLoad = true;
 	}
