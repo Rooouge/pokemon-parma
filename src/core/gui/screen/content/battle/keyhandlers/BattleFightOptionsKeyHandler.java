@@ -59,7 +59,7 @@ public class BattleFightOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 					move = new SpecialAttackMove("Acid Armor", Types.POISON, 100, 30, 40);
 					break;
 				case 3:
-					move = new SpecialAttackMove("Aerial Ace", Types.FLYING, 100, 20, 60);
+					move = new SpecialAttackMove("Aeroblast", Types.FLYING, 95, 5, 100);
 					break;
 				default:
 					move = null;
