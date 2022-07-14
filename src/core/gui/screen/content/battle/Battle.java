@@ -28,6 +28,7 @@ import core.gui.screen.content.battle.painters.BattlePlayerMoveAnimationPainter;
 import core.gui.screen.content.battle.painters.BattlePlayerPokemonLabelPainter;
 import core.gui.screen.content.battle.painters.BattlePlayerPokemonPainter;
 import core.gui.screen.content.battle.painters.BattlePlayerPokemonTerrainPainter;
+import core.gui.screen.content.battle.painters.BattleSetOrderPainter;
 import lombok.Getter;
 
 @SuppressWarnings("serial")
@@ -121,6 +122,23 @@ public class Battle extends Content<Battle> {
 		playerMovePainters.add(bpmap);
 		paintersListsMap.put(GameStates.BATTLE_PLAYER_MOVE, playerMovePainters);
 		
+		// ENEMY_MOVE
+		
+		// SET_ORDER
+		BattleSetOrderPainter bsop = new BattleSetOrderPainter(this);
+		List<Painter<Battle>> setOrderPainters = new ArrayList<>();
+		setOrderPainters.add(bbp);
+		setOrderPainters.add(bpptp);
+		setOrderPainters.add(beptp);
+		setOrderPainters.add(bppp);
+		setOrderPainters.add(bepp);
+		setOrderPainters.add(bpplp);
+		setOrderPainters.add(beplp);
+		setOrderPainters.add(bsop);
+		paintersListsMap.put(GameStates.BATTLE_SET_ORDER, setOrderPainters);
+		
+		// PLAYER_DAMAGE
+		
 		// ENEMY_DAMAGE
 		BattleEnemyDamageAnimationPainter bedap = new BattleEnemyDamageAnimationPainter(this, beplp);
 		List<Painter<Battle>> enemyDamagePainters = new ArrayList<>();
@@ -164,6 +182,9 @@ public class Battle extends Content<Battle> {
 		
 		
 		if(!currentState.name().startsWith("BATTLE"))
+			return;
+		
+		if(currentState.equals(GameStates.BATTLE_ENEMY_MOVE))
 			return;
 		
 		for(Painter<Battle> p : paintersListsMap.get(currentState)) {

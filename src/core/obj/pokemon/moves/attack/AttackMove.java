@@ -2,6 +2,8 @@ package core.obj.pokemon.moves.attack;
 
 import java.util.function.Function;
 
+import org.dom4j.Node;
+
 import core.enums.MoveTypes;
 import core.enums.Types;
 import core.events.battle.BattleMap;
@@ -15,6 +17,20 @@ public abstract class AttackMove extends Move {
 	@Getter
 	protected Function<BattleMap, Integer> damageFunction;
 	
+	
+	protected AttackMove(Node m, MoveTypes moveType, int damage) {
+		super(m, moveType);
+		this.damage = damage;
+		
+		damageFunction = new Function<BattleMap, Integer>() {
+			
+			@Override
+			public Integer apply(BattleMap map) {
+				return calculateDamage(map);
+			}
+			
+		};
+	}
 	
 	protected AttackMove(String name, Types type, MoveTypes moveType, int precision, int pp, int damage) {
 		super(name, type, moveType, precision, pp);

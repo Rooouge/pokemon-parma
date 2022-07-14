@@ -11,6 +11,7 @@ import core.fonts.Fonts;
 import core.gui.GUIUtils;
 import core.gui.screen.content.ContentSettings;
 import jutils.strings.Strings;
+import lombok.Getter;
 import lombok.Setter;
 
 public class LabelRect {
@@ -32,8 +33,10 @@ public class LabelRect {
 	private final Color textColor;
 	private final Point topTextPoint;
 	private final Point bottomTextPoint;
+	@Getter
 	@Setter
 	private String topText;
+	@Getter
 	@Setter
 	private String bottomText;
 	

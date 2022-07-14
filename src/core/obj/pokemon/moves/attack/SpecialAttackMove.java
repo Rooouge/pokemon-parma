@@ -2,6 +2,8 @@ package core.obj.pokemon.moves.attack;
 
 import java.util.Random;
 
+import org.dom4j.Node;
+
 import core.enums.MoveTypes;
 import core.enums.Stats;
 import core.enums.Types;
@@ -11,6 +13,11 @@ import core.obj.pokemon.battle.BattlePokemonData;
 
 public class SpecialAttackMove extends AttackMove {
 
+	
+	public SpecialAttackMove(Node m) {
+		super(m, MoveTypes.SPECIAL, Integer.parseInt(m.valueOf("@power")));
+	}
+	
 	public SpecialAttackMove(String name, Types type, int precision, int pp, int damage) {
 		super(name, type, MoveTypes.SPECIAL, precision, pp, damage);
 		

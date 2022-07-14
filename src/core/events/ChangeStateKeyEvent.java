@@ -39,6 +39,7 @@ public class ChangeStateKeyEvent extends GlobalKeyEvent {
 		if(listener != null)
 			listener.onLoad();
 		
-		GameStates.set(toSet);
+		if(!toSet.equals(GameStates.NONE))
+			GameStates.set(toSet);
 	}
 }

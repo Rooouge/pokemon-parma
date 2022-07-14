@@ -10,7 +10,8 @@ public class BattleMap {
 	public static final String ENEMY_PKM = "enemy_pkm";
 	public static final String ATK = "atk";
 	public static final String DEF = "def";
-	public static final String MOVE = "move";
+	public static final String PLAYER_MOVE = "player_move";
+	public static final String ENEMY_MOVE = "enemy_move";
 	
 	private Map<String, Object> map;
 	

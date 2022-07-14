@@ -28,7 +28,7 @@ public class BattleEnemyDamageAnimationPainter extends Painter<Battle> {
 	
 	
 	public void setDamageAnimation(BattleMap map) {
-		AttackMove move = map.get(BattleMap.MOVE, AttackMove.class);
+		AttackMove move = map.get(BattleMap.PLAYER_MOVE, AttackMove.class);
 		BattlePokemon enemyPkm = map.get(BattleMap.ENEMY_PKM, BattlePokemon.class);
 		BattlePokemon playerPkm = map.get(BattleMap.PLAYER_PKM, BattlePokemon.class);
 		
