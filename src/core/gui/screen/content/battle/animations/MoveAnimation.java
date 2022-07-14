@@ -11,7 +11,7 @@ import core.files.SoundsHandler;
 import core.gui.screen.content.battle.Battle;
 import core.gui.screen.painters.animations.GUIAnimation;
 
-class MoveAnimation extends GUIAnimation<Battle> {
+public class MoveAnimation extends GUIAnimation<Battle> {
 
 	protected int flag;
 	protected Clip clip;
