@@ -11,11 +11,13 @@ import core.events.battle.BattleMap;
 import core.events.battle.WildPokemonBattle;
 import core.gui.interfaces.Painter;
 import core.gui.screen.content.battle.Battle;
+import core.gui.screen.content.battle.keyhandlers.BattleFightOptionsKeyHandler;
 import core.gui.screen.content.battle.painters.elements.LabelRect;
 import core.obj.entities.player.Player;
 import core.obj.pokemon.battle.BattlePokemon;
 import core.obj.pokemon.entity.EntityPokemonStats;
 import core.obj.pokemon.moves.Move;
+import jutils.threads.Threads;
 
 public class BattleSetOrderPainter extends Painter<Battle> {
 
@@ -40,12 +42,19 @@ public class BattleSetOrderPainter extends Painter<Battle> {
 	}
 	
 	
-	public void startCalculation(Move playerMove) throws IOException {
+	public void startCalculation(Move playerMove, BattleFightOptionsKeyHandler bfokh) {
+//		System.out.println(GameStates.current().name());
 		GameStates toSet = calculatePriority(playerMove);
-		bpmap.readMoveAnimations(playerMove.getName());
 		
-		System.out.println(toSet.name());
-		GameStates.set(toSet);
+		Threads.run(() -> {
+			try {
+				bpmap.readMoveAnimations(playerMove.getName());
+				GameStates.set(toSet);
+				bfokh.setFlag(false);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		});
 	}
 	
 	private GameStates calculatePriority(Move playerMove) {

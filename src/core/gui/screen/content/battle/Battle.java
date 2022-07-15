@@ -195,6 +195,7 @@ public class Battle extends Content<Battle> {
 	@Override
 	public void update() throws Exception {
 		currentState = GameStates.current();
+//		System.out.println(currentState.name()w);
 		List<Painter<Battle>> painters = paintersListsMap.get(currentState);
 		
 		switch (currentState) {

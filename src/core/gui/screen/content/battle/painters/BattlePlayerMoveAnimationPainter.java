@@ -38,8 +38,7 @@ public class BattlePlayerMoveAnimationPainter extends Painter<Battle> {
 	}
 	
 	public void readMoveAnimations(String moveName) throws IOException {
-		System.out.println(moveName);
-		animations = new MoveAnimations(parent, moveName);
+		animations = new MoveAnimations(parent, moveName, false);
 	}
 	
 	@Override

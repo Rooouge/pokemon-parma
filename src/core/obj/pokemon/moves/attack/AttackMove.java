@@ -11,10 +11,10 @@ import core.obj.pokemon.battle.BattlePokemonData;
 import core.obj.pokemon.moves.Move;
 import lombok.Getter;
 
+@Getter
 public abstract class AttackMove extends Move {
 
 	protected final int damage;
-	@Getter
 	protected Function<BattleMap, Integer> damageFunction;
 	
 	

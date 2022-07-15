@@ -12,6 +12,7 @@ public class BattleMap {
 	public static final String DEF = "def";
 	public static final String PLAYER_MOVE = "player_move";
 	public static final String ENEMY_MOVE = "enemy_move";
+	public static final String CRITICAL_HIT = "critical_hit";
 	
 	private Map<String, Object> map;
 	

@@ -1,7 +1,6 @@
 package core.gui.screen.content.battle.keyhandlers;
 
 import java.awt.event.KeyEvent;
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -20,10 +19,13 @@ import core.gui.screen.content.battle.painters.BattleSetOrderPainter;
 import core.gui.screen.content.battle.painters.elements.FightOptionsRect;
 import core.obj.pokemon.moves.Move;
 import core.obj.pokemon.moves.attack.SpecialAttackMove;
+import lombok.Setter;
 
 public class BattleFightOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 
 	private final KeyMap keyMap;
+	@Setter
+	private boolean flag;
 	
 	
 	public BattleFightOptionsKeyHandler(Battle parent) {
@@ -33,6 +35,8 @@ public class BattleFightOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 		BattleFightOptionsPainter bfop = (BattleFightOptionsPainter) map.get(GameStates.BATTLE_FIGHT_OPTIONS).get(7);
 		BattleSetOrderPainter bsop = (BattleSetOrderPainter) map.get(GameStates.BATTLE_SET_ORDER).get(7);
 		FightOptionsRect rect = bfop.getFightOptionsRect();
+		
+		flag = false;
 		
 		keyMap = new KeyMap();
 		keyMap.put(new KeyEventWithRunnable(KeyEvent.VK_DOWN, rect::down));
@@ -45,28 +49,28 @@ public class BattleFightOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 //			Move move = rect.getSelectedMove();
 			
 			Move move;
-			switch (rect.getSelected()) {
-			case 0:
-				move = new SpecialAttackMove("Absorb", Types.GRASS, 100, 25, 20);
-				break;
-			case 1:
-				move = new SpecialAttackMove("Acid", Types.POISON, 100, 30, 40);
-				break;
-			case 2:
-				move = new SpecialAttackMove("Acid Armor", Types.POISON, 100, 30, 40);
-				break;
-			case 3:
-				move = new SpecialAttackMove("Aeroblast", Types.FLYING, 95, 5, 100);
-				break;
-			default:
-				move = null;
-				break;
-			}
+//			switch (rect.getSelected()) {
+//			case 0:
+//				move = new SpecialAttackMove("Absorb", Types.GRASS, 100, 25, 20);
+//				break;
+//			case 1:
+//				move = new SpecialAttackMove("Acid", Types.POISON, 100, 30, 40);
+//				break;
+//			case 2:
+//				move = new SpecialAttackMove("Acid Armor", Types.POISON, 100, 30, 40);
+//				break;
+//			case 3:
+//				move = new SpecialAttackMove("Aeroblast", Types.FLYING, 95, 5, 100);
+//				break;
+//			default:
+//				move = null;
+//				break;
+//			}
+			move = new SpecialAttackMove("Aerial Ace", Types.FLYING, 100, 30, 30);
 			
-			try {
-				bsop.startCalculation(move);
-			} catch (IOException e) {
-				e.printStackTrace();
+			if(!flag) {
+				bsop.startCalculation(move, this);
+				flag = true;
 			}
 		}));
 		

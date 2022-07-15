@@ -20,11 +20,11 @@ public class MoveAnimations {
 	protected final String moveName;
 	
 	
-	public MoveAnimations(Battle parent, String moveName) throws IOException {
+	public MoveAnimations(Battle parent, String moveName, boolean enemy) throws IOException {
 		this.moveName = moveName;
 		moveName = moveName.toLowerCase().replace(" ", "_").replace(".", "_");
 		
-		BufferedImage[][] animations = ImageHandler.getAnimations(moveName, "battle/animations");
+		BufferedImage[][] animations = ImageHandler.getAnimations(moveName, "battle/animations", enemy);
 		layers = new ArrayList<>();
 		
 		for(int i = 0; i < animations.length; i++) {

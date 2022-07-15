@@ -81,7 +81,7 @@
 		<wild id="6" min="36" max="50" chance="1" bound="1"/>
 		<wild id="9" min="36" max="50" chance="1" bound="1"/>
 		-->
-		<wild id="9" min="36" max="50" chance="1" bound="1"/>
+		<wild id="9" min="36" max="40" chance="1" bound="1"/>
 	</wilds>
 	<autotiles>
 		<autotile name="grass_bottom" pos="11,8"/>
