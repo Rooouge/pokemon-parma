@@ -45,31 +45,31 @@ public class BattleFightOptionsKeyHandler extends OnKeyPressHandler<Battle> {
 		keyMap.put(new KeyEventWithRunnable(KeyEvent.VK_RIGHT, rect::right));
 		keyMap.put(new ChangeStateKeyEvent(KeyEvent.VK_ESCAPE, GameStates.BATTLE_FIGHT_OPTIONS, GameStates.BATTLE_OPTIONS).pressSound());
 		keyMap.put(new ChangeStateKeyEvent(KeyEvent.VK_SPACE, GameStates.BATTLE_FIGHT_OPTIONS, GameStates.NONE).withExtra(() ->  {
-			SoundsHandler.playSound(SoundsHandler.PRESS);
-//			Move move = rect.getSelectedMove();
-			
-			Move move;
-//			switch (rect.getSelected()) {
-//			case 0:
-//				move = new SpecialAttackMove("Absorb", Types.GRASS, 100, 25, 20);
-//				break;
-//			case 1:
-//				move = new SpecialAttackMove("Acid", Types.POISON, 100, 30, 40);
-//				break;
-//			case 2:
-//				move = new SpecialAttackMove("Acid Armor", Types.POISON, 100, 30, 40);
-//				break;
-//			case 3:
-//				move = new SpecialAttackMove("Aeroblast", Types.FLYING, 95, 5, 100);
-//				break;
-//			default:
-//				move = null;
-//				break;
-//			}
-			move = new SpecialAttackMove("Aerial Ace", Types.FLYING, 100, 30, 30);
-			
 			if(!flag) {
-				bsop.startCalculation(move, this);
+				SoundsHandler.playSound(SoundsHandler.PRESS);
+				GameStates.set(GameStates.BATTLE_SET_ORDER);
+//				Move move = rect.getSelectedMove();	
+				Move move;
+//				switch (rect.getSelected()) {
+//				case 0:
+//					move = new SpecialAttackMove("Absorb", Types.GRASS, 100, 25, 20);
+//					break;
+//				case 1:
+//					move = new SpecialAttackMove("Acid", Types.POISON, 100, 30, 40);
+//					break;
+//				case 2:
+//					move = new SpecialAttackMove("Acid Armor", Types.POISON, 100, 30, 40);
+//					break;
+//				case 3:
+//					move = new SpecialAttackMove("Aeroblast", Types.FLYING, 95, 5, 100);
+//					break;
+//				default:
+//					move = null;
+//					break;
+//				}
+				move = new SpecialAttackMove("Aerial Ace", Types.FLYING, 100, 30, 30);
+			
+				bsop.setOrder(move, this);
 				flag = true;
 			}
 		}));

@@ -12,15 +12,15 @@ import core.obj.pokemon.battle.BattlePokemon;
 import core.obj.pokemon.moves.attack.AttackMove;
 import lombok.Getter;
 
-public class BattleEnemyDamageAnimationPainter extends Painter<Battle> {
+public class BattlePlayerDamageAnimationPainter extends Painter<Battle> {
 
 	private final LabelRect labelRect;
-	private final BattleEnemyPokemonLabelPainter ref;
+	private final BattlePlayerPokemonLabelPainter ref;
 	@Getter
 	private DamageAnimation animation;
 	
 	
-	public BattleEnemyDamageAnimationPainter(Battle parent, BattleEnemyPokemonLabelPainter ref) {
+	public BattlePlayerDamageAnimationPainter(Battle parent, BattlePlayerPokemonLabelPainter ref) {
 		super(parent);
 		this.ref = ref;
 		labelRect = new LabelRect();
@@ -29,17 +29,18 @@ public class BattleEnemyDamageAnimationPainter extends Painter<Battle> {
 	
 	public void setDamageAnimation() {
 		BattleMap map = parent.getBattle().getMap();
-		AttackMove move = map.get(BattleMap.PLAYER_MOVE, AttackMove.class);
+		AttackMove move = map.get(BattleMap.ENEMY_MOVE, AttackMove.class);
 		BattlePokemon enemyPkm = map.get(BattleMap.ENEMY_PKM, BattlePokemon.class);
 		BattlePokemon playerPkm = map.get(BattleMap.PLAYER_PKM, BattlePokemon.class);
 		
-		map.put(BattleMap.ATK, playerPkm);
-		map.put(BattleMap.DEF, enemyPkm);
+		map.put(BattleMap.ATK, enemyPkm);
+		map.put(BattleMap.DEF, playerPkm);
 		
 		int damage = move.calculateDamage(map);
-		Log.log("Enemy Damage: " + damage);
-		animation = new DamageAnimation(parent, enemyPkm.getData(), damage, ref);
+		Log.log("Player Damage: " + damage);
+		animation = new DamageAnimation(parent, playerPkm.getData(), damage, ref);
 	}
+	
 	
 	@Override
 	public void paint(Graphics2D g) {

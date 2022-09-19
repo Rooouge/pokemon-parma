@@ -12,7 +12,10 @@ public class BattleMap {
 	public static final String DEF = "def";
 	public static final String PLAYER_MOVE = "player_move";
 	public static final String ENEMY_MOVE = "enemy_move";
-	public static final String CRITICAL_HIT = "critical_hit";
+	public static final String DAMAGE_DESCRIPTION = "damage_description";
+	public static final String IS_CRITICAL_HIT = "critical_hit";
+	public static final String IS_FIRST_ATTACK = "is_first_attack";
+	public static final String SECOND_ATTACK = "second_attack";
 	
 	private Map<String, Object> map;
 	
@@ -37,4 +40,5 @@ public class BattleMap {
 	public void clear() {
 		map.clear();
 	}
+	
 }

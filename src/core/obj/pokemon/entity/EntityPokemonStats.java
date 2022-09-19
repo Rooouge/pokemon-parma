@@ -139,6 +139,6 @@ public class EntityPokemonStats extends EnumMap<Stats, Integer> {
 	}
 	
 	public void logHp() {
-		jutils.log.Log.info("Hp: " + get(Stats.HP) + "/" + get(Stats.TOT_HP));
+		jutils.log.Log.info(data.getDisplayName() + " HP: " + get(Stats.HP) + "/" + get(Stats.TOT_HP));
 	}
 }

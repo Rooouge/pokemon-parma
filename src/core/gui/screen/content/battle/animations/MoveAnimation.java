@@ -16,6 +16,7 @@ public class MoveAnimation extends GUIAnimation<Battle> {
 	protected int flag;
 	protected Clip clip;
 	protected Runnable end;
+	protected boolean enemy;
 	
 	
 	public MoveAnimation(Battle parent, String resName) throws IOException {
@@ -23,7 +24,7 @@ public class MoveAnimation extends GUIAnimation<Battle> {
 		flag = 0;
 	}
 	
-	public MoveAnimation(Battle parent, String resName, BufferedImage[] animation) throws IOException {
+	public MoveAnimation(Battle parent, String resName, BufferedImage[] animation, boolean enemy) throws IOException {
 		super(parent, resName, animation, true);
 		
 //		System.out.println("--- SAVE " + resName + " ---");
@@ -40,6 +41,7 @@ public class MoveAnimation extends GUIAnimation<Battle> {
 //		ImageIO.write(img, "png", new File("C:\\Users\\Andrea Rossi\\Desktop\\test\\" + resName + ".png"));
 		
 		flag = 0;
+		this.enemy = enemy;
 	}
 	
 	
@@ -72,7 +74,7 @@ public class MoveAnimation extends GUIAnimation<Battle> {
 		if(end != null)
 			end.run();
 		
-		GameStates.set(GameStates.BATTLE_ENEMY_DAMAGE);
+		GameStates.set(enemy ? GameStates.BATTLE_PLAYER_DAMAGE : GameStates.BATTLE_ENEMY_DAMAGE);
 	}
 
 	@Override

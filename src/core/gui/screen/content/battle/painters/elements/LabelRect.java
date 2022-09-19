@@ -71,6 +71,14 @@ public class LabelRect {
 		textColor = Color.white;
 	}
 	
+	public LabelRect(String top, String bottom) {
+		this();
+		if(top != null)
+			topText = top;
+		if(bottom != null)
+			bottomText = bottom;
+	}
+	
 	
 	public void paint(Graphics2D g) {
 		GUIUtils.fillRect(g, backgroundRect, backgroundColor);

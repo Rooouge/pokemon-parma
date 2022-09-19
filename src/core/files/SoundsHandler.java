@@ -66,8 +66,6 @@ public class SoundsHandler {
 	
 	
 	public void playSound(Clip clip) {
-		clip.stop();
-		clip.setFramePosition(0);
 		clip.start();
 	}
 

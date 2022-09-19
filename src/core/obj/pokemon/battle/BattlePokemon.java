@@ -22,6 +22,6 @@ public class BattlePokemon {
 		 * Test
 		 */
 		
-		return new SpecialAttackMove("Absorb", Types.GRASS, 100, 25, 20);
+		return new SpecialAttackMove("Aerial Ace", Types.FLYING, 100, 25, 20);
 	}
 }
